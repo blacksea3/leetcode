@@ -1,0 +1,21 @@
+*.log
+*.pot
+*.pyc
+local_settings.py
+
+# Editor backup files
+*~
+*#
+
+# Django's SQL Lite Database File
+db.sqlite3
+
+# Django generated migrations
+0*.py
+
+.DS_Store
+
+# VS temp data directory?
+.vs
+leetcode/Debug
+Debug
