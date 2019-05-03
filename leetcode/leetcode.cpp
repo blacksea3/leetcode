@@ -501,6 +501,32 @@ void test75(Solution s)
 	int i = 1;
 }
 
+void test76(Solution s)
+{
+	string res = s.minWindow("aaaaaaaaaaaabbbbbcdd", "abcdd");
+	int i = 1;
+}
+
+void test77(Solution s)
+{
+	vector<vector<int>> res = s.combine(3,3);
+	int i = 1;
+}
+
+void test78(Solution s)
+{
+	vector<int> nums = { 1,2,3 };
+	vector<vector<int>> res = s.subsets(nums);
+	int i = 1;
+}
+
+void test79(Solution s)
+{
+	vector<vector<char>> board = { {'A','B','C','E'},{'S','F','C','S'},{'A','D','E','E'} };
+	bool res = s.exist(board, "SEE");
+	int i = 1;
+}
+
 #else
 #endif
 
@@ -509,7 +535,7 @@ void test75(Solution s)
 int main()
 {
 	Solution s = Solution();
-	test75(s);
+	test79(s);
 }
 
 

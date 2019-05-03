@@ -275,5 +275,266 @@ void Solution::sortColors(vector<int>& nums)
 	}
 }
 
+string Solution::minWindow(string s, string t)
+{
+	//滑动窗口,一轮迭代
+
+	//分析
+	unordered_map<char, int> ts;  //t内的字符构成的字典
+	for (auto tc : t)
+		ts[tc]++;
+	int tsize = t.size();        //t长度
+
+	//单独处理t只有一个字符的情况
+	if (tsize == 1)
+	{
+		for (auto sc : s)
+			if (sc == t[0]) return t;
+		return "";
+	}
+
+	//t多于一个字符的情况,滑动窗口
+	unordered_map<char, int> ps;  //当前字典
+	int left = 0;                //窗口左下标
+	int precount = 0;            //当前匹配字符计数
+
+	int minlength = 0;           //最小子串长度
+	int start = 0;               //起始
+	int end = 0;                 //结束,注意子串是[start,end]双闭合区间
+
+	for (int right = 0; right < s.size(); right++)
+	{
+		char sc = s[right];
+		if (ts.find(sc) != ts.end()) //找到了
+		{
+			if (precount == 0)  //如果是首次找到了,移动left
+				left = right;
+
+			if (ps.find(sc) == ps.end())
+			{
+				precount++;
+				ps[sc] = 1;
+			}
+			else if (ps[sc] >= ts[sc])     //仅操作ps[sc]而不操作precount
+			{
+				ps[sc]++;
+			}
+			else
+			{
+				ps[sc]++;
+				precount++;
+			}
+			//如果已经全了
+			if (precount == tsize)
+			{
+				//在当前范围内获取最短子串
+				while (true)
+				{
+					if (ts.find(s[left]) != ts.end())
+						if (ps[s[left]] > ts[s[left]])
+							ps[s[left]]--;
+						else
+							break;
+					left++;
+				}
+				if (minlength == 0)
+				{
+					minlength = (right - left + 1);
+					start = left;
+					end = right;
+				}
+				else
+				{
+					if (minlength > (right - left + 1))
+					{
+						minlength = (right - left + 1);
+						start = left;
+						end = right;
+					}
+				}
+				//移动left
+				ps[s[left]]--;
+				left++;
+				precount--;
+				while (ts.find(s[left]) == ts.end()) left++;
+			}
+		}
+	}
+	if (minlength == 0) return "";
+	else return s.substr(start, (end - start + 1));
+}
+
+vector<vector<int>> Solution::combine(int n, int k)
+{
+	//回溯
+
+	if (k == 1)
+	{
+		vector<vector<int>> res(n, vector<int>{});
+		for (int i = 1; i <= n; i++)
+			res[i - 1].push_back(i);
+		return res;
+    }
+
+	//init
+	//int result_numbers = 1;
+	//for (int i = 0; i < k; i++)
+	//{
+	//	if (n == (i + 1)) break;
+	//	result_numbers *= (n - i - 1);
+	//}
+	vector<vector<int>> res{};
+	int preloc = 0;
+	vector<vector<int>> stack(1, vector<int>{});
+	for (int i = 1; i <= (n-k+1); i++)
+		stack[0].push_back(i);
+	vector<int> pre_numbers = {};
+	int pre_length = 0;
+
+	//正式回溯
+	while ((stack.size() > 1) || (stack[0].size() >= 1))
+	{
+		if (stack[stack.size() - 1].size() > 0)
+		{
+			int num = stack[stack.size() - 1][0];
+			stack[stack.size() - 1].erase(stack[stack.size() - 1].begin());
+			pre_length++;
+			pre_numbers.push_back(num);
+			if (pre_length == k)
+			{
+				res.push_back(pre_numbers);
+				pre_length--;
+				pre_numbers.pop_back();
+			}
+			else
+			{
+				vector<int> remaining_nums = {};
+				for (int i = num + 1; i <= min(n,n-k+1+pre_length); i++)
+				{
+					vector<int>::iterator location_index;
+					location_index = find(pre_numbers.begin(), pre_numbers.end(), i);
+					if (location_index == pre_numbers.end())
+						remaining_nums.push_back(i);
+				}
+				stack.push_back(remaining_nums);
+			}
+		}
+		else
+		{
+			stack.pop_back();
+			pre_length--;
+			pre_numbers.pop_back();
+		}
+	}
+	return res;
+}
+
+vector<vector<int>> Solution::subsets(vector<int>& nums)
+{
+	//遍历nums.size()个bit位,1表示选取某个下标的num,0则不选取
+
+	int nsize = nums.size();
+
+	if (nsize == 0) return vector<vector<int>> {};
+
+	int length = (int)pow(2, nsize);
+
+	vector<vector<int>> res(length, vector<int> {});
+
+	for (int i = 0; i < length; i++)
+	{
+		vector<int> temp = {};
+		for (int j = 0; j < nsize; j++)
+		{
+			if ((i >> j) % 2 == 1) temp.push_back(nums[j]);
+		}
+		res[i] = temp;
+	}
+	return res;
+}
+
+vector<pair<int, int>> Solution::get_possible_locations(vector<vector<char>>& board, vector<vector<bool>>& boolboard, int m, int n, int i, int j, char ch)
+{
+	vector<pair<int, int>> res = {};
+	if (i != 0) if ((board[i - 1][j] == ch) && (boolboard[i - 1][j])) res.push_back(pair<int, int>(i - 1, j));
+	if (j != 0) if ((board[i][j - 1] == ch) && (boolboard[i][j - 1])) res.push_back(pair<int, int>(i, j - 1));
+	if (i != m - 1) if ((board[i + 1][j] == ch) && (boolboard[i + 1][j])) res.push_back(pair<int, int>(i + 1, j));
+	if (j != n - 1) if ((board[i][j + 1] == ch) && (boolboard[i][j + 1])) res.push_back(pair<int, int>(i, j + 1));
+	return res;
+}
+
+bool Solution::exist(vector<vector<char>>& board, string word)
+{
+	//深度优先搜索,回溯
+
+	//维护一个当前board状态,内含已经走过的路线,维护一个已经走过的长度
+	//维护一个pre_loc直接包含已经走过的坐标
+	//维护一个stack表示待走的坐标
+
+	//m行n列
+	int m = board.size();
+	if (m == 0) return false;
+	int n = board[0].size();
+	if (n == 0) return false;
+
+	int wsize = word.size();
+	vector<vector<bool>> boolboard(m, vector<bool>(n, true));
+	int length = 0;
+	vector<vector<pair<int, int>>> stack = {};   //这个从第二个位置开始
+	vector<pair<int, int>> pre_loc = {};
+
+	for (int i = 0; i < m; i++)
+		for (int j = 0; j < n; j++)
+		{
+			if (board[i][j] == word[0])
+			{
+				if (wsize == 1) return true;
+				//init
+				boolboard[i][j] = false;
+				length = 1;
+				vector<pair<int, int>> res = get_possible_locations(board, boolboard, m, n, i, j, word[length]);
+				if (res.size() == 0)
+				{
+					boolboard[i][j] = true;
+					length = 0;
+					continue;
+				}
+				stack.push_back(res);
+				pre_loc = { pair<int,int>(i,j) };
+
+				//以此为起点开始搜索
+				while ((stack.size() > 1) || (stack[0].size() >= 1))
+				{
+					if (stack[stack.size() - 1].size() == 0)
+					{
+						pair<int, int> temp = pre_loc[pre_loc.size() - 1];
+						boolboard[temp.first][temp.second] = true;
+						pre_loc.pop_back();
+						length--;
+						stack.pop_back();
+					}
+					else
+					{
+						if (length == (wsize - 1)) return true;
+						pair<int, int> temp = stack[stack.size() - 1][stack[stack.size() - 1].size()-1];
+						stack[stack.size() - 1].pop_back();
+						boolboard[temp.first][temp.second] = false;
+						length++;
+						pre_loc.push_back(temp);
+						vector<pair<int, int>> res = get_possible_locations(board, boolboard, m, n, temp.first, temp.second, word[length]);
+						stack.push_back(res);
+					}
+				}
+				//没搜到
+				pair<int, int> temp = pre_loc[pre_loc.size() - 1];
+				boolboard[temp.first][temp.second] = true;
+				pre_loc.pop_back();
+				length--;
+				stack.pop_back();
+			}
+		}
+	return false;
+}
+
 #else
 #endif

@@ -239,6 +239,19 @@ public:
 	bool searchMatrix(vector<vector<int>>& matrix, int target);
 	//75
 	void sortColors(vector<int>& nums);
+	//76
+	string minWindow(string s, string t);
+	//77
+	vector<vector<int>> combine(int n, int k);
+	//78
+	vector<vector<int>> subsets(vector<int>& nums);
+	//79
+private:
+	vector<pair<int, int>> get_possible_locations(vector<vector<char>>& board, vector<vector<bool>>& boolboard, int m, int n, int i, int j, char ch);
+public:
+	bool exist(vector<vector<char>>& board, string word);
+	//80
+	int removeDuplicates(vector<int>& nums);
 #else
 #endif
 
