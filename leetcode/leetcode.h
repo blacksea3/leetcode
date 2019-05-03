@@ -9,7 +9,8 @@
 //#define LEETCODE_41_50
 //#define LEETCODE_51_60
 //#define LEETCODE_61_70
-#define LEETCODE_71_80
+//#define LEETCODE_71_80
+#define LEETCODE_81_90
 
 class Solution
 {
@@ -252,6 +253,34 @@ public:
 	bool exist(vector<vector<char>>& board, string word);
 	//80
 	int removeDuplicates(vector<int>& nums);
+#else
+#endif
+
+#ifdef LEETCODE_81_90
+    //81
+private:
+	int iter_search_81(vector<int>& nums, int target, int startloc, int endloc);
+	int binary_search_81(vector<int>& nums, int target, int startloc, int endloc);
+public:
+	bool search_81(vector<int>& nums, int target);
+	//82
+	ListNode* deleteDuplicates(ListNode* head);
+	//83
+	ListNode* deleteDuplicates_83(ListNode* head);
+	//84
+	int largestRectangleArea(vector<int>& heights);
+	//85
+	int maximalRectangle(vector<vector<char>>& matrix);
+	//86
+	ListNode* partition(ListNode* head, int x);
+	//87
+	bool isScramble(string s1, string s2);
+	//88
+	void merge(vector<int>& nums1, int m, vector<int>& nums2, int n);
+	//89
+	vector<int> grayCode(int n);
+	//90
+	vector<vector<int>> subsetsWithDup(vector<int>& nums);
 #else
 #endif
 
