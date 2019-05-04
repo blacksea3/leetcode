@@ -559,10 +559,33 @@ void test90(Solution s)
 #else
 #endif
 
+#ifdef LEETCODE_WC
+void testwc1(Solution s)
+{
+	vector<vector<int>> grid = { {1,1},{1,2} };
+	vector<vector<int>> res = s.colorBorder(grid, 0, 0, 3);
+	int i = 1;
+}
+	
+
+#else
+#endif
+
+#ifdef LEETCODE_91_100
+void test92(Solution s)
+{
+	ListNode *ln = s.initlistnode(vector<int>{1, 2, 3, 4, 5});
+	ListNode *res = s.reverseBetween(ln, 2, 4);
+	int i = 1;
+}
+
+#else
+#endif
+
 int main()
 {
 	Solution s = Solution();
-	test90(s);
+	test92(s);
 }
 
 

@@ -2,6 +2,8 @@
 
 #include "public.h"
 
+//#define LEETCODE_WC
+
 //#define LEETCODE_01_10
 //#define LEETCODE_11_20
 //#define LEETCODE_21_30
@@ -10,7 +12,8 @@
 //#define LEETCODE_51_60
 //#define LEETCODE_61_70
 //#define LEETCODE_71_80
-#define LEETCODE_81_90
+//#define LEETCODE_81_90
+#define LEETCODE_91_100
 
 class Solution
 {
@@ -283,5 +286,24 @@ public:
 	vector<vector<int>> subsetsWithDup(vector<int>& nums);
 #else
 #endif
+
+#ifdef LEETCODE_WC
+public:
+	vector<vector<int>> colorBorder(vector<vector<int>>& grid, int r0, int c0, int color);
+
+#else
+#endif
+
+#ifdef LEETCODE_91_100
+public:
+	//91
+	int numDecodings(string s);
+	//92
+	ListNode* reverseBetween(ListNode* head, int m, int n);
+
+
+#else
+#endif
+
 
 };

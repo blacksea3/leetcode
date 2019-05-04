@@ -1,7 +1,8 @@
+#ifdef LEETCODE_31_40
+
 #include "public.h"
 #include "leetcode.h"
 
-#ifdef LEETCODE_31_40
 void Solution::nextPermutation(vector<int>& nums)
 {
 	//...... 4   76554321
