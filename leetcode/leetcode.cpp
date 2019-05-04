@@ -4,6 +4,8 @@
 
 #include "leetcode.h"
 
+#define null NULL
+
 #ifdef LEETCODE_01_10
 void test1(Solution s)
 {
@@ -579,13 +581,42 @@ void test92(Solution s)
 	int i = 1;
 }
 
+void test93(Solution s)
+{
+	vector<string> res = s.restoreIpAddresses("010010");
+	int i = 1;
+}
+
+void test95(Solution s)
+{
+	vector<TreeNode*> res = s.generateTrees(3);
+	int i = 1;
+}
+
+void test96(Solution s)
+{
+	cout << s.numTrees(18);
+}
+
+void test97(Solution s)
+{
+	cout << s.isInterleave("a", "", "c");
+}
+
+void test98(Solution s)
+{
+	TreeNode *root = s.initTreeNode({ 5,1,4,null,null,3,6 });
+	cout << s.isValidBST(root);
+	int i = 1;
+}
+
 #else
 #endif
 
 int main()
 {
 	Solution s = Solution();
-	test92(s);
+	test98(s);
 }
 
 

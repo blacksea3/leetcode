@@ -20,6 +20,7 @@ class Solution
 public:
 	void printlistnode(ListNode* input);
 	ListNode* initlistnode(vector<int> input);
+	TreeNode * initTreeNode(vector<int> input);
 
 #ifdef LEETCODE_01_10
 	////////////////////////////////////////////////////////////////////////////////////
@@ -300,8 +301,22 @@ public:
 	int numDecodings(string s);
 	//92
 	ListNode* reverseBetween(ListNode* head, int m, int n);
-
-
+	//93
+	vector<string> restoreIpAddresses(string s);
+	//94
+	vector<int> inorderTraversal(TreeNode* root);
+	//95
+private:
+	vector<TreeNode*> iter_gen_trees(int n, int m);
+public:
+	vector<TreeNode*> generateTrees(int n);
+	//96
+public:
+	int numTrees(int n);
+	//97
+	bool isInterleave(string s1, string s2, string s3);
+	//98
+	bool isValidBST(TreeNode* root);
 #else
 #endif
 
