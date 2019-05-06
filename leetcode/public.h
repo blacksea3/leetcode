@@ -6,6 +6,8 @@
 #include<algorithm>
 #include <string>
 #include <strstream>
+#include<stack>
+
 using namespace std;
 
 /**

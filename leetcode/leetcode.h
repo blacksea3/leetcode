@@ -2,7 +2,7 @@
 
 #include "public.h"
 
-#define LEETCODE_WC
+//#define LEETCODE_WC
 
 //#define LEETCODE_01_10
 //#define LEETCODE_11_20
@@ -14,7 +14,7 @@
 //#define LEETCODE_71_80
 //#define LEETCODE_81_90
 //#define LEETCODE_91_100
-//#define LEETCODE_101_110
+#define LEETCODE_101_110
 
 class Solution
 {
@@ -344,6 +344,20 @@ public:
 	vector<vector<int>> levelOrder(TreeNode* root);
 	//103
 	vector<vector<int>> zigzagLevelOrder(TreeNode* root);
+	//104
+	int maxDepth(TreeNode* root);
+	//105
+	TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder);
+	//106
+	TreeNode* buildTree_106(vector<int>& inorder, vector<int>& postorder);
+	//107
+	vector<vector<int>> levelOrderBottom(TreeNode* root);
+	//108
+private:
+	TreeNode* iter_sortedArrayToBST(vector<int>& nums, int left, int right);
+public:
+	TreeNode* sortedArrayToBST(vector<int>& nums);
+
 
 #else
 #endif
