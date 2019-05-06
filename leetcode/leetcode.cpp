@@ -650,7 +650,7 @@ void test101(Solution s)
 int main()
 {
 	Solution s = Solution();
-	test101(s);
+	testwc_135_3(s);
 }
 
 

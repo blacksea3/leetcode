@@ -2,7 +2,7 @@
 
 #include "public.h"
 
-//#define LEETCODE_WC
+#define LEETCODE_WC
 
 //#define LEETCODE_01_10
 //#define LEETCODE_11_20
@@ -14,7 +14,7 @@
 //#define LEETCODE_71_80
 //#define LEETCODE_81_90
 //#define LEETCODE_91_100
-#define LEETCODE_101_110
+//#define LEETCODE_101_110
 
 class Solution
 {
@@ -32,8 +32,8 @@ public:
 	TreeNode* bstToGst(TreeNode* root);
 	//problem 3
 private:
-	int iter_minScoreTriangulation(vector<int>& A);
-	//int noborder_add(int add1, int add2, int max);
+	//int iter_minScoreTriangulation(vector<int>& A);
+	int noborder(int num, int size);
 public:
 	int minScoreTriangulation(vector<int>& A);
 #else

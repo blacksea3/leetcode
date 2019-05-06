@@ -107,7 +107,7 @@ TreeNode* Solution::bstToGst(TreeNode* root)
 	return rootbak;
 }
 
-
+/*
 int Solution::iter_minScoreTriangulation(vector<int>& A)
 {
 	//如果长度是三,直接乘起来
@@ -154,51 +154,43 @@ int Solution::minScoreTriangulation(vector<int>& A)
 {
 	return iter_minScoreTriangulation(A);
 }
-
-/*
-	//包括0,有效值[0,max]
-	int Solution::noborder_add(int add1, int add2, int max)
+*/
+	//按max调整num
+    //num可能>=size,此时减size
+	int Solution::noborder(int num, int size)
 	{
-		return ((add1 + add2) <= max) ? (add1 + add2) : (add1 + add2 - max - 1);
+		return (num >= size) ? (num - size) : (num < 0) ? num + size : num;
 	}
 
 	int Solution::minScoreTriangulation(vector<int>& A)
 	{
 		//动态规划
-		//维护dp[start][end]:表示 start,start+1,end三角形的乘积,这里的end实际上是下标end+2
-		//维护dp2[start][length]:表示从start顺时针加一段长度,length:0表示长度是4,0最大为A.size()-4
+		//维护dp[start][end],:注意这个数组有一些空间没有用到
+		//对end与start间隔遍历,从2至size-1;对start遍历,从0至size-1;对mid遍历,从start+1至end-1遍历
+		//注意用start->mid->end三角形分割两个顶点是连续的多边形,而且这多边形的起始与终点坐标能够直接表示出来!
+		//
+		
+		//最后直接用dp[0][size-1],算到最后无论从哪里开始,绕了一圈都是一个结果
 
-		int maxloc = A.size() - 1;
 		int size = A.size();
 
 		//计算dp
-		vector<vector<int>> dp(A.size(), vector<int>(A.size() - 3));
+		vector<vector<int>> dp(A.size(), vector<int>(A.size(), 0));
 
-		for (int i = 0; i <= maxloc; i++)
-			for (int j = 0; j <= (maxloc - 3); j++)
-				dp[i][j] = A[i] * A[noborder_add(i, 1, maxloc)] * A[j];
-
-		//计算dp2
-		vector<vector<int>> dp2(A.size(), vector<int>(A.size() - 3));
-
-		int length = -1;
-		for (int i = 0; i <= maxloc; i++)
-			dp2[i][0] = min((dp[i][0] + dp[noborder_add(i, (length + 2), maxloc)][size - (length + 2) - 1]), (dp[noborder_add(i, 1, maxloc)][0] + dp[i][length + 1]));
-
-		for (int i = 1; i <= maxloc; i++)
-		{
-			for (int j = 0; j <= (maxloc - 3); j++)
+		for (int diff = 2; diff < A.size(); ++diff)
+			for (int start = 0; start < A.size(); ++start)
 			{
-				int length = j - 1;
-				dp2[i][j] = min((dp[i][length] + dp[noborder_add(i, (length + 2), maxloc)][size - (length + 2) - 1]), (dp[noborder_add(i, 1, maxloc)][j] + dp[i][length + 1]));
+				int end = noborder(start + diff, size);
+				int mul = A[start]*A[end];
+				dp[start][end] = INT_MAX;
+				for (int mid = noborder(start + 1, size); mid != end; mid = noborder(mid + 1, size))
+					dp[start][end] = min(dp[start][end], dp[start][mid] + dp[mid][end] + mul * A[mid]);
 			}
-			
-		}
-
-		return 0;
+		
+		return dp[0][size-1];
 	}
 
-*/
+
 
 #else
 #endif
