@@ -372,6 +372,111 @@ bool Solution::isValidBST(TreeNode * root)
 	return true;
 }
 
+void Solution::recoverTree(TreeNode * root)
+{
+	//简单的方法是中序遍历后排序节点，然后按照中序遍历的顺序依次填回去，空间复杂度O(n)
+
+	//Morris遍历
+	//太变态了https://blog.csdn.net/u013575812/article/details/50069991
+	//核心:首先疯狂往左遍历,每次往下增加深度时,对当前的右子树的最右节点的右节点连上当前节点的父节点
+	//然后按照中序遍历,往左遍历完就往右走,能够直接走到父节点去!,然后再往右走
+
+	//什么时候往左走:当前的右子树的最右节点是空的，而不是当前的右子树的最右节点连接上了当前节点的父节点
+	//否则往右走
+
+	//这个需要之后再次消化
+
+	//空间复杂度为常数
+
+
+	TreeNode *first = NULL;
+	TreeNode *second = NULL;
+	TreeNode *parent = NULL;
+	TreeNode *pre = NULL;
+	TreeNode *cur = root;
+
+	while (cur != NULL) {
+		if (cur->left == NULL) {
+			if (parent != NULL && parent->val >= cur->val) {
+				if (first == NULL) first = parent;
+				second = cur;
+			}
+			parent = cur;
+			cur = cur->right;
+		}//end if
+		else {
+			pre = cur->left;
+			while (pre->right != NULL && pre->right != cur) pre = pre->right;
+
+			if (pre->right == NULL) {
+				pre->right = cur;
+				cur = cur->left;
+			}
+			else {
+				pre->right = NULL;
+				if (parent != NULL && parent->val >= cur->val) {
+					if (first == NULL) first = parent;
+					second = cur;
+				}
+				parent = cur;
+				cur = cur->right;
+			}
+		}//end else
+	}//end while
+
+	if (first != NULL && second != NULL) {
+		int temp = first->val;
+		first->val = second->val;
+		second->val = temp;
+	}
+}
+
+bool Solution::isSameTree(TreeNode * p, TreeNode * q)
+{
+	//一起遍历就可以了
+
+	vector<TreeNode*> stackp = {};
+	vector<TreeNode*> stackq = {};
+	TreeNode *prep = p;
+	TreeNode *preq = q;
+
+	while (true)
+	{
+		//边界条件
+		if ((prep == nullptr) && (stackp.empty()))
+			if ((preq == nullptr) && (stackq.empty())) break;
+			else return false;
+		else if ((preq == nullptr) && (stackq.empty())) return false;
+		else
+		{
+			if ((preq != nullptr) && (prep != nullptr))
+			{
+				stackp.push_back(prep);
+				stackq.push_back(preq);
+				prep = prep->left;
+				preq = preq->left;
+			}
+			else if ((preq == nullptr) && (prep == nullptr))
+			{
+				//撤回一步
+				prep = stackp[stackp.size() - 1];
+				preq = stackq[stackq.size() - 1];
+				if ((prep->val) != (preq->val)) return false;
+
+				stackp.pop_back();
+				stackq.pop_back();
+
+				prep = prep->right;
+				preq = preq->right;
+			}
+			else return false;
+		}
+	}
+	return true;
+}
+
+
+
 #else
 #endif
 

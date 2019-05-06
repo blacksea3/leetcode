@@ -561,17 +561,7 @@ void test90(Solution s)
 #else
 #endif
 
-#ifdef LEETCODE_WC
-void testwc1(Solution s)
-{
-	vector<vector<int>> grid = { {1,1},{1,2} };
-	vector<vector<int>> res = s.colorBorder(grid, 0, 0, 3);
-	int i = 1;
-}
-	
 
-#else
-#endif
 
 #ifdef LEETCODE_91_100
 void test92(Solution s)
@@ -610,13 +600,57 @@ void test98(Solution s)
 	int i = 1;
 }
 
+void test100(Solution s)
+{
+	TreeNode *p = s.initTreeNode({ 1,2,1 });
+	TreeNode *q = s.initTreeNode({ 1,1,2 });
+
+	cout << s.isSameTree(p,  q);
+}
+
+#else
+#endif
+
+#ifdef LEETCODE_WC
+void testwc1(Solution s)
+{
+	vector<vector<int>> grid = { {1,1},{1,2} };
+	vector<vector<int>> res = s.colorBorder(grid, 0, 0, 3);
+	int i = 1;
+}
+
+
+void testwc_135_2(Solution s)
+{
+	TreeNode *root = s.initTreeNode({ 4,1,6,0,2,5,7,null,null,null,3,null,null,null,8 });
+	TreeNode* res = s.bstToGst(root);
+	int i = 1;
+}
+
+void testwc_135_3(Solution s)
+{
+	vector<int> A = { 1,2,8,5,3,6,7,6,2 };
+	cout << s.minScoreTriangulation(A);
+}
+
+#else
+#endif
+
+#ifdef LEETCODE_101_110
+
+void test101(Solution s)
+{
+	TreeNode *root = s.initTreeNode({ 1,2,3 });
+	cout << s.isSymmetric(root);
+}
+
 #else
 #endif
 
 int main()
 {
 	Solution s = Solution();
-	test98(s);
+	test101(s);
 }
 
 

@@ -13,7 +13,8 @@
 //#define LEETCODE_61_70
 //#define LEETCODE_71_80
 //#define LEETCODE_81_90
-#define LEETCODE_91_100
+//#define LEETCODE_91_100
+#define LEETCODE_101_110
 
 class Solution
 {
@@ -21,6 +22,24 @@ public:
 	void printlistnode(ListNode* input);
 	ListNode* initlistnode(vector<int> input);
 	TreeNode * initTreeNode(vector<int> input);
+
+#ifdef LEETCODE_WC
+public:
+	vector<vector<int>> colorBorder(vector<vector<int>>& grid, int r0, int c0, int color);
+//week 135
+	//problem 2
+public:
+	TreeNode* bstToGst(TreeNode* root);
+	//problem 3
+private:
+	int iter_minScoreTriangulation(vector<int>& A);
+	//int noborder_add(int add1, int add2, int max);
+public:
+	int minScoreTriangulation(vector<int>& A);
+#else
+#endif
+
+
 
 #ifdef LEETCODE_01_10
 	////////////////////////////////////////////////////////////////////////////////////
@@ -288,13 +307,6 @@ public:
 #else
 #endif
 
-#ifdef LEETCODE_WC
-public:
-	vector<vector<int>> colorBorder(vector<vector<int>>& grid, int r0, int c0, int color);
-
-#else
-#endif
-
 #ifdef LEETCODE_91_100
 public:
 	//91
@@ -317,6 +329,22 @@ public:
 	bool isInterleave(string s1, string s2, string s3);
 	//98
 	bool isValidBST(TreeNode* root);
+	//99
+	void recoverTree(TreeNode* root);
+	//100
+	bool isSameTree(TreeNode* p, TreeNode* q);
+#else
+#endif
+
+#ifdef LEETCODE_101_110
+public:
+	//101
+	bool isSymmetric(TreeNode* root);
+	//102
+	vector<vector<int>> levelOrder(TreeNode* root);
+	//103
+	vector<vector<int>> zigzagLevelOrder(TreeNode* root);
+
 #else
 #endif
 
