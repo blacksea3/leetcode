@@ -370,7 +370,19 @@ public:
 
 #ifdef LEETCODE_111_120
 public:
+	//111
     int minDepth(TreeNode* root);
+	//112
+	bool hasPathSum(TreeNode* root, int sum);
+	//113
+	vector<vector<int>> pathSum(TreeNode* root, int sum);
+	//114
+	void flatten(TreeNode* root);
+	//115
+	int numDistinct(string s, string t);
+	//116
+	Node* connect(Node* root);
+
 #else
 #endif
 
