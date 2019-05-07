@@ -655,10 +655,24 @@ void test105(Solution s)
 #else
 #endif
 
+#include "public.h"
+#include "leetcode.h"
+
+#ifdef LEETCODE_111_120
+
+void test111(Solution s)
+{
+	TreeNode* root = s.initTreeNode(vector<int> {1, 2, 3, 4, 5});
+	cout << s.minDepth(root);
+}
+
+#else
+#endif
+
 int main()
 {
 	Solution s = Solution();
-	test105(s);
+	test111(s);
 }
 
 

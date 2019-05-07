@@ -14,7 +14,8 @@
 //#define LEETCODE_71_80
 //#define LEETCODE_81_90
 //#define LEETCODE_91_100
-#define LEETCODE_101_110
+//#define LEETCODE_101_110
+#define LEETCODE_111_120
 
 class Solution
 {
@@ -357,10 +358,20 @@ private:
 	TreeNode* iter_sortedArrayToBST(vector<int>& nums, int left, int right);
 public:
 	TreeNode* sortedArrayToBST(vector<int>& nums);
-
-
+	//109
+	TreeNode* sortedListToBST(ListNode* head);
+	//110
+private:
+	int treeDepth(TreeNode* root);
+public:
+	bool isBalanced(TreeNode* root);
 #else
 #endif
 
+#ifdef LEETCODE_111_120
+public:
+    int minDepth(TreeNode* root);
+#else
+#endif
 
 };

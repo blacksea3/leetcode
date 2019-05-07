@@ -423,5 +423,36 @@ TreeNode * Solution::sortedArrayToBST(vector<int>& nums)
 	else return iter_sortedArrayToBST(nums, 0, nums.size() - 1);
 }
 
+TreeNode * Solution::sortedListToBST(ListNode * head)
+{
+	//转成有序数组,然后就复用了上一题的代码
+
+	vector<int> nums = {};
+	ListNode* pre = head;
+	while (pre != nullptr)
+	{
+		nums.push_back(pre->val);
+		pre = pre->next;
+	}
+	return sortedArrayToBST(nums);
+}
+
+int Solution::treeDepth(TreeNode * root)
+{
+	if (root == nullptr) return 0;
+	else return max(treeDepth(root->left), treeDepth(root->right)) + 1;
+}
+
+bool Solution::isBalanced(TreeNode * root)
+{
+	//递归,获取二叉树的深度然后判断
+	//假设不会栈溢出
+
+	if (root == nullptr) return true;
+	if (abs(treeDepth(root->left) - treeDepth(root->right) ) > 1) return false;
+	else
+		return isBalanced(root->left) && isBalanced(root->right);
+}
+
 #else
 #endif
