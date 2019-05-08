@@ -1,8 +1,8 @@
-#include "public.h"
-#include "leetcode.h"
+#include "include.h"
 
 #ifdef LEETCODE_111_120
-
+#include "public.h"
+#include "leetcode.h"
 int Solution::minDepth(TreeNode * root)
 {
 	//Î¬»¤Á½¸övector<TreeNode*> pre_t1,pre_t2;

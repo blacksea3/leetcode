@@ -1,8 +1,8 @@
-#include "public.h"
-#include "leetcode.h"
+#include "include.h"
 
 #ifdef LEETCODE_91_100
-
+#include "public.h"
+#include "leetcode.h"
 int Solution::numDecodings(string s)
 {
 	//“ª¬÷…®√Ë

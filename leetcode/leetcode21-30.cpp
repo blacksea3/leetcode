@@ -1,7 +1,8 @@
-#include "public.h"
-#include "leetcode.h"
+#include "include.h"
 
 #ifdef LEETCODE_21_30
+#include "public.h"
+#include "leetcode.h"
 ListNode * Solution::mergeTwoLists(ListNode * l1, ListNode * l2)
 {
 	if (l1 == NULL) return l2;

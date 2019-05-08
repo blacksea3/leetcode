@@ -1,7 +1,8 @@
-#include "public.h"
-#include "leetcode.h"
+#include "include.h"
 
 #ifdef LEETCODE_41_50
+#include "public.h"
+#include "leetcode.h"
 int Solution::firstMissingPositive(vector<int>& nums)
 {
 	//特殊算法,详情见我的py3实现

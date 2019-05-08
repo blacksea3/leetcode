@@ -24,6 +24,9 @@
     <ClInclude Include="leetcode.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="include.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="leetcode.cpp">
@@ -66,6 +69,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="leetcode111-120.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode121-130.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode_public.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

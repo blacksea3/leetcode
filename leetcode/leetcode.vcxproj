@@ -151,6 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="include.h" />
     <ClInclude Include="leetcode.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="public.h" />
@@ -161,6 +162,7 @@
     <ClCompile Include="leetcode101-110.cpp" />
     <ClCompile Include="leetcode11-20.cpp" />
     <ClCompile Include="leetcode111-120.cpp" />
+    <ClCompile Include="leetcode121-130.cpp" />
     <ClCompile Include="leetcode21-30.cpp" />
     <ClCompile Include="leetcode31-40.cpp" />
     <ClCompile Include="leetcode41-50.cpp" />
@@ -169,6 +171,7 @@
     <ClCompile Include="leetcode71-80.cpp" />
     <ClCompile Include="leetcode81-90.cpp" />
     <ClCompile Include="leetcode91-100.cpp" />
+    <ClCompile Include="leetcode_public.cpp" />
     <ClCompile Include="leetcode_weekly_contest.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -1,8 +1,8 @@
-#include "public.h"
-#include "leetcode.h"
+#include "include.h"
 
 #ifdef LEETCODE_101_110
-
+#include "public.h"
+#include "leetcode.h"
 bool Solution::isSymmetric(TreeNode * root)
 {
 	//ÓÃµü´ú,µÝ¹éÌ«¼òµ¥

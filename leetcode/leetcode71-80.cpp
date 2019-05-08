@@ -1,7 +1,8 @@
-#include "public.h"
-#include "leetcode.h"
+#include "include.h"
 
 #ifdef LEETCODE_71_80
+#include "public.h"
+#include "leetcode.h"
 string Solution::simplifyPath(string path)
 {
 	vector<string> stack = {};

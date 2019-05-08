@@ -1,7 +1,8 @@
-#include "public.h"
-#include "leetcode.h"
+#include "include.h"
 
 #ifdef LEETCODE_WC
+#include "public.h"
+#include "leetcode.h"
 
 vector<vector<int>> Solution::colorBorder(vector<vector<int>>& grid, int r0, int c0, int color)
 {

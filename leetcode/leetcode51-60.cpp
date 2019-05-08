@@ -1,8 +1,8 @@
-#include "public.h"
-#include "leetcode.h"
+#include "include.h"
 
 #ifdef LEETCODE_51_60
-
+#include "public.h"
+#include "leetcode.h"
 vector<string> Solution::generate_Queens_string(vector<int> input)
 {
 	int isize = input.size();

@@ -1,7 +1,8 @@
-#include "public.h"
-#include "leetcode.h"
+#include "include.h"
 
 #ifdef LEETCODE_61_70
+#include "public.h"
+#include "leetcode.h"
 ListNode * Solution::rotateRight(ListNode * head, int k)
 {
 	//为了代码/思路简洁,牺牲效率

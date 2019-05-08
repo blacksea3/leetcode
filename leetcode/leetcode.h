@@ -1,21 +1,7 @@
 #pragma once
 
 #include "public.h"
-
-//#define LEETCODE_WC
-
-//#define LEETCODE_01_10
-//#define LEETCODE_11_20
-//#define LEETCODE_21_30
-//#define LEETCODE_31_40
-//#define LEETCODE_41_50
-//#define LEETCODE_51_60
-//#define LEETCODE_61_70
-//#define LEETCODE_71_80
-//#define LEETCODE_81_90
-//#define LEETCODE_91_100
-//#define LEETCODE_101_110
-#define LEETCODE_111_120
+#include "include.h"
 
 class Solution
 {
@@ -388,6 +374,28 @@ public:
 	vector<int> getRow(int rowIndex);
 	//120
 	int minimumTotal(vector<vector<int>>& triangle);
+#else
+#endif
+
+#ifdef LEETCODE_121_130
+public:
+	//121
+	int maxProfit(vector<int>& prices);
+	//122
+	int maxProfit_122(vector<int>& prices);
+	//123
+	int maxProfit_123(vector<int>& prices);
+	//124
+private:
+	static int res;
+	int iter_maxPathSum(TreeNode* root);
+public:
+	int maxPathSum(TreeNode* root);
+	//125
+	bool isPalindrome(string s);
+	//127
+	int ladderLength(string beginWord, string endWord, vector<string>& wordList);
+
 #else
 #endif
 

@@ -1,7 +1,9 @@
+#include "include.h"
+
+#ifdef LEETCODE_11_20
 #include "public.h"
 #include "leetcode.h"
 
-#ifdef LEETCODE_11_20
 int Solution::maxArea(vector<int>& height)
 {
 	//init, 默认数字均>=0,至少有两个元素
