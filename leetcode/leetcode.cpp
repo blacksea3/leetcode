@@ -679,13 +679,19 @@ void test115(Solution s)
 		"rwmimatmhydhbujebqehjprrwfkoebcxxqfktayaaeheys");
 }
 
+void test120(Solution s)
+{
+	vector<vector<int>> triangle = { {2},{3,4},{6,5,7},{4,1,8,3} };
+	cout << s.minimumTotal(triangle);
+}
+
 #else
 #endif
 
 int main()
 {
 	Solution s = Solution();
-	test115(s);
+	test120(s);
 }
 
 

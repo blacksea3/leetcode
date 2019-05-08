@@ -201,7 +201,7 @@ Node * Solution::connect(Node * root)
 	Node* pre_parent;
 	Node* pre;
 	Node* next_left_parent = root;
-	Node* old;
+	Node* old = root;
 	bool isfirst = true;
 	bool isleftson = true;
 
@@ -248,6 +248,69 @@ Node * Solution::connect(Node * root)
 		if (next_left_parent == NULL) break;
 	}
 	return rootbak;
+}
+
+vector<vector<int>> Solution::generate(int numRows)
+{
+	if (numRows == 0) return vector<vector<int>> {};
+	else if (numRows == 1) return vector<vector<int>> { {1} };
+	else
+	{
+		vector<vector<int>> res = { {1},{1,1} };
+		for (int i = 2; i < numRows; i++)
+		{
+			vector<int> temp(i + 1, 1);
+			for (int j = 1; j < res[i - 1].size(); j++)
+			{
+				temp[j] = res[i - 1][j - 1] + res[i - 1][j];
+			}
+			res.push_back(temp);
+		}
+		return res;
+	}
+}
+
+vector<int> Solution::getRow(int rowIndex)
+{
+	//自合并,左右各添加1
+	if (rowIndex == 0) return vector<int> {1};
+	else
+	{
+		vector<int> pre = { 1,1 };
+		for (int i = 2; i <= rowIndex; i++)
+		{
+			for (int j = 0; j < pre.size() - 1; j++)
+				pre[j] += pre[j + 1];
+			pre.insert(pre.begin(), 1);
+		}
+		return pre;
+	}
+}
+
+int Solution::minimumTotal(vector<vector<int>>& triangle)
+{
+	//一行一行扫下来,扫的时候就把当前最小路径算出来!
+
+	int nline = triangle.size();
+	if (nline == 0) return 0;
+	else if (nline == 1) return triangle[0][0];
+	{
+		for (int i = 1; i < nline; i++)   //i表示第i+1行
+		{
+			triangle[i][0] += triangle[i - 1][0];
+			for (int j = 1; j < i; j++)  //操作第i+1行的下标为j的元素
+			{
+				triangle[i][j] += (triangle[i - 1][j - 1] < triangle[i - 1][j]) ? triangle[i - 1][j - 1] : triangle[i - 1][j];
+			}
+			triangle[i][i] += triangle[i - 1][i - 1];
+		}
+	}
+	//找最小值
+	int resmin = INT_MAX;
+	for (int j = 0; j < nline; j++)
+		resmin = min(resmin, triangle[nline - 1][j]);
+
+	return resmin;
 }
 
 #else

@@ -380,9 +380,14 @@ public:
 	void flatten(TreeNode* root);
 	//115
 	int numDistinct(string s, string t);
-	//116
+	//116”Î117
 	Node* connect(Node* root);
-
+	//118
+	vector<vector<int>> generate(int numRows);
+	//119
+	vector<int> getRow(int rowIndex);
+	//120
+	int minimumTotal(vector<vector<int>>& triangle);
 #else
 #endif
 
