@@ -127,69 +127,125 @@ bool Solution::isPalindrome(string s)
 	return true;
 }
 
-int Solution::ladderLength(string beginWord, string endWord, vector<string>& wordList)
+vector<string> Solution::adjacent_string(string word, unordered_set<string>& wordList)
 {
-
-	if (wordList.size() = 0) return 0;
-
-	//广度优先搜索,转换成图
-	//使用邻接列表创建图结构
-	unordered_map(string, vector<string>) graph;
-	int wsize = wordList[0].size();
+	int wsize = word.size();
 	bool isdifferent;
-
-	//生成图结构
-	for (int i = 0; i < wordList.size(); i++)
-	{
-		vector<string> nodes{};
-		for (int j = 0; j < wordList.size(); j++)
-		{
-			if (j == i) continue;
-			isdifferent = false; //true表示有不同的,true时如果再不同则跳过当前循环
-			for (int k = 0; k < wsize; k++)
-			{
-				if (wordList[i][k] != wordList[j][k])
-				{
-					if (isdifferent) goto smallbreak;
-					else isdifferent = true;
-				}
-			}
-			//到这里表示两个节点连起来了
-			nodes.push_back(wordList[j]);
-		smallbreak:;
-		}
-		graph[wordList[i]] = nodes;
-	}
-
-	//广度优先搜索
-	vector<pair<string, int>> stack; //存放搜索节点
-	//搜索起点
-	vector<string> initnodes{};
-	for (int j = 0; j < wordList.size(); j++)
+	vector<string> res = {};
+	auto iter = wordList.begin();
+	while (iter != wordList.end())
 	{
 		isdifferent = false; //true表示有不同的,true时如果再不同则跳过当前循环
 		for (int k = 0; k < wsize; k++)
 		{
-			if (beginWord[k] != wordList[j][k])
+			if (word[k] != (*iter)[k])
 			{
-				if (isdifferent) goto smallbreak2;
+				if (isdifferent) goto smallbreak;
 				else isdifferent = true;
 			}
 		}
-		//到这里表示两个节点连起来了
-		initnodes.push_back(wordList[j]);
-	smallbreak2:;
+		//到这里表示两个节点连起来了,应该记录
+		res.push_back((*iter));
+		iter = wordList.erase(iter);
+		continue;
+	smallbreak:
+		//到这里表示两节点不能连起来
+		iter++;
 	}
+	return res;
+}
 
-	vector<string> usednodes = initnodes;
-	stack.push_back(initnodes);
-	int step = 1;
-	while (!stack.empty())
+bool Solution::onechar_different(string note, unordered_set<string>& wordList)
+{
+	for (int i = 0; i < note.size(); i++)
 	{
-		//写不动了......
+		string temp = note;
+		for (char c = 'a'; c <= 'z'; c++)
+		{
+			temp[i] = c;
+			if (wordList.find(temp) != wordList.end()) return true;
+		}
 	}
+	return false;
+}
 
+int Solution::ladderLength(string beginWord, string endWord, vector<string>& wordList)
+{
+	unordered_set<string> wordDict(wordList.begin(), wordList.end());
+
+	if (wordList.size() == 0) return 0;
+	if (wordDict.find(endWord) == wordDict.end()) return 0;
+
+	//广度优先搜索,转换成图
+	//使用邻接列表创建图结构
+	//unordered_map<string, vector<string>> graph;
+	int wsize = wordList[0].size();
+	bool isdifferent;
+
+	//生成图结构
+	//不要先完整生成图,而是应该动态生成图
+
+	//广度优先搜索,双端搜索
+	//vector<string> stack; //存放搜索节点
+	//搜索起点
+	unordered_set<string> beginset = { beginWord };
+	unordered_set<string> endset = { endWord };
+
+	int res = 2;
+	while (!(beginset.empty()))
+	{
+		unordered_set<string> pre;
+		for (auto note : beginset)
+		{
+			if (onechar_different(note, endset)) return res;
+			vector<string> adjacentstring = adjacent_string(note, wordDict);
+
+			for (auto tempstring : adjacentstring)
+				pre.insert(tempstring);
+		}
+		if (pre.size() > endset.size())
+		{
+			beginset = endset;
+			endset = pre;
+		}
+		else
+		{
+			beginset = pre;
+		}
+		res++;
+	}
 	return 0;
+}
+
+int Solution::longestConsecutive(vector<int>& nums)
+{
+	//对每个点都记录此点所在的最长连续序列的长度
+	//注意在哈希表中,仅仅只有某最长连续序列的两个端点长度是有效的,中间点的长度实际上是错的,而且也用不着
+
+	unordered_map<int, int> d;
+	int maxlength = 0;
+	for (auto num : nums)
+	{
+		if (d.find(num) == d.end() )
+		{
+			int left;
+			int right;
+			if (d.find(num - 1) == d.end())
+				left = 0;
+			else
+				left = d[num - 1];
+			if (d.find(num + 1) == d.end())
+				right = 0;
+			else
+				right = d[num + 1];
+			int curlength = 1 + left + right;
+			maxlength = max(maxlength, curlength);
+			d[num] = curlength;   
+			d[num - left] = curlength;
+			d[num + right] = curlength;
+		}
+	}
+	return maxlength;
 }
 
 #else

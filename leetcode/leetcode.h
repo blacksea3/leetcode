@@ -394,7 +394,15 @@ public:
 	//125
 	bool isPalindrome(string s);
 	//127
+private:
+	vector<string> adjacent_string(string word, unordered_set<string>& wordList);
+	bool onechar_different(string note, unordered_set<string>& wordList);
+public:
 	int ladderLength(string beginWord, string endWord, vector<string>& wordList);
+	//126,难度过高,跳过去
+
+	//128
+	int longestConsecutive(vector<int>& nums);
 
 #else
 #endif
