@@ -411,6 +411,22 @@ public:
 	int sumNumbers(TreeNode* root);
 	//130
 	void solve(vector<vector<char>>& board);
+#else
+#endif
+
+#ifdef LEETCODE_131_140
+	//131
+private:
+	vector<vector<string>> res_131;
+	vector<string> temp_131;
+	bool is_partition(string s);
+	void iter_partition(string s);
+public:
+	vector<vector<string>> partition(string s);
+	//132
+	int minCut(string s);
+	//133
+	Node* cloneGraph(Node* node);
 
 #else
 #endif

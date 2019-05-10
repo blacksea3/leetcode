@@ -706,10 +706,26 @@ void test128(Solution s)
 #else
 #endif
 
+#ifdef LEETCODE_131_140
+
+void test131(Solution s)
+{
+	vector<vector<string>> res = s.partition("aab");
+	int i = 1;
+}
+
+void test132(Solution s)
+{
+	cout << s.minCut("aab");
+}
+
+#else
+#endif
+
 int main()
 {
 	Solution s = Solution();
-	test128(s);
+	test132(s);
 }
 
 

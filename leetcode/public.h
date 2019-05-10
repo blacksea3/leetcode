@@ -34,6 +34,7 @@ struct TreeNode {
 	TreeNode(int x) : val(x), left(NULL), right(NULL) {}	
 };
 
+/*
 class Node {
 public:
 	int val;
@@ -48,5 +49,19 @@ public:
 		left = _left;
 		right = _right;
 		next = _next;
+	}
+};*/
+
+//for problem 133
+class Node {
+public:
+	int val;
+	vector<Node*> neighbors;
+
+	Node() {}
+
+	Node(int _val, vector<Node*> _neighbors) {
+		val = _val;
+		neighbors = _neighbors;
 	}
 };
