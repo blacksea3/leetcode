@@ -403,6 +403,14 @@ public:
 
 	//128
 	int longestConsecutive(vector<int>& nums);
+	//129
+private:
+	int sum;
+	void iter_sumNumbres(TreeNode* root, int pre);
+public:
+	int sumNumbers(TreeNode* root);
+	//130
+	void solve(vector<vector<char>>& board);
 
 #else
 #endif

@@ -248,5 +248,195 @@ int Solution::longestConsecutive(vector<int>& nums)
 	return maxlength;
 }
 
+void Solution::iter_sumNumbres(TreeNode * root, int pre)
+{
+	int now = 10 * pre + root->val;
+	if ((root->left == nullptr) && (root->right == nullptr))
+	{
+		sum += now;
+		return;
+	}
+	if (root->left != nullptr)
+		iter_sumNumbres(root->left, now);
+	if (root->right != nullptr)
+		iter_sumNumbres(root->right, now);
+}
+
+int Solution::sumNumbers(TreeNode * root)
+{
+	sum = 0;
+	if (root == nullptr) return sum;
+	//递归
+	iter_sumNumbres(root, 0);
+	return sum;
+}
+
+void Solution::solve(vector<vector<char>>& board)
+{
+	//给外部的O搜索一轮,深度优先
+	int bsize = board.size();
+	if (bsize == 0) return;
+	int bssize = board[0].size();
+	if (bssize == 0) return;
+
+	vector<vector<bool>> issearched(bsize, vector<bool>(bssize, false));
+
+	stack<pair<int, int>> dfs;
+
+	//搜索边界
+	for (int j = 0; j < bssize; j++)
+	{
+		if (board[0][j] == 'O')
+		{
+			//深度优先遍历,回溯搜索
+			if (issearched[0][j]) continue;
+			dfs.push(pair<int,int>(0, j));
+			pair<int, int> temploc;
+			while (!dfs.empty())
+			{
+				temploc = dfs.top();
+				dfs.pop();
+				int row = temploc.first;
+				int column = temploc.second;
+				board[row][column] = '!';
+				issearched[row][column] = true;
+				if (row != 0)
+					if (board[row - 1][column] == 'O')
+						if (!issearched[row - 1][column])
+							dfs.push(pair<int, int>(row - 1, column));
+				if (row != bsize - 1)
+					if (board[row + 1][column] == 'O')
+						if (!issearched[row + 1][column])
+							dfs.push(pair<int, int>(row + 1, column));
+				if (column != 0)
+					if (board[row][column - 1] == 'O')
+						if (!issearched[row][column - 1])
+							dfs.push(pair<int, int>(row, column - 1));
+				if (column != bssize - 1)
+					if (board[row][column + 1] == 'O')
+						if (!issearched[row][column + 1])
+							dfs.push(pair<int, int>(row, column + 1));
+			}
+		}
+	}
+
+	for (int j = 0; j < bssize; j++)
+	{
+		if (board[bsize - 1][j] == 'O')
+		{
+			//深度优先遍历,回溯搜索
+			if (issearched[bsize - 1][j]) continue;
+			dfs.push(pair<int, int>(bsize - 1, j));
+			pair<int, int> temploc;
+			while (!dfs.empty())
+			{
+				temploc = dfs.top();
+				dfs.pop();
+				int row = temploc.first;
+				int column = temploc.second;
+				board[row][column] = '!';
+				issearched[row][column] = true;
+				if (row != 0)
+					if (board[row - 1][column] == 'O')
+						if (!issearched[row - 1][column])
+							dfs.push(pair<int, int>(row - 1, column));
+				if (row != bsize - 1)
+					if (board[row + 1][column] == 'O')
+						if (!issearched[row + 1][column])
+							dfs.push(pair<int, int>(row + 1, column));
+				if (column != 0)
+					if (board[row][column - 1] == 'O')
+						if (!issearched[row][column - 1])
+							dfs.push(pair<int, int>(row, column - 1));
+				if (column != bssize - 1)
+					if (board[row][column + 1] == 'O')
+						if (!issearched[row][column + 1])
+							dfs.push(pair<int, int>(row, column + 1));
+			}
+		}
+	}
+
+	for (int i = 1; i < bsize - 1; i++)
+	{
+		if (board[i][bssize - 1] == 'O')
+		{
+			//深度优先遍历,回溯搜索
+			if (issearched[i][bssize - 1]) continue;
+			dfs.push(pair<int, int>(i, bssize - 1));
+			pair<int, int> temploc;
+			while (!dfs.empty())
+			{
+				temploc = dfs.top();
+				dfs.pop();
+				int row = temploc.first;
+				int column = temploc.second;
+				board[row][column] = '!';
+				issearched[row][column] = true;
+				if (row != 0)
+					if (board[row - 1][column] == 'O')
+						if (!issearched[row - 1][column])
+							dfs.push(pair<int, int>(row - 1, column));
+				if (row != bsize - 1)
+					if (board[row + 1][column] == 'O')
+						if (!issearched[row + 1][column])
+							dfs.push(pair<int, int>(row + 1, column));
+				if (column != 0)
+					if (board[row][column - 1] == 'O')
+						if (!issearched[row][column - 1])
+							dfs.push(pair<int, int>(row, column - 1));
+				if (column != bssize - 1)
+					if (board[row][column + 1] == 'O')
+						if (!issearched[row][column + 1])
+							dfs.push(pair<int, int>(row, column + 1));
+			}
+		}
+	}
+
+	for (int i = 1; i < bsize - 1; i++)
+	{
+		if (board[i][0] == 'O')
+		{
+			//深度优先遍历,回溯搜索
+			if (issearched[i][0]) continue;
+			dfs.push(pair<int, int>(i, 0));
+			pair<int, int> temploc;
+			while (!dfs.empty())
+			{
+				temploc = dfs.top();
+				dfs.pop();
+				int row = temploc.first;
+				int column = temploc.second;
+				board[row][column] = '!';
+				issearched[row][column] = true;
+				if (row != 0)
+					if (board[row - 1][column] == 'O')
+						if (!issearched[row - 1][column])
+							dfs.push(pair<int, int>(row - 1, column));
+				if (row != bsize - 1)
+					if (board[row + 1][column] == 'O')
+						if (!issearched[row + 1][column])
+							dfs.push(pair<int, int>(row + 1, column));
+				if (column != 0)
+					if (board[row][column - 1] == 'O')
+						if (!issearched[row][column - 1])
+							dfs.push(pair<int, int>(row, column - 1));
+				if (column != bssize - 1)
+					if (board[row][column + 1] == 'O')
+						if (!issearched[row][column + 1])
+							dfs.push(pair<int, int>(row, column + 1));
+			}
+		}
+	}
+
+	//修改
+	for (int i = 0; i < bsize; i++)
+		for (int j = 0; j < bssize; j++)
+			if (board[i][j] == '!')
+				board[i][j] = 'O';
+			else if (board[i][j] == 'O')
+				board[i][j] = 'X';
+
+}
+
 #else
 #endif
