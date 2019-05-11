@@ -737,10 +737,21 @@ void test140(Solution s)
 #else
 #endif
 
+#ifdef LEETCODE_141_150
+void test143(Solution s)
+{
+	ListNode* head = s.initlistnode(vector<int>{1, 2, 3, 4, 5, 6, 7});
+	s.reorderList(head);
+	int i = 1;
+}
+
+#else
+#endif
+
 int main()
 {
 	Solution s = Solution();
-	test140(s);
+	test143(s);
 }
 
 

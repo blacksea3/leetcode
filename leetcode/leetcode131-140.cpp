@@ -4,8 +4,6 @@
 #include "public.h"
 #include "leetcode.h"
 
-
-
 bool Solution::is_partition(string s)
 {
 	int i = 0;

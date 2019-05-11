@@ -444,8 +444,20 @@ private:
 	string generate_space_sentense(const vector<string>& input);
 public:
 	vector<string> wordBreak_140(string s, vector<string>& wordDict);
+#else
+#endif
+
+#ifdef LEETCODE_141_150
+public:
+	//141
+	bool hasCycle(ListNode *head);
+	//142
+	ListNode *detectCycle(ListNode *head);
+	//143
+	void reorderList(ListNode* head);
 
 #else
 #endif
+
 
 };

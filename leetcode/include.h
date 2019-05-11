@@ -15,4 +15,40 @@
 //#define LEETCODE_101_110
 //#define LEETCODE_111_120
 //#define LEETCODE_121_130
-#define LEETCODE_131_140
+//#define LEETCODE_131_140
+#define LEETCODE_141_150
+
+#ifdef LEETCODE_131_140
+
+//for problem 133
+class Node_133 {
+public:
+	int val;
+	vector<Node_133*> neighbors;
+
+	Node_133() {}
+
+	Node_133(int _val, vector<Node_133*> _neighbors) {
+		val = _val;
+		neighbors = _neighbors;
+	}
+};
+
+//for problem 138
+class Node {
+public:
+	int val;
+	Node* next;
+	Node* random;
+
+	Node() {}
+
+	Node(int _val, Node* _next, Node* _random) {
+		val = _val;
+		next = _next;
+		random = _random;
+	}
+};
+
+#else
+#endif
