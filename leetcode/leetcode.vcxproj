@@ -151,12 +151,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="common_algorithms.h" />
     <ClInclude Include="include.h" />
     <ClInclude Include="leetcode.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="public.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="common_algorithms.cpp" />
     <ClCompile Include="leetcode.cpp" />
     <ClCompile Include="leetcode01-10.cpp" />
     <ClCompile Include="leetcode101-110.cpp" />

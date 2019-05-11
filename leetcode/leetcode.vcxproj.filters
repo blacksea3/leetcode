@@ -27,6 +27,9 @@
     <ClInclude Include="include.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="common_algorithms.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="leetcode.cpp">
@@ -81,6 +84,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="leetcode141-150.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="common_algorithms.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
