@@ -225,5 +225,230 @@ ListNode * Solution::insertionSortList(ListNode * head)
 	}
 	return returnhead;
 }
+
+ListNode * Solution::iter_sortList(ListNode * head)
+{
+	//原地算法
+	//归并排序
+	if (head->next == nullptr) return head;
+
+	//用双指针切割链表
+	ListNode* fast = head;
+	ListNode* slow = head;
+
+	while (true)
+	{
+		if ((fast->next) && (fast->next->next))
+		{
+			fast = fast->next->next;
+			slow = slow->next;
+		}
+		else break;
+	}
+	//slow->next为后半链表
+
+	ListNode* lefthalf = head;
+	ListNode* righthalf = slow->next;
+	slow->next = nullptr;
+	lefthalf = iter_sortList(lefthalf);
+	righthalf = iter_sortList(righthalf);
+
+	//合并
+	ListNode* returnhead;
+	ListNode* pre;
+	if (lefthalf->val < righthalf->val)
+	{
+		returnhead = lefthalf;
+		lefthalf = lefthalf->next;
+	}
+	else
+	{
+		returnhead = righthalf;
+		righthalf = righthalf->next;
+	}
+	pre = returnhead;
+	while (lefthalf && righthalf)
+	{
+		if (lefthalf->val < righthalf->val)
+		{
+			pre->next = lefthalf;
+			lefthalf = lefthalf->next;
+		}
+		else
+		{
+			pre->next = righthalf;
+			righthalf = righthalf->next;
+		}
+		pre = pre->next;
+	}
+	if (lefthalf) pre->next = lefthalf;
+	else pre->next = righthalf;
+	return returnhead;
+}
+
+ListNode * Solution::sortList(ListNode * head)
+{
+	if (head == nullptr) return nullptr;  //此处仅首次调用
+	return iter_sortList(head);
+}
+
+pair<int, int> Solution::iter_gcd(pair<int, int> input)
+{
+	//害怕溢出,md
+	long num1;
+	long num2;
+	bool isexchange = false;
+	if (abs(input.first) < abs(input.second))
+	{
+		int temp = input.first;
+		input.first = input.second;
+		input.second = temp;
+		isexchange = true;
+	}
+
+	if (input.first > 0)
+	{
+		num1 = (long)input.first;
+	}
+	else
+	{
+		num1 = -1 * (long)input.first;
+	}
+	if (input.second > 0)
+	{
+		num2 = (long)input.second;
+	}
+	else
+	{
+		num2 = -1 * (long)input.second;
+	}
+	long max_yueshu;
+	while (true)
+	{
+		max_yueshu = num1 % num2;
+		num1 = num2;
+		num2 = max_yueshu;
+		if (max_yueshu == 0) break;
+	}
+	if (!isexchange)
+	{
+		long res1 = (long)(input.first) / num1;
+		long res2 = (long)(input.second) / num1;
+		return pair<int, int> {int(res1), (int)res2};
+	}
+	else
+	{
+		long res1 = (long)(input.second) / num1;
+		long res2 = (long)(input.first) / num1;
+		return pair<int, int> {int(res1), (int)res2};
+	}
+}
+
+int Solution::maxPoints(vector<vector<int>>& points)
+{
+	//对某个给定点,对所有点扫一次进行唯一性记录:按照斜率记录
+	//记录的值将是一个pair<int a,int b>表示 a/b (a可能是任意整数,b只能是正整数)
+	//init:extra = 0
+	//对于与给定点重复的点,extra+=1(注意,这个值必定>=1因为所有点包含那个给定点)
+	//然后对于大量的斜率,找到数量最高的就可以了
+	int psize = points.size();
+	if (psize <= 2) return psize;
+	map<pair<int, int>, int> slice_dict;
+	int maxpoints = 0;
+
+	//正式计算
+	for (int i = 0; i < psize; i++)
+	{
+		int extra = 0;
+		int tempmaxpoints = 0;
+		slice_dict.clear();
+		for (int j = 0; j < psize; j++)
+		{
+			if ((points[i][0] == points[j][0]) && (points[i][1] == points[j][1]))
+				extra++;
+			else
+			{
+				int dx = points[i][0] - points[j][0];
+				int dy = points[i][1] - points[j][1];
+				if (dx == 0)
+				{
+					slice_dict[pair<int, int>(1, 0)] += 1;
+				}
+				else if (dy == 0)
+				{
+					slice_dict[pair<int, int>(0, 1)] += 1;
+				}
+				else
+				{
+					slice_dict[iter_gcd(pair<int, int>{dy, dx})] += 1;
+				}
+			}
+		}
+		//扫一遍slice_dict
+		for (map<pair<int, int>, int>::iterator iter = slice_dict.begin(); iter != slice_dict.end(); iter++)
+		{
+			tempmaxpoints = max(tempmaxpoints, iter->second);
+		}
+		tempmaxpoints += extra;
+		maxpoints = max(maxpoints, tempmaxpoints);
+	}
+	return maxpoints;
+}
+
+int Solution::evalRPN(vector<string>& tokens)
+{
+	//栈
+	if (tokens.size() == 0) return 0;
+
+	stack<int> st;
+
+	//假设输入有效
+	for (auto token : tokens)
+	{
+		if (token[0] >= '0') //这样就一定是数字了,详情看ASCII码表
+			st.push(atoi(token.c_str()));
+		else if (token[0] == '+')
+		{
+			int num1 = st.top();
+			st.pop();
+			int num2 = st.top();
+			st.pop();
+			st.push(num1 + num2);
+		}
+		else if (token[0] == '-')
+		{
+			if (token.size() > 1)
+			{
+				st.push(atoi(token.c_str()));
+			}
+			else
+			{
+				int num1 = st.top();
+				st.pop();
+				int num2 = st.top();
+				st.pop();
+				st.push(num2 - num1);
+			}
+		}
+		else if (token[0] == '*')
+		{
+			int num1 = st.top();
+			st.pop();
+			int num2 = st.top();
+			st.pop();
+			st.push(num1*num2);
+		}
+		else
+		{
+			int num1 = st.top();
+			st.pop();
+			int num2 = st.top();
+			st.pop();
+			st.push(num2 / num1);
+		}
+	}
+	return st.top();
+}
+
 #else
 #endif
