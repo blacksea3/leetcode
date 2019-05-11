@@ -745,13 +745,35 @@ void test143(Solution s)
 	int i = 1;
 }
 
+void test146(Solution s)
+{
+	LRUCache cache = LRUCache(2);
+
+	cache.put(1, 1);
+	cache.put(2, 2);
+	cout<<cache.get(1);       // 返回  1
+	cache.put(3, 3);    // 该操作会使得密钥 2 作废
+	cout << cache.get(2);       // 返回 -1 (未找到)
+	cache.put(4, 4);    // 该操作会使得密钥 1 作废
+	cout << cache.get(1);       // 返回 -1 (未找到)
+	cout << cache.get(3);       // 返回  3
+	cout << cache.get(4);       // 返回  4
+}
+
+void test147(Solution s)
+{
+	ListNode * head = s.initlistnode(vector<int>{4, 2, 1, 3});
+	ListNode * res = s.insertionSortList(head);
+	int i = 1;
+}
+
 #else
 #endif
 
 int main()
 {
 	Solution s = Solution();
-	test143(s);
+	test147(s);
 }
 
 

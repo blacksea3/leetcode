@@ -122,7 +122,108 @@ void Solution::reorderList(ListNode * head)
 	return;
 }
 
+vector<int> Solution::preorderTraversal(TreeNode * root)
+{
+	//迭代
+	vector<int> res = {};
+	if (root == nullptr) return res;
+	stack<TreeNode*> dfs;
+	TreeNode* pre = root;
 
+	while (!dfs.empty() || pre)
+	{
+		if (pre)
+		{
+			res.push_back(pre->val);
+			dfs.push(pre);
+			pre = pre->left;
+		}
+		else
+		{
+			pre = dfs.top();
+			pre = pre->right;
+			dfs.pop();
+		}
+	}
+	return res;
+}
 
+vector<int> Solution::postorderTraversal(TreeNode * root)
+{
+	//倒过来,生成反-后序遍历:即根-右-左遍历顺序
+
+	vector<int> res = {};
+
+	if (root == nullptr) return res;
+
+	TreeNode* pre = root;
+	stack<TreeNode*> dfs;
+
+	while (!dfs.empty() || pre)
+	{
+		if (pre)
+		{
+			res.insert(res.begin(), pre->val);
+			dfs.push(pre);
+			pre = pre->right;
+		}
+		else
+		{
+			pre = dfs.top();
+			dfs.pop();
+			pre = pre->left;
+		}
+	}
+	return res;
+}
+
+ListNode * Solution::insertionSortList(ListNode * head)
+{
+	//没什么特殊的地方
+	//要原地操作
+
+	if (head == nullptr) return nullptr;
+	if (head->next == nullptr) return head;
+
+	//
+	ListNode* left;
+	ListNode* right = head->next;
+	ListNode* right_m1 = head;    //在right的左边一格节点
+
+	ListNode* pre;
+	ListNode* returnhead = head;
+	//O(n^2)时间复杂度
+	while (right != nullptr)
+	{
+		left = returnhead;
+		if (left->val >= right->val) //最左端
+		{
+			right_m1->next = right->next;
+			returnhead = right;
+			right->next = left;
+		}
+		else   //在中间
+		{
+			while (left != right_m1)
+			{
+				if (left->next->val >= right->val)
+				{
+					//将right插到left与left->next中间
+					right_m1->next = right->next;
+					ListNode* temp = left->next;
+					left->next = right;
+					right->next = temp;
+					goto elseend;
+				}
+				else left = left->next;
+			}
+			//最右端,不要操作
+			right_m1 = right;
+		elseend:;
+		}
+		right = right_m1->next;
+	}
+	return returnhead;
+}
 #else
 #endif
