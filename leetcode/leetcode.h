@@ -426,7 +426,24 @@ public:
 	//132
 	int minCut(string s);
 	//133
-	Node* cloneGraph(Node* node);
+	Node_133 * cloneGraph(Node_133 * node);
+	//134
+	int canCompleteCircuit(vector<int>& gas, vector<int>& cost);
+	//135
+	int candy(vector<int>& ratings);
+	//136
+	int singleNumber(vector<int>& nums);
+	//137
+	int singleNumber_137(vector<int>& nums);
+	//138
+	Node* copyRandomList(Node* head);
+	//139
+	bool wordBreak_139(string s, vector<string>& wordDict);
+	//140
+private:
+	string generate_space_sentense(const vector<string>& input);
+public:
+	vector<string> wordBreak_140(string s, vector<string>& wordDict);
 
 #else
 #endif

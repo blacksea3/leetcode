@@ -719,13 +719,28 @@ void test132(Solution s)
 	cout << s.minCut("aab");
 }
 
+void test134(Solution s)
+{
+	vector<int> gas = { 1,2,3,4,5 };
+	vector<int> cost = { 3,4,5,1,2 };
+	cout << s.canCompleteCircuit(gas, cost);
+}
+
+void test140(Solution s)
+{
+	vector<string> wordDict = { "cat","cats","and","sand","dog" };
+
+	vector<string> res = s.wordBreak_140("catsanddog", wordDict);
+	int i = 1;
+}
+
 #else
 #endif
 
 int main()
 {
 	Solution s = Solution();
-	test132(s);
+	test140(s);
 }
 
 
