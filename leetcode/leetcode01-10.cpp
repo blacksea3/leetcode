@@ -1,6 +1,6 @@
 #include "include.h"
 
-#ifdef LEETCODE_01_09
+#ifdef LEETCODE_01_10
 #include "public.h"
 #include "leetcode.h"
 
@@ -157,6 +157,7 @@ double Solution::findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2)
 	}
 	return -999;
 }
+
 
 string Solution::longestPalindrome(string s)
 {
@@ -475,6 +476,7 @@ bool Solution::isMatchSpace(string p)
 	unsigned int loc = 0;
 	while (loc < plen)
 	{
+		if (p[loc] == '*') return false;
 		if (p[loc + 1] != '*') return false;
 		else loc += 2;
 	}
@@ -483,7 +485,153 @@ bool Solution::isMatchSpace(string p)
 
 bool Solution::isMatch(string s, string p)
 {
-	return isMatchBlock(s, p);
+	return new_isMatch(s, p);
 }
+
+bool Solution::new_isMatch(string s, string p)
+{
+	//对于特殊的?*组合,记录至stack中
+
+	struct star { int sloc; int ploc; int number; };  //sloc:s的起始loc, ploc:?*组合的?处的p的loc, number:匹配掉多少个s中的?字符
+	stack<star> recall = {};
+
+	int sloc = 0;
+	int ploc = 0;
+	int ssize = s.size();
+	int psize = p.size();
+
+	bool isneedjudge = false;  //回溯用的判断
+
+	while (true)
+	{
+		if (isneedjudge)
+		{
+			if (recall.empty()) return false;
+			star last = recall.top();
+			if (p[last.ploc] == '.')
+			{
+				//边界判断 //再次回溯
+				if ((last.sloc + last.number) >= ssize)
+				{
+					recall.pop();
+					isneedjudge = true;
+				}
+				else
+				{
+					recall.top().number++;
+					sloc = last.sloc + last.number + 1;
+					ploc = last.ploc + 2;
+					isneedjudge = false;
+				}
+			}
+			else
+			{
+				//边界判断 //再次回溯
+				if ((last.sloc + last.number) >= ssize)
+				{
+					recall.pop();
+					isneedjudge = true;
+				}
+				else if (s[last.sloc + last.number] == p[last.ploc])
+				{
+					recall.top().number++;
+					sloc = last.sloc + last.number + 1;
+					ploc = last.ploc + 2;
+					isneedjudge = false;
+				}
+				else //再次回溯
+				{
+					recall.pop();
+					isneedjudge = true;
+				}
+			}
+		}
+		else
+		{
+			if (sloc == ssize)
+			{
+				if (ploc == psize)
+					break;
+				else
+				{
+					//判断p之后的内容
+					if (isMatchSpace(p.substr(ploc))) break;
+					else //回溯
+						isneedjudge = true;
+				}
+			}
+			else if (ploc == psize)
+			{
+				isneedjudge = true;
+				//回溯
+			}
+			else
+			{
+				if ((p[ploc] <= 'z') && (p[ploc] >= 'a'))
+				{
+					//如果p这里正好有个?*组合,那么直接加入stack
+					if ((ploc < psize - 1) && (p[ploc + 1] == '*'))
+					{
+						//生成栈
+						star pre = star();
+						pre.sloc = sloc;
+						pre.ploc = ploc;
+						pre.number = 0;
+						recall.push(pre);
+						ploc += 2;
+					}
+					else if (s[sloc] == p[ploc])
+					{
+						sloc++;
+						ploc++;
+					}
+					else //回溯
+					{
+						isneedjudge = true;
+					}
+				}
+				else if (p[ploc] == '.')
+				{
+					//如果p这里正好有个?*组合,那么直接加入stack
+					if ((ploc < psize - 1) && (p[ploc + 1] == '*'))
+					{
+						//生成栈
+						star pre = star();
+						pre.sloc = sloc;
+						pre.ploc = ploc;
+						pre.number = 0;
+						recall.push(pre);
+						ploc += 2;
+					}
+					else
+					{
+						sloc++;
+						ploc++;
+					}
+				}
+				else  //有星号了
+				{
+					//判断星号合法性
+					if (ploc == 0) return false;
+					if (p[ploc - 1] == '*') return false;
+
+					//生成栈
+					star pre = star();
+					pre.sloc = sloc - 1;
+					pre.ploc = ploc - 1;
+					pre.number = 0;
+					recall.push(pre);
+					sloc--;
+					ploc++;
+				}
+			}
+		}
+
+	}
+
+	return true;
+}
+
 #else
+
 #endif

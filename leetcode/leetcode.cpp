@@ -78,7 +78,23 @@ void test9(Solution s)
 
 void test10(Solution s)
 {
+	//cout << s.isMatch("aa", "a");
+	cout << s.isMatch("aa", "a*");
+	cout << s.isMatch("aa", "a**");
+	cout << s.isMatch("aa", "");
+	cout << s.isMatch("", "a");
+	cout << s.isMatch("", "");
+	cout << s.isMatch("", "*");
+
+	cout << s.isMatch("ab", ".*");
+	cout << s.isMatch("aab", "c*a*b");
+	cout << s.isMatch("mississippi", "mis*is*p*.");
+
 	cout << s.isMatch("mississippi", "mis*is*ip*.");
+
+	cout << s.isMatch("bbbba", ".*a*a");
+
+	cout << s.isMatch("a", ".*");
 }
 #else
 #endif
@@ -803,7 +819,7 @@ void testwc_136_2(Solution s)
 int main()
 {
 	Solution s = Solution();
-	testwc_136_2(s);
+	test10(s);
 }
 
 

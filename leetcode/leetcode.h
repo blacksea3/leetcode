@@ -95,6 +95,9 @@ private:
 	bool isMatchSpace(string p);
 public:
 	bool isMatch(string s, string p);
+
+private:
+	bool new_isMatch(string s, string p);
 #else
 #endif
 
