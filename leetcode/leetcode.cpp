@@ -185,7 +185,7 @@ void test21(Solution s)
 void test22(Solution s)
 {
 	vector<string> res;
-	res = s.generateParenthesis(3);
+	res = s.generateParenthesis_recall(3);
 	int i = 1;
 }
 
@@ -819,7 +819,7 @@ void testwc_136_2(Solution s)
 int main()
 {
 	Solution s = Solution();
-	test17(s);
+	test22(s);
 }
 
 

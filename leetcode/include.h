@@ -3,8 +3,8 @@
 //#define LEETCODE_WC
 
 //#define LEETCODE_01_10
-#define LEETCODE_11_20
-//#define LEETCODE_21_30
+//#define LEETCODE_11_20
+#define LEETCODE_21_30
 //#define LEETCODE_31_40
 //#define LEETCODE_41_50
 //#define LEETCODE_51_60

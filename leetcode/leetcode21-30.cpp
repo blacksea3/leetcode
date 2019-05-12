@@ -91,6 +91,70 @@ vector<string> Solution::generateParenthesis(int n)
 	return all_parenthesis[n];
 }
 
+vector<string> Solution::generateParenthesis_recall(int n)
+{
+	//暴力回溯
+	vector<string> res = {};
+	string pre = "";
+	int leftnum = 0;
+	int rightnum = 0;
+	bool isneedrecall = false;
+
+	while (true)
+	{
+		if (isneedrecall)
+		{
+			while (true)
+			{
+				//判断是否有()组合
+				pre.pop_back();
+				rightnum--;
+				if (pre[pre.size() - 1] == ')') break;
+				else
+				{
+					pre.pop_back();
+					leftnum--;
+				}
+				if (pre.empty()) goto end;
+			}
+
+			while (pre[pre.size() - 1] == ')') //撤回多余的右括号,直到看到左括号
+			{
+				pre.pop_back();
+				rightnum--;
+			}
+			pre[pre.size() - 1] = ')';
+			rightnum++;
+			leftnum--;
+			isneedrecall = false;
+		}
+		else
+		{
+			if (leftnum < n)
+			{
+				pre += "(";
+				leftnum++;
+			}
+			else
+			{
+				if (rightnum < n)
+				{
+					pre += ")";
+					rightnum++;
+				}
+				else
+				{
+					res.push_back(pre);
+					//回溯
+					isneedrecall = true;
+				}
+			}
+		}
+	}
+	end:
+	return res;
+}
+
 //外部需要确保startloc<=endloc
 //合并Klists, 根据下标范围[startloc, endloc]
 ListNode * Solution::iter_mergeKLists(vector<ListNode*>& lists, int startloc, int endloc)

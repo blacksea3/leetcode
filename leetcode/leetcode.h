@@ -142,6 +142,7 @@ public:
 	ListNode* mergeTwoLists(ListNode* l1, ListNode* l2);
 	//22
 	vector<string> generateParenthesis(int n);
+	vector<string> generateParenthesis_recall(int n);
 	//23
 private:
 	ListNode* iter_mergeKLists(vector<ListNode*>& lists, int startloc1, int startloc2);
