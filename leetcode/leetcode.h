@@ -97,7 +97,7 @@ public:
 	bool isMatch(string s, string p);
 
 private:
-	bool new_isMatch(string s, string p);
+	bool isMatch_recall(string s, string p);
 #else
 #endif
 
@@ -123,6 +123,7 @@ public:
 	int threeSumClosest(vector<int>& nums, int target);
 	//17
 	vector<string> letterCombinations(string digits);
+	vector<string> letterCombinations_recall(string digits);
 	//18
 private:
 	vector<vector<int>> three_sum_target(vector<int>& nums, int target, int startloc, int endloc);

@@ -488,7 +488,7 @@ bool Solution::isMatch(string s, string p)
 	return new_isMatch(s, p);
 }
 
-bool Solution::new_isMatch(string s, string p)
+bool Solution::isMatch_recall(string s, string p)
 {
 	//对于特殊的?*组合,记录至stack中
 

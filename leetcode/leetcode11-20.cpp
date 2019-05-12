@@ -356,6 +356,57 @@ vector<string> Solution::letterCombinations(string digits)
 	return (is_s1_vaild) ? returns1 : returns2;
 }
 
+vector<string> Solution::letterCombinations_recall(string digits)
+{
+	unordered_map<char, vector<string>> um = {
+	{'2',{"a","b","c"}},{'3',{"d","e","f"}},{'4',{"g","h","i"}},{'5',{"j","k","l"}},{'6',{"m","n","o"}},{'7',{"p","q","r","s"}},{'8',{"t","u","v"}},{'9',{"w","x","y","z"}}
+	};
+	unordered_set<char> lastchar{ 'c','f','i','l','o','s','v','z' };
+
+	//回溯
+	string prestr;
+	int dsize = digits.size();
+	bool isneedrecall = false;
+	int prelen = 1;
+	vector<string> res = {};
+
+	if (dsize == 0) return vector<string>{};
+	prestr += um[digits[0]][0];
+
+	while (true)
+	{
+		if (isneedrecall)
+		{
+			if (prestr.empty()) break;
+			if (lastchar.find(prestr[prestr.size() - 1]) == lastchar.end())
+			{
+				//修改当前字母
+				prestr[prestr.size() - 1]++;
+				isneedrecall = false;
+			}
+			else  //还需要回溯
+			{
+				prestr.pop_back();
+				prelen--;
+			}
+		}
+		else
+		{
+			if (prelen == dsize)
+			{
+				isneedrecall = true;
+				res.push_back(prestr);
+			}
+			else
+			{
+				prestr += um[digits[prelen]][0];
+				prelen++;
+			}
+		}
+	}
+	return res;
+}
+
 vector<vector<int>> Solution::three_sum_target(vector<int>& nums, int target, int startloc, int endloc)
 {
 	vector<vector<int>> returnv = {};

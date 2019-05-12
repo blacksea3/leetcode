@@ -146,7 +146,7 @@ void test16(Solution s)
 void test17(Solution s)
 {
 	vector<string> res;
-	res = s.letterCombinations("23");
+	res = s.letterCombinations_recall("23");
 	int i = 0;
 }
 
@@ -819,7 +819,7 @@ void testwc_136_2(Solution s)
 int main()
 {
 	Solution s = Solution();
-	test10(s);
+	test17(s);
 }
 
 
