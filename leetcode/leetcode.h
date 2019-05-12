@@ -70,21 +70,7 @@ public:
 	ListNode* initlistnode(vector<int> input);
 	TreeNode * initTreeNode(vector<int> input);
 
-#ifdef LEETCODE_WC
-public:
-	vector<vector<int>> colorBorder(vector<vector<int>>& grid, int r0, int c0, int color);
-//week 135
-	//problem 2
-public:
-	TreeNode* bstToGst(TreeNode* root);
-	//problem 3
-private:
-	//int iter_minScoreTriangulation(vector<int>& A);
-	int noborder(int num, int size);
-public:
-	int minScoreTriangulation(vector<int>& A);
-#else
-#endif
+
 
 
 
@@ -538,6 +524,30 @@ public:
 	int maxPoints(vector<vector<int>>& points);
 	//150
 	int evalRPN(vector<string>& tokens);
+#else
+#endif
+
+#ifdef LEETCODE_WC
+public:
+	//week 134
+	//problem 2
+	vector<vector<int>> colorBorder(vector<vector<int>>& grid, int r0, int c0, int color);
+	//week 135
+	//problem 2
+public:
+	TreeNode* bstToGst(TreeNode* root);
+	//problem 3
+private:
+	//int iter_minScoreTriangulation(vector<int>& A);
+	int noborder(int num, int size);
+public:
+	int minScoreTriangulation(vector<int>& A);
+
+	//week 136
+	//problem 2
+public:
+	vector<int> gardenNoAdj(int N, vector<vector<int>>& paths);
+
 #else
 #endif
 

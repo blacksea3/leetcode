@@ -611,30 +611,7 @@ void test100(Solution s)
 #else
 #endif
 
-#ifdef LEETCODE_WC
-void testwc1(Solution s)
-{
-	vector<vector<int>> grid = { {1,1},{1,2} };
-	vector<vector<int>> res = s.colorBorder(grid, 0, 0, 3);
-	int i = 1;
-}
 
-
-void testwc_135_2(Solution s)
-{
-	TreeNode *root = s.initTreeNode({ 4,1,6,0,2,5,7,null,null,null,3,null,null,null,8 });
-	TreeNode* res = s.bstToGst(root);
-	int i = 1;
-}
-
-void testwc_135_3(Solution s)
-{
-	vector<int> A = { 1,2,8,5,3,6,7,6,2 };
-	cout << s.minScoreTriangulation(A);
-}
-
-#else
-#endif
 
 #ifdef LEETCODE_101_110
 
@@ -789,10 +766,44 @@ void test150(Solution s)
 #else
 #endif
 
+#ifdef LEETCODE_WC
+void testwc1(Solution s)
+{
+	vector<vector<int>> grid = { {1,1},{1,2} };
+	vector<vector<int>> res = s.colorBorder(grid, 0, 0, 3);
+	int i = 1;
+}
+
+
+void testwc_135_2(Solution s)
+{
+	TreeNode *root = s.initTreeNode({ 4,1,6,0,2,5,7,null,null,null,3,null,null,null,8 });
+	TreeNode* res = s.bstToGst(root);
+	int i = 1;
+}
+
+void testwc_135_3(Solution s)
+{
+	vector<int> A = { 1,2,8,5,3,6,7,6,2 };
+	cout << s.minScoreTriangulation(A);
+}
+
+void testwc_136_2(Solution s)
+{
+	int N = 3;
+	vector<vector<int>> paths = { {1,2},{2,3},{3,1} };
+	vector<int> res = s.gardenNoAdj(N, paths);
+	int i = 1;
+}
+
+#else
+#endif
+
+
 int main()
 {
 	Solution s = Solution();
-	test150(s);
+	testwc_136_2(s);
 }
 
 

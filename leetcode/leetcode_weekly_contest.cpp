@@ -156,40 +156,113 @@ int Solution::minScoreTriangulation(vector<int>& A)
 	return iter_minScoreTriangulation(A);
 }
 */
-	//按max调整num
-    //num可能>=size,此时减size
-	int Solution::noborder(int num, int size)
+
+//按max调整num
+//num可能>=size,此时减size
+int Solution::noborder(int num, int size)
+{
+	return (num >= size) ? (num - size) : (num < 0) ? num + size : num;
+}
+
+int Solution::minScoreTriangulation(vector<int>& A)
+{
+	//动态规划
+	//维护dp[start][end],:注意这个数组有一些空间没有用到
+	//对end与start间隔遍历,从2至size-1;对start遍历,从0至size-1;对mid遍历,从start+1至end-1遍历
+	//注意用start->mid->end三角形分割两个顶点是连续的多边形,而且这多边形的起始与终点坐标能够直接表示出来!
+	//
+
+	//最后直接用dp[0][size-1],算到最后无论从哪里开始,绕了一圈都是一个结果
+
+	int size = A.size();
+
+	//计算dp
+	vector<vector<int>> dp(A.size(), vector<int>(A.size(), 0));
+
+	for (int diff = 2; diff < A.size(); ++diff)
+		for (int start = 0; start < A.size(); ++start)
+		{
+			int end = noborder(start + diff, size);
+			int mul = A[start] * A[end];
+			dp[start][end] = INT_MAX;
+			for (int mid = noborder(start + 1, size); mid != end; mid = noborder(mid + 1, size))
+				dp[start][end] = min(dp[start][end], dp[start][mid] + dp[mid][end] + mul * A[mid]);
+		}
+
+	return dp[0][size - 1];
+}
+
+vector<int> Solution::gardenNoAdj(int N, vector<vector<int>>& paths)
+{
+	//题目保证存在答案
+    //生成图
+	struct node { int id; int color; vector<int> links; vector<int> badcolors; };
+	vector<node> gardens;
+	node dump = node();
+	gardens.push_back(dump);
+
+	for (int i = 1; i <= N; i++)
 	{
-		return (num >= size) ? (num - size) : (num < 0) ? num + size : num;
+		node temp = node();
+		temp.id = i;
+		temp.color = 0;
+		gardens.push_back(temp);
 	}
 
-	int Solution::minScoreTriangulation(vector<int>& A)
+	for (auto path : paths)
 	{
-		//动态规划
-		//维护dp[start][end],:注意这个数组有一些空间没有用到
-		//对end与start间隔遍历,从2至size-1;对start遍历,从0至size-1;对mid遍历,从start+1至end-1遍历
-		//注意用start->mid->end三角形分割两个顶点是连续的多边形,而且这多边形的起始与终点坐标能够直接表示出来!
-		//
-		
-		//最后直接用dp[0][size-1],算到最后无论从哪里开始,绕了一圈都是一个结果
-
-		int size = A.size();
-
-		//计算dp
-		vector<vector<int>> dp(A.size(), vector<int>(A.size(), 0));
-
-		for (int diff = 2; diff < A.size(); ++diff)
-			for (int start = 0; start < A.size(); ++start)
-			{
-				int end = noborder(start + diff, size);
-				int mul = A[start]*A[end];
-				dp[start][end] = INT_MAX;
-				for (int mid = noborder(start + 1, size); mid != end; mid = noborder(mid + 1, size))
-					dp[start][end] = min(dp[start][end], dp[start][mid] + dp[mid][end] + mul * A[mid]);
-			}
-		
-		return dp[0][size-1];
+		gardens[path[0]].links.push_back(path[1]);
+		gardens[path[1]].links.push_back(path[0]);
 	}
+	
+	stack<int> finished = {};
+	stack<int> dfs = {};
+	dfs.push(1);  //
+	while (true)
+	{
+		int nodeid = dfs.top();
+		dfs.pop();
+		vector<int> totalcolors = { 1,2,3,4 };
+		vector<int> precolors = {};
+		int nextcolor = 0;
+		for (auto gardenid : gardens[nodeid].links)
+			precolors.push_back(gardens[gardenid].color);
+
+		for (int i = 0; i < totalcolors.size(); i++)
+		{
+			if (std::find(precolors.begin(), precolors.end(), totalcolors[i]) == precolors.end())
+				if (std::find(gardens[nodeid].badcolors.begin(), gardens[nodeid].badcolors.end(), totalcolors[i]) == gardens[nodeid].badcolors.end())
+				{
+					nextcolor = totalcolors[i];
+					break;
+				}
+		}
+		if (nextcolor != 0)
+		{
+			gardens[nodeid].color = nextcolor;
+			finished.push(nodeid);
+			if (finished.size() == N) goto end;
+			dfs.push(nodeid + 1);
+		}
+		else
+		{
+			//需要回溯
+			//把上一个颜色删了,
+			int preid = finished.top();
+			gardens[preid].badcolors.push_back(gardens[preid].color);
+			gardens[preid].color = 0;
+			finished.pop();
+			dfs.push(preid);
+		}
+	}
+end:
+	vector<int> res = {};
+
+	for (int i = 1; i <= N; i++)
+		res.push_back(gardens[i].color);
+
+	return res;
+}
 
 
 
