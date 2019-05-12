@@ -455,6 +455,10 @@ public:
 	bool isPalindrome(string s);
 	//127
 private:
+	struct Node_127 { string id; vector<string> links; int level; };
+	//之后再操作
+
+private:
 	vector<string> adjacent_string(string word, unordered_set<string>& wordList);
 	bool onechar_different(string note, unordered_set<string>& wordList);
 public:
