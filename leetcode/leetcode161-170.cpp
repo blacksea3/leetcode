@@ -91,5 +91,109 @@ int Solution::maximumGap(vector<int>& nums)
 	}
 }
 
+int Solution::compareVersion(string version1, string version2)
+{
+	//按顺序遍历,每次遍历一个有效数字
+	//按题目意思,不会输入空字符串
+
+	int sloc1 = 0;
+	int sloc2 = 0;
+	int maxsloc1 = version1.size();
+	int maxsloc2 = version2.size();
+	bool isn1_equal0 = false;
+	bool isn2_equal0 = false;
+	int oldsloc1 = 0;
+	int oldsloc2 = 0;
+	int n1, n2;
+
+	while (true)
+	{
+		if (!isn1_equal0)
+		{
+			int oldsloc1 = sloc1;
+			while ((sloc1 != maxsloc1) && (version1[sloc1++] != '.'));
+			n1 = atoi(version1.substr(oldsloc1, sloc1 - oldsloc1).c_str());
+		}
+		else n1 = 0;
+
+		if (!isn2_equal0)
+		{
+			int oldsloc2 = sloc2;
+			while ((sloc2 != maxsloc2) && (version2[sloc2++] != '.'));
+			n2 = atoi(version2.substr(oldsloc2, sloc2 - oldsloc2).c_str());
+		}
+		else n2 = 0;
+
+		if (n1 > n2)
+			return 1;
+		else if (n1 < n2)
+			return -1;
+		else
+		{
+			if ((sloc1 != maxsloc1) && (sloc2 != maxsloc2))
+				continue;
+			else if ((sloc1 == maxsloc1) && (sloc2 == maxsloc2)) return 0;
+			else if (sloc1 == maxsloc1) isn1_equal0 = true;
+			else isn2_equal0 = true;
+		}
+	}
+	return -999; //dump return
+}
+
+string Solution::fractionToDecimal(int numerator, int denominator)
+{
+	//除下去
+	//出现0就强制退出
+	//否则等待出现重复的循环小数
+
+	//坑爹题目明天再写
+
+
+	long long fnumerator = numerator;
+	long long fdenominator = denominator;
+
+	if ((fnumerator == INT_MIN) && (fdenominator == -1))
+		return "2147483648";
+	else if (fnumerator%fdenominator == 0)
+		return to_string(fnumerator / fdenominator);
+	else
+	{
+		string res1 = to_string(fnumerator / fdenominator);
+		string res2 = "";
+		fnumerator %= fdenominator;
+
+		while (true)
+		{
+			fnumerator *= 10;
+			res2 += to_string(fnumerator / fdenominator);
+			if (fnumerator%fdenominator == 0)
+				return res1 + "." + res2;
+			else
+			{
+				int res2size = res2.size();
+				//O(n)暴力查找
+				for (int i = res2size % 2; i <= res2size - 2; i += 2)
+				{
+					//判断是不是全是0
+					bool isallzero = true;
+					for (auto ch : res2.substr(i, (res2size - i) / 2))
+					{
+						if (ch != '0')
+						{
+							isallzero = false;
+							break;
+						}
+					}
+					if (isallzero) continue;
+					if (res2.substr(i, (res2size - i) / 2).compare(res2.substr(i + (res2size - i) / 2)) == 0)
+						return res1 + "." + res2.substr(0, i) + "(" + res2.substr(i, (res2size - i) / 2) + ")";
+				}
+				fnumerator %= fdenominator;
+			}
+		}
+		return "";  //dump
+	}
+}
+
 #else
 #endif

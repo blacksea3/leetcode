@@ -823,7 +823,19 @@ void test164(Solution s)
 	cout << s.maximumGap(nums);
 }
 	
+void test165(Solution s)
+{
+	cout << s.compareVersion("1.0", "1.0.0");
+}
 
+void test166(Solution s)
+{
+	int fuck1 = -1;
+	int fuck2 = INT_MIN;
+
+	string res = s.fractionToDecimal(7, 12);
+	int i = 1;
+}
 
 #else
 #endif
@@ -832,7 +844,7 @@ void test164(Solution s)
 int main()
 {
 	Solution s = Solution();
-	test164(s);
+	test166(s);
 }
 
 

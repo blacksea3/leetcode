@@ -583,6 +583,11 @@ public:
 	int findPeakElement(vector<int>& nums);
 	//164
 	int maximumGap(vector<int>& nums);
+	//165
+	int compareVersion(string version1, string version2);
+	//166
+	string fractionToDecimal(int numerator, int denominator);
+
 
 
 #else
