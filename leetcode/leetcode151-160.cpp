@@ -182,5 +182,7 @@ ListNode * Solution::getIntersectionNode(ListNode * headA, ListNode * headB)
 	return nullptr;
 }
 
+
+
 #else
 #endif

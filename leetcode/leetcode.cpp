@@ -816,10 +816,23 @@ void testwc_136_2(Solution s)
 #endif
 
 
+#ifdef LEETCODE_161_170
+void test164(Solution s)
+{
+	vector<int> nums = { 73, 22, 93, 43, 55, 14, 28, 65, 39, 81 };
+	cout << s.maximumGap(nums);
+}
+	
+
+
+#else
+#endif
+
+
 int main()
 {
 	Solution s = Solution();
-	test22(s);
+	test164(s);
 }
 
 

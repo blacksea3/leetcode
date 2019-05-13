@@ -574,6 +574,15 @@ public:
 	int findMin_154(vector<int>& nums);
 	//160
 	ListNode *getIntersectionNode(ListNode *headA, ListNode *headB);
+#else
+#endif
+
+#ifdef LEETCODE_161_170
+public:
+	//162
+	int findPeakElement(vector<int>& nums);
+	//164
+	int maximumGap(vector<int>& nums);
 
 
 #else
