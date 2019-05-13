@@ -264,7 +264,5 @@ end:
 	return res;
 }
 
-
-
 #else
 #endif

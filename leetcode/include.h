@@ -4,7 +4,7 @@
 
 //#define LEETCODE_01_10
 //#define LEETCODE_11_20
-#define LEETCODE_21_30
+//#define LEETCODE_21_30
 //#define LEETCODE_31_40
 //#define LEETCODE_41_50
 //#define LEETCODE_51_60
@@ -17,6 +17,7 @@
 //#define LEETCODE_121_130
 //#define LEETCODE_131_140
 //#define LEETCODE_141_150
+#define LEETCODE_151_160
 
 #ifdef LEETCODE_131_140
 
@@ -49,6 +50,45 @@ public:
 		random = _random;
 	}
 };
+
+#ifdef LEETCODE_151_160
+//for problem 155
+class MinStack {
+private:
+	stack<int> real;
+	stack<int> mins;
+
+public:
+	/** initialize your data structure here. */
+	MinStack() {
+		//双栈
+		//一个是记录元素的栈
+		//一个是记录最小值的栈
+	}
+
+	void push(int x) {
+		real.push(x);
+		if (mins.empty())
+			mins.push(x);
+		else
+			mins.push(min(mins.top(), x));
+	}
+
+	void pop() {
+		real.pop();
+		mins.pop();
+	}
+
+	int top() {
+		return real.top();
+	}
+
+	int getMin() {
+		return mins.top();
+	}
+};
+#else
+#endif
 
 #else
 #endif

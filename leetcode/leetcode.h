@@ -556,6 +556,28 @@ public:
 #else
 #endif
 
+#ifdef LEETCODE_151_160
+public:
+	//151
+	string reverseWords(string s);
+	//152
+	int maxProduct(vector<int>& nums);
+	//153
+private:
+	int iter_findMin(vector<int>& nums, int start, int end);
+public:
+	int findMin(vector<int>& nums);
+	//154
+private:
+	int iter_findMin_154(vector<int>& nums, int start, int end);
+public:
+	int findMin_154(vector<int>& nums);
+	//160
+	ListNode *getIntersectionNode(ListNode *headA, ListNode *headB);
+
+
+#else
+#endif
 
 };
 
