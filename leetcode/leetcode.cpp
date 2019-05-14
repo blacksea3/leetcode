@@ -834,7 +834,31 @@ void test166(Solution s)
 	int fuck2 = INT_MIN;
 
 	string res = s.fractionToDecimal(7, 12);
-	int i = 1;
+	cout << res.c_str() << endl;
+	res = s.fractionToDecimal(1, 2);
+	cout << res.c_str() << endl;
+	res = s.fractionToDecimal(2, 3);
+	cout << res.c_str() << endl;
+	res = s.fractionToDecimal(1, 7);
+	cout << res.c_str() << endl;
+
+	res = s.fractionToDecimal(8, 4);
+	cout << res.c_str() << endl;
+	res = s.fractionToDecimal(-1, INT_MIN);
+	cout << res.c_str() << endl;
+	res = s.fractionToDecimal(INT_MIN, -1);
+	cout << res.c_str() << endl;
+    res = s.fractionToDecimal(1, 17);
+	cout << res.c_str() << endl;
+
+	res = s.fractionToDecimal(1, 333);
+	cout << res.c_str() << endl;
+	res = s.fractionToDecimal(1, 6);
+	cout << res.c_str() << endl;
+	res = s.fractionToDecimal(-50, 8);
+	cout << res.c_str() << endl;
+	res = s.fractionToDecimal(7, -12);
+	cout << res.c_str() << endl;
 }
 
 #else
