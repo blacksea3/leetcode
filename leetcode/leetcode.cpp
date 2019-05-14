@@ -864,11 +864,22 @@ void test166(Solution s)
 #else
 #endif
 
+#ifdef LEETCODE_171_180
+void test174(Solution s)
+{
+	vector<vector<int>> dungeon = { {-2, -3, 3},{-5, -10, 1},{10, 30, -5} };
+	cout << s.calculateMinimumHP(dungeon);
+
+}
+
+#else
+#endif
+
 
 int main()
 {
 	Solution s = Solution();
-	test166(s);
+	test174(s);
 }
 
 

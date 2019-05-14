@@ -18,7 +18,8 @@
 //#define LEETCODE_131_140
 //#define LEETCODE_141_150
 //#define LEETCODE_151_160
-#define LEETCODE_161_170
+//#define LEETCODE_161_170
+#define LEETCODE_171_180
 
 #ifdef LEETCODE_131_140
 
@@ -51,6 +52,10 @@ public:
 		random = _random;
 	}
 };
+
+
+#else
+#endif
 
 #ifdef LEETCODE_151_160
 //for problem 155
@@ -90,6 +95,51 @@ public:
 };
 #else
 #endif
+
+
+//这狗日的VS2017说我声明错误,但是leetcode在线没有问题,FUCK
+#ifdef LEETCODE_171_180s
+
+class BSTIterator {
+private:
+	queue<int> values;
+public:
+	BSTIterator(TreeNode* root) {
+		//中序遍历:左-根-右
+		//然后形成一个栈
+		if (root == nullptr) return;
+		TreeNode* pre = root;
+		stack<TreeNode*> dfs;
+
+		while (pre || !dfs.empty())
+		{
+			if (pre)
+			{
+				dfs.push(pre);
+				pre = pre->left;
+			}
+			else
+			{
+				values.push(dfs.top()->val);
+				pre = dfs.top()->right;
+				dfs.pop();
+			}
+		}
+	}
+
+	/** @return the next smallest number */
+	int next() {
+		int res = values.front();
+		values.pop();
+		return res;
+	}
+
+	/** @return whether we have a next smallest number */
+	bool hasNext() {
+		return !values.empty();
+	}
+};
+
 
 #else
 #endif

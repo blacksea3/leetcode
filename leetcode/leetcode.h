@@ -596,9 +596,21 @@ public:
 	string convertToTitle(int n);
 	//169
 	int majorityElement(vector<int>& nums);
+#else
+#endif
+
+#ifdef LEETCODE_171_180
+public:
+	//171
+	int titleToNumber(string s);
+	//172
+	int trailingZeroes(int n);
+	//174
+	int calculateMinimumHP(vector<vector<int>>& dungeon);
 
 #else
 #endif
+
 
 };
 
