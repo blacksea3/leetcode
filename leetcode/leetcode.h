@@ -587,8 +587,15 @@ public:
 	int compareVersion(string version1, string version2);
 	//166
 	string fractionToDecimal(int numerator, int denominator);
-
-
+	//167
+private:
+	pair<bool, int> iter_two_search_find_167(vector<int>& numbers, int target, int startloc, int endloc);
+public:
+	vector<int> twoSum_167(vector<int>& numbers, int target);
+	//168
+	string convertToTitle(int n);
+	//169
+	int majorityElement(vector<int>& nums);
 
 #else
 #endif
