@@ -607,6 +607,12 @@ public:
 	int trailingZeroes(int n);
 	//174
 	int calculateMinimumHP(vector<vector<int>>& dungeon);
+	//179
+private:
+	bool cmpnum_179(int num1, int num2);
+public:
+	string largestNumber(vector<int>& nums);
+
 
 #else
 #endif
