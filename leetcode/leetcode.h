@@ -612,11 +612,25 @@ private:
 	bool cmpnum_179(int num1, int num2);
 public:
 	string largestNumber(vector<int>& nums);
-
-
 #else
 #endif
 
+#ifdef LEETCODE_181_190
+public:
+	//187
+private:
+	string extract_40_bits_187(long long  num);
+	long long  generate_40_bits_187(string s);
+public:
+	vector<string> findRepeatedDnaSequences(string s);
+	//188
+	int maxProfit(int k, vector<int>& prices);
+	//189
+	void rotate(vector<int>& nums, int k);
+	//190
+	uint32_t reverseBits(uint32_t n);
+#else
+#endif
 
 };
 

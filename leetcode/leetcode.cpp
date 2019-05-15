@@ -875,11 +875,19 @@ void test174(Solution s)
 #else
 #endif
 
+#ifdef LEETCODE_181_190
+void test187(Solution s)
+{
+	vector<string> res = s.findRepeatedDnaSequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT");
+	int i = 1;
+}
+#else
+#endif
 
 int main()
 {
 	Solution s = Solution();
-	test174(s);
+	test187(s);
 }
 
 
