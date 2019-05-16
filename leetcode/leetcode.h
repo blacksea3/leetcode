@@ -632,6 +632,24 @@ public:
 #else
 #endif
 
+#ifdef LEETCODE_191_200
+public:
+	//191
+	int hammingWeight(uint32_t n);
+	//198
+	int rob(vector<int>& nums);
+	//199
+	vector<int> rightSideView(TreeNode* root);
+	//200
+private:
+	pair<int, int> getstartloc(vector<vector<char>>& grid, pair<int, int> lastloc);
+	void BFS_Islands_200(vector<vector<char>>& grid, pair<int, int> preloc);
+public:
+	int numIslands(vector<vector<char>>& grid);
+
+#else
+#endif
+
 };
 
 
