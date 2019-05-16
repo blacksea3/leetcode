@@ -650,6 +650,26 @@ public:
 #else
 #endif
 
+#ifdef LEETCODE_201_210
+public:
+	//201
+	int rangeBitwiseAnd(int m, int n);
+	//202
+private:
+	int getsquaresum_202(int n);
+public:
+	bool isHappy(int n);
+	//203
+	ListNode* removeElements(ListNode* head, int val);
+	//204
+	int countPrimes(int n);
+	//205
+	bool isIsomorphic(string s, string t);
+
+#else
+#endif
+
+
 };
 
 

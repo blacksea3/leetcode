@@ -884,10 +884,32 @@ void test187(Solution s)
 #else
 #endif
 
+#ifdef LEETCODE_201_210
+
+void test201(Solution s)
+{
+	//cout << s.rangeBitwiseAnd(0, 0);
+	//cout << s.rangeBitwiseAnd(0, 1);
+	//cout << s.rangeBitwiseAnd(5, 7);
+	cout << s.rangeBitwiseAnd(2, 2);
+}
+
+void test204(Solution s)
+{
+	cout << s.countPrimes(1);
+	cout << s.countPrimes(2);
+	cout << s.countPrimes(9);
+	cout << s.countPrimes(10);
+	cout << s.countPrimes(10000);
+}
+
+#else
+#endif
+
 int main()
 {
 	Solution s = Solution();
-	test187(s);
+	test204(s);
 }
 
 
