@@ -173,5 +173,121 @@ bool Solution::isIsomorphic(string s, string t)
 	return true;
 }
 
+ListNode * Solution::reverseList(ListNode * head)
+{
+	ListNode* left = nullptr;
+	ListNode* right = head;
+	ListNode* temp;
+
+	while (right)
+	{
+		temp = right;
+		right = right->next;
+		temp->next = left;
+		left = temp;
+	}
+	return left;
+}
+
+bool Solution::canFinish(int numCourses, vector<vector<int>>& prerequisites)
+{
+	if (numCourses == 0) return true;
+
+	//拓扑排序
+	struct Node { int indegree = 0; vector<int> nexts = {}; };  //包含入度以及下一节点,值就是vector的下标
+
+	//init节点们/入度为0的节点进stack
+	stack<int> st;
+	vector<Node> courses(numCourses, Node());
+	int num_of_removed_nodes = 0;
+
+	for (auto prere : prerequisites)
+	{
+		courses[prere[1]].nexts.push_back(prere[0]);
+		courses[prere[0]].indegree++;
+	}
+	for (int i = 0; i < numCourses; i++)
+		if (courses[i].indegree == 0) st.push(i);
+
+	//拆分节点
+	while (!st.empty())
+	{
+		int prenodeid = st.top();
+		st.pop();
+		num_of_removed_nodes++;
+		for (auto nextnodeid : courses[prenodeid].nexts)
+		{
+			if (--courses[nextnodeid].indegree == 0)
+				st.push(nextnodeid);
+		}
+	}
+	return (num_of_removed_nodes == numCourses);
+}
+
+int Solution::minSubArrayLen(int s, vector<int>& nums)
+{
+	//直接来O(n)解法
+	//滑动窗口
+	queue<int> pre;
+	int presum = 0;
+	int loc = 0;
+	int minlen = INT_MAX;
+	while (loc < nums.size())
+	{
+		pre.push(nums[loc]);
+		presum += nums[loc];
+		if (presum >= s)
+		{
+			while (presum >= s)
+			{
+				presum -= pre.front();
+				pre.pop();
+			}
+			minlen = (pre.size() + 1 < minlen) ? pre.size() + 1 : minlen;
+		}
+		++loc;
+	}
+	//按理来说,minlen不会真的是INT_MAX吧,...
+	return (minlen != INT_MAX) ? minlen : 0;
+}
+
+vector<int> Solution::findOrder(int numCourses, vector<vector<int>>& prerequisites)
+{
+	//复用207题
+	if (numCourses == 0) return vector<int> {};
+
+	//拓扑排序
+	struct Node { int indegree = 0; vector<int> nexts = {}; };  //包含入度以及下一节点,值就是vector的下标
+
+	//init节点们/入度为0的节点进stack
+	stack<int> st;
+	vector<Node> courses(numCourses, Node());
+	vector<int> res = {};
+	int num_of_removed_nodes = 0;
+
+	for (auto prere : prerequisites)
+	{
+		courses[prere[1]].nexts.push_back(prere[0]);
+		courses[prere[0]].indegree++;
+	}
+	for (int i = 0; i < numCourses; i++)
+		if (courses[i].indegree == 0) st.push(i);
+
+	//拆分节点
+	while (!st.empty())
+	{
+		int prenodeid = st.top();
+		res.push_back(prenodeid);
+		st.pop();
+		num_of_removed_nodes++;
+		for (auto nextnodeid : courses[prenodeid].nexts)
+		{
+			if (--courses[nextnodeid].indegree == 0)
+				st.push(nextnodeid);
+		}
+	}
+	return (num_of_removed_nodes == numCourses) ? res : vector<int>{};
+}
+
 #else
 #endif

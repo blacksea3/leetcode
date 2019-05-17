@@ -903,13 +903,30 @@ void test204(Solution s)
 	cout << s.countPrimes(10000);
 }
 
+void test205(Solution s)
+{
+	s.printlistnode(s.reverseList(s.initlistnode(vector<int> {1, 2, 3, 4, 5})));
+}
+
+void test208(Solution s)
+{
+	Trie* trie = new Trie();
+
+	trie->insert("apple");
+	cout << trie->search("apple");   // 返回 true
+	cout << trie->search("app");     // 返回 false
+	cout << trie->startsWith("app"); // 返回 true
+	trie->insert("app");
+	cout << trie->search("app");     // 返回 true
+}
+
 #else
 #endif
 
 int main()
 {
 	Solution s = Solution();
-	test204(s);
+	test208(s);
 }
 
 

@@ -3,6 +3,222 @@
 #include "public.h"
 #include "include.h"
 
+#ifdef LEETCODE_131_140
+
+//for problem 133
+class Node_133 {
+public:
+	int val;
+	vector<Node_133*> neighbors;
+
+	Node_133() {}
+
+	Node_133(int _val, vector<Node_133*> _neighbors) {
+		val = _val;
+		neighbors = _neighbors;
+	}
+};
+
+//for problem 138
+class Node {
+public:
+	int val;
+	Node* next;
+	Node* random;
+
+	Node() {}
+
+	Node(int _val, Node* _next, Node* _random) {
+		val = _val;
+		next = _next;
+		random = _random;
+	}
+};
+
+
+#else
+#endif
+
+#ifdef LEETCODE_151_160
+//for problem 155
+class MinStack {
+private:
+	stack<int> real;
+	stack<int> mins;
+
+public:
+	/** initialize your data structure here. */
+	MinStack() {
+		//双栈
+		//一个是记录元素的栈
+		//一个是记录最小值的栈
+	}
+
+	void push(int x) {
+		real.push(x);
+		if (mins.empty())
+			mins.push(x);
+		else
+			mins.push(min(mins.top(), x));
+	}
+
+	void pop() {
+		real.pop();
+		mins.pop();
+	}
+
+	int top() {
+		return real.top();
+	}
+
+	int getMin() {
+		return mins.top();
+	}
+};
+#else
+#endif
+
+
+//这狗日的VS2017说我声明错误,但是leetcode在线没有问题,FUCK
+#ifdef LEETCODE_171_180s
+
+class BSTIterator {
+private:
+	queue<int> values;
+public:
+	BSTIterator(TreeNode* root) {
+		//中序遍历:左-根-右
+		//然后形成一个栈
+		if (root == nullptr) return;
+		TreeNode* pre = root;
+		stack<TreeNode*> dfs;
+
+		while (pre || !dfs.empty())
+		{
+			if (pre)
+			{
+				dfs.push(pre);
+				pre = pre->left;
+			}
+			else
+			{
+				values.push(dfs.top()->val);
+				pre = dfs.top()->right;
+				dfs.pop();
+			}
+		}
+	}
+
+	/** @return the next smallest number */
+	int next() {
+		int res = values.front();
+		values.pop();
+		return res;
+	}
+
+	/** @return whether we have a next smallest number */
+	bool hasNext() {
+		return !values.empty();
+	}
+};
+
+
+#else
+#endif
+
+#ifdef LEETCODE_201_210
+//208
+class Trie {
+private:
+	struct TrieTreeNode
+	{
+		char val;
+		vector<TrieTreeNode*> nexts = {};
+		bool isend = false;
+	};
+
+	TrieTreeNode* ancestor;
+
+public:
+	/** Initialize your data structure here. */
+	Trie() {
+		ancestor = new TrieTreeNode();
+	}
+
+	/** Inserts a word into the trie. */
+	void insert(string word) {
+		//从祖先开始搜
+		TrieTreeNode* pre = ancestor;
+		bool isbreakinter = false;
+		for (auto ch : word)
+		{
+			isbreakinter = false;
+			for (auto next : pre->nexts)
+			{
+				if (next->val == ch)
+				{
+					pre = next;
+					isbreakinter = true;
+				}
+			}
+			if (!isbreakinter)
+			{
+				TrieTreeNode* newtt = new TrieTreeNode();
+				newtt->val = ch;
+				pre->nexts.push_back(newtt);
+				pre = newtt;
+			}
+		}
+		pre->isend = true;
+	}
+
+	/** Returns if the word is in the trie. */
+	bool search(string word) {
+		//从祖先开始搜
+		TrieTreeNode* pre = ancestor;
+		bool isfind = false;
+		for (auto ch : word)
+		{
+			isfind = false;
+			for (auto next : pre->nexts)
+			{
+				if (next->val == ch)
+				{
+					isfind = true;
+					pre = next;
+					break;
+				}
+			}
+			if (!isfind) return false;
+		}
+		return (pre->isend);
+	}
+
+	/** Returns if there is any word in the trie that starts with the given prefix. */
+	bool startsWith(string prefix) {
+		//从祖先开始搜
+		TrieTreeNode* pre = ancestor;
+		bool isfind = false;
+		for (auto ch : prefix)
+		{
+			isfind = false;
+			for (auto next : pre->nexts)
+			{
+				if (next->val == ch)
+				{
+					isfind = true;
+					pre = next;
+					break;
+				}
+			}
+			if (!isfind) return false;
+		}
+		return true;
+	}
+};
+#else
+#endif
+
 #ifdef LEETCODE_141_150
 class LRUCache {
 private:
@@ -665,6 +881,14 @@ public:
 	int countPrimes(int n);
 	//205
 	bool isIsomorphic(string s, string t);
+	//206
+	ListNode* reverseList(ListNode* head);
+	//207
+	bool canFinish(int numCourses, vector<vector<int>>& prerequisites);
+	//209
+	int minSubArrayLen(int s, vector<int>& nums);
+	//210
+	vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites);
 
 #else
 #endif
