@@ -923,10 +923,35 @@ void test208(Solution s)
 #else
 #endif
 
+void test211(Solution s)
+{
+	WordDictionary* obj = new WordDictionary();
+
+	obj->addWord("at");
+	obj->addWord("and");
+	obj->addWord("an");
+	obj->addWord("add");
+	obj->addWord("a");
+	cout << obj->search(".at");
+	obj->addWord("bat");
+	cout << obj->search(".at");
+}
+
+void test212(Solution s)
+{
+	//vector<vector<char>> board = { {'o','a','a','n'},{'e','t','a','e'},{'i','h','k','r'},{'i','f','l','v'} };
+	//vector<string> words = { "oath","pea","eat","rain" };
+	//vector<string> res = s.findWords(board, words);
+	vector<vector<char>> board = { {'a','a'}};
+	vector<string> words = { "a"};
+	vector<string> res = s.findWords(board, words);
+	int i = 1;
+}
+
 int main()
 {
 	Solution s = Solution();
-	test208(s);
+	test212(s);
 }
 
 
