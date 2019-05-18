@@ -320,5 +320,226 @@ string Solution::shortestPalindrome(string s)
 	return res;
 }
 
+int Solution::findKthLargest(vector<int>& nums, int k)
+{
+	//折半:快速排序
+
+	vector<int> smallnums = {};  //这一定包含了nums[0],<=nums[0]的有效数量应当减1
+	vector<int> bignums = {};
+
+	for (auto num : nums)
+	{
+		if (num > nums[0])
+			bignums.push_back(num);
+		else
+			smallnums.push_back(num);
+	}
+	smallnums.erase(smallnums.begin());
+	if (bignums.size() == (k - 1)) return nums[0];
+	else if (bignums.size() > (k - 1)) return findKthLargest(bignums, k);
+	else return findKthLargest(smallnums, k - 1 - bignums.size());
+}
+
+vector<vector<int>> Solution::combinationSum3(int k, int n)
+{
+	//回溯
+	vector<vector<int>> res = {};
+	if ((k <= 0) || (k > 9)) return res;
+	if (k == 1) return ((n <= 9) && (n >= 1)) ? vector<vector<int>> {vector<int> {n}} : res;
+
+	unordered_map<int, pair<int, int>> um; //可以有解的最大值与最小值
+	um[2] = pair<int, int>{ 3,17 };
+	um[3] = pair<int, int>{ 6,24 };
+	um[4] = pair<int, int>{ 10,30 };
+	um[5] = pair<int, int>{ 15,35 };
+	um[6] = pair<int, int>{ 21,39 };
+	um[7] = pair<int, int>{ 28,42 };
+	um[8] = pair<int, int>{ 36,44 };
+	um[9] = pair<int, int>{ 45,45 };
+	if ((n > um[k].second) || (n < um[k].first)) return res;
+	vector<int> pre = { 1 };
+	int prelen = 1;
+	int presum = 1;
+	bool isneedrecall = false;
+
+	while (true)
+	{
+		if (!isneedrecall)
+		{
+			if (prelen == (k - 1))
+				if (((n - presum) > 9) || ((n - presum) < 1))
+				{
+					isneedrecall = true;
+				}
+				else if (pre[pre.size() - 1] < (n - presum))
+				{
+					res.push_back(pre);
+					res[res.size() - 1].push_back(n - presum);
+					isneedrecall = true;
+				}
+				else
+					isneedrecall = true;
+			else
+			{
+				if (pre[pre.size() - 1] == 9)
+				{
+					isneedrecall = true;
+				}
+				else
+				{
+					pre.push_back(pre[pre.size() - 1] + 1);
+					prelen++;
+					presum += pre[pre.size() - 1];
+				}
+			}
+		}
+		else
+		{
+			if (pre[pre.size() - 1] == 9)
+			{
+				presum -= pre[pre.size() - 1];
+				pre.pop_back();
+				prelen--;
+				if (pre.empty()) break;
+			}
+			else
+			{
+				pre[pre.size() - 1]++;
+				presum++;
+				isneedrecall = false;
+			}
+		}
+	}
+	return res;
+}
+
+bool Solution::containsDuplicate(vector<int>& nums)
+{
+	unordered_set<int> us;
+	for (auto num : nums)
+		if (us.find(num) == us.end())
+			us.insert(num);
+		else
+			return true;
+	return false;
+}
+
+bool Solution::complare_218(pair<int, int> p1, pair<int, int> p2)
+{
+	if (p1.first < p2.first)
+		return true;
+	else if (p1.first > p2.first)
+		return false;
+	else
+		if (p1.second <= p2.second)
+			return true;
+		else
+			return false;
+}
+
+vector<vector<int>> Solution::getSkyline(vector<vector<int>>& buildings)
+{
+	//维护一个优先队列,储存最大高度
+	//把buildings信息按照以下方式排序:对于[2,9,10]记作:(2,-10),(9,10)表示从2上升10与从9下降10
+	//对于这些点,按照第一:pos升序、第二height升序排序(height有正有负,根据上升与下降的方向不同而不同),然后把这些点按此升序优先级遍历,如果能够调整最大高度(包括增加(上升)一个最大高度或者删除(下降)一个最大高度),那么记录当前最大高度与当前位置,否则不操作
+
+	vector<vector<int>> res = {};
+	if (buildings.size() == 0) return res;
+
+	//使用multiset:可含重复元素的集合(保证有序)
+
+	multiset<pair<int, int>, less<pair<int, int>>> points;   //记录位置,高度(带正负号的),升序排序,小下标的值小于大下标的
+	multiset<int, greater<int>> maxheights = { 0 }; //值大的元素在小的下标处,填一个0确保这multiset不为空
+
+	for (auto building : buildings)
+	{
+		points.insert(pair<int, int> {building[0], -1 * building[2]});
+		points.insert(pair<int, int> {building[1], building[2]});
+	}
+
+	int hisheight = 0;
+	for (auto point : points)
+	{
+		if (point.second < 0) //大楼起始坐标,高度上升
+			maxheights.insert(-1 * point.second);
+		else                 //大楼起始坐标,高度下降,不用担心erase空指针位置,因为算法决定这里一定有元素被移除
+			maxheights.erase(maxheights.find(point.second));
+		multiset<int, greater<int>>::iterator it = maxheights.begin();
+		if (hisheight != *it)   //注:如果这里出现什么形如it无法解地址运算,那么一定是这个FUCK multiset空了
+			res.push_back(vector<int> {point.first, *it});
+		hisheight = *it;
+	}
+
+	return res;
+}
+
+bool Solution::containsNearbyDuplicate(vector<int>& nums, int k)
+{
+	unordered_map<int, int> um;
+	for (int i = 0; i < nums.size(); i++)
+	{
+		if (um.find(nums[i]) == um.end())
+			um[nums[i]] = i;
+		else
+			if ((i - um[nums[i]]) <= k) return true;
+			else um[nums[i]] = i;
+	}
+	return false;
+}
+
+bool Solution::containsNearbyAlmostDuplicate(vector<int>& nums, int k, int t)
+{
+
+
+
+	//维护一个vector
+	//暴力求解 O(n^2)
+	//这会TIE
+	/*
+	if (k < 1) return false;
+	if (t < 0) return false;
+
+	vector<int> q;
+
+	for (int i = 0; i < nums.size(); i++)
+	{
+		for (auto val : q)
+		{
+			if (abs((long)val - nums[i]) <= t) return true;
+		}
+		if (q.size() == k)
+		{
+			q.erase(q.begin());
+		}
+		q.push_back(nums[i]);
+	}
+	return false;*/
+
+	//另一种暴力求解,先按值排序,同时记录排序后的对应下标
+	//O(n^2)
+	if (k < 1) return false;
+	if (t < 0) return false;
+
+	vector<pair<int, int>> vp(nums.size(), pair<int, int> {});
+	for (int i = 0; i < nums.size(); ++i)
+		vp[i] = pair<int, int>{ nums[i],i };
+
+	sort(vp.begin(), vp.end()); //自动按照pair<int,int> val.first升序排序
+
+	int j = 0;
+	for (int i = 1; i < nums.size(); i++)
+	{
+		while ((j < i) && ((vp[j].first + t) < vp[i].first))
+			j++;
+		for (int m = j; m < i; m++)
+			if (abs(vp[m].second - vp[i].second) <= k)
+				return true;
+	}
+	return false;
+
+
+
+}
+
 #else
 #endif

@@ -1036,6 +1036,22 @@ public:
 	int rob_213(vector<int>& nums);
 	//214
 	string shortestPalindrome(string s);
+	//215
+	int findKthLargest(vector<int>& nums, int k);
+	//216
+	vector<vector<int>> combinationSum3(int k, int n);
+	//217
+	bool containsDuplicate(vector<int>& nums);
+	//218
+private:
+	bool complare_218(pair<int, int> p1, pair<int, int> p2);
+public:
+	vector<vector<int>> getSkyline(vector<vector<int>>& buildings);
+	//219
+	bool containsNearbyDuplicate(vector<int>& nums, int k);
+	//220
+public:
+	bool containsNearbyAlmostDuplicate(vector<int>& nums, int k, int t);
 
 #else
 #endif

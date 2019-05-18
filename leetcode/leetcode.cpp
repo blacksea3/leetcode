@@ -961,10 +961,23 @@ void test214(Solution s)
 	int i = 1;
 }
 
+void test216(Solution s)
+{
+	vector<vector<int>> res = s.combinationSum3(3, 20);
+	int i = 1;
+}
+
+void test218(Solution s)
+{
+	vector<vector<int>> buildings = { {2,9,10},{3,7,15 }, { 5,12,12},{15,20,10},{19,24,8} };
+	vector<vector<int>> res = s.getSkyline(buildings);
+	int i = 1;
+}
+
 int main()
 {
 	Solution s = Solution();
-	test214(s);
+	test218(s);
 }
 
 
