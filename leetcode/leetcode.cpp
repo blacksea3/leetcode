@@ -942,16 +942,29 @@ void test212(Solution s)
 	//vector<vector<char>> board = { {'o','a','a','n'},{'e','t','a','e'},{'i','h','k','r'},{'i','f','l','v'} };
 	//vector<string> words = { "oath","pea","eat","rain" };
 	//vector<string> res = s.findWords(board, words);
-	vector<vector<char>> board = { {'a','a'}};
-	vector<string> words = { "a"};
+
+	vector<vector<char>> board = { {'b', 'a', 'a', 'b', 'a', 'b'}, {'a', 'b', 'a', 'a', 'a', 'a'}, {'a', 'b', 'a', 'a', 'a', 'b'}, {'a', 'b', 'a', 'b', 'b', 'a'}, {'a', 'a', 'b', 'b', 'a', 'b'}, {'a', 'a', 'b', 'b', 'b', 'a'}, {'a', 'a', 'b', 'a', 'a', 'b'} };
+	vector<string> words = { "bbaabaabaaaaabaababaaaaababb", "aabbaaabaaabaabaaaaaabbaaaba", "babaababbbbbbbaabaababaabaaa", "bbbaaabaabbaaababababbbbbaaa", "babbabbbbaabbabaaaaaabbbaaab", "bbbababbbbbbbababbabbbbbabaa", "babababbababaabbbbabbbbabbba", "abbbbbbaabaaabaaababaabbabba", "aabaabababbbbbbababbbababbaa", "aabbbbabbaababaaaabababbaaba", "ababaababaaabbabbaabbaabbaba", "abaabbbaaaaababbbaaaaabbbaab", "aabbabaabaabbabababaaabbbaab", "baaabaaaabbabaaabaabababaaaa", "aaabbabaaaababbabbaabbaabbaa", "aaabaaaaabaabbabaabbbbaabaaa", "abbaabbaaaabbaababababbaabbb", "baabaababbbbaaaabaaabbababbb", "aabaababbaababbaaabaabababab", "abbaaabbaabaabaabbbbaabbbbbb", "aaababaabbaaabbbaaabbabbabab", "bbababbbabbbbabbbbabbbbbabaa", "abbbaabbbaaababbbababbababba", "bbbbbbbabbbababbabaabababaab", "aaaababaabbbbabaaaaabaaaaabb", "bbaaabbbbabbaaabbaabbabbaaba", "aabaabbbbaabaabbabaabababaaa", "abbababbbaababaabbababababbb", "aabbbabbaaaababbbbabbababbbb", "babbbaabababbbbbbbbbaabbabaa" };
 	vector<string> res = s.findWords(board, words);
+
+
+
+	//vector<vector<char>> board = { {'a','a'}};
+	//vector<string> words = { "a"};
+	//vector<string> res = s.findWords(board, words);
+	int i = 1;
+}
+
+void test214(Solution s)
+{
+	string res = s.shortestPalindrome("gabqtbypdwjjelvgohmvzpyfqayobkyyhoizaqhtqkzodcosufbpgurxsbjtrkombfbl");
 	int i = 1;
 }
 
 int main()
 {
 	Solution s = Solution();
-	test212(s);
+	test214(s);
 }
 
 

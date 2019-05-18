@@ -1029,6 +1029,13 @@ private:
 	int getusedir_212(vector<vector<bool>> searchde_board, int predir, int prex, int prey);
 public:
 	vector<string> findWords(vector<vector<char>>& board, vector<string>& words);
+	//213
+private:
+	int rob_199(vector<int>& nums, int startloc, int endloc);
+public:
+	int rob_213(vector<int>& nums);
+	//214
+	string shortestPalindrome(string s);
 
 #else
 #endif

@@ -202,5 +202,123 @@ vector<string> Solution::findWords(vector<vector<char>>& board, vector<string>& 
 	return res;
 }
 
+int Solution::rob_199(vector<int>& nums, int startloc, int endloc)
+{
+	//dpi:偷窃开头直到包含i下标的最大金额
+//只保存最后三个dp
+//init
+	int nsize = endloc - startloc + 1;
+
+	if (nsize <= 0)
+		return 0;
+	else if (nsize == 1)
+		return nums[startloc];
+	else if (nsize == 2)
+		return max(nums[startloc], nums[endloc]);
+	else
+	{
+		int dp0 = nums[startloc];
+		int dp1 = nums[startloc + 1];
+		int dp2 = nums[startloc] + nums[startloc + 2];
+		for (int i = startloc + 3; i <= endloc; i++)
+		{
+			dp0 = max(dp0, dp1) + nums[i];
+			int temp = dp0;
+			dp0 = dp1;
+			dp1 = dp2;
+			dp2 = temp;
+		}
+		return max(dp1, dp2);
+	}
+}
+
+int Solution::rob_213(vector<int>& nums)
+{
+	//连续两遍198题
+	if (nums.size() == 0) return 0;
+	else if (nums.size() == 1) return nums[0];
+	else return max(rob_199(nums, 0, nums.size() - 2), rob_199(nums, 1, nums.size() - 1));
+}
+
+string Solution::shortestPalindrome(string s)
+{
+	//找出从最左侧开始的最长回文串
+
+	//从s的左半段开始扩展,O(n^2),从中间开始扩展,曹
+	//不采用特殊算法会超时
+	//故:复用题目5
+
+	//Manacher algorithm
+	//特别注意边界问题
+	//https://mp.weixin.qq.com/s?__biz=MzIzMTE1ODkyNQ==&mid=2649410225&idx=1&sn=ed045e8edc3c49a436a328e5f0f37a55&chksm=f0b60f53c7c18645b4c04a69ad314723cce94ed56994d6f963c2275a2db8d85f973f15f508e4&mpshare=1&scene=23&srcid=1001JCsBlpxgUWjgixasChNQ#rd
+
+	string newstr = string("#");
+	unsigned int iSize = s.size();
+	for (unsigned int i = 0; i < iSize; i++)
+	{
+		newstr += s[i];
+		newstr += "#";
+	}
+
+	int new_len = newstr.size();
+	vector<int> radius = {};
+	int right_border = -1;
+	int center_index = -1;
+	int longest_radius = -1;
+	int longest_center_index = -1;
+	for (int index = 0; index < new_len; index++)
+	{
+		if (index > right_border)
+		{
+			//expand the right border
+			int L = index;
+			int R = index;
+			while ((L >= 0) && (R < new_len) && (newstr[L] == newstr[R]))
+			{
+				L--;
+				R++;
+			}
+			int newradius = (R - L + 1) / 2;    //此处将向下取整
+			radius.insert(radius.end(), newradius);
+			right_border = R - 1;
+			center_index = index;
+			if ((L == -1) && (newradius > longest_radius))
+			{
+				longest_radius = newradius;
+				longest_center_index = index;
+			}
+		}
+		else if ((index + radius[2 * center_index - index] - 1) >= right_border)
+		{
+			//also expand the right border
+			int L = 2 * index - right_border;
+			int R = right_border;
+			while ((L >= 0) && (R < new_len) && (newstr[L] == newstr[R]))
+			{
+				L--;
+				R++;
+			}
+			int newradius = (R - L + 1) / 2;    //此处将向下取整
+			radius.insert(radius.end(), newradius);
+			right_border = R - 1;
+			center_index = index;
+			if ((L == -1) && (newradius > longest_radius))
+			{
+				longest_radius = newradius;
+				longest_center_index = index;
+			}
+		}
+		else radius.insert(radius.end(), radius[2 * center_index - index]);
+	}
+
+	float real_index = (longest_center_index + 1) / 2.0 - 1;  //may be xxx.5  4->1.5 2->0.5, 3->1, 1->0
+	float real_radius = (longest_radius) / 2.0 - 1;         //5 ->1.5,  3->0.5  4->1, 2->0
+
+	string res = s;
+	for (int i = int(2 * real_radius + 1); i < s.size(); i++)
+		res.insert(res.begin(), s[i]);
+	return res;
+}
+
 #else
 #endif
