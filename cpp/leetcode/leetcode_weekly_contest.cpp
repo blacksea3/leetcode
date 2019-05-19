@@ -4,6 +4,8 @@
 #include "public.h"
 #include "leetcode.h"
 
+#define null NULL
+
 vector<vector<int>> Solution::colorBorder(vector<vector<int>>& grid, int r0, int c0, int color)
 {
 	//只要搞清楚边界就可以咯
@@ -262,6 +264,153 @@ end:
 		res.push_back(gardens[i].color);
 
 	return res;
+}
+
+int Solution::iter_lastStoneWeight(vector<int>& stones)
+{
+	return 0;
+}
+
+int Solution::lastStoneWeight(vector<int>& stones)
+{
+	multiset<int> ml;
+	for (auto stone:stones)
+	{
+		ml.insert(stone);
+	}
+	while (ml.size() >= 2)
+	{
+		int s1 = *ml.rbegin();
+		ml.erase(ml.find(s1));
+		int s2 = *(ml.rbegin());
+		ml.erase(ml.find(s2));
+		if (s1 != s2)
+		{
+			ml.insert(s1 - s2);
+		}
+	}
+	return (ml.size() == 1) ? *ml.begin() : 0;
+}
+
+bool Solution::isfront_body(string word1, string word2)
+{
+	int i = 0;
+	int j = 0;
+	while ((i < word1.size()) && (word1[i] == word2[j]))
+	{
+		i++;
+		j++;
+	}
+	if (i == word1.size()) return true;
+	j++;
+	while ((j < word2.size()) && (word1[i] == word2[j]))
+	{
+		i++;
+		j++;
+	}
+	if (j == word2.size()) return true;
+	else return false;
+}
+
+int Solution::longestStrChain(vector<string>& words)
+{
+	//注意到单词长度最长为16
+	vector<vector<pair<string, int>>> v(16, vector<pair<string, int>>{});
+
+	for (auto word : words)
+		v[word.size() - 1].push_back(pair<string, int>{word, 1});
+
+	int may_maxlen = 1;
+	int maxlen = 1;
+
+	int temp = 0;
+	for (auto iter_v : v)
+	{
+		if (iter_v.empty())
+		{
+			may_maxlen = max(may_maxlen, temp);
+			temp = 0;
+		}
+		else temp++;
+	}
+	may_maxlen = max(may_maxlen, temp);
+
+	//按长度遍历单词
+	for (int i = 1; i < 16; i++)
+	{
+		for (int j = 0; j < v[i].size(); j++)
+		{
+			pair<string, int> pair_bigword = v[i][j];
+			for (int k = 0; k < v[i - 1].size(); k++)
+			{
+				pair<string, int> pair_smallword = v[i - 1][k];
+				if (isfront_body(pair_smallword.first, pair_bigword.first))
+				{
+					v[i][j].second = max(v[i][j].second, pair_smallword.second + 1);
+					maxlen = max(maxlen, v[i][j].second);
+					if (maxlen == may_maxlen) return may_maxlen;
+				}
+			}
+		}
+	}
+	return maxlen;
+}
+
+string Solution::removeDuplicates(string S) {
+	int left = 0;
+	if (S.size() <= 1) return S;
+
+	while ((left + 1) < S.size())
+	{
+		if (S[left] == S[left + 1])
+		{
+			S.erase(S.begin() + left);
+			S.erase(S.begin() + left);
+			if (left != 0) left--;
+		}
+		else
+			left++;
+	}
+	return S;
+}
+
+#else
+#endif
+
+//#############################################################################################
+//#############################################################################################
+//#############################################################################################
+//#############################################################################################
+//#############################################################################################
+
+#ifdef LEETCODE_WC
+void testwc1(Solution s)
+{
+	vector<vector<int>> grid = { {1,1},{1,2} };
+	vector<vector<int>> res = s.colorBorder(grid, 0, 0, 3);
+	int i = 1;
+}
+
+
+void testwc_135_2(Solution s)
+{
+	TreeNode *root = s.initTreeNode({ 4,1,6,0,2,5,7,null,null,null,3,null,null,null,8 });
+	TreeNode* res = s.bstToGst(root);
+	int i = 1;
+}
+
+void testwc_135_3(Solution s)
+{
+	vector<int> A = { 1,2,8,5,3,6,7,6,2 };
+	cout << s.minScoreTriangulation(A);
+}
+
+void testwc_136_2(Solution s)
+{
+	int N = 3;
+	vector<vector<int>> paths = { {1,2},{2,3},{3,1} };
+	vector<int> res = s.gardenNoAdj(N, paths);
+	int i = 1;
 }
 
 #else
