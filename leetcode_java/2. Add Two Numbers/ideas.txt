@@ -1,0 +1,13 @@
+相关点：
+2 pointer
+
+
+思路：
+1，考虑 brute force
+检验所有substring，0<i<j<s.length()
+每个substring中，用set来判断是非有重复char
+
+2，考虑 给定start， end pointer， 使用hashmap记录每个char的位置
+start和end间不存在任何两个相同的char
+每次end++，如果遇到char存在，根据位置更新start和hashmap
+
