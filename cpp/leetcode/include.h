@@ -1,6 +1,6 @@
 #pragma once
 
-//#define LEETCODE_WC
+#define LEETCODE_WC
 
 //#define LEETCODE_01_10
 //#define LEETCODE_11_20
@@ -23,4 +23,4 @@
 //#define LEETCODE_181_190
 //#define LEETCODE_191_200
 #define LEETCODE_201_210
-#define LEETCODE_211_220
+//#define LEETCODE_211_220

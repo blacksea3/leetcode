@@ -16,6 +16,8 @@ db.sqlite3
 .DS_Store
 
 # VS temp data directory?
-.vs
-leetcode/Debug
-Debug
+cpp/.vs
+cpp/leetcode/Debug
+cpp/leetcode/x64/Debug
+cpp/Debug
+cpp/x64/Debug

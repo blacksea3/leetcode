@@ -3,6 +3,8 @@
 #include "public.h"
 #include "include.h"
 
+
+
 #ifdef LEETCODE_131_140
 
 //for problem 133
@@ -214,6 +216,25 @@ public:
 			if (!isfind) return false;
 		}
 		return true;
+	}
+
+	int search_length(string word) {
+		//从祖先开始搜
+		TrieTreeNode* pre = ancestor;
+		int res = 0;
+		for (auto ch : word)
+		{
+			for (auto next : pre->nexts)
+			{
+				if (next->val == ch)
+				{
+					pre = next;
+					break;
+				}
+			}
+			if (pre->isend) res++;
+		}
+		return res;
 	}
 };
 #else
@@ -898,6 +919,20 @@ public:
 	//problem 2
 public:
 	vector<int> gardenNoAdj(int N, vector<vector<int>>& paths);
+
+	//week137
+	//problem 1
+private:
+	int iter_lastStoneWeight(vector<int>& stones);
+public:
+	int lastStoneWeight(vector<int>& stones);
+	//p 2
+	string removeDuplicates(string S);
+	//p 3
+private:
+	bool isfront_body(string word1, string word2);
+public:
+	int longestStrChain(vector<string>& words);
 
 #else
 #endif
