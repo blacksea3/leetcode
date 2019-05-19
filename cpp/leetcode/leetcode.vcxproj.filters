@@ -25,6 +25,15 @@
     <Filter Include="源文件\DC">
       <UniqueIdentifier>{d7a92ef2-f2ae-45dd-a58a-1f96dba9ad58}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Math">
+      <UniqueIdentifier>{94e552d6-9abc-41d3-ab4d-21e5fcb20e46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\DP">
+      <UniqueIdentifier>{61a5fc2d-e743-41c1-8e30-4fa9c823ae2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Recall">
+      <UniqueIdentifier>{4fdb2d0f-9d1b-4cb1-94ee-d32ec61a00d3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -47,8 +56,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="5.cpp">
-      <Filter>源文件\String</Filter>
+    <ClCompile Include="10. Regular Expression Matching.cpp">
+      <Filter>源文件\DP</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
