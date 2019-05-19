@@ -13,15 +13,9 @@
 #include <queue>
 #include <set>
 
-using namespace std;
+//#include "json/json.h"
 
-/**
- * Definition for singly-linked list.*/
-struct ListNode {
-    int val;
-    ListNode *next;
-    ListNode(int x) : val(x), next(NULL) {}
-};
+using namespace std;
 
 //37
 struct SudokuInfo

@@ -106,10 +106,13 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\PC\GitFiles\leetcode\cpp\packages\jsoncpp.0.6.0.1\build\native\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -153,39 +156,26 @@
   <ItemGroup>
     <ClInclude Include="common_algorithms.h" />
     <ClInclude Include="include.h" />
-    <ClInclude Include="leetcode.h" />
+    <ClInclude Include="listnode.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="public.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="common_algorithms.cpp" />
-    <ClCompile Include="leetcode.cpp" />
-    <ClCompile Include="leetcode01-10.cpp" />
-    <ClCompile Include="leetcode101-110.cpp" />
-    <ClCompile Include="leetcode11-20.cpp" />
-    <ClCompile Include="leetcode111-120.cpp" />
-    <ClCompile Include="leetcode121-130.cpp" />
-    <ClCompile Include="leetcode131-140.cpp" />
-    <ClCompile Include="leetcode141-150.cpp" />
-    <ClCompile Include="leetcode151-160.cpp" />
-    <ClCompile Include="leetcode161-170.cpp" />
-    <ClCompile Include="leetcode171-180.cpp" />
-    <ClCompile Include="leetcode181-190.cpp" />
-    <ClCompile Include="leetcode191-200.cpp" />
-    <ClCompile Include="leetcode201-210.cpp" />
-    <ClCompile Include="leetcode21-30.cpp" />
-    <ClCompile Include="leetcode211-220.cpp" />
-    <ClCompile Include="leetcode31-40.cpp" />
-    <ClCompile Include="leetcode41-50.cpp" />
-    <ClCompile Include="leetcode51-60.cpp" />
-    <ClCompile Include="leetcode61-70.cpp" />
-    <ClCompile Include="leetcode71-80.cpp" />
-    <ClCompile Include="leetcode81-90.cpp" />
-    <ClCompile Include="leetcode91-100.cpp" />
-    <ClCompile Include="leetcode_public.cpp" />
-    <ClCompile Include="leetcode_weekly_contest.cpp" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="5.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\jsoncpp.redist.0.6.0.1\build\native\jsoncpp.redist.targets" Condition="Exists('..\packages\jsoncpp.redist.0.6.0.1\build\native\jsoncpp.redist.targets')" />
+    <Import Project="..\packages\jsoncpp.0.6.0.1\build\native\jsoncpp.targets" Condition="Exists('..\packages\jsoncpp.0.6.0.1\build\native\jsoncpp.targets')" />
   </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\jsoncpp.redist.0.6.0.1\build\native\jsoncpp.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\jsoncpp.redist.0.6.0.1\build\native\jsoncpp.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\jsoncpp.0.6.0.1\build\native\jsoncpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\jsoncpp.0.6.0.1\build\native\jsoncpp.targets'))" />
+  </Target>
 </Project>
