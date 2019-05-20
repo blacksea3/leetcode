@@ -178,5 +178,39 @@ bool isMatch(string s, string p)
 //if (p[j] = 字母) if (p[j] == s[i]) dp[i][j] = d[i-1][j-1] else dp[i][j] = false;
 //else if (p[j] == '.') dp[i][j] = d[i-1][j-1]
 //else 贪婪匹配*
-//    if (p[j-1] != s[i])  dp[i][j] = d[i-1][j-2] 表示也许可以跳过吗?*组合
-//    else if 
+//    if 
+//    else if (p[j-1] != s[i])  dp[i][j] = d[i][j-2] 表示也许可以跳过吗?*组合
+//    else if (p[])
+
+class Solution {
+public:
+	bool isMatch(string s, string p) {
+
+		int ssize = s.size();
+		int psize = p.size();
+
+		vector<vector<bool>> dp(ssize + 1, vector<bool>(psize + 1, false));
+
+		//init
+		for (int j = 0; j <= psize; j++)
+			dp[0][j] = true;
+
+		//main dp
+		for (int i = 1; i <= ssize; i++)
+			for (int j = 1; j <= psize; j++)
+				if ((p[j - 1] <= 'z') && (p[j - 1] >= 'a'))
+				{
+					if (p[j - 1] == s[i - 1]) dp[i][j] = dp[i - 1][j - 1];
+				}
+				else if (p[j - 1] == '.')
+					dp[i][j] = dp[i - 1][j - 1];
+				else //贪婪匹配*
+					if (j != 1) //p非开头的*
+					{
+						if(p[j - 2] != s[i - 1]) dp[i][j] = dp[i - 1][j - 2];
+					}
+
+		        
+						
+	}
+};
