@@ -172,7 +172,7 @@ bool isMatch(string s, string p)
 //按照以下规则进行
 //dp[i][j]表示s直到第i个字符与p直到第j字符是否匹配  0<=i<=s.size(),  0<=j<=p.size()
 //dp初始化按照全false进行处理
-//第一轮初始化按照dp[0][?] = true进行处理
+//第一轮初始化按照查看是否存在连续的?*组合进行选择是否赋值true
 
 //按照以下递推关系
 //if (p[j] = 字母) if (p[j] == s[i]) dp[i][j] = d[i-1][j-1] else dp[i][j] = false;
