@@ -1,7 +1,7 @@
 #include "public.h"
 
 //回溯法,相当复杂,不建议使用
-
+//时间也很长 76ms
 /*
 
 class Solution {
@@ -167,7 +167,7 @@ bool isMatch(string s, string p)
 
 */
 
-//动态规划
+//动态规划 //8ms 99.33%
 
 //按照以下规则进行
 //dp[i][j]表示s直到第i个字符与p直到第j字符是否匹配  0<=i<=s.size(),  0<=j<=p.size()
@@ -191,26 +191,56 @@ public:
 
 		vector<vector<bool>> dp(ssize + 1, vector<bool>(psize + 1, false));
 
+		dp[0][0] = true;
 		//init
-		for (int j = 0; j <= psize; j++)
-			dp[0][j] = true;
+		for (int j = 2; j <= psize; j+=2)
+			if (((p[j - 1] == '*') && (p[j - 2] != '*')) && (dp[0][j - 2]))
+			    dp[0][j] = true;
 
 		//main dp
 		for (int i = 1; i <= ssize; i++)
 			for (int j = 1; j <= psize; j++)
-				if ((p[j - 1] <= 'z') && (p[j - 1] >= 'a'))
-				{
-					if (p[j - 1] == s[i - 1]) dp[i][j] = dp[i - 1][j - 1];
-				}
-				else if (p[j - 1] == '.')
+				if ((p[j - 1] == s[i - 1]) || (p[j - 1] == '.'))
 					dp[i][j] = dp[i - 1][j - 1];
-				else //贪婪匹配*
+				else if (p[j - 1] == '*')//贪婪匹配*
 					if (j != 1) //p非开头的*
 					{
-						if(p[j - 2] != s[i - 1]) dp[i][j] = dp[i - 1][j - 2];
+						if ((p[j - 2] == s[i - 1]) || (p[j - 2] == '.')) //如果*前面是字母和s对应位置相等或者是.
+						{
+							//分别对应*吃掉额外的s字符;*不吃字符,用原字符吃它;跳过这组?*
+							dp[i][j] = dp[i - 1][j] || dp[i][j - 1] || dp[i][j - 2];
+						}
+						else if (p[j - 2] == '*') return false; //强制退出,p字符串不合法
+						else //*前面是字母但是和s对应位置不等
+							dp[i][j] = dp[i][j - 2];  //看是否能够跳过
 					}
+					else return false; //强制退出,p字符串不合法
+				else
+					continue;
 
-		        
-						
+		return dp[ssize][psize];
 	}
 };
+
+int main()
+{
+	Solution s = Solution();
+	cout << s.isMatch("aa", "a*");
+	cout << s.isMatch("aa", "a**");
+	cout << s.isMatch("aa", "");
+	cout << s.isMatch("", "a");
+	cout << s.isMatch("", "");
+	cout << s.isMatch("", "*");
+
+    cout << s.isMatch("ab", ".*");
+	cout << s.isMatch("aab", "c*a*b");
+	cout << s.isMatch("mississippi", "mis*is*p*.");
+
+	cout << s.isMatch("mississippi", "mis*is*ip*.");
+
+	cout << s.isMatch("bbbba", ".*a*a");
+
+	cout << s.isMatch("a", ".*");
+	return 0;
+}
+
