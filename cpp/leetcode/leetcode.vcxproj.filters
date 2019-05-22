@@ -56,7 +56,22 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="16. 3Sum Closest.cpp">
+    <ClCompile Include="17. Letter Combinations of a Phone Number.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="18. 4Sum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="19. Remove Nth Node From End of List.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="20. Valid Parentheses.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="21. Merge Two Sorted Lists.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="22. Generate Parentheses.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
