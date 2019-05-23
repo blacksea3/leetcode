@@ -74,5 +74,8 @@
     <ClCompile Include="22. Generate Parentheses.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="23. Merge k Sorted Lists.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
