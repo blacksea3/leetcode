@@ -1,0 +1,9 @@
+相关点： 
+
+
+思路：
+1，转为string reverse再变为int
+
+
+
+
