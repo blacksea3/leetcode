@@ -1,0 +1,20 @@
+相关点： 
+Share substring
+Reverse 
+2 pointers
+
+
+思路：
+1，考虑 brute force
+检验所有substring是否是回文，并找到最长
+
+2，考虑 reverse s和s的最长substring
+Substring使用2-d 数组记录，数组内记录数字为到包括当前位置的最长substring长度
+另外 注意‘abc435cba’这种情况，需要考虑substring在s和rev的起始位置
+
+3，拓展中心
+对于每个char拓展
+
+4，Manacher's Algorithm
+time O（n）
+
