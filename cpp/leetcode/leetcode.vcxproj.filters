@@ -98,5 +98,14 @@
     <ClCompile Include="30. Substring with Concatenation of All Words.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="31. Next Permutation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="32. Longest Valid Parentheses.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="33. Search in Rotated Sorted Array.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

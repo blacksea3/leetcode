@@ -178,6 +178,9 @@
     <ClCompile Include="28. Implement strStr().cpp" />
     <ClCompile Include="29. Divide Two Integers.cpp" />
     <ClCompile Include="30. Substring with Concatenation of All Words.cpp" />
+    <ClCompile Include="31. Next Permutation.cpp" />
+    <ClCompile Include="32. Longest Valid Parentheses.cpp" />
+    <ClCompile Include="33. Search in Rotated Sorted Array.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
