@@ -171,6 +171,13 @@
     <ClCompile Include="21. Merge Two Sorted Lists.cpp" />
     <ClCompile Include="22. Generate Parentheses.cpp" />
     <ClCompile Include="23. Merge k Sorted Lists.cpp" />
+    <ClCompile Include="24. Swap Nodes in Pairs.cpp" />
+    <ClCompile Include="25. Reverse Nodes in k-Group.cpp" />
+    <ClCompile Include="26. Remove Duplicates from Sorted Array.cpp" />
+    <ClCompile Include="27. Remove Element.cpp" />
+    <ClCompile Include="28. Implement strStr().cpp" />
+    <ClCompile Include="29. Divide Two Integers.cpp" />
+    <ClCompile Include="30. Substring with Concatenation of All Words.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
