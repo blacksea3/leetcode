@@ -56,55 +56,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="17. Letter Combinations of a Phone Number.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="18. 4Sum.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="19. Remove Nth Node From End of List.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="20. Valid Parentheses.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="21. Merge Two Sorted Lists.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="22. Generate Parentheses.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="23. Merge k Sorted Lists.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="24. Swap Nodes in Pairs.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="25. Reverse Nodes in k-Group.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="26. Remove Duplicates from Sorted Array.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="27. Remove Element.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="28. Implement strStr().cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="29. Divide Two Integers.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="30. Substring with Concatenation of All Words.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="31. Next Permutation.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="32. Longest Valid Parentheses.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="33. Search in Rotated Sorted Array.cpp">
+    <ClCompile Include="37. Sudoku Solver.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
