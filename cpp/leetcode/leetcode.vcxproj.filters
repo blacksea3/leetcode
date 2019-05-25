@@ -65,5 +65,11 @@
     <ClCompile Include="40. Combination Sum II.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="41. First Missing Positive.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="42. Trapping Rain Water.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
