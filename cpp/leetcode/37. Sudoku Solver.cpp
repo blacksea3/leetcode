@@ -2,7 +2,7 @@
 
 //20ms, 77.40%
 
-//This is a typical BackTracking problem:
+//This is a typical DFS(BackTracking) problem: Here I use recursive solution
 //use tricks: consider these structures: rows: 9 values, each is a 9 bool, columns: 9 values, each is a 9 bool;
 // groups: 9 values, each is a 9 bool.
 
