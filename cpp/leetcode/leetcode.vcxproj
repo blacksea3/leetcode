@@ -164,11 +164,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="38. Count and Say.cpp" />
-    <ClCompile Include="39. Combination Sum.cpp" />
-    <ClCompile Include="40. Combination Sum II.cpp" />
-    <ClCompile Include="41. First Missing Positive.cpp" />
-    <ClCompile Include="42. Trapping Rain Water.cpp" />
+    <ClCompile Include="44. Wildcard Matching.cpp" />
+    <ClCompile Include="45. Jump Game II.cpp" />
+    <ClCompile Include="46. Permutations.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
