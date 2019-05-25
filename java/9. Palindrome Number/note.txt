@@ -1,0 +1,10 @@
+相关点： 
+Math
+
+思路：
+1, int to string and string reverse
+
+
+
+
+
