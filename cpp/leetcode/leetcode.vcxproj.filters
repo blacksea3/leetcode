@@ -56,7 +56,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="37. Sudoku Solver.cpp">
+    <ClCompile Include="38. Count and Say.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="39. Combination Sum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="40. Combination Sum II.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
