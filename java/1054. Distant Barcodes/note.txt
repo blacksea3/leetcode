@@ -1,0 +1,10 @@
+相关点： 
+Hashmap
+
+思路：
+1, basic idea 
+用 hashmap 存所有的不同的数，根据出现最多的数来分配blocksize，根据blocksize分配block数（大于等于出现最多的数的数量）。注意要先分配出现最多的数。
+
+
+
+
