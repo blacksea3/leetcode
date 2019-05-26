@@ -164,9 +164,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="44. Wildcard Matching.cpp" />
-    <ClCompile Include="45. Jump Game II.cpp" />
-    <ClCompile Include="46. Permutations.cpp" />
+    <ClCompile Include="WC138.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

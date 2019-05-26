@@ -56,13 +56,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="44. Wildcard Matching.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="45. Jump Game II.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="46. Permutations.cpp">
+    <ClCompile Include="WC138.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
