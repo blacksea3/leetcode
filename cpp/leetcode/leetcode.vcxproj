@@ -164,7 +164,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="WC138.cpp" />
+    <ClCompile Include="371. Sum of Two Integers.cpp" />
+    <ClCompile Include="374. Guess Number Higher or Lower.cpp" />
+    <ClCompile Include="383. Ransom Note.cpp" />
+    <ClCompile Include="387. First Unique Character in a String.cpp" />
+    <ClCompile Include="389. Find the Difference.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

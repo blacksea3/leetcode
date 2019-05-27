@@ -56,7 +56,19 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="WC138.cpp">
+    <ClCompile Include="371. Sum of Two Integers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="374. Guess Number Higher or Lower.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="383. Ransom Note.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="387. First Unique Character in a String.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="389. Find the Difference.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
