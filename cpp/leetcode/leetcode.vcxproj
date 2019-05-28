@@ -164,11 +164,19 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="371. Sum of Two Integers.cpp" />
-    <ClCompile Include="374. Guess Number Higher or Lower.cpp" />
-    <ClCompile Include="383. Ransom Note.cpp" />
-    <ClCompile Include="387. First Unique Character in a String.cpp" />
-    <ClCompile Include="389. Find the Difference.cpp" />
+    <ClCompile Include="48. Rotate Image.cpp" />
+    <ClCompile Include="49. Group Anagrams.cpp" />
+    <ClCompile Include="50. Pow(x, n).cpp" />
+    <ClCompile Include="51. N-Queens.cpp" />
+    <ClCompile Include="52. N-Queens II.cpp" />
+    <ClCompile Include="53. Maximum Subarray.cpp" />
+    <ClCompile Include="54. Spiral Matrix.cpp" />
+    <ClCompile Include="55. Jump Game.cpp" />
+    <ClCompile Include="56. Merge Intervals.cpp" />
+    <ClCompile Include="57. Insert Interval.cpp" />
+    <ClCompile Include="58. Length of Last Word.cpp" />
+    <ClCompile Include="59. Spiral Matrix II.cpp" />
+    <ClCompile Include="60. Permutation Sequence.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
