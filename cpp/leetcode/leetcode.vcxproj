@@ -164,10 +164,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="67. Add Binary.cpp" />
-    <ClCompile Include="68. Text Justification.cpp" />
-    <ClCompile Include="69. Sqrt(x).cpp" />
-    <ClCompile Include="70. Climbing Stairs.cpp" />
+    <ClCompile Include="71. Simplify Path.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
