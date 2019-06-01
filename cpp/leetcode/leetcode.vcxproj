@@ -164,9 +164,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="72. Edit Distance.cpp" />
-    <ClCompile Include="73. Set Matrix Zeroes.cpp" />
-    <ClCompile Include="74. Search a 2D Matrix.cpp" />
+    <ClCompile Include="75. Sort Colors.cpp" />
+    <ClCompile Include="76. Minimum Window Substring.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

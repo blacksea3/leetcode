@@ -56,13 +56,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="72. Edit Distance.cpp">
+    <ClCompile Include="75. Sort Colors.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="73. Set Matrix Zeroes.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="74. Search a 2D Matrix.cpp">
+    <ClCompile Include="76. Minimum Window Substring.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
