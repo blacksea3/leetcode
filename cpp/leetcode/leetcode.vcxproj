@@ -154,6 +154,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BinaryTree.h" />
     <ClInclude Include="common_algorithms.h" />
     <ClInclude Include="include.h" />
     <ClInclude Include="listnode.h" />
@@ -164,8 +165,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="75. Sort Colors.cpp" />
-    <ClCompile Include="76. Minimum Window Substring.cpp" />
+    <ClCompile Include="ListNode.cpp" />
+    <ClCompile Include="WC139-night.cpp" />
+    <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

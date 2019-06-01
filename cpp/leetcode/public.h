@@ -12,11 +12,13 @@
 #include <map>
 #include <queue>
 #include <set>
+#include <sstream>
 
 //#include "json/json.h"
 
 using namespace std;
 
+/*
 //37
 struct SudokuInfo
 {
@@ -31,7 +33,7 @@ struct TreeNode {
 	TreeNode *right;
 	TreeNode(int x) : val(x), left(NULL), right(NULL) {}	
 };
-
+*/
 /*
 class Node {
 public:
