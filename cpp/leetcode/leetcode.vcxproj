@@ -165,6 +165,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="5010. Digit Count in Range.cpp" />
+    <ClCompile Include="5013. Index Pairs of a String.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="WC139-night.cpp" />
     <ClCompile Include="BinaryTree.cpp" />

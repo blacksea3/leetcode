@@ -68,5 +68,11 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="5013. Index Pairs of a String.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5010. Digit Count in Range.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
