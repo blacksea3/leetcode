@@ -56,7 +56,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="71. Simplify Path.cpp">
+    <ClCompile Include="72. Edit Distance.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="73. Set Matrix Zeroes.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="74. Search a 2D Matrix.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
