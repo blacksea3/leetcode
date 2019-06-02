@@ -1,0 +1,13 @@
+相关点： 
+2 pointers
+
+思路：
+1, differ from 2 sum, no hashmap
+Just use simple loop, 
+2 pointer need to from start+1 and end
+
+
+
+
+
+
