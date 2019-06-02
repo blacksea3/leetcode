@@ -65,13 +65,46 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="5077. Flip Columns For Maximum Number of Equal Rows.cpp">
+    <ClCompile Include="77. Combinations.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="5078. Adding Two Negabinary Numbers.cpp">
+    <ClCompile Include="78. Subsets.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="5075. Number of Submatrices That Sum to Target.cpp">
+    <ClCompile Include="79. Word Search.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="80. Remove Duplicates from Sorted Array II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="81. Search in Rotated Sorted Array II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="82. Remove Duplicates from Sorted List II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="83. Remove Duplicates from Sorted List.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="84. Largest Rectangle in Histogram.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="85. Maximal Rectangle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="86. Partition List.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="87. Scramble String.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="88. Merge Sorted Array.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="89. Gray Code.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="90. Subsets II.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

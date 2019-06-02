@@ -165,9 +165,20 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="5075. Number of Submatrices That Sum to Target.cpp" />
-    <ClCompile Include="5077. Flip Columns For Maximum Number of Equal Rows.cpp" />
-    <ClCompile Include="5078. Adding Two Negabinary Numbers.cpp" />
+    <ClCompile Include="77. Combinations.cpp" />
+    <ClCompile Include="78. Subsets.cpp" />
+    <ClCompile Include="79. Word Search.cpp" />
+    <ClCompile Include="80. Remove Duplicates from Sorted Array II.cpp" />
+    <ClCompile Include="81. Search in Rotated Sorted Array II.cpp" />
+    <ClCompile Include="82. Remove Duplicates from Sorted List II.cpp" />
+    <ClCompile Include="83. Remove Duplicates from Sorted List.cpp" />
+    <ClCompile Include="84. Largest Rectangle in Histogram.cpp" />
+    <ClCompile Include="85. Maximal Rectangle.cpp" />
+    <ClCompile Include="86. Partition List.cpp" />
+    <ClCompile Include="87. Scramble String.cpp" />
+    <ClCompile Include="88. Merge Sorted Array.cpp" />
+    <ClCompile Include="89. Gray Code.cpp" />
+    <ClCompile Include="90. Subsets II.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>
