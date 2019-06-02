@@ -165,10 +165,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="5010. Digit Count in Range.cpp" />
-    <ClCompile Include="5013. Index Pairs of a String.cpp" />
+    <ClCompile Include="5075. Number of Submatrices That Sum to Target.cpp" />
+    <ClCompile Include="5077. Flip Columns For Maximum Number of Equal Rows.cpp" />
+    <ClCompile Include="5078. Adding Two Negabinary Numbers.cpp" />
     <ClCompile Include="ListNode.cpp" />
-    <ClCompile Include="WC139-night.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
