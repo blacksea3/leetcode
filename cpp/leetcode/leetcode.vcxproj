@@ -165,10 +165,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="100. Same Tree.cpp" />
-    <ClCompile Include="97. Interleaving String.cpp" />
-    <ClCompile Include="98. Validate Binary Search Tree.cpp" />
-    <ClCompile Include="99. Recover Binary Search Tree.cpp" />
+    <ClCompile Include="332. Reconstruct Itinerary.cpp" />
+    <ClCompile Include="337. House Robber III.cpp" />
+    <ClCompile Include="394. Decode String.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>

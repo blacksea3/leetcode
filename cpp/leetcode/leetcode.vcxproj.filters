@@ -65,16 +65,13 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="97. Interleaving String.cpp">
+    <ClCompile Include="332. Reconstruct Itinerary.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="98. Validate Binary Search Tree.cpp">
+    <ClCompile Include="337. House Robber III.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="99. Recover Binary Search Tree.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="100. Same Tree.cpp">
+    <ClCompile Include="394. Decode String.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
