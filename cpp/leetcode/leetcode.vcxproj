@@ -165,9 +165,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="332. Reconstruct Itinerary.cpp" />
-    <ClCompile Include="337. House Robber III.cpp" />
-    <ClCompile Include="394. Decode String.cpp" />
+    <ClCompile Include="417. Pacific Atlantic Water Flow.cpp" />
+    <ClCompile Include="473. Matchsticks to Square.cpp" />
+    <ClCompile Include="491. Increasing Subsequences.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>
