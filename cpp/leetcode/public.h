@@ -13,6 +13,7 @@
 #include <queue>
 #include <set>
 #include <sstream>
+#include <numeric>
 
 //#include "json/json.h"
 

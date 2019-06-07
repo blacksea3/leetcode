@@ -65,13 +65,7 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="417. Pacific Atlantic Water Flow.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="473. Matchsticks to Square.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="491. Increasing Subsequences.cpp">
+    <ClCompile Include="494. Target Sum.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
