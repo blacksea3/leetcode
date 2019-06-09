@@ -65,7 +65,13 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="494. Target Sum.cpp">
+    <ClCompile Include="5087. Letter Tile Possibilities.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5084. Insufficient Nodes in Root to Leaf Paths.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5086. Smallest Subsequence of Distinct Characters.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

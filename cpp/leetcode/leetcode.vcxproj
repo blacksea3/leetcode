@@ -165,7 +165,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="494. Target Sum.cpp" />
+    <ClCompile Include="5084. Insufficient Nodes in Root to Leaf Paths.cpp" />
+    <ClCompile Include="5086. Smallest Subsequence of Distinct Characters.cpp" />
+    <ClCompile Include="5087. Letter Tile Possibilities.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>
