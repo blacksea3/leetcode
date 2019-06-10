@@ -165,9 +165,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="5084. Insufficient Nodes in Root to Leaf Paths.cpp" />
-    <ClCompile Include="5086. Smallest Subsequence of Distinct Characters.cpp" />
-    <ClCompile Include="5087. Letter Tile Possibilities.cpp" />
+    <ClCompile Include="513. find-bottom-left-tree-value.cpp" />
+    <ClCompile Include="515. find-largest-value-in-each-tree-row.cpp" />
+    <ClCompile Include="529. minesweeper.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>
