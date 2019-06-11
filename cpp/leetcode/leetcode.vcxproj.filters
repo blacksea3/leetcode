@@ -65,13 +65,7 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="513. find-bottom-left-tree-value.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="515. find-largest-value-in-each-tree-row.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="529. minesweeper.cpp">
+    <ClCompile Include="542. 01-matrix.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
