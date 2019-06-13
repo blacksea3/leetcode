@@ -165,6 +165,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="409. longest-palindrome.cpp" />
+    <ClCompile Include="414. third-maximum-number.cpp" />
+    <ClCompile Include="427. construct-quad-tree.cpp" />
     <ClCompile Include="542. 01-matrix.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />

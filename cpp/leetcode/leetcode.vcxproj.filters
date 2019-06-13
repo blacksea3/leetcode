@@ -68,5 +68,14 @@
     <ClCompile Include="542. 01-matrix.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="409. longest-palindrome.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="414. third-maximum-number.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="427. construct-quad-tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
