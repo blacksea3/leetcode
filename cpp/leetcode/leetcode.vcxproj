@@ -165,11 +165,18 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1081. Smallest Subsequence of Distinct Characters.cpp" />
-    <ClCompile Include="991. broken-calculator.cpp" />
+    <ClCompile Include="101. symmetric-tree.cpp" />
+    <ClCompile Include="102. binary-tree-level-order-traversal.cpp" />
+    <ClCompile Include="103. binary-tree-zigzag-level-order-traversal.cpp" />
+    <ClCompile Include="104. maximum-depth-of-binary-tree.cpp" />
+    <ClCompile Include="105. construct-binary-tree-from-preorder-and-inorder-traversal.cpp" />
+    <ClCompile Include="106. construct-binary-tree-from-inorder-and-postorder-traversal.cpp" />
+    <ClCompile Include="107. binary-tree-level-order-traversal-ii.cpp" />
+    <ClCompile Include="108. convert-sorted-array-to-binary-search-tree.cpp" />
+    <ClCompile Include="109. convert-sorted-list-to-binary-search-tree.cpp" />
+    <ClCompile Include="110. balanced-binary-tree.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
-    <ClCompile Include="模拟面试1.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
