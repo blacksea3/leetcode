@@ -165,12 +165,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="409. longest-palindrome.cpp" />
-    <ClCompile Include="414. third-maximum-number.cpp" />
-    <ClCompile Include="427. construct-quad-tree.cpp" />
-    <ClCompile Include="542. 01-matrix.cpp" />
+    <ClCompile Include="1081. Smallest Subsequence of Distinct Characters.cpp" />
+    <ClCompile Include="991. broken-calculator.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
+    <ClCompile Include="模拟面试1.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

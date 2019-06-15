@@ -65,16 +65,13 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="542. 01-matrix.cpp">
+    <ClCompile Include="模拟面试1.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="409. longest-palindrome.cpp">
+    <ClCompile Include="1081. Smallest Subsequence of Distinct Characters.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="414. third-maximum-number.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="427. construct-quad-tree.cpp">
+    <ClCompile Include="991. broken-calculator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
