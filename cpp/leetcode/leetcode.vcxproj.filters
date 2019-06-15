@@ -95,5 +95,20 @@
     <ClCompile Include="110. balanced-binary-tree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="111. minimum-depth-of-binary-tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="112. path-sum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="113. path-sum-ii.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="114. flatten-binary-tree-to-linked-list.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="115. distinct-subsequences.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
