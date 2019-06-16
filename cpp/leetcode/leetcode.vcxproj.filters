@@ -65,7 +65,10 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="WC141.cpp">
+    <ClCompile Include="427. construct-quad-tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="437. path-sum-iii.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

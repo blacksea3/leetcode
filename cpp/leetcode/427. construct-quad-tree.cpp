@@ -1,6 +1,6 @@
 #include "public.h"
 
-//DC problem: divide and conquer
+//DC problem: divide and conquer, 204ms, 84.36%
 
 // Definition for a QuadTree node.
 class Node {
@@ -26,15 +26,18 @@ public:
 
 class Solution {
 private:
-	Node* recu_construct(const vector<vector<int>>& grid, int startrow, int startcolumn, int linelen)
+	Node* recu_construct(vector<vector<int>>& grid, int startrow, int startcolumn, int linelen)
 	{
 		bool isAllconstant = true;
-		bool isfirstval = grid[startrow][startcolumn];
+		bool firstval;
+		int firstvali = grid[startrow][startcolumn];
+		if (grid[startrow][startcolumn]) firstval = true;
+		else firstval = false;
 		for (int row = startrow; row < startrow + linelen; ++row)
 		{
 			for (int column = startcolumn; column < startcolumn + linelen; ++column)
 			{
-				if (isfirstval != grid[row][column])
+				if (firstvali != grid[row][column])
 				{
 					isAllconstant = false;
 					goto end;
@@ -44,9 +47,8 @@ private:
 	end:
 		if (isAllconstant)
 		{
-			Node newn = Node(isfirstval, true, nullptr, nullptr, nullptr, nullptr);
-			Node* pnewn = &newn;
-			return pnewn;
+			Node* newn = new Node(firstval, true, nullptr, nullptr, nullptr, nullptr);
+			return newn;
 		}
 		else
 		{
@@ -54,9 +56,8 @@ private:
 			Node* topRight = recu_construct(grid, startrow, startcolumn + linelen / 2, linelen / 2);
 			Node* bottomLeft = recu_construct(grid, startrow + linelen / 2, startcolumn, linelen / 2);
 			Node* bottomRight = recu_construct(grid, startrow + linelen / 2, startcolumn + linelen / 2, linelen / 2);
-			Node newn = Node(isfirstval, false, topLeft, topRight, bottomLeft, bottomRight);
-			Node* pnewn = &newn;
-			return pnewn;
+			Node* newn = new Node(firstval, false, topLeft, topRight, bottomLeft, bottomRight);
+			return newn;
 		}
 	}
 
@@ -66,6 +67,7 @@ public:
 	}
 };
 
+/*
 int main()
 {
 	Solution* s = new Solution();
@@ -73,3 +75,4 @@ int main()
 	Node* res = s->construct(grid);
 	return 0;
 }
+*/
