@@ -165,8 +165,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="116. populating-next-right-pointers-in-each-node.cpp" />
-    <ClCompile Include="117. populating-next-right-pointers-in-each-node-ii.cpp" />
+    <ClCompile Include="DWC-2.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>
