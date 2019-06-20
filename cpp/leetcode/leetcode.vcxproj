@@ -165,14 +165,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="118. pascals-triangle.cpp" />
-    <ClCompile Include="119. pascals-triangle-ii.cpp" />
-    <ClCompile Include="120. triangle.cpp" />
-    <ClCompile Include="121. best-time-to-buy-and-sell-stock.cpp" />
-    <ClCompile Include="122. best-time-to-buy-and-sell-stock-ii.cpp" />
-    <ClCompile Include="123. best-time-to-buy-and-sell-stock-iii.cpp" />
-    <ClCompile Include="124. binary-tree-maximum-path-sum.cpp" />
-    <ClCompile Include="125. valid-palindrome.cpp" />
+    <ClCompile Include="126. word-ladder-ii.cpp" />
+    <ClCompile Include="leetcode121-130.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>
