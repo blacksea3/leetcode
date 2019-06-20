@@ -68,7 +68,16 @@
     <ClCompile Include="126. word-ladder-ii.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="leetcode121-130.cpp">
+    <ClCompile Include="127. word-ladder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="128. longest-consecutive-sequence.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="129. sum-root-to-leaf-numbers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="130. surrounded-regions.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

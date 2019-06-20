@@ -166,7 +166,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="126. word-ladder-ii.cpp" />
-    <ClCompile Include="leetcode121-130.cpp" />
+    <ClCompile Include="127. word-ladder.cpp" />
+    <ClCompile Include="128. longest-consecutive-sequence.cpp" />
+    <ClCompile Include="129. sum-root-to-leaf-numbers.cpp" />
+    <ClCompile Include="130. surrounded-regions.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>
