@@ -57,6 +57,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="138. copy-list-with-random-pointer.cpp">
+      <Filter>源文件</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BinaryTree.cpp">
@@ -65,19 +68,31 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="126. word-ladder-ii.cpp">
+    <ClCompile Include="131. palindrome-partitioning.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="127. word-ladder.cpp">
+    <ClCompile Include="132. palindrome-partitioning-ii.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="128. longest-consecutive-sequence.cpp">
+    <ClCompile Include="133. clone-graph.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="129. sum-root-to-leaf-numbers.cpp">
+    <ClCompile Include="134. gas-station.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="130. surrounded-regions.cpp">
+    <ClCompile Include="135. candy.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="136. single-number.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="137. single-number-ii.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="139. word-break.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="140. word-break-ii.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
