@@ -162,19 +162,11 @@
     <ClInclude Include="public.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="138. copy-list-with-random-pointer.cpp" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="131. palindrome-partitioning.cpp" />
-    <ClCompile Include="132. palindrome-partitioning-ii.cpp" />
-    <ClCompile Include="133. clone-graph.cpp" />
-    <ClCompile Include="134. gas-station.cpp" />
-    <ClCompile Include="135. candy.cpp" />
-    <ClCompile Include="136. single-number.cpp" />
-    <ClCompile Include="137. single-number-ii.cpp" />
-    <ClCompile Include="139. word-break.cpp" />
-    <ClCompile Include="140. word-break-ii.cpp" />
+    <ClCompile Include="141. linked-list-cycle.cpp" />
+    <ClCompile Include="142. linked-list-cycle-ii.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>
