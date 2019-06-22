@@ -165,16 +165,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="143. reorder-list.cpp" />
-    <ClCompile Include="144. binary-tree-preorder-traversal.cpp" />
-    <ClCompile Include="145. binary-tree-postorder-traversal.cpp" />
-    <ClCompile Include="146. lru-cache.cpp" />
-    <ClCompile Include="147. insertion-sort-list.cpp" />
-    <ClCompile Include="148. sort-list.cpp" />
-    <ClCompile Include="149. max-points-on-a-line.cpp" />
-    <ClCompile Include="150. evaluate-reverse-polish-notation.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
+    <ClCompile Include="模拟面试2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
