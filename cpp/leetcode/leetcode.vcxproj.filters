@@ -65,7 +65,70 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="模拟面试2.cpp">
+    <ClCompile Include="151. reverse-words-in-a-string.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="152. maximum-product-subarray.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="153. find-minimum-in-rotated-sorted-array.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="154. find-minimum-in-rotated-sorted-array-ii.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="155. min-stack.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="160. intersection-of-two-linked-lists.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="162. find-peak-element.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="164. maximum-gap.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="165. compare-version-numbers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="166. fraction-to-recurring-decimal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="167. two-sum-ii-input-array-is-sorted.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="168. excel-sheet-column-title.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="169. majority-element.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="171. excel-sheet-column-number.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="172. factorial-trailing-zeroes.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="173. binary-search-tree-iterator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="174. dungeon-game.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="179. largest-number.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="187. repeated-dna-sequences.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="188. best-time-to-buy-and-sell-stock-iv.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="189. rotate-array.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="190. reverse-bits.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

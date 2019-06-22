@@ -165,9 +165,30 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="151. reverse-words-in-a-string.cpp" />
+    <ClCompile Include="152. maximum-product-subarray.cpp" />
+    <ClCompile Include="153. find-minimum-in-rotated-sorted-array.cpp" />
+    <ClCompile Include="154. find-minimum-in-rotated-sorted-array-ii.cpp" />
+    <ClCompile Include="155. min-stack.cpp" />
+    <ClCompile Include="160. intersection-of-two-linked-lists.cpp" />
+    <ClCompile Include="162. find-peak-element.cpp" />
+    <ClCompile Include="164. maximum-gap.cpp" />
+    <ClCompile Include="165. compare-version-numbers.cpp" />
+    <ClCompile Include="166. fraction-to-recurring-decimal.cpp" />
+    <ClCompile Include="167. two-sum-ii-input-array-is-sorted.cpp" />
+    <ClCompile Include="168. excel-sheet-column-title.cpp" />
+    <ClCompile Include="169. majority-element.cpp" />
+    <ClCompile Include="171. excel-sheet-column-number.cpp" />
+    <ClCompile Include="172. factorial-trailing-zeroes.cpp" />
+    <ClCompile Include="173. binary-search-tree-iterator.cpp" />
+    <ClCompile Include="174. dungeon-game.cpp" />
+    <ClCompile Include="179. largest-number.cpp" />
+    <ClCompile Include="187. repeated-dna-sequences.cpp" />
+    <ClCompile Include="188. best-time-to-buy-and-sell-stock-iv.cpp" />
+    <ClCompile Include="189. rotate-array.cpp" />
+    <ClCompile Include="190. reverse-bits.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
-    <ClCompile Include="模拟面试2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
