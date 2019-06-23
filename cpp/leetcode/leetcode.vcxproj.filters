@@ -65,13 +65,22 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="212. word-search-ii.cpp">
+    <ClCompile Include="215. kth-largest-element-in-an-array.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="213. house-robber-ii.cpp">
+    <ClCompile Include="216. combination-sum-iii.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="214. shortest-palindrome.cpp">
+    <ClCompile Include="217. contains-duplicate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="218. the-skyline-problem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="219. contains-duplicate-ii.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="220. contains-duplicate-iii.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

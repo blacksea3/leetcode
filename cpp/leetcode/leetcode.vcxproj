@@ -165,9 +165,12 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="212. word-search-ii.cpp" />
-    <ClCompile Include="213. house-robber-ii.cpp" />
-    <ClCompile Include="214. shortest-palindrome.cpp" />
+    <ClCompile Include="215. kth-largest-element-in-an-array.cpp" />
+    <ClCompile Include="216. combination-sum-iii.cpp" />
+    <ClCompile Include="217. contains-duplicate.cpp" />
+    <ClCompile Include="218. the-skyline-problem.cpp" />
+    <ClCompile Include="219. contains-duplicate-ii.cpp" />
+    <ClCompile Include="220. contains-duplicate-iii.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>
