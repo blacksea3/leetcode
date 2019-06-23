@@ -165,21 +165,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="191. number-of-1-bits.cpp" />
-    <ClCompile Include="198. house-robber.cpp" />
-    <ClCompile Include="199. binary-tree-right-side-view.cpp" />
-    <ClCompile Include="200. number-of-islands.cpp" />
-    <ClCompile Include="201. bitwise-and-of-numbers-range.cpp" />
-    <ClCompile Include="202. happy-number.cpp" />
-    <ClCompile Include="203. remove-linked-list-elements.cpp" />
-    <ClCompile Include="204. count-primes.cpp" />
-    <ClCompile Include="205. isomorphic-strings.cpp" />
-    <ClCompile Include="206. reverse-linked-list.cpp" />
-    <ClCompile Include="207. course-schedule.cpp" />
-    <ClCompile Include="208. implement-trie-prefix-tree.cpp" />
-    <ClCompile Include="209. minimum-size-subarray-sum.cpp" />
-    <ClCompile Include="210. course-schedule-ii.cpp" />
-    <ClCompile Include="211. add-and-search-word-data-structure-design.cpp" />
+    <ClCompile Include="212. word-search-ii.cpp" />
+    <ClCompile Include="213. house-robber-ii.cpp" />
+    <ClCompile Include="214. shortest-palindrome.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>

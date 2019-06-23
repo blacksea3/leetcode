@@ -65,49 +65,13 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="191. number-of-1-bits.cpp">
+    <ClCompile Include="212. word-search-ii.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="198. house-robber.cpp">
+    <ClCompile Include="213. house-robber-ii.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="199. binary-tree-right-side-view.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="200. number-of-islands.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="201. bitwise-and-of-numbers-range.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="202. happy-number.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="203. remove-linked-list-elements.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="204. count-primes.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="205. isomorphic-strings.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="206. reverse-linked-list.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="207. course-schedule.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="208. implement-trie-prefix-tree.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="209. minimum-size-subarray-sum.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="210. course-schedule-ii.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="211. add-and-search-word-data-structure-design.cpp">
+    <ClCompile Include="214. shortest-palindrome.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
