@@ -65,22 +65,16 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="215. kth-largest-element-in-an-array.cpp">
+    <ClCompile Include="221. maximal-square.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="216. combination-sum-iii.cpp">
+    <ClCompile Include="222. count-complete-tree-nodes.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="217. contains-duplicate.cpp">
+    <ClCompile Include="223. rectangle-area.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="218. the-skyline-problem.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="219. contains-duplicate-ii.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="220. contains-duplicate-iii.cpp">
+    <ClCompile Include="224. basic-calculator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
