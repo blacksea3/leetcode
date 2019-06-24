@@ -65,16 +65,34 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="221. maximal-square.cpp">
+    <ClCompile Include="225. implement-stack-using-queues.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="222. count-complete-tree-nodes.cpp">
+    <ClCompile Include="226. invert-binary-tree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="223. rectangle-area.cpp">
+    <ClCompile Include="227. basic-calculator-ii.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="224. basic-calculator.cpp">
+    <ClCompile Include="228. summary-ranges.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="229. majority-element-ii.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="230. kth-smallest-element-in-a-bst.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="231. power-of-two.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="232. implement-queue-using-stacks.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="233. number-of-digit-one.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="234. palindrome-linked-list.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
