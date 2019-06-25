@@ -65,34 +65,22 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="225. implement-stack-using-queues.cpp">
+    <ClCompile Include="235. lowest-common-ancestor-of-a-binary-search-tree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="226. invert-binary-tree.cpp">
+    <ClCompile Include="236. lowest-common-ancestor-of-a-binary-tree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="227. basic-calculator-ii.cpp">
+    <ClCompile Include="237. delete-node-in-a-linked-list.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="228. summary-ranges.cpp">
+    <ClCompile Include="238. product-of-array-except-self.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="229. majority-element-ii.cpp">
+    <ClCompile Include="239. sliding-window-maximum.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="230. kth-smallest-element-in-a-bst.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="231. power-of-two.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="232. implement-queue-using-stacks.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="233. number-of-digit-one.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="234. palindrome-linked-list.cpp">
+    <ClCompile Include="240. search-a-2d-matrix-ii.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
