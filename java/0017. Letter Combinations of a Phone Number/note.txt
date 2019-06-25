@@ -1,0 +1,11 @@
+相关点： 
+Iterate
+
+思路：
+1, add char 1 by 1
+
+
+
+
+
+
