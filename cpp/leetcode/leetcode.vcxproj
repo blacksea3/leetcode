@@ -165,9 +165,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="263. ugly-number.cpp" />
-    <ClCompile Include="264. ugly-number-ii.cpp" />
-    <ClCompile Include="268. missing-number.cpp" />
+    <ClCompile Include="273. integer-to-english-words.cpp" />
+    <ClCompile Include="274. h-index.cpp" />
+    <ClCompile Include="275. h-index-ii.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>
