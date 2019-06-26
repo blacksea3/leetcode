@@ -65,13 +65,13 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="257. binary-tree-paths.cpp">
+    <ClCompile Include="263. ugly-number.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="258. add-digits.cpp">
+    <ClCompile Include="264. ugly-number-ii.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="260. single-number-iii.cpp">
+    <ClCompile Include="268. missing-number.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
