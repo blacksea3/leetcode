@@ -165,12 +165,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="235. lowest-common-ancestor-of-a-binary-search-tree.cpp" />
-    <ClCompile Include="236. lowest-common-ancestor-of-a-binary-tree.cpp" />
-    <ClCompile Include="237. delete-node-in-a-linked-list.cpp" />
-    <ClCompile Include="238. product-of-array-except-self.cpp" />
-    <ClCompile Include="239. sliding-window-maximum.cpp" />
     <ClCompile Include="240. search-a-2d-matrix-ii.cpp" />
+    <ClCompile Include="241. different-ways-to-add-parentheses.cpp" />
+    <ClCompile Include="242. valid-anagram.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>

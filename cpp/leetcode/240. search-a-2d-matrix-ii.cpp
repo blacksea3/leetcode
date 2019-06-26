@@ -1,5 +1,7 @@
 #include "public.h"
 
+/*
+//260ms, 14.78%
 //分治+二分查找
 //对于指定的midrow, midcol
 //如果小, 那么搜索row:[startrow, midrow-1], column:[startcol, midcol]以及
@@ -51,3 +53,37 @@ int main()
 	cout << s->searchMatrix(matrix, 5);
 	return 0;
 }
+*/
+
+//60ms, 99.76%
+//可以从右上角或者左下角开始
+//例如右上角,小了就左移,大了就下移
+
+class Solution {
+public:
+	bool searchMatrix(vector<vector<int>>& matrix, int target) {
+		int maxrowp1 = matrix.size();
+		if (!maxrowp1) return false;
+		int maxcolp1 = matrix[0].size();
+		if (!maxcolp1) return false;
+
+		int prerow = 0;
+		int precol = maxcolp1 - 1;
+		while (true)
+		{
+			if (matrix[prerow][precol] < target)
+			{
+				if (prerow < maxrowp1 - 1) prerow++;
+				else return false;
+			}
+			else if (matrix[prerow][precol] > target)
+			{
+				if (precol > 0) precol--;
+				else return false;
+			}
+			else return true;
+		}
+		return true; //dump return
+	}
+};
+

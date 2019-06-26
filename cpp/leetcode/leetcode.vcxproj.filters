@@ -65,22 +65,13 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="235. lowest-common-ancestor-of-a-binary-search-tree.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="236. lowest-common-ancestor-of-a-binary-tree.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="237. delete-node-in-a-linked-list.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="238. product-of-array-except-self.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="239. sliding-window-maximum.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="240. search-a-2d-matrix-ii.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="241. different-ways-to-add-parentheses.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="242. valid-anagram.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
