@@ -165,9 +165,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="240. search-a-2d-matrix-ii.cpp" />
-    <ClCompile Include="241. different-ways-to-add-parentheses.cpp" />
-    <ClCompile Include="242. valid-anagram.cpp" />
+    <ClCompile Include="257. binary-tree-paths.cpp" />
+    <ClCompile Include="258. add-digits.cpp" />
+    <ClCompile Include="260. single-number-iii.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>

@@ -65,13 +65,13 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="240. search-a-2d-matrix-ii.cpp">
+    <ClCompile Include="257. binary-tree-paths.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="241. different-ways-to-add-parentheses.cpp">
+    <ClCompile Include="258. add-digits.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="242. valid-anagram.cpp">
+    <ClCompile Include="260. single-number-iii.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
