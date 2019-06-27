@@ -65,13 +65,31 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="273. integer-to-english-words.cpp">
+    <ClCompile Include="278. first-bad-version.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="274. h-index.cpp">
+    <ClCompile Include="279. perfect-squares.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="275. h-index-ii.cpp">
+    <ClCompile Include="283. move-zeroes.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="284. peeking-iterator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="287. find-the-duplicate-number.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="289. game-of-life.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="290. word-pattern.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="292. nim-game.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="295. find-median-from-data-stream.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

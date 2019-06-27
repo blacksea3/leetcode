@@ -165,9 +165,15 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="273. integer-to-english-words.cpp" />
-    <ClCompile Include="274. h-index.cpp" />
-    <ClCompile Include="275. h-index-ii.cpp" />
+    <ClCompile Include="278. first-bad-version.cpp" />
+    <ClCompile Include="279. perfect-squares.cpp" />
+    <ClCompile Include="283. move-zeroes.cpp" />
+    <ClCompile Include="284. peeking-iterator.cpp" />
+    <ClCompile Include="287. find-the-duplicate-number.cpp" />
+    <ClCompile Include="289. game-of-life.cpp" />
+    <ClCompile Include="290. word-pattern.cpp" />
+    <ClCompile Include="292. nim-game.cpp" />
+    <ClCompile Include="295. find-median-from-data-stream.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>
