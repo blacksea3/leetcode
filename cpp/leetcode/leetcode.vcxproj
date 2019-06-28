@@ -165,15 +165,12 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="278. first-bad-version.cpp" />
-    <ClCompile Include="279. perfect-squares.cpp" />
-    <ClCompile Include="283. move-zeroes.cpp" />
-    <ClCompile Include="284. peeking-iterator.cpp" />
-    <ClCompile Include="287. find-the-duplicate-number.cpp" />
-    <ClCompile Include="289. game-of-life.cpp" />
-    <ClCompile Include="290. word-pattern.cpp" />
-    <ClCompile Include="292. nim-game.cpp" />
-    <ClCompile Include="295. find-median-from-data-stream.cpp" />
+    <ClCompile Include="297. serialize-and-deserialize-binary-tree.cpp" />
+    <ClCompile Include="299. bulls-and-cows.cpp" />
+    <ClCompile Include="300. longest-increasing-subsequence.cpp" />
+    <ClCompile Include="303. range-sum-query-immutable.cpp" />
+    <ClCompile Include="304. range-sum-query-2d-immutable.cpp" />
+    <ClCompile Include="306. additive-number.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>
