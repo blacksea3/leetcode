@@ -165,12 +165,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="297. serialize-and-deserialize-binary-tree.cpp" />
-    <ClCompile Include="299. bulls-and-cows.cpp" />
-    <ClCompile Include="300. longest-increasing-subsequence.cpp" />
-    <ClCompile Include="303. range-sum-query-immutable.cpp" />
-    <ClCompile Include="304. range-sum-query-2d-immutable.cpp" />
-    <ClCompile Include="306. additive-number.cpp" />
+    <ClCompile Include="1096. brace-expansion-ii.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>
