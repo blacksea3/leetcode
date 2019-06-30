@@ -65,13 +65,22 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="1096. brace-expansion-ii.cpp">
+    <ClCompile Include="307. range-sum-query-mutable.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="double-weekly-contest3.cpp">
+    <ClCompile Include="309. best-time-to-buy-and-sell-stock-with-cooldown.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="weekly-contest143.cpp">
+    <ClCompile Include="310. minimum-height-trees.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="312. burst-balloons.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="313. super-ugly-number.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="316. remove-duplicate-letters.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
