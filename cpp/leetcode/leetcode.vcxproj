@@ -166,8 +166,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1096. brace-expansion-ii.cpp" />
+    <ClCompile Include="double-weekly-contest3.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
+    <ClCompile Include="weekly-contest143.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

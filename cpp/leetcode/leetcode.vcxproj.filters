@@ -68,5 +68,11 @@
     <ClCompile Include="1096. brace-expansion-ii.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="double-weekly-contest3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="weekly-contest143.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

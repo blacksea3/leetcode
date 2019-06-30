@@ -48,8 +48,6 @@ private:
 	{
 		unordered_set<string> res;
 		unordered_set<string> preset;
-		string pre = "";
-		int state = 0;  //0:初始值; 1:前面是字母, 字母们前面是}; 2:前面是字母, 字母们前面是,; 3:前面是}或者,
 		while (startloc < expression.size())
 		{
 			if (expression[startloc] == ',')
@@ -98,9 +96,11 @@ public:
 	}
 };
 
+
+/*
 int main()
 {
 	Solution* s = new Solution();
 	vector<string> res = s->braceExpansionII("{a,b}{c{d,e}}");
 	return 0;
-}
+}*/
