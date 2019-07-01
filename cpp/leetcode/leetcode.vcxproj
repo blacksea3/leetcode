@@ -165,12 +165,15 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="307. range-sum-query-mutable.cpp" />
-    <ClCompile Include="309. best-time-to-buy-and-sell-stock-with-cooldown.cpp" />
-    <ClCompile Include="310. minimum-height-trees.cpp" />
-    <ClCompile Include="312. burst-balloons.cpp" />
-    <ClCompile Include="313. super-ugly-number.cpp" />
-    <ClCompile Include="316. remove-duplicate-letters.cpp" />
+    <ClCompile Include="318. maximum-product-of-word-lengths.cpp" />
+    <ClCompile Include="319. bulb-switcher.cpp" />
+    <ClCompile Include="320. generalized-abbreviation.cpp" />
+    <ClCompile Include="322. coin-change.cpp" />
+    <ClCompile Include="324. wiggle-sort-ii.cpp" />
+    <ClCompile Include="326. power-of-three.cpp" />
+    <ClCompile Include="328. odd-even-linked-list.cpp" />
+    <ClCompile Include="329. longest-increasing-path-in-a-matrix.cpp" />
+    <ClCompile Include="330. patching-array.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>

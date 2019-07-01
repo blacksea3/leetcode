@@ -65,22 +65,31 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="307. range-sum-query-mutable.cpp">
+    <ClCompile Include="318. maximum-product-of-word-lengths.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="309. best-time-to-buy-and-sell-stock-with-cooldown.cpp">
+    <ClCompile Include="319. bulb-switcher.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="310. minimum-height-trees.cpp">
+    <ClCompile Include="320. generalized-abbreviation.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="312. burst-balloons.cpp">
+    <ClCompile Include="322. coin-change.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="313. super-ugly-number.cpp">
+    <ClCompile Include="324. wiggle-sort-ii.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="316. remove-duplicate-letters.cpp">
+    <ClCompile Include="326. power-of-three.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="328. odd-even-linked-list.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="329. longest-increasing-path-in-a-matrix.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="330. patching-array.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
