@@ -165,16 +165,12 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="225. implement-stack-using-queues.cpp" />
-    <ClCompile Include="226. invert-binary-tree.cpp" />
-    <ClCompile Include="227. basic-calculator-ii.cpp" />
-    <ClCompile Include="228. summary-ranges.cpp" />
-    <ClCompile Include="229. majority-element-ii.cpp" />
-    <ClCompile Include="230. kth-smallest-element-in-a-bst.cpp" />
-    <ClCompile Include="231. power-of-two.cpp" />
-    <ClCompile Include="232. implement-queue-using-stacks.cpp" />
-    <ClCompile Include="233. number-of-digit-one.cpp" />
-    <ClCompile Include="234. palindrome-linked-list.cpp" />
+    <ClCompile Include="307. range-sum-query-mutable.cpp" />
+    <ClCompile Include="309. best-time-to-buy-and-sell-stock-with-cooldown.cpp" />
+    <ClCompile Include="310. minimum-height-trees.cpp" />
+    <ClCompile Include="312. burst-balloons.cpp" />
+    <ClCompile Include="313. super-ugly-number.cpp" />
+    <ClCompile Include="316. remove-duplicate-letters.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>

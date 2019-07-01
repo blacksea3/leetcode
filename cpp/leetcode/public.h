@@ -15,6 +15,7 @@
 #include <sstream>
 #include <numeric>
 #include <bitset>
+#include <array>
 
 //#include "json/json.h"
 
