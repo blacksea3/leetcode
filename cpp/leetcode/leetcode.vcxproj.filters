@@ -65,31 +65,22 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="318. maximum-product-of-word-lengths.cpp">
+    <ClCompile Include="331. verify-preorder-serialization-of-a-binary-tree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="319. bulb-switcher.cpp">
+    <ClCompile Include="338. counting-bits.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="320. generalized-abbreviation.cpp">
+    <ClCompile Include="343. integer-break.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="322. coin-change.cpp">
+    <ClCompile Include="354. russian-doll-envelopes.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="324. wiggle-sort-ii.cpp">
+    <ClCompile Include="357. count-numbers-with-unique-digits.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="326. power-of-three.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="328. odd-even-linked-list.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="329. longest-increasing-path-in-a-matrix.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="330. patching-array.cpp">
+    <ClCompile Include="363. max-sum-of-rectangle-no-larger-than-k.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
