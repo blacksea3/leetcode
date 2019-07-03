@@ -39,12 +39,6 @@
     <ClInclude Include="pch.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="common_algorithms.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="listnode.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -65,22 +59,16 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="331. verify-preorder-serialization-of-a-binary-tree.cpp">
+    <ClCompile Include="368. largest-divisible-subset.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="338. counting-bits.cpp">
+    <ClCompile Include="375. guess-number-higher-or-lower-ii.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="343. integer-break.cpp">
+    <ClCompile Include="376. wiggle-subsequence.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="354. russian-doll-envelopes.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="357. count-numbers-with-unique-digits.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="363. max-sum-of-rectangle-no-larger-than-k.cpp">
+    <ClCompile Include="377. combination-sum-iv.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

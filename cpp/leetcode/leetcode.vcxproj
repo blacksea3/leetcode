@@ -155,8 +155,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="BinaryTree.h" />
-    <ClInclude Include="common_algorithms.h" />
-    <ClInclude Include="include.h" />
     <ClInclude Include="listnode.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="public.h" />
@@ -165,12 +163,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="331. verify-preorder-serialization-of-a-binary-tree.cpp" />
-    <ClCompile Include="338. counting-bits.cpp" />
-    <ClCompile Include="343. integer-break.cpp" />
-    <ClCompile Include="354. russian-doll-envelopes.cpp" />
-    <ClCompile Include="357. count-numbers-with-unique-digits.cpp" />
-    <ClCompile Include="363. max-sum-of-rectangle-no-larger-than-k.cpp" />
+    <ClCompile Include="368. largest-divisible-subset.cpp" />
+    <ClCompile Include="375. guess-number-higher-or-lower-ii.cpp" />
+    <ClCompile Include="376. wiggle-subsequence.cpp" />
+    <ClCompile Include="377. combination-sum-iv.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>
