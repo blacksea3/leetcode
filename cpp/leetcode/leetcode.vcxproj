@@ -163,10 +163,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="368. largest-divisible-subset.cpp" />
-    <ClCompile Include="375. guess-number-higher-or-lower-ii.cpp" />
-    <ClCompile Include="376. wiggle-subsequence.cpp" />
-    <ClCompile Include="377. combination-sum-iv.cpp" />
+    <ClCompile Include="392. is-subsequence.cpp" />
+    <ClCompile Include="403. frog-jump.cpp" />
+    <ClCompile Include="410. split-array-largest-sum.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>

@@ -10,6 +10,7 @@
 
 //大约是个O(m*m*n*log(n))的复杂度?
 
+
 class Solution {
 public:
 	int maxSumSubmatrix(vector<vector<int>>& matrix, int k) {
@@ -28,6 +29,7 @@ public:
 					prerowSum[row] += matrix[row][colend];
 				int preSum = 0;
 
+				/*
 				for (int row = 0; row < rows; ++row)
 				{
 					preSum += prerowSum[row];
@@ -35,7 +37,7 @@ public:
 					if (preSum < 0) preSum = 0;
 				}
 				if (preSum < k) continue;   //直接剪枝, 这是因为不存在没有判断过的矩阵和<k且比现在的preSum还大了
-				else preSum = 0;
+				else preSum = 0;*/
 
 				set<int> sumSet;
 				sumSet.insert(0); //哨兵值, 如果lower_bound查到了这个值, 说明存在一个从第一行到当前行的矩阵元素和满足条件
@@ -56,10 +58,55 @@ public:
 	}
 };
 
+/*  //剪枝过于暴力, 需注释掉
+class Solution {
+public:
+	int maxSumSubmatrix(vector<vector<int>>& matrix, int k) {
+		int m = matrix.size();
+		if (!m) return 0;
+		int n = matrix[0].size();
+
+		int output = -1e9;
+		for (int lc = 0; lc < n; lc++)
+		{
+			vector<int> dp(m, 0);
+			for (int rc = lc; rc < n; rc++)
+			{
+				for (int r = 0; r < m; r++)
+					dp[r] += matrix[r][rc];
+
+				int curSum = 0;
+				for (int r = 0; r < m; r++)
+				{
+					curSum += dp[r];
+					if (curSum <= k && output < curSum) output = curSum;
+					if (curSum + dp[r] < 0) curSum = 0;
+				}
+				if (curSum < k) continue;
+
+				curSum = 0;
+				set<int> st{ 0 };
+				for (int r = 0; r < m; r++)
+				{
+					curSum += dp[r];
+					auto it = st.lower_bound(curSum - k);
+					if (it != st.end())
+					{
+						if (*it == curSum - k) return k;
+						if (curSum - *it > output) output = curSum - *it;
+					}
+					st.insert(curSum);
+				}
+			}
+		}
+		return output < -1e8 ? -1 : output;
+	}
+};*/
+
 int main()
 {
 	Solution* s = new Solution();
-	vector<vector<int>> matrix = { {1, 0, 1},{0, -2, 3} };
+	vector<vector<int>> matrix = { {3},{-7},{3},{3},{3},{-10} };
 	cout << s->maxSumSubmatrix(matrix, 2);
 	return 0;
 }

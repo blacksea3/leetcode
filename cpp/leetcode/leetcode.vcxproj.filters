@@ -59,16 +59,13 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="368. largest-divisible-subset.cpp">
+    <ClCompile Include="392. is-subsequence.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="375. guess-number-higher-or-lower-ii.cpp">
+    <ClCompile Include="403. frog-jump.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="376. wiggle-subsequence.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="377. combination-sum-iv.cpp">
+    <ClCompile Include="410. split-array-largest-sum.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
