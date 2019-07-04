@@ -39,12 +39,6 @@
     <ClInclude Include="pch.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="common_algorithms.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="listnode.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -65,22 +59,13 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="307. range-sum-query-mutable.cpp">
+    <ClCompile Include="392. is-subsequence.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="309. best-time-to-buy-and-sell-stock-with-cooldown.cpp">
+    <ClCompile Include="403. frog-jump.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="310. minimum-height-trees.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="312. burst-balloons.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="313. super-ugly-number.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="316. remove-duplicate-letters.cpp">
+    <ClCompile Include="410. split-array-largest-sum.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

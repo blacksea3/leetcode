@@ -155,8 +155,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="BinaryTree.h" />
-    <ClInclude Include="common_algorithms.h" />
-    <ClInclude Include="include.h" />
     <ClInclude Include="listnode.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="public.h" />
@@ -165,12 +163,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="307. range-sum-query-mutable.cpp" />
-    <ClCompile Include="309. best-time-to-buy-and-sell-stock-with-cooldown.cpp" />
-    <ClCompile Include="310. minimum-height-trees.cpp" />
-    <ClCompile Include="312. burst-balloons.cpp" />
-    <ClCompile Include="313. super-ugly-number.cpp" />
-    <ClCompile Include="316. remove-duplicate-letters.cpp" />
+    <ClCompile Include="392. is-subsequence.cpp" />
+    <ClCompile Include="403. frog-jump.cpp" />
+    <ClCompile Include="410. split-array-largest-sum.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>
