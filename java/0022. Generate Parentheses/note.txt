@@ -1,0 +1,14 @@
+相关点： 
+String
+
+思路：
+1, first thought: add () to the prev one, and () is always together, just insert for each loc in prev string, and test if there are duplicate ones, very slow!
+2, brute force, just use balance of ( and ), num of ( should larger or equal than ), and finally equal
+3, backtrack: special for (), remember the requirement of balance and always follow that
+4, closure number: considering "(" + left + ")" + right, left and right are parentheses as well
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+相关点： 
+Linked list
+
+思路：
+1, using recursion from merge 2 list, which is quite slow ,time: O(kn)
+2, better way to use merge 2 list is to merge every 2 list, time: O(nlogk)
+
+
+
+
+
+
