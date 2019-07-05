@@ -59,13 +59,7 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="392. is-subsequence.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="403. frog-jump.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="410. split-array-largest-sum.cpp">
+    <ClCompile Include="282. expression-add-operators.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

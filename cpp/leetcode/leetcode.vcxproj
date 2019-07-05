@@ -163,9 +163,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="392. is-subsequence.cpp" />
-    <ClCompile Include="403. frog-jump.cpp" />
-    <ClCompile Include="410. split-array-largest-sum.cpp" />
+    <ClCompile Include="282. expression-add-operators.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>
