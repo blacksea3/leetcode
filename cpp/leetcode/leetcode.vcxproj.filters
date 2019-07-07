@@ -59,13 +59,7 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="282. expression-add-operators.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="301. remove-invalid-parentheses.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="315. count-of-smaller-numbers-after-self.cpp">
+    <ClCompile Include="weekly-contest144.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

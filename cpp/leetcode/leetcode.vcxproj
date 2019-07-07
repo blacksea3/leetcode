@@ -163,11 +163,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="282. expression-add-operators.cpp" />
-    <ClCompile Include="301. remove-invalid-parentheses.cpp" />
-    <ClCompile Include="315. count-of-smaller-numbers-after-self.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
+    <ClCompile Include="weekly-contest144.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
