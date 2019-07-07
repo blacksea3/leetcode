@@ -59,7 +59,28 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="weekly-contest144.cpp">
+    <ClCompile Include="338. counting-bits.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="343. integer-break.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="342. power-of-four.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="344. reverse-string.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="347. top-k-frequent-elements.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="352. data-stream-as-disjoint-intervals.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="355. design-twitter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="365. water-and-jug-problem.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

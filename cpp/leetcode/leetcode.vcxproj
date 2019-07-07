@@ -163,9 +163,16 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="338. counting-bits.cpp" />
+    <ClCompile Include="342. power-of-four.cpp" />
+    <ClCompile Include="343. integer-break.cpp" />
+    <ClCompile Include="344. reverse-string.cpp" />
+    <ClCompile Include="347. top-k-frequent-elements.cpp" />
+    <ClCompile Include="352. data-stream-as-disjoint-intervals.cpp" />
+    <ClCompile Include="355. design-twitter.cpp" />
+    <ClCompile Include="365. water-and-jug-problem.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
-    <ClCompile Include="weekly-contest144.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
