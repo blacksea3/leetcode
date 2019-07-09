@@ -17,6 +17,8 @@
 #include <bitset>
 #include <array>
 
+#include <random>
+
 //#include "json/json.h"
 
 using namespace std;

@@ -59,7 +59,19 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="372. super-pow.cpp">
+    <ClCompile Include="373. find-k-pairs-with-smallest-sums.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="378. kth-smallest-element-in-a-sorted-matrix.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="380. insert-delete-getrandom-o1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="381. insert-delete-getrandom-o1-duplicates-allowed.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="382. linked-list-random-node.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
