@@ -163,11 +163,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="373. find-k-pairs-with-smallest-sums.cpp" />
-    <ClCompile Include="378. kth-smallest-element-in-a-sorted-matrix.cpp" />
-    <ClCompile Include="380. insert-delete-getrandom-o1.cpp" />
-    <ClCompile Include="381. insert-delete-getrandom-o1-duplicates-allowed.cpp" />
-    <ClCompile Include="382. linked-list-random-node.cpp" />
+    <ClCompile Include="384. shuffle-an-array.cpp" />
+    <ClCompile Include="385. mini-parser.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>
