@@ -165,6 +165,9 @@
   <ItemGroup>
     <ClCompile Include="384. shuffle-an-array.cpp" />
     <ClCompile Include="385. mini-parser.cpp" />
+    <ClCompile Include="386. lexicographical-numbers.cpp" />
+    <ClCompile Include="388. longest-absolute-file-path.cpp" />
+    <ClCompile Include="390. elimination-game.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>

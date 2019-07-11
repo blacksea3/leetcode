@@ -65,5 +65,14 @@
     <ClCompile Include="385. mini-parser.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="386. lexicographical-numbers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="388. longest-absolute-file-path.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="390. elimination-game.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
