@@ -163,11 +163,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="384. shuffle-an-array.cpp" />
-    <ClCompile Include="385. mini-parser.cpp" />
-    <ClCompile Include="386. lexicographical-numbers.cpp" />
-    <ClCompile Include="388. longest-absolute-file-path.cpp" />
-    <ClCompile Include="390. elimination-game.cpp" />
+    <ClCompile Include="391. perfect-rectangle.cpp" />
+    <ClCompile Include="393. utf-8-validation.cpp" />
+    <ClCompile Include="395. longest-substring-with-at-least-k-repeating-characters.cpp" />
+    <ClCompile Include="396. rotate-function.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>

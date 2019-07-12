@@ -59,19 +59,16 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="384. shuffle-an-array.cpp">
+    <ClCompile Include="391. perfect-rectangle.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="385. mini-parser.cpp">
+    <ClCompile Include="393. utf-8-validation.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="386. lexicographical-numbers.cpp">
+    <ClCompile Include="395. longest-substring-with-at-least-k-repeating-characters.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="388. longest-absolute-file-path.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="390. elimination-game.cpp">
+    <ClCompile Include="396. rotate-function.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
