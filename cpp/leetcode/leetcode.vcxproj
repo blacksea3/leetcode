@@ -167,6 +167,15 @@
     <ClCompile Include="393. utf-8-validation.cpp" />
     <ClCompile Include="395. longest-substring-with-at-least-k-repeating-characters.cpp" />
     <ClCompile Include="396. rotate-function.cpp" />
+    <ClCompile Include="397. submissions.cpp" />
+    <ClCompile Include="398. random-pick-index.cpp" />
+    <ClCompile Include="399. evaluate-division.cpp" />
+    <ClCompile Include="400. nth-digit.cpp" />
+    <ClCompile Include="401. binary-watch.cpp" />
+    <ClCompile Include="402. remove-k-digits.cpp" />
+    <ClCompile Include="404. sum-of-left-leaves.cpp" />
+    <ClCompile Include="405. convert-a-number-to-hexadecimal.cpp" />
+    <ClCompile Include="406. queue-reconstruction-by-height.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>

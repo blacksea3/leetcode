@@ -71,5 +71,32 @@
     <ClCompile Include="396. rotate-function.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="397. submissions.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="398. random-pick-index.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="399. evaluate-division.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="400. nth-digit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="401. binary-watch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="402. remove-k-digits.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="404. sum-of-left-leaves.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="405. convert-a-number-to-hexadecimal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="406. queue-reconstruction-by-height.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
