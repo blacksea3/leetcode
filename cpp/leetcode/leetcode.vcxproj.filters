@@ -59,28 +59,7 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="407. trapping-rain-water-ii.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="412. fizz-buzz.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="415. add-strings.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="416. partition-equal-subset-sum.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="419. battleships-in-a-board.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="421. maximum-xor-of-two-numbers-in-an-array.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="423. reconstruct-original-digits-from-english.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="424. longest-repeating-character-replacement.cpp">
+    <ClCompile Include="DWC-4.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

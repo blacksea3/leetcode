@@ -163,14 +163,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="407. trapping-rain-water-ii.cpp" />
-    <ClCompile Include="412. fizz-buzz.cpp" />
-    <ClCompile Include="415. add-strings.cpp" />
-    <ClCompile Include="416. partition-equal-subset-sum.cpp" />
-    <ClCompile Include="419. battleships-in-a-board.cpp" />
-    <ClCompile Include="421. maximum-xor-of-two-numbers-in-an-array.cpp" />
-    <ClCompile Include="423. reconstruct-original-digits-from-english.cpp" />
-    <ClCompile Include="424. longest-repeating-character-replacement.cpp" />
+    <ClCompile Include="DWC-4.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>
