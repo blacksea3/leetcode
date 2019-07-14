@@ -59,7 +59,64 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="WC145.cpp">
+    <ClCompile Include="1111. maximum-nesting-depth-of-two-valid-parentheses-strings.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1110. delete-nodes-and-return-forest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1109. corporate-flight-bookings.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1108. defanging-an-ip-address.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1106. parsing-a-boolean-expression.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1105. filling-bookcase-shelves.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1104. path-in-zigzag-labelled-binary-tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1103. distribute-candies-to-people.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1096. brace-expansion-ii.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1081. Smallest Subsequence of Distinct Characters.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1095. find-in-mountain-array.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1094. car-pooling.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1093. statistics-from-a-large-sample.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1092. shortest-common-supersequence.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1091. shortest-path-in-binary-matrix.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1090. largest-values-from-labels.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1089. duplicate-zeros.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1080. insufficient-nodes-in-root-to-leaf-paths.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1079. letter-tile-possibilities.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1078. occurrences-after-bigram.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
