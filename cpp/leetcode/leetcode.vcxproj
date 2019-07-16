@@ -163,26 +163,19 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1078. occurrences-after-bigram.cpp" />
-    <ClCompile Include="1079. letter-tile-possibilities.cpp" />
-    <ClCompile Include="1080. insufficient-nodes-in-root-to-leaf-paths.cpp" />
-    <ClCompile Include="1081. Smallest Subsequence of Distinct Characters.cpp" />
-    <ClCompile Include="1089. duplicate-zeros.cpp" />
-    <ClCompile Include="1090. largest-values-from-labels.cpp" />
-    <ClCompile Include="1091. shortest-path-in-binary-matrix.cpp" />
-    <ClCompile Include="1092. shortest-common-supersequence.cpp" />
-    <ClCompile Include="1093. statistics-from-a-large-sample.cpp" />
-    <ClCompile Include="1094. car-pooling.cpp" />
-    <ClCompile Include="1095. find-in-mountain-array.cpp" />
-    <ClCompile Include="1096. brace-expansion-ii.cpp" />
-    <ClCompile Include="1103. distribute-candies-to-people.cpp" />
-    <ClCompile Include="1104. path-in-zigzag-labelled-binary-tree.cpp" />
-    <ClCompile Include="1105. filling-bookcase-shelves.cpp" />
-    <ClCompile Include="1106. parsing-a-boolean-expression.cpp" />
-    <ClCompile Include="1108. defanging-an-ip-address.cpp" />
-    <ClCompile Include="1109. corporate-flight-bookings.cpp" />
-    <ClCompile Include="1110. delete-nodes-and-return-forest.cpp" />
-    <ClCompile Include="1111. maximum-nesting-depth-of-two-valid-parentheses-strings.cpp" />
+    <ClCompile Include="1045. longest-duplicate-substring.cpp" />
+    <ClCompile Include="1046. last-stone-weight.cpp" />
+    <ClCompile Include="1047. remove-all-adjacent-duplicates-in-string.cpp" />
+    <ClCompile Include="1048. longest-string-chain.cpp" />
+    <ClCompile Include="1049. last-stone-weight-ii.cpp" />
+    <ClCompile Include="1051. height-checker.cpp" />
+    <ClCompile Include="1052. grumpy-bookstore-owner.cpp" />
+    <ClCompile Include="1053. previous-permutation-with-one-swap.cpp" />
+    <ClCompile Include="1054. distant-barcodes.cpp" />
+    <ClCompile Include="1071. greatest-common-divisor-of-strings.cpp" />
+    <ClCompile Include="1072. flip-columns-for-maximum-number-of-equal-rows.cpp" />
+    <ClCompile Include="1073. adding-two-negabinary-numbers.cpp" />
+    <ClCompile Include="1074. number-of-submatrices-that-sum-to-target.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>

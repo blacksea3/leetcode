@@ -4,6 +4,7 @@
 
 //44ms, 87.05%
 
+/*
 class Solution :
 	def findOcurrences(self, text: str, first : str, second : str)->List[str] :
 	strs = text.split(' ')
@@ -12,3 +13,4 @@ class Solution :
 		if ((strs[i] == first) and (strs[i + 1] == second)) :
 			res.append(strs[i + 2])
 			return res
+*/
