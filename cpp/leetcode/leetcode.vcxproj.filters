@@ -59,43 +59,7 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="1074. number-of-submatrices-that-sum-to-target.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="1073. adding-two-negabinary-numbers.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="1072. flip-columns-for-maximum-number-of-equal-rows.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="1071. greatest-common-divisor-of-strings.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="1054. distant-barcodes.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="1053. previous-permutation-with-one-swap.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="1052. grumpy-bookstore-owner.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="1051. height-checker.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="1049. last-stone-weight-ii.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="1048. longest-string-chain.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="1047. remove-all-adjacent-duplicates-in-string.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="1046. last-stone-weight.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="1045. longest-duplicate-substring.cpp">
+    <ClCompile Include="1044. longest-duplicate-substring.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -163,19 +163,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1045. longest-duplicate-substring.cpp" />
-    <ClCompile Include="1046. last-stone-weight.cpp" />
-    <ClCompile Include="1047. remove-all-adjacent-duplicates-in-string.cpp" />
-    <ClCompile Include="1048. longest-string-chain.cpp" />
-    <ClCompile Include="1049. last-stone-weight-ii.cpp" />
-    <ClCompile Include="1051. height-checker.cpp" />
-    <ClCompile Include="1052. grumpy-bookstore-owner.cpp" />
-    <ClCompile Include="1053. previous-permutation-with-one-swap.cpp" />
-    <ClCompile Include="1054. distant-barcodes.cpp" />
-    <ClCompile Include="1071. greatest-common-divisor-of-strings.cpp" />
-    <ClCompile Include="1072. flip-columns-for-maximum-number-of-equal-rows.cpp" />
-    <ClCompile Include="1073. adding-two-negabinary-numbers.cpp" />
-    <ClCompile Include="1074. number-of-submatrices-that-sum-to-target.cpp" />
+    <ClCompile Include="1044. longest-duplicate-substring.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>
