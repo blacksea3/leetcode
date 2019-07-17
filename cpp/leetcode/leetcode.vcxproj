@@ -163,6 +163,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="1043. partition-array-for-maximum-sum.cpp" />
     <ClCompile Include="1044. longest-duplicate-substring.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />

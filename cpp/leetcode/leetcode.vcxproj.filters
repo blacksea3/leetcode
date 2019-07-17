@@ -62,5 +62,8 @@
     <ClCompile Include="1044. longest-duplicate-substring.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="1043. partition-array-for-maximum-sum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
