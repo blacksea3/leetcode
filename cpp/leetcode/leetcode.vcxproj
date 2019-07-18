@@ -163,8 +163,12 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1043. partition-array-for-maximum-sum.cpp" />
-    <ClCompile Include="1044. longest-duplicate-substring.cpp" />
+    <ClCompile Include="1037. valid-boomerang.cpp" />
+    <ClCompile Include="1038. binary-search-tree-to-greater-sum-tree.cpp" />
+    <ClCompile Include="1039. minimum-score-triangulation-of-polygon.cpp" />
+    <ClCompile Include="1040. moving-stones-until-consecutive-ii.cpp" />
+    <ClCompile Include="1041. robot-bounded-in-circle.cpp" />
+    <ClCompile Include="1042. flower-planting-with-no-adjacent.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
   </ItemGroup>
