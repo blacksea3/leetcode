@@ -163,6 +163,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="1029. two-city-scheduling.cpp" />
+    <ClCompile Include="1030. matrix-cells-in-distance-order.cpp" />
+    <ClCompile Include="1033. moving-stones-until-consecutive.cpp" />
+    <ClCompile Include="1034. coloring-a-border.cpp" />
+    <ClCompile Include="1035. uncrossed-lines.cpp" />
     <ClCompile Include="1037. valid-boomerang.cpp" />
     <ClCompile Include="1038. binary-search-tree-to-greater-sum-tree.cpp" />
     <ClCompile Include="1039. minimum-score-triangulation-of-polygon.cpp" />

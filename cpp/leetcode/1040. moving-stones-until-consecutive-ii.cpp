@@ -39,10 +39,11 @@ public:
 	}
 };
 
+/*
 int main()
 {
 	Solution* s = new Solution();
 	vector<int> stones = { 7, 4, 9 };
 	auto res = s->numMovesStonesII(stones);
 	return 0;
-}
+}*/
