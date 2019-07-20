@@ -65,5 +65,41 @@
     <ClCompile Include="test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="1026. maximum-difference-between-node-and-ancestor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1027. longest-arithmetic-sequence.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1028. recover-a-tree-from-preorder-traversal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1025. divisor-game.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1021. remove-outermost-parentheses.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1022. sum-of-root-to-leaf-binary-numbers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1024. video-stitching.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1023. camelcase-matching.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1018. binary-prefix-divisible-by-5.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1017. convert-to-base-2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1019. next-greater-node-in-linked-list.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1020. number-of-enclaves.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

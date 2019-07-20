@@ -163,7 +163,19 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="1017. convert-to-base-2.cpp" />
+    <ClCompile Include="1018. binary-prefix-divisible-by-5.cpp" />
+    <ClCompile Include="1019. next-greater-node-in-linked-list.cpp" />
+    <ClCompile Include="1020. number-of-enclaves.cpp" />
+    <ClCompile Include="1021. remove-outermost-parentheses.cpp" />
+    <ClCompile Include="1022. sum-of-root-to-leaf-binary-numbers.cpp" />
+    <ClCompile Include="1024. video-stitching.cpp" />
+    <ClCompile Include="1025. divisor-game.cpp" />
+    <ClCompile Include="1026. maximum-difference-between-node-and-ancestor.cpp" />
+    <ClCompile Include="1027. longest-arithmetic-sequence.cpp" />
+    <ClCompile Include="1028. recover-a-tree-from-preorder-traversal.cpp" />
     <ClCompile Include="1031. maximum-sum-of-two-non-overlapping-subarrays.cpp" />
+    <ClCompile Include="1023. camelcase-matching.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
     <ClCompile Include="test.cpp" />
