@@ -163,10 +163,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1009. complement-of-base-10-integer.cpp" />
-    <ClCompile Include="1010. pairs-of-songs-with-total-durations-divisible-by-60.cpp" />
-    <ClCompile Include="1011. capacity-to-ship-packages-within-d-days.cpp" />
-    <ClCompile Include="1012. numbers-with-repeated-digits.cpp" />
+    <ClCompile Include="1000. minimum-cost-to-merge-stones.cpp" />
+    <ClCompile Include="1002. find-common-characters.cpp" />
+    <ClCompile Include="1003. check-if-word-is-valid-after-substitutions.cpp" />
+    <ClCompile Include="1004. max-consecutive-ones-iii.cpp" />
+    <ClCompile Include="1005. maximize-sum-of-array-after-k-negations.cpp" />
+    <ClCompile Include="1006. clumsy-factorial.cpp" />
+    <ClCompile Include="1007. minimum-domino-rotations-for-equal-row.cpp" />
+    <ClCompile Include="1008. construct-binary-search-tree-from-preorder-traversal.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
     <ClCompile Include="test.cpp" />

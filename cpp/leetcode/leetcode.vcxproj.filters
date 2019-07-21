@@ -62,16 +62,28 @@
     <ClCompile Include="test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="1009. complement-of-base-10-integer.cpp">
+    <ClCompile Include="1005. maximize-sum-of-array-after-k-negations.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="1010. pairs-of-songs-with-total-durations-divisible-by-60.cpp">
+    <ClCompile Include="1006. clumsy-factorial.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="1011. capacity-to-ship-packages-within-d-days.cpp">
+    <ClCompile Include="1007. minimum-domino-rotations-for-equal-row.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="1012. numbers-with-repeated-digits.cpp">
+    <ClCompile Include="1008. construct-binary-search-tree-from-preorder-traversal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1002. find-common-characters.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1003. check-if-word-is-valid-after-substitutions.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1004. max-consecutive-ones-iii.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1000. minimum-cost-to-merge-stones.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
