@@ -163,11 +163,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1013. partition-array-into-three-parts-with-equal-sum.cpp" />
-    <ClCompile Include="1014. best-sightseeing-pair.cpp" />
-    <ClCompile Include="1015. smallest-integer-divisible-by-k.cpp" />
-    <ClCompile Include="1016. binary-string-with-substrings-representing-1-to-n.cpp" />
-    <ClCompile Include="1022. sum-of-root-to-leaf-binary-numbers.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
     <ClCompile Include="test.cpp" />

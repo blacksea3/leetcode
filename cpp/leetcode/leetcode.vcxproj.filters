@@ -62,20 +62,5 @@
     <ClCompile Include="test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="1013. partition-array-into-three-parts-with-equal-sum.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="1015. smallest-integer-divisible-by-k.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="1016. binary-string-with-substrings-representing-1-to-n.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="1014. best-sightseeing-pair.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="1022. sum-of-root-to-leaf-binary-numbers.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>
