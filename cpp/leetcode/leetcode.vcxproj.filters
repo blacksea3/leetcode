@@ -62,5 +62,17 @@
     <ClCompile Include="test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="1009. complement-of-base-10-integer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1010. pairs-of-songs-with-total-durations-divisible-by-60.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1011. capacity-to-ship-packages-within-d-days.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1012. numbers-with-repeated-digits.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

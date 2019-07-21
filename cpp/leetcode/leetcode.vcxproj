@@ -163,6 +163,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="1009. complement-of-base-10-integer.cpp" />
+    <ClCompile Include="1010. pairs-of-songs-with-total-durations-divisible-by-60.cpp" />
+    <ClCompile Include="1011. capacity-to-ship-packages-within-d-days.cpp" />
+    <ClCompile Include="1012. numbers-with-repeated-digits.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
     <ClCompile Include="test.cpp" />

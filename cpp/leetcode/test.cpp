@@ -194,7 +194,7 @@ public:
 
 };
 
-
+/*
 int main() {
 	Solution* s = new Solution();
 	//vector<vector<int>> d = { {1,2}, {2,1},{2,1},{2,1} };
@@ -212,7 +212,7 @@ int main() {
 	//vector<vector<int>> red_edges = { {2,2},{0,4},{4,2},{4,3},{2,4},{0,0},{0,1},{2,3},{1,3} };
 	//vector<vector<int>> blue_edges = { {0,4},{1,0},{1,4},{0,0},{4,0} };
 	//auto res = s->shortestAlternatingPaths(5, red_edges, blue_edges);
-	
+	*/
 	/*
 
 	vector<int> arr1 = {1,2,3,4};
@@ -228,8 +228,9 @@ int main() {
 	vector<int> arr6 = {-5, -4, 2, 9, -8, -5};
 	cout << s->maxAbsValExpr(arr5, arr6) << endl;
 	*/
-
+	/*
 	vector<int> arr = { 6,2,4 };
 	cout << s->mctFromLeafValues(arr);
 	return 0;
 }
+*/
