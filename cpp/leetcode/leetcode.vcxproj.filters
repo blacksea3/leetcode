@@ -62,28 +62,28 @@
     <ClCompile Include="test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="1005. maximize-sum-of-array-after-k-negations.cpp">
+    <ClCompile Include="997. find-the-town-judge.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="1006. clumsy-factorial.cpp">
+    <ClCompile Include="999. available-captures-for-rook.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="1007. minimum-domino-rotations-for-equal-row.cpp">
+    <ClCompile Include="998. maximum-binary-tree-ii.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="1008. construct-binary-search-tree-from-preorder-traversal.cpp">
+    <ClCompile Include="1001. grid-illumination.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="1002. find-common-characters.cpp">
+    <ClCompile Include="993. cousins-in-binary-tree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="1003. check-if-word-is-valid-after-substitutions.cpp">
+    <ClCompile Include="994. rotting-oranges.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="1004. max-consecutive-ones-iii.cpp">
+    <ClCompile Include="995. minimum-number-of-k-consecutive-bit-flips.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="1000. minimum-cost-to-merge-stones.cpp">
+    <ClCompile Include="996. number-of-squareful-arrays.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
