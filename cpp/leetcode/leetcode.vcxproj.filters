@@ -62,28 +62,28 @@
     <ClCompile Include="test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="997. find-the-town-judge.cpp">
+    <ClCompile Include="989. add-to-array-form-of-integer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="999. available-captures-for-rook.cpp">
+    <ClCompile Include="990. satisfiability-of-equality-equations.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="998. maximum-binary-tree-ii.cpp">
+    <ClCompile Include="991. broken-calculator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="1001. grid-illumination.cpp">
+    <ClCompile Include="992. subarrays-with-k-different-integers.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="993. cousins-in-binary-tree.cpp">
+    <ClCompile Include="985. sum-of-even-numbers-after-queries.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="994. rotting-oranges.cpp">
+    <ClCompile Include="988. smallest-string-starting-from-leaf.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="995. minimum-number-of-k-consecutive-bit-flips.cpp">
+    <ClCompile Include="986. interval-list-intersections.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="996. number-of-squareful-arrays.cpp">
+    <ClCompile Include="987. vertical-order-traversal-of-a-binary-tree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,31 +1,21 @@
-//0ms, 100%
+#include "public.h"
 
-//Greedy: from Y to X, make Y/2 as can as possible
+//4ms, 79.46%
+//反过来
+//Y除以2或者加一, 多个步骤后到X
+//Y比X大则能除就除, 不能除再加
+//Y比X小直接加
 
 class Solution {
 public:
 	int brokenCalc(int X, int Y) {
 		int res = 0;
-
-		while (X != Y)
+		while (Y > X)
 		{
-			if (Y < X)
-			{
-				res += (X - Y);
-				break;
-			}
-			else if (Y % 2 == 0)
-			{
-				Y /= 2;
-				res++;
-			}
-			else
-			{
-				Y = (Y + 1) / 2;
-				res += 2;
-			}
+			if (Y % 2 == 0) Y /= 2;
+			else Y++;
+			res++;
 		}
-		return res;
+		return res + (X - Y);
 	}
 };
-

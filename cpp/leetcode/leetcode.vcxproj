@@ -163,14 +163,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1001. grid-illumination.cpp" />
-    <ClCompile Include="993. cousins-in-binary-tree.cpp" />
-    <ClCompile Include="994. rotting-oranges.cpp" />
-    <ClCompile Include="995. minimum-number-of-k-consecutive-bit-flips.cpp" />
-    <ClCompile Include="996. number-of-squareful-arrays.cpp" />
-    <ClCompile Include="997. find-the-town-judge.cpp" />
-    <ClCompile Include="998. maximum-binary-tree-ii.cpp" />
-    <ClCompile Include="999. available-captures-for-rook.cpp" />
+    <ClCompile Include="985. sum-of-even-numbers-after-queries.cpp" />
+    <ClCompile Include="986. interval-list-intersections.cpp" />
+    <ClCompile Include="987. vertical-order-traversal-of-a-binary-tree.cpp" />
+    <ClCompile Include="988. smallest-string-starting-from-leaf.cpp" />
+    <ClCompile Include="989. add-to-array-form-of-integer.cpp" />
+    <ClCompile Include="990. satisfiability-of-equality-equations.cpp" />
+    <ClCompile Include="991. broken-calculator.cpp" />
+    <ClCompile Include="992. subarrays-with-k-different-integers.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
     <ClCompile Include="test.cpp" />
