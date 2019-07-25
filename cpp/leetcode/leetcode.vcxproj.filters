@@ -62,28 +62,16 @@
     <ClCompile Include="test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="989. add-to-array-form-of-integer.cpp">
+    <ClCompile Include="984. string-without-aaa-or-bbb.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="990. satisfiability-of-equality-equations.cpp">
+    <ClCompile Include="981. time-based-key-value-store.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="991. broken-calculator.cpp">
+    <ClCompile Include="983. minimum-cost-for-tickets.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="992. subarrays-with-k-different-integers.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="985. sum-of-even-numbers-after-queries.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="988. smallest-string-starting-from-leaf.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="986. interval-list-intersections.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="987. vertical-order-traversal-of-a-binary-tree.cpp">
+    <ClCompile Include="982. triples-with-bitwise-and-equal-to-zero.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
