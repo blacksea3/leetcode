@@ -62,37 +62,7 @@
     <ClCompile Include="test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="977. squares-of-a-sorted-array.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="978. longest-turbulent-subarray.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="979. distribute-coins-in-binary-tree.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="980. unique-paths-iii.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="973. k-closest-points-to-origin.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="976. largest-perimeter-triangle.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="974. subarray-sums-divisible-by-k.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="975. odd-even-jump.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="970. powerful-integers.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="969. pancake-sorting.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="971. flip-binary-tree-to-match-preorder-traversal.cpp">
+    <ClCompile Include="972. equal-rational-numbers.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
