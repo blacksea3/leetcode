@@ -62,7 +62,16 @@
     <ClCompile Include="test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="972. equal-rational-numbers.cpp">
+    <ClCompile Include="965. univalued-binary-tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="967. numbers-with-same-consecutive-differences.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="966. vowel-spellchecker.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="968. binary-tree-cameras.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

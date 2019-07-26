@@ -163,7 +163,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="972. equal-rational-numbers.cpp" />
+    <ClCompile Include="965. univalued-binary-tree.cpp" />
+    <ClCompile Include="966. vowel-spellchecker.cpp" />
+    <ClCompile Include="967. numbers-with-same-consecutive-differences.cpp" />
+    <ClCompile Include="968. binary-tree-cameras.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
     <ClCompile Include="test.cpp" />
