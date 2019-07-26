@@ -163,10 +163,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="965. univalued-binary-tree.cpp" />
-    <ClCompile Include="966. vowel-spellchecker.cpp" />
-    <ClCompile Include="967. numbers-with-same-consecutive-differences.cpp" />
-    <ClCompile Include="968. binary-tree-cameras.cpp" />
+    <ClCompile Include="961. n-repeated-element-in-size-2n-array.cpp" />
+    <ClCompile Include="962. maximum-width-ramp.cpp" />
+    <ClCompile Include="963. minimum-area-rectangle-ii.cpp" />
+    <ClCompile Include="964. least-operators-to-express-number.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
     <ClCompile Include="test.cpp" />

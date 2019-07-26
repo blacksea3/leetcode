@@ -62,16 +62,16 @@
     <ClCompile Include="test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="965. univalued-binary-tree.cpp">
+    <ClCompile Include="961. n-repeated-element-in-size-2n-array.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="967. numbers-with-same-consecutive-differences.cpp">
+    <ClCompile Include="962. maximum-width-ramp.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="966. vowel-spellchecker.cpp">
+    <ClCompile Include="963. minimum-area-rectangle-ii.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="968. binary-tree-cameras.cpp">
+    <ClCompile Include="964. least-operators-to-express-number.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
