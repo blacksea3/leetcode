@@ -163,10 +163,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="981. time-based-key-value-store.cpp" />
-    <ClCompile Include="982. triples-with-bitwise-and-equal-to-zero.cpp" />
-    <ClCompile Include="983. minimum-cost-for-tickets.cpp" />
-    <ClCompile Include="984. string-without-aaa-or-bbb.cpp" />
+    <ClCompile Include="969. pancake-sorting.cpp" />
+    <ClCompile Include="970. powerful-integers.cpp" />
+    <ClCompile Include="971. flip-binary-tree-to-match-preorder-traversal.cpp" />
+    <ClCompile Include="973. k-closest-points-to-origin.cpp" />
+    <ClCompile Include="974. subarray-sums-divisible-by-k.cpp" />
+    <ClCompile Include="975. odd-even-jump.cpp" />
+    <ClCompile Include="976. largest-perimeter-triangle.cpp" />
+    <ClCompile Include="977. squares-of-a-sorted-array.cpp" />
+    <ClCompile Include="978. longest-turbulent-subarray.cpp" />
+    <ClCompile Include="979. distribute-coins-in-binary-tree.cpp" />
+    <ClCompile Include="980. unique-paths-iii.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
     <ClCompile Include="test.cpp" />
