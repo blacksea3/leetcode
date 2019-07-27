@@ -62,16 +62,28 @@
     <ClCompile Include="test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="957. prison-cells-after-n-days.cpp">
+    <ClCompile Include="953. verifying-an-alien-dictionary.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="958. check-completeness-of-a-binary-tree.cpp">
+    <ClCompile Include="954. array-of-doubled-pairs.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="960. delete-columns-to-make-sorted-iii.cpp">
+    <ClCompile Include="955. delete-columns-to-make-sorted-ii.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="959. regions-cut-by-slashes.cpp">
+    <ClCompile Include="956. tallest-billboard.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="949. largest-time-for-given-digits.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="951. flip-equivalent-binary-trees.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="950. reveal-cards-in-increasing-order.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="952. largest-component-size-by-common-factor.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
