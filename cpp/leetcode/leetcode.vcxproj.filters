@@ -62,16 +62,16 @@
     <ClCompile Include="test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="961. n-repeated-element-in-size-2n-array.cpp">
+    <ClCompile Include="957. prison-cells-after-n-days.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="962. maximum-width-ramp.cpp">
+    <ClCompile Include="958. check-completeness-of-a-binary-tree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="963. minimum-area-rectangle-ii.cpp">
+    <ClCompile Include="960. delete-columns-to-make-sorted-iii.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="964. least-operators-to-express-number.cpp">
+    <ClCompile Include="959. regions-cut-by-slashes.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
