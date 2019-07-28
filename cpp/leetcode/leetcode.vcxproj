@@ -163,17 +163,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="937. reorder-log-files.cpp" />
-    <ClCompile Include="938. range-sum-of-bst.cpp" />
-    <ClCompile Include="939. minimum-area-rectangle.cpp" />
-    <ClCompile Include="940. distinct-subsequences-ii.cpp" />
-    <ClCompile Include="941. valid-mountain-array.cpp" />
-    <ClCompile Include="942. di-string-match.cpp" />
-    <ClCompile Include="944. delete-columns-to-make-sorted.cpp" />
-    <ClCompile Include="945. minimum-increment-to-make-array-unique.cpp" />
-    <ClCompile Include="946. validate-stack-sequences.cpp" />
-    <ClCompile Include="947. most-stones-removed-with-same-row-or-column.cpp" />
-    <ClCompile Include="948. bag-of-tokens.cpp" />
+    <ClCompile Include="933. number-of-recent-calls.cpp" />
+    <ClCompile Include="934. shortest-bridge.cpp" />
+    <ClCompile Include="935. knight-dialer.cpp" />
+    <ClCompile Include="936. stamping-the-sequence.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
     <ClCompile Include="test.cpp" />

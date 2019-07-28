@@ -62,37 +62,16 @@
     <ClCompile Include="test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="945. minimum-increment-to-make-array-unique.cpp">
+    <ClCompile Include="933. number-of-recent-calls.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="946. validate-stack-sequences.cpp">
+    <ClCompile Include="935. knight-dialer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="947. most-stones-removed-with-same-row-or-column.cpp">
+    <ClCompile Include="934. shortest-bridge.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="948. bag-of-tokens.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="941. valid-mountain-array.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="944. delete-columns-to-make-sorted.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="942. di-string-match.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="937. reorder-log-files.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="938. range-sum-of-bst.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="939. minimum-area-rectangle.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="940. distinct-subsequences-ii.cpp">
+    <ClCompile Include="936. stamping-the-sequence.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
