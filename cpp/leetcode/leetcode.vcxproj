@@ -163,14 +163,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="949. largest-time-for-given-digits.cpp" />
-    <ClCompile Include="950. reveal-cards-in-increasing-order.cpp" />
-    <ClCompile Include="951. flip-equivalent-binary-trees.cpp" />
-    <ClCompile Include="952. largest-component-size-by-common-factor.cpp" />
-    <ClCompile Include="953. verifying-an-alien-dictionary.cpp" />
-    <ClCompile Include="954. array-of-doubled-pairs.cpp" />
-    <ClCompile Include="955. delete-columns-to-make-sorted-ii.cpp" />
-    <ClCompile Include="956. tallest-billboard.cpp" />
+    <ClCompile Include="5139. n-th-tribonacci-number.cpp" />
+    <ClCompile Include="5140. alphabet-board-path.cpp" />
+    <ClCompile Include="5141. largest-1-bordered-square.cpp" />
+    <ClCompile Include="5142. stone-game-ii.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
     <ClCompile Include="test.cpp" />
