@@ -163,10 +163,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="933. number-of-recent-calls.cpp" />
-    <ClCompile Include="934. shortest-bridge.cpp" />
-    <ClCompile Include="935. knight-dialer.cpp" />
-    <ClCompile Include="936. stamping-the-sequence.cpp" />
+    <ClCompile Include="925. long-pressed-name.cpp" />
+    <ClCompile Include="926. flip-string-to-monotone-increasing.cpp" />
+    <ClCompile Include="928. minimize-malware-spread-ii.cpp" />
+    <ClCompile Include="929. unique-email-addresses.cpp" />
+    <ClCompile Include="930. binary-subarrays-with-sum.cpp" />
+    <ClCompile Include="931. minimum-falling-path-sum.cpp" />
+    <ClCompile Include="932. beautiful-array.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
     <ClCompile Include="test.cpp" />

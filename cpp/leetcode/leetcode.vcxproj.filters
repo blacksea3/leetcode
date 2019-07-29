@@ -62,16 +62,25 @@
     <ClCompile Include="test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="933. number-of-recent-calls.cpp">
+    <ClCompile Include="929. unique-email-addresses.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="935. knight-dialer.cpp">
+    <ClCompile Include="930. binary-subarrays-with-sum.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="934. shortest-bridge.cpp">
+    <ClCompile Include="931. minimum-falling-path-sum.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="936. stamping-the-sequence.cpp">
+    <ClCompile Include="932. beautiful-array.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="925. long-pressed-name.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="926. flip-string-to-monotone-increasing.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="928. minimize-malware-spread-ii.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
