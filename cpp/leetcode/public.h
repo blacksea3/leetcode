@@ -23,6 +23,8 @@
 
 using namespace std;
 
+int gcd(int, int);
+
 /*
 //37
 struct SudokuInfo

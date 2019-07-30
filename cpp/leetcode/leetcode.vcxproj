@@ -163,13 +163,22 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="925. long-pressed-name.cpp" />
-    <ClCompile Include="926. flip-string-to-monotone-increasing.cpp" />
+    <ClCompile Include="908. smallest-range-i.cpp" />
+    <ClCompile Include="909. snakes-and-ladders.cpp" />
+    <ClCompile Include="911. online-election.cpp" />
+    <ClCompile Include="914. x-of-a-kind-in-a-deck-of-cards.cpp" />
+    <ClCompile Include="915. partition-array-into-disjoint-intervals.cpp" />
+    <ClCompile Include="916. word-subsets.cpp" />
+    <ClCompile Include="917. reverse-only-letters.cpp" />
+    <ClCompile Include="918. maximum-sum-circular-subarray.cpp" />
+    <ClCompile Include="919. complete-binary-tree-inserter.cpp" />
+    <ClCompile Include="920. number-of-music-playlists.cpp" />
+    <ClCompile Include="921. minimum-add-to-make-parentheses-valid.cpp" />
+    <ClCompile Include="922. sort-array-by-parity-ii.cpp" />
+    <ClCompile Include="923. 3sum-with-multiplicity.cpp" />
+    <ClCompile Include="924. minimize-malware-spread.cpp" />
     <ClCompile Include="928. minimize-malware-spread-ii.cpp" />
-    <ClCompile Include="929. unique-email-addresses.cpp" />
-    <ClCompile Include="930. binary-subarrays-with-sum.cpp" />
-    <ClCompile Include="931. minimum-falling-path-sum.cpp" />
-    <ClCompile Include="932. beautiful-array.cpp" />
+    <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
     <ClCompile Include="test.cpp" />

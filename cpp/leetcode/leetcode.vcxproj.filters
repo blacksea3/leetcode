@@ -62,25 +62,52 @@
     <ClCompile Include="test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="929. unique-email-addresses.cpp">
+    <ClCompile Include="922. sort-array-by-parity-ii.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="930. binary-subarrays-with-sum.cpp">
+    <ClCompile Include="921. minimum-add-to-make-parentheses-valid.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="931. minimum-falling-path-sum.cpp">
+    <ClCompile Include="923. 3sum-with-multiplicity.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="932. beautiful-array.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="925. long-pressed-name.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="926. flip-string-to-monotone-increasing.cpp">
+    <ClCompile Include="924. minimize-malware-spread.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="928. minimize-malware-spread-ii.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="917. reverse-only-letters.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="918. maximum-sum-circular-subarray.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="919. complete-binary-tree-inserter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="920. number-of-music-playlists.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="914. x-of-a-kind-in-a-deck-of-cards.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="commonalg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="915. partition-array-into-disjoint-intervals.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="916. word-subsets.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="908. smallest-range-i.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="909. snakes-and-ladders.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="911. online-election.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
