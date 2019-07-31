@@ -62,52 +62,13 @@
     <ClCompile Include="test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="922. sort-array-by-parity-ii.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="921. minimum-add-to-make-parentheses-valid.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="923. 3sum-with-multiplicity.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="924. minimize-malware-spread.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="928. minimize-malware-spread-ii.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="917. reverse-only-letters.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="918. maximum-sum-circular-subarray.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="919. complete-binary-tree-inserter.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="920. number-of-music-playlists.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="914. x-of-a-kind-in-a-deck-of-cards.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="915. partition-array-into-disjoint-intervals.cpp">
+    <ClCompile Include="910. smallest-range-ii.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="916. word-subsets.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="908. smallest-range-i.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="909. snakes-and-ladders.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="911. online-election.cpp">
+    <ClCompile Include="912. sort-an-array.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
