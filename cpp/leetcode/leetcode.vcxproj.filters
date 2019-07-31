@@ -65,10 +65,34 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="910. smallest-range-ii.cpp">
+    <ClCompile Include="905. sort-array-by-parity.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="912. sort-an-array.cpp">
+    <ClCompile Include="904. fruit-into-baskets.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="907. sum-of-subarray-minimums.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="900. rle-iterator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="901. online-stock-span.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="902. numbers-at-most-n-given-digit-set.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="897. increasing-order-search-tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="898. bitwise-ors-of-subarrays.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="899. orderly-queue.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="896. monotonic-array.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
