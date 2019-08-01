@@ -163,10 +163,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="892. surface-area-of-3d-shapes.cpp" />
-    <ClCompile Include="893. groups-of-special-equivalent-strings.cpp" />
-    <ClCompile Include="894. all-possible-full-binary-trees.cpp" />
-    <ClCompile Include="895. maximum-frequency-stack.cpp" />
+    <ClCompile Include="880. decoded-string-at-index.cpp" />
+    <ClCompile Include="881. boats-to-save-people.cpp" />
+    <ClCompile Include="883. projection-area-of-3d-shapes.cpp" />
+    <ClCompile Include="884. uncommon-words-from-two-sentences.cpp" />
+    <ClCompile Include="885. spiral-matrix-iii.cpp" />
+    <ClCompile Include="886. possible-bipartition.cpp" />
+    <ClCompile Include="887. super-egg-drop.cpp" />
+    <ClCompile Include="888. fair-candy-swap.cpp" />
+    <ClCompile Include="889. construct-binary-tree-from-preorder-and-postorder-traversal.cpp" />
+    <ClCompile Include="890. find-and-replace-pattern.cpp" />
+    <ClCompile Include="891. sum-of-subsequence-widths.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
