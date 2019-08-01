@@ -27,12 +27,12 @@
     <Filter Include="源文件\DP">
       <UniqueIdentifier>{61a5fc2d-e743-41c1-8e30-4fa9c823ae2e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\BackTracking">
-      <UniqueIdentifier>{4fdb2d0f-9d1b-4cb1-94ee-d32ec61a00d3}</UniqueIdentifier>
-    </Filter>
     <Filter Include="资源文件">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\BackTracking">
+      <UniqueIdentifier>{4fdb2d0f-9d1b-4cb1-94ee-d32ec61a00d3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -65,34 +65,16 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="905. sort-array-by-parity.cpp">
+    <ClCompile Include="892. surface-area-of-3d-shapes.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="904. fruit-into-baskets.cpp">
+    <ClCompile Include="893. groups-of-special-equivalent-strings.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="907. sum-of-subarray-minimums.cpp">
+    <ClCompile Include="894. all-possible-full-binary-trees.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="900. rle-iterator.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="901. online-stock-span.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="902. numbers-at-most-n-given-digit-set.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="897. increasing-order-search-tree.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="898. bitwise-ors-of-subarrays.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="899. orderly-queue.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="896. monotonic-array.cpp">
+    <ClCompile Include="895. maximum-frequency-stack.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
