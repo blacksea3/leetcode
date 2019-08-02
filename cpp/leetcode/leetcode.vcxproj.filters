@@ -65,37 +65,13 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="888. fair-candy-swap.cpp">
+    <ClCompile Include="876. middle-of-the-linked-list.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="890. find-and-replace-pattern.cpp">
+    <ClCompile Include="877. stone-game.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="889. construct-binary-tree-from-preorder-and-postorder-traversal.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="891. sum-of-subsequence-widths.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="885. spiral-matrix-iii.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="884. uncommon-words-from-two-sentences.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="886. possible-bipartition.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="887. super-egg-drop.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="883. projection-area-of-3d-shapes.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="881. boats-to-save-people.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="880. decoded-string-at-index.cpp">
+    <ClCompile Include="878. nth-magical-number.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
