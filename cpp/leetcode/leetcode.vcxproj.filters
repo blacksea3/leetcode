@@ -65,13 +65,16 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="876. middle-of-the-linked-list.cpp">
+    <ClCompile Include="872. leaf-similar-trees.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="877. stone-game.cpp">
+    <ClCompile Include="874. walking-robot-simulation.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="878. nth-magical-number.cpp">
+    <ClCompile Include="875. koko-eating-bananas.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="873. length-of-longest-fibonacci-subsequence.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
