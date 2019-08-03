@@ -163,10 +163,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="872. leaf-similar-trees.cpp" />
-    <ClCompile Include="873. length-of-longest-fibonacci-subsequence.cpp" />
-    <ClCompile Include="874. walking-robot-simulation.cpp" />
-    <ClCompile Include="875. koko-eating-bananas.cpp" />
+    <ClCompile Include="860. lemonade-change.cpp" />
+    <ClCompile Include="861. score-after-flipping-matrix.cpp" />
+    <ClCompile Include="863. all-nodes-distance-k-in-binary-tree.cpp" />
+    <ClCompile Include="864. shortest-path-to-get-all-keys.cpp" />
+    <ClCompile Include="865. smallest-subtree-with-all-the-deepest-nodes.cpp" />
+    <ClCompile Include="866. prime-palindrome.cpp" />
+    <ClCompile Include="867. transpose-matrix.cpp" />
+    <ClCompile Include="868. binary-gap.cpp" />
+    <ClCompile Include="869. reordered-power-of-2.cpp" />
+    <ClCompile Include="870. advantage-shuffle.cpp" />
+    <ClCompile Include="871. minimum-number-of-refueling-stops.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />

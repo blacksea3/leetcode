@@ -65,16 +65,37 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="872. leaf-similar-trees.cpp">
+    <ClCompile Include="868. binary-gap.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="874. walking-robot-simulation.cpp">
+    <ClCompile Include="869. reordered-power-of-2.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="875. koko-eating-bananas.cpp">
+    <ClCompile Include="870. advantage-shuffle.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="873. length-of-longest-fibonacci-subsequence.cpp">
+    <ClCompile Include="871. minimum-number-of-refueling-stops.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="867. transpose-matrix.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="865. smallest-subtree-with-all-the-deepest-nodes.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="866. prime-palindrome.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="864. shortest-path-to-get-all-keys.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="860. lemonade-change.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="863. all-nodes-distance-k-in-binary-tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="861. score-after-flipping-matrix.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
