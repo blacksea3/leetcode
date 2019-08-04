@@ -163,14 +163,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="5147. decrease-elements-to-make-array-zigzag.cpp" />
-    <ClCompile Include="5148. binary-tree-coloring-game.cpp" />
-    <ClCompile Include="5149. snapshot-array.cpp" />
-    <ClCompile Include="5150. longest-chunked-palindrome-decomposition.cpp" />
-    <ClCompile Include="856. score-of-parentheses.cpp" />
-    <ClCompile Include="857. minimum-cost-to-hire-k-workers.cpp" />
-    <ClCompile Include="858. mirror-reflection.cpp" />
-    <ClCompile Include="859. buddy-strings.cpp" />
+    <ClCompile Include="852. peak-index-in-a-mountain-array.cpp" />
+    <ClCompile Include="853. car-fleet.cpp" />
+    <ClCompile Include="855. exam-room.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />

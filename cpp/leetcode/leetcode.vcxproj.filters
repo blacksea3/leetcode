@@ -65,28 +65,13 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="5147. decrease-elements-to-make-array-zigzag.cpp">
+    <ClCompile Include="852. peak-index-in-a-mountain-array.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="5148. binary-tree-coloring-game.cpp">
+    <ClCompile Include="853. car-fleet.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="5149. snapshot-array.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="5150. longest-chunked-palindrome-decomposition.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="859. buddy-strings.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="856. score-of-parentheses.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="858. mirror-reflection.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="857. minimum-cost-to-hire-k-workers.cpp">
+    <ClCompile Include="855. exam-room.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
