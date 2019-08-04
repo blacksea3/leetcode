@@ -65,37 +65,28 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="868. binary-gap.cpp">
+    <ClCompile Include="5147. decrease-elements-to-make-array-zigzag.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="869. reordered-power-of-2.cpp">
+    <ClCompile Include="5148. binary-tree-coloring-game.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="870. advantage-shuffle.cpp">
+    <ClCompile Include="5149. snapshot-array.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="871. minimum-number-of-refueling-stops.cpp">
+    <ClCompile Include="5150. longest-chunked-palindrome-decomposition.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="867. transpose-matrix.cpp">
+    <ClCompile Include="859. buddy-strings.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="865. smallest-subtree-with-all-the-deepest-nodes.cpp">
+    <ClCompile Include="856. score-of-parentheses.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="866. prime-palindrome.cpp">
+    <ClCompile Include="858. mirror-reflection.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="864. shortest-path-to-get-all-keys.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="860. lemonade-change.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="863. all-nodes-distance-k-in-binary-tree.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="861. score-after-flipping-matrix.cpp">
+    <ClCompile Include="857. minimum-cost-to-hire-k-workers.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

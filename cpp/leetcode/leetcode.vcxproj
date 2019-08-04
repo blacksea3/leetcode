@@ -163,17 +163,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="860. lemonade-change.cpp" />
-    <ClCompile Include="861. score-after-flipping-matrix.cpp" />
-    <ClCompile Include="863. all-nodes-distance-k-in-binary-tree.cpp" />
-    <ClCompile Include="864. shortest-path-to-get-all-keys.cpp" />
-    <ClCompile Include="865. smallest-subtree-with-all-the-deepest-nodes.cpp" />
-    <ClCompile Include="866. prime-palindrome.cpp" />
-    <ClCompile Include="867. transpose-matrix.cpp" />
-    <ClCompile Include="868. binary-gap.cpp" />
-    <ClCompile Include="869. reordered-power-of-2.cpp" />
-    <ClCompile Include="870. advantage-shuffle.cpp" />
-    <ClCompile Include="871. minimum-number-of-refueling-stops.cpp" />
+    <ClCompile Include="5147. decrease-elements-to-make-array-zigzag.cpp" />
+    <ClCompile Include="5148. binary-tree-coloring-game.cpp" />
+    <ClCompile Include="5149. snapshot-array.cpp" />
+    <ClCompile Include="5150. longest-chunked-palindrome-decomposition.cpp" />
+    <ClCompile Include="856. score-of-parentheses.cpp" />
+    <ClCompile Include="857. minimum-cost-to-hire-k-workers.cpp" />
+    <ClCompile Include="858. mirror-reflection.cpp" />
+    <ClCompile Include="859. buddy-strings.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
