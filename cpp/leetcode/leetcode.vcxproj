@@ -163,9 +163,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="852. peak-index-in-a-mountain-array.cpp" />
-    <ClCompile Include="853. car-fleet.cpp" />
-    <ClCompile Include="855. exam-room.cpp" />
+    <ClCompile Include="218. the-skyline-problem.cpp" />
+    <ClCompile Include="844. backspace-string-compare.cpp" />
+    <ClCompile Include="845. longest-mountain-in-array.cpp" />
+    <ClCompile Include="846. hand-of-straights.cpp" />
+    <ClCompile Include="848. shifting-letters.cpp" />
+    <ClCompile Include="849. maximize-distance-to-closest-person.cpp" />
+    <ClCompile Include="851. loud-and-rich.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />

@@ -65,13 +65,25 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="852. peak-index-in-a-mountain-array.cpp">
+    <ClCompile Include="848. shifting-letters.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="853. car-fleet.cpp">
+    <ClCompile Include="849. maximize-distance-to-closest-person.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="855. exam-room.cpp">
+    <ClCompile Include="851. loud-and-rich.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="844. backspace-string-compare.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="845. longest-mountain-in-array.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="846. hand-of-straights.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="218. the-skyline-problem.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
