@@ -65,34 +65,37 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="840. magic-squares-in-grid.cpp">
+    <ClCompile Include="1122. relative-sort-array.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="841. keys-and-rooms.cpp">
+    <ClCompile Include="1123. lowest-common-ancestor-of-deepest-leaves.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="842. split-array-into-fibonacci-sequence.cpp">
+    <ClCompile Include="1124. longest-well-performing-interval.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="843. guess-the-word.cpp">
+    <ClCompile Include="1128. number-of-equivalent-domino-pairs.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="844. backspace-string-compare.cpp">
+    <ClCompile Include="1129. shortest-path-with-alternating-colors.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="845. longest-mountain-in-array.cpp">
+    <ClCompile Include="1130. minimum-cost-tree-from-leaf-values.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="846. hand-of-straights.cpp">
+    <ClCompile Include="1131. maximum-of-absolute-value-expression.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="848. shifting-letters.cpp">
+    <ClCompile Include="1137. n-th-tribonacci-number.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="849. maximize-distance-to-closest-person.cpp">
+    <ClCompile Include="1138. alphabet-board-path.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="851. loud-and-rich.cpp">
+    <ClCompile Include="1139. largest-1-bordered-square.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1140. stone-game-ii.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
