@@ -1,6 +1,6 @@
 #include "public.h"
 
-//
+//160ms, 44.68%
 //全部放入map, 然后一组一组判断
 //注意特殊情况: hand数量若不能整除W则false, 若W==1则返回true
 

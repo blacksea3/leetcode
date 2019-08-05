@@ -65,13 +65,16 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="848. shifting-letters.cpp">
+    <ClCompile Include="840. magic-squares-in-grid.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="849. maximize-distance-to-closest-person.cpp">
+    <ClCompile Include="841. keys-and-rooms.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="851. loud-and-rich.cpp">
+    <ClCompile Include="842. split-array-into-fibonacci-sequence.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="843. guess-the-word.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="844. backspace-string-compare.cpp">
@@ -83,7 +86,13 @@
     <ClCompile Include="846. hand-of-straights.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="218. the-skyline-problem.cpp">
+    <ClCompile Include="848. shifting-letters.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="849. maximize-distance-to-closest-person.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="851. loud-and-rich.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

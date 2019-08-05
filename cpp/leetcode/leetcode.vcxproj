@@ -163,7 +163,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="218. the-skyline-problem.cpp" />
+    <ClCompile Include="840. magic-squares-in-grid.cpp" />
+    <ClCompile Include="841. keys-and-rooms.cpp" />
+    <ClCompile Include="842. split-array-into-fibonacci-sequence.cpp" />
+    <ClCompile Include="843. guess-the-word.cpp" />
     <ClCompile Include="844. backspace-string-compare.cpp" />
     <ClCompile Include="845. longest-mountain-in-array.cpp" />
     <ClCompile Include="846. hand-of-straights.cpp" />

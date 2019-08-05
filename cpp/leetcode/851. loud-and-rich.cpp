@@ -1,6 +1,6 @@
 #include "public.h"
 
-//
+//308ms, 23.64% 
 //按图处理, 节点含入度, 父亲们, 儿子们
 
 class Solution {

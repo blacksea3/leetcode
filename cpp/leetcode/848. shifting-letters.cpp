@@ -1,6 +1,6 @@
 #include "public.h"
 
-//
+//96ms, 7.77%
 //倒过来从shifts的最后一个元素开始移位
 
 class Solution {
