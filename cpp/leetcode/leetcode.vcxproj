@@ -163,10 +163,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="836. rectangle-overlap.cpp" />
-    <ClCompile Include="837. new-21-game.cpp" />
-    <ClCompile Include="838. push-dominoes.cpp" />
-    <ClCompile Include="839. similar-string-groups.cpp" />
+    <ClCompile Include="832. flipping-an-image.cpp" />
+    <ClCompile Include="833. find-and-replace-in-string.cpp" />
+    <ClCompile Include="834. sum-of-distances-in-tree.cpp" />
+    <ClCompile Include="835. image-overlap.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
