@@ -65,37 +65,16 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="1122. relative-sort-array.cpp">
+    <ClCompile Include="836. rectangle-overlap.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="1123. lowest-common-ancestor-of-deepest-leaves.cpp">
+    <ClCompile Include="838. push-dominoes.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="1124. longest-well-performing-interval.cpp">
+    <ClCompile Include="839. similar-string-groups.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="1128. number-of-equivalent-domino-pairs.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="1129. shortest-path-with-alternating-colors.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="1130. minimum-cost-tree-from-leaf-values.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="1131. maximum-of-absolute-value-expression.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="1137. n-th-tribonacci-number.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="1138. alphabet-board-path.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="1139. largest-1-bordered-square.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="1140. stone-game-ii.cpp">
+    <ClCompile Include="837. new-21-game.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
