@@ -65,16 +65,7 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="832. flipping-an-image.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="833. find-and-replace-in-string.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="835. image-overlap.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="834. sum-of-distances-in-tree.cpp">
+    <ClCompile Include="327. count-of-range-sum.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

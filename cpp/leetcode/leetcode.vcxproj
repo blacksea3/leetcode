@@ -163,10 +163,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="832. flipping-an-image.cpp" />
-    <ClCompile Include="833. find-and-replace-in-string.cpp" />
-    <ClCompile Include="834. sum-of-distances-in-tree.cpp" />
-    <ClCompile Include="835. image-overlap.cpp" />
+    <ClCompile Include="327. count-of-range-sum.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
