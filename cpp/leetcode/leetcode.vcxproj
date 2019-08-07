@@ -163,7 +163,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="327. count-of-range-sum.cpp" />
+    <ClCompile Include="824. goat-latin.cpp" />
+    <ClCompile Include="825. friends-of-appropriate-ages.cpp" />
+    <ClCompile Include="826. most-profit-assigning-work.cpp" />
+    <ClCompile Include="827. making-a-large-island.cpp" />
+    <ClCompile Include="828. unique-letter-string.cpp" />
+    <ClCompile Include="829. consecutive-numbers-sum.cpp" />
+    <ClCompile Include="830. positions-of-large-groups.cpp" />
+    <ClCompile Include="831. masking-personal-information.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />

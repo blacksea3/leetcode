@@ -65,7 +65,28 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="327. count-of-range-sum.cpp">
+    <ClCompile Include="830. positions-of-large-groups.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="831. masking-personal-information.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="829. consecutive-numbers-sum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="828. unique-letter-string.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="824. goat-latin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="825. friends-of-appropriate-ages.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="826. most-profit-assigning-work.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="827. making-a-large-island.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
