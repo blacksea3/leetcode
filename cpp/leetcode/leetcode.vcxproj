@@ -163,6 +163,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="804. unique-morse-code-words.cpp" />
+    <ClCompile Include="805. split-array-with-same-average.cpp" />
+    <ClCompile Include="806. number-of-lines-to-write-string.cpp" />
+    <ClCompile Include="807. max-increase-to-keep-city-skyline.cpp" />
     <ClCompile Include="808. soup-servings.cpp" />
     <ClCompile Include="809. expressive-words.cpp" />
     <ClCompile Include="810. chalkboard-xor-game.cpp" />

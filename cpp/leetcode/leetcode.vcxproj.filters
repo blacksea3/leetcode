@@ -77,5 +77,17 @@
     <ClCompile Include="810. chalkboard-xor-game.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="807. max-increase-to-keep-city-skyline.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="805. split-array-with-same-average.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="804. unique-morse-code-words.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="806. number-of-lines-to-write-string.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
