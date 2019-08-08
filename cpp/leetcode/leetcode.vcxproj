@@ -163,10 +163,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="812. largest-triangle-area.cpp" />
-    <ClCompile Include="813. largest-sum-of-averages.cpp" />
-    <ClCompile Include="814. binary-tree-pruning.cpp" />
-    <ClCompile Include="815. bus-routes.cpp" />
+    <ClCompile Include="808. soup-servings.cpp" />
+    <ClCompile Include="809. expressive-words.cpp" />
+    <ClCompile Include="810. chalkboard-xor-game.cpp" />
+    <ClCompile Include="811. subdomain-visit-count.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
