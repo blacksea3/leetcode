@@ -163,10 +163,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="816. ambiguous-coordinates.cpp" />
-    <ClCompile Include="817. linked-list-components.cpp" />
-    <ClCompile Include="818. race-car.cpp" />
-    <ClCompile Include="819. most-common-word.cpp" />
+    <ClCompile Include="812. largest-triangle-area.cpp" />
+    <ClCompile Include="813. largest-sum-of-averages.cpp" />
+    <ClCompile Include="814. binary-tree-pruning.cpp" />
+    <ClCompile Include="815. bus-routes.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
