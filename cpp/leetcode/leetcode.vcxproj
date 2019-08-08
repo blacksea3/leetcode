@@ -163,10 +163,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="820. short-encoding-of-words.cpp" />
-    <ClCompile Include="821. shortest-distance-to-a-character.cpp" />
-    <ClCompile Include="822. card-flipping-game.cpp" />
-    <ClCompile Include="823. binary-trees-with-factors.cpp" />
+    <ClCompile Include="816. ambiguous-coordinates.cpp" />
+    <ClCompile Include="817. linked-list-components.cpp" />
+    <ClCompile Include="818. race-car.cpp" />
+    <ClCompile Include="819. most-common-word.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
