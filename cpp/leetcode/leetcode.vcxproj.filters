@@ -65,28 +65,16 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="811. subdomain-visit-count.cpp">
+    <ClCompile Include="796. rotate-string.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="809. expressive-words.cpp">
+    <ClCompile Include="797. all-paths-from-source-to-target.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="808. soup-servings.cpp">
+    <ClCompile Include="799. champagne-tower.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="810. chalkboard-xor-game.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="807. max-increase-to-keep-city-skyline.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="805. split-array-with-same-average.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="804. unique-morse-code-words.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="806. number-of-lines-to-write-string.cpp">
+    <ClCompile Include="798. smallest-rotation-with-highest-score.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
