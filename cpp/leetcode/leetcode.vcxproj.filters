@@ -65,16 +65,16 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="794. valid-tic-tac-toe-state.cpp">
+    <ClCompile Include="788. rotated-digits.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="792. number-of-matching-subsequences.cpp">
+    <ClCompile Include="789. escape-the-ghosts.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="795. number-of-subarrays-with-bounded-maximum.cpp">
+    <ClCompile Include="791. custom-sort-string.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="793. preimage-size-of-factorial-zeroes-function.cpp">
+    <ClCompile Include="790. domino-and-tromino-tiling.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
