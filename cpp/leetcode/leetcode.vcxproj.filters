@@ -65,16 +65,16 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="788. rotated-digits.cpp">
+    <ClCompile Include="784. letter-case-permutation.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="789. escape-the-ghosts.cpp">
+    <ClCompile Include="785. is-graph-bipartite.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="791. custom-sort-string.cpp">
+    <ClCompile Include="787. cheapest-flights-within-k-stops.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="790. domino-and-tromino-tiling.cpp">
+    <ClCompile Include="786. k-th-smallest-prime-fraction.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
