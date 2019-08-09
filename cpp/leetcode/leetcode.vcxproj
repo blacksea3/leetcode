@@ -163,10 +163,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="784. letter-case-permutation.cpp" />
-    <ClCompile Include="785. is-graph-bipartite.cpp" />
-    <ClCompile Include="786. k-th-smallest-prime-fraction.cpp" />
-    <ClCompile Include="787. cheapest-flights-within-k-stops.cpp" />
+    <ClCompile Include="780. reaching-points.cpp" />
+    <ClCompile Include="781. rabbits-in-forest.cpp" />
+    <ClCompile Include="783. minimum-distance-between-bst-nodes.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />

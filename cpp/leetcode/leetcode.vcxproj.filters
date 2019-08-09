@@ -65,16 +65,13 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="784. letter-case-permutation.cpp">
+    <ClCompile Include="783. minimum-distance-between-bst-nodes.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="785. is-graph-bipartite.cpp">
+    <ClCompile Include="781. rabbits-in-forest.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="787. cheapest-flights-within-k-stops.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="786. k-th-smallest-prime-fraction.cpp">
+    <ClCompile Include="780. reaching-points.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
