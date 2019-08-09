@@ -65,16 +65,16 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="796. rotate-string.cpp">
+    <ClCompile Include="794. valid-tic-tac-toe-state.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="797. all-paths-from-source-to-target.cpp">
+    <ClCompile Include="792. number-of-matching-subsequences.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="799. champagne-tower.cpp">
+    <ClCompile Include="795. number-of-subarrays-with-bounded-maximum.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="798. smallest-rotation-with-highest-score.cpp">
+    <ClCompile Include="793. preimage-size-of-factorial-zeroes-function.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
