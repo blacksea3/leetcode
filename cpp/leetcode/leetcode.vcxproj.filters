@@ -65,16 +65,10 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="762. prime-number-of-set-bits-in-binary-representation.cpp">
+    <ClCompile Include="746. min-cost-climbing-stairs.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="763. partition-labels.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="764. largest-plus-sign.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="765. couples-holding-hands.cpp">
+    <ClCompile Include="748. shortest-completing-word.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

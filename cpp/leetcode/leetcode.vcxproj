@@ -163,10 +163,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="762. prime-number-of-set-bits-in-binary-representation.cpp" />
-    <ClCompile Include="763. partition-labels.cpp" />
-    <ClCompile Include="764. largest-plus-sign.cpp" />
-    <ClCompile Include="765. couples-holding-hands.cpp" />
+    <ClCompile Include="746. min-cost-climbing-stairs.cpp" />
+    <ClCompile Include="748. shortest-completing-word.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
