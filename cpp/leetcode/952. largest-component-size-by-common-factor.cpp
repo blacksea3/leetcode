@@ -8,7 +8,6 @@
 
 class Solution {
 private:
-private:
 	unordered_map<int, int> um;
 
 	void init(vector<int>& vals)
