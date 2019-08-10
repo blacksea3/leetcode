@@ -163,9 +163,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="780. reaching-points.cpp" />
-    <ClCompile Include="781. rabbits-in-forest.cpp" />
-    <ClCompile Include="783. minimum-distance-between-bst-nodes.cpp" />
+    <ClCompile Include="766. toeplitz-matrix.cpp" />
+    <ClCompile Include="767. reorganize-string.cpp" />
+    <ClCompile Include="769. max-chunks-to-make-sorted.cpp" />
+    <ClCompile Include="768. max-chunks-to-make-sorted-ii.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />

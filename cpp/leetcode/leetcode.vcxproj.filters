@@ -65,13 +65,16 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="783. minimum-distance-between-bst-nodes.cpp">
+    <ClCompile Include="766. toeplitz-matrix.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="781. rabbits-in-forest.cpp">
+    <ClCompile Include="767. reorganize-string.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="780. reaching-points.cpp">
+    <ClCompile Include="769. max-chunks-to-make-sorted.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="768. max-chunks-to-make-sorted-ii.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
