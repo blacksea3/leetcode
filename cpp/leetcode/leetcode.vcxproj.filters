@@ -65,16 +65,16 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="1125. smallest-sufficient-team.cpp">
+    <ClCompile Include="1152. analyze-user-website-visit-pattern.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="1036. escape-a-large-maze.cpp">
+    <ClCompile Include="1151. minimum-swaps-to-group-all-1s-together.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="1032. stream-of-characters.cpp">
+    <ClCompile Include="1150. check-if-a-number-is-majority-element-in-a-sorted-array.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="952. largest-component-size-by-common-factor.cpp">
+    <ClCompile Include="1153. string-transforms-into-another-string.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
