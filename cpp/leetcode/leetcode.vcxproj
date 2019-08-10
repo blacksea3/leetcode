@@ -163,8 +163,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="746. min-cost-climbing-stairs.cpp" />
-    <ClCompile Include="748. shortest-completing-word.cpp" />
+    <ClCompile Include="1032. stream-of-characters.cpp" />
+    <ClCompile Include="1036. escape-a-large-maze.cpp" />
+    <ClCompile Include="1125. smallest-sufficient-team.cpp" />
+    <ClCompile Include="952. largest-component-size-by-common-factor.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />

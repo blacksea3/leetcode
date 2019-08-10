@@ -65,10 +65,16 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="746. min-cost-climbing-stairs.cpp">
+    <ClCompile Include="1125. smallest-sufficient-team.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="748. shortest-completing-word.cpp">
+    <ClCompile Include="1036. escape-a-large-maze.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1032. stream-of-characters.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="952. largest-component-size-by-common-factor.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
