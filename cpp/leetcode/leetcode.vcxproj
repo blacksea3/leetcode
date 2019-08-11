@@ -163,10 +163,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1150. check-if-a-number-is-majority-element-in-a-sorted-array.cpp" />
-    <ClCompile Include="1151. minimum-swaps-to-group-all-1s-together.cpp" />
-    <ClCompile Include="1152. analyze-user-website-visit-pattern.cpp" />
-    <ClCompile Include="1153. string-transforms-into-another-string.cpp" />
+    <ClCompile Include="943. find-the-shortest-superstring.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
