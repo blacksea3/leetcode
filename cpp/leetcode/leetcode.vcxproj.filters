@@ -65,7 +65,16 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="943. find-the-shortest-superstring.cpp">
+    <ClCompile Include="1156. swap-for-maximum-repeated-substring.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1155. number-of-dice-rolls-with-target-sum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1157. online-majority-element-in-subarray.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1154. ordinal-number-of-date.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
