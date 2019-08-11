@@ -163,14 +163,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="334. increasing-triplet-subsequence.cpp" />
-    <ClCompile Include="430. flatten-a-multilevel-doubly-linked-list.cpp" />
-    <ClCompile Include="433. minimum-genetic-mutation.cpp" />
-    <ClCompile Include="435. non-overlapping-intervals.cpp" />
-    <ClCompile Include="436. find-right-interval.cpp" />
-    <ClCompile Include="442. find-all-duplicates-in-an-array.cpp" />
-    <ClCompile Include="754. reach-a-number.cpp" />
-    <ClCompile Include="771. jewels-and-stones.cpp" />
+    <ClCompile Include="341. flatten-nested-list-iterator.cpp" />
+    <ClCompile Include="413. arithmetic-slices.cpp" />
+    <ClCompile Include="445. add-two-numbers-ii.cpp" />
+    <ClCompile Include="449. serialize-and-deserialize-bst.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
