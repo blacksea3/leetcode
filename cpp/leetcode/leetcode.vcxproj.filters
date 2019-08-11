@@ -65,7 +65,10 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="964. least-operators-to-express-number.cpp">
+    <ClCompile Include="927. three-equal-parts.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="913. cat-and-mouse.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

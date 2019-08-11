@@ -163,7 +163,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="964. least-operators-to-express-number.cpp" />
+    <ClCompile Include="913. cat-and-mouse.cpp" />
+    <ClCompile Include="927. three-equal-parts.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
