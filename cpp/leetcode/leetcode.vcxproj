@@ -163,10 +163,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1154. ordinal-number-of-date.cpp" />
-    <ClCompile Include="1155. number-of-dice-rolls-with-target-sum.cpp" />
-    <ClCompile Include="1156. swap-for-maximum-repeated-substring.cpp" />
-    <ClCompile Include="1157. online-majority-element-in-subarray.cpp" />
+    <ClCompile Include="964. least-operators-to-express-number.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
