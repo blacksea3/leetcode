@@ -163,7 +163,18 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="770. basic-calculator-iv.cpp" />
+    <ClCompile Include="438. find-all-anagrams-in-a-string.cpp" />
+    <ClCompile Include="441. arranging-coins.cpp" />
+    <ClCompile Include="443. string-compression.cpp" />
+    <ClCompile Include="447. number-of-boomerangs.cpp" />
+    <ClCompile Include="448. find-all-numbers-disappeared-in-an-array.cpp" />
+    <ClCompile Include="453. minimum-moves-to-equal-array-elements.cpp" />
+    <ClCompile Include="455. assign-cookies.cpp" />
+    <ClCompile Include="459. repeated-substring-pattern.cpp" />
+    <ClCompile Include="461. hamming-distance.cpp" />
+    <ClCompile Include="463. island-perimeter.cpp" />
+    <ClCompile Include="475. heaters.cpp" />
+    <ClCompile Include="476. number-complement.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
