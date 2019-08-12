@@ -65,40 +65,19 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="438. find-all-anagrams-in-a-string.cpp">
+    <ClCompile Include="450. delete-node-in-a-bst.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="441. arranging-coins.cpp">
+    <ClCompile Include="451. sort-characters-by-frequency.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="443. string-compression.cpp">
+    <ClCompile Include="452. minimum-number-of-arrows-to-burst-balloons.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="447. number-of-boomerangs.cpp">
+    <ClCompile Include="454. 4sum-ii.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="448. find-all-numbers-disappeared-in-an-array.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="453. minimum-moves-to-equal-array-elements.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="455. assign-cookies.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="459. repeated-substring-pattern.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="461. hamming-distance.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="463. island-perimeter.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="475. heaters.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="476. number-complement.cpp">
+    <ClCompile Include="456. 132-pattern.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
