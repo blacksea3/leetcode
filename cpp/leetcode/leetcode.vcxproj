@@ -163,10 +163,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="341. flatten-nested-list-iterator.cpp" />
-    <ClCompile Include="413. arithmetic-slices.cpp" />
-    <ClCompile Include="445. add-two-numbers-ii.cpp" />
-    <ClCompile Include="449. serialize-and-deserialize-bst.cpp" />
+    <ClCompile Include="770. basic-calculator-iv.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />

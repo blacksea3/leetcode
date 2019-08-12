@@ -65,16 +65,7 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="341. flatten-nested-list-iterator.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="413. arithmetic-slices.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="445. add-two-numbers-ii.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="449. serialize-and-deserialize-bst.cpp">
+    <ClCompile Include="770. basic-calculator-iv.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
