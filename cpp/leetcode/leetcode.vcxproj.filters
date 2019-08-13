@@ -65,19 +65,43 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="450. delete-node-in-a-bst.cpp">
+    <ClCompile Include="485. max-consecutive-ones.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="451. sort-characters-by-frequency.cpp">
+    <ClCompile Include="482. license-key-formatting.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="452. minimum-number-of-arrows-to-burst-balloons.cpp">
+    <ClCompile Include="492. construct-the-rectangle.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="454. 4sum-ii.cpp">
+    <ClCompile Include="496. next-greater-element-i.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="456. 132-pattern.cpp">
+    <ClCompile Include="500. keyboard-row.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="501. find-mode-in-binary-search-tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="504. base-7.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="506. relative-ranks.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="507. perfect-number.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="509. fibonacci-number.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="520. detect-capital.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="521. longest-uncommon-subsequence-i.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="530. minimum-absolute-difference-in-bst.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
