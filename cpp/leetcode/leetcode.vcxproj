@@ -163,13 +163,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="532. k-diff-pairs-in-an-array.cpp" />
-    <ClCompile Include="538. convert-bst-to-greater-tree.cpp" />
-    <ClCompile Include="541. reverse-string-ii.cpp" />
-    <ClCompile Include="543. diameter-of-binary-tree.cpp" />
-    <ClCompile Include="551. student-attendance-record-i.cpp" />
-    <ClCompile Include="557. reverse-words-in-a-string-iii.cpp" />
-    <ClCompile Include="558. quad-tree-intersection.cpp" />
+    <ClCompile Include="559. maximum-depth-of-n-ary-tree.cpp" />
+    <ClCompile Include="561. array-partition-i.cpp" />
+    <ClCompile Include="563. binary-tree-tilt.cpp" />
+    <ClCompile Include="566. reshape-the-matrix.cpp" />
+    <ClCompile Include="572. subtree-of-another-tree.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
