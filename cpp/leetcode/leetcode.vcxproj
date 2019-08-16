@@ -163,11 +163,18 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="559. maximum-depth-of-n-ary-tree.cpp" />
-    <ClCompile Include="561. array-partition-i.cpp" />
-    <ClCompile Include="563. binary-tree-tilt.cpp" />
-    <ClCompile Include="566. reshape-the-matrix.cpp" />
-    <ClCompile Include="572. subtree-of-another-tree.cpp" />
+    <ClCompile Include="575. distribute-candies.cpp" />
+    <ClCompile Include="581. shortest-unsorted-continuous-subarray.cpp" />
+    <ClCompile Include="589. n-ary-tree-preorder-traversal.cpp" />
+    <ClCompile Include="590. n-ary-tree-postorder-traversal.cpp" />
+    <ClCompile Include="594. longest-harmonious-subsequence.cpp" />
+    <ClCompile Include="598. range-addition-ii.cpp" />
+    <ClCompile Include="599. minimum-index-sum-of-two-lists.cpp" />
+    <ClCompile Include="605. can-place-flowers.cpp" />
+    <ClCompile Include="606. construct-string-from-binary-tree.cpp" />
+    <ClCompile Include="617. merge-two-binary-trees.cpp" />
+    <ClCompile Include="628. maximum-product-of-three-numbers.cpp" />
+    <ClCompile Include="633. sum-of-square-numbers.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
