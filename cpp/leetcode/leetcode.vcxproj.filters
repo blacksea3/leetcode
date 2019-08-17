@@ -65,13 +65,10 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="457. circular-array-loop.cpp">
+    <ClCompile Include="467. unique-substrings-in-wraparound-string.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="462. minimum-moves-to-equal-array-elements-ii.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="464. can-i-win.cpp">
+    <ClCompile Include="468. validate-ip-address.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -163,9 +163,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="457. circular-array-loop.cpp" />
-    <ClCompile Include="462. minimum-moves-to-equal-array-elements-ii.cpp" />
-    <ClCompile Include="464. can-i-win.cpp" />
+    <ClCompile Include="467. unique-substrings-in-wraparound-string.cpp" />
+    <ClCompile Include="468. validate-ip-address.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
