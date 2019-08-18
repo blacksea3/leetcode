@@ -163,8 +163,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="467. unique-substrings-in-wraparound-string.cpp" />
-    <ClCompile Include="468. validate-ip-address.cpp" />
+    <ClCompile Include="5048. find-words-that-can-be-formed-by-characters.cpp" />
+    <ClCompile Include="5052. maximum-level-sum-of-a-binary-tree.cpp" />
+    <ClCompile Include="5053. as-far-from-land-as-possible.cpp" />
+    <ClCompile Include="5069. last-substring-in-lexicographical-order.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
