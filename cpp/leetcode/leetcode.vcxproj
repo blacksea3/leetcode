@@ -163,13 +163,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="637. average-of-levels-in-binary-tree.cpp" />
-    <ClCompile Include="643. maximum-average-subarray-i.cpp" />
-    <ClCompile Include="645. set-mismatch.cpp" />
-    <ClCompile Include="653. two-sum-iv-input-is-a-bst.cpp" />
-    <ClCompile Include="657. robot-return-to-origin.cpp" />
-    <ClCompile Include="661. image-smoother.cpp" />
-    <ClCompile Include="665. non-decreasing-array.cpp" />
+    <ClCompile Include="669. trim-a-binary-search-tree.cpp" />
+    <ClCompile Include="671. second-minimum-node-in-a-binary-tree.cpp" />
+    <ClCompile Include="674. longest-continuous-increasing-subsequence.cpp" />
+    <ClCompile Include="680. valid-palindrome-ii.cpp" />
+    <ClCompile Include="682. baseball-game.cpp" />
+    <ClCompile Include="686. repeated-string-match.cpp" />
+    <ClCompile Include="687. longest-univalue-path.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />

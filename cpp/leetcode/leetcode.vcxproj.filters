@@ -44,25 +44,25 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="637. average-of-levels-in-binary-tree.cpp">
+    <ClCompile Include="669. trim-a-binary-search-tree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="643. maximum-average-subarray-i.cpp">
+    <ClCompile Include="671. second-minimum-node-in-a-binary-tree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="645. set-mismatch.cpp">
+    <ClCompile Include="674. longest-continuous-increasing-subsequence.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="653. two-sum-iv-input-is-a-bst.cpp">
+    <ClCompile Include="680. valid-palindrome-ii.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="657. robot-return-to-origin.cpp">
+    <ClCompile Include="682. baseball-game.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="661. image-smoother.cpp">
+    <ClCompile Include="686. repeated-string-match.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="665. non-decreasing-array.cpp">
+    <ClCompile Include="687. longest-univalue-path.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
