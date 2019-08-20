@@ -163,10 +163,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="5048. find-words-that-can-be-formed-by-characters.cpp" />
-    <ClCompile Include="5052. maximum-level-sum-of-a-binary-tree.cpp" />
-    <ClCompile Include="5053. as-far-from-land-as-possible.cpp" />
-    <ClCompile Include="5069. last-substring-in-lexicographical-order.cpp" />
+    <ClCompile Include="637. average-of-levels-in-binary-tree.cpp" />
+    <ClCompile Include="643. maximum-average-subarray-i.cpp" />
+    <ClCompile Include="645. set-mismatch.cpp" />
+    <ClCompile Include="653. two-sum-iv-input-is-a-bst.cpp" />
+    <ClCompile Include="657. robot-return-to-origin.cpp" />
+    <ClCompile Include="661. image-smoother.cpp" />
+    <ClCompile Include="665. non-decreasing-array.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
