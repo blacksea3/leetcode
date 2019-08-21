@@ -44,25 +44,31 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="669. trim-a-binary-search-tree.cpp">
+    <ClCompile Include="690. employee-importance.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="671. second-minimum-node-in-a-binary-tree.cpp">
+    <ClCompile Include="693. binary-number-with-alternating-bits.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="674. longest-continuous-increasing-subsequence.cpp">
+    <ClCompile Include="696. count-binary-substrings.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="680. valid-palindrome-ii.cpp">
+    <ClCompile Include="697. degree-of-an-array.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="682. baseball-game.cpp">
+    <ClCompile Include="700. search-in-a-binary-search-tree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="686. repeated-string-match.cpp">
+    <ClCompile Include="703. kth-largest-element-in-a-stream.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="687. longest-univalue-path.cpp">
+    <ClCompile Include="704. binary-search.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="705. design-hashset.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="706. design-hashmap.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
