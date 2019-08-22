@@ -163,15 +163,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="690. employee-importance.cpp" />
-    <ClCompile Include="693. binary-number-with-alternating-bits.cpp" />
-    <ClCompile Include="696. count-binary-substrings.cpp" />
-    <ClCompile Include="697. degree-of-an-array.cpp" />
-    <ClCompile Include="700. search-in-a-binary-search-tree.cpp" />
-    <ClCompile Include="703. kth-largest-element-in-a-stream.cpp" />
-    <ClCompile Include="704. binary-search.cpp" />
-    <ClCompile Include="705. design-hashset.cpp" />
-    <ClCompile Include="706. design-hashmap.cpp" />
+    <ClCompile Include="707. design-linked-list.cpp" />
+    <ClCompile Include="709. to-lower-case.cpp" />
+    <ClCompile Include="717. 1-bit-and-2-bit-characters.cpp" />
+    <ClCompile Include="720. longest-word-in-dictionary.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
