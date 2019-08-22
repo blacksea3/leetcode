@@ -163,10 +163,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="707. design-linked-list.cpp" />
-    <ClCompile Include="709. to-lower-case.cpp" />
-    <ClCompile Include="717. 1-bit-and-2-bit-characters.cpp" />
-    <ClCompile Include="720. longest-word-in-dictionary.cpp" />
+    <ClCompile Include="724. find-pivot-index.cpp" />
+    <ClCompile Include="728. self-dividing-numbers.cpp" />
+    <ClCompile Include="733. flood-fill.cpp" />
+    <ClCompile Include="744. find-smallest-letter-greater-than-target.cpp" />
+    <ClCompile Include="747. largest-number-at-least-twice-of-others.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />

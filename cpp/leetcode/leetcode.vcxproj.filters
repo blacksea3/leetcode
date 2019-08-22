@@ -44,16 +44,19 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="707. design-linked-list.cpp">
+    <ClCompile Include="724. find-pivot-index.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="709. to-lower-case.cpp">
+    <ClCompile Include="728. self-dividing-numbers.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="717. 1-bit-and-2-bit-characters.cpp">
+    <ClCompile Include="733. flood-fill.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="720. longest-word-in-dictionary.cpp">
+    <ClCompile Include="744. find-smallest-letter-greater-than-target.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="747. largest-number-at-least-twice-of-others.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
