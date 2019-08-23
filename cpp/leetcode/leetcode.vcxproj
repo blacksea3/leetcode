@@ -167,6 +167,9 @@
     <ClCompile Include="478. generate-random-point-in-a-circle.cpp" />
     <ClCompile Include="481. magical-string.cpp" />
     <ClCompile Include="486. predict-the-winner.cpp" />
+    <ClCompile Include="495. teemo-attacking.cpp" />
+    <ClCompile Include="497. random-point-in-non-overlapping-rectangles.cpp" />
+    <ClCompile Include="498. diagonal-traverse.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />

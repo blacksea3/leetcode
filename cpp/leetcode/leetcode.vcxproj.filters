@@ -56,5 +56,14 @@
     <ClCompile Include="486. predict-the-winner.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="495. teemo-attacking.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="497. random-point-in-non-overlapping-rectangles.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="498. diagonal-traverse.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
