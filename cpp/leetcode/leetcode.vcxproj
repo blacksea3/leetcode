@@ -163,11 +163,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="724. find-pivot-index.cpp" />
-    <ClCompile Include="728. self-dividing-numbers.cpp" />
-    <ClCompile Include="733. flood-fill.cpp" />
-    <ClCompile Include="744. find-smallest-letter-greater-than-target.cpp" />
-    <ClCompile Include="747. largest-number-at-least-twice-of-others.cpp" />
+    <ClCompile Include="470. implement-rand10-using-rand7.cpp" />
+    <ClCompile Include="474. ones-and-zeroes.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
