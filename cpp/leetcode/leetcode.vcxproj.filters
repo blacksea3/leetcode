@@ -44,10 +44,16 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="470. implement-rand10-using-rand7.cpp">
+    <ClCompile Include="477. total-hamming-distance.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="474. ones-and-zeroes.cpp">
+    <ClCompile Include="478. generate-random-point-in-a-circle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="481. magical-string.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="486. predict-the-winner.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
