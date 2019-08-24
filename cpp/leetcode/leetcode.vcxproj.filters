@@ -44,7 +44,16 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="1157. online-majority-element-in-subarray.cpp">
+    <ClCompile Include="5059. single-row-keyboard.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5061. design-file-system.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5062. minimum-cost-to-connect-sticks.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5074. optimize-water-distribution-in-a-village.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
