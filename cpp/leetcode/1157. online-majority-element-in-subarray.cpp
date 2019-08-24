@@ -11,8 +11,8 @@ public:
 	int query(int left, int right, int threshold) {
 		//unordered_map<int, int> um;
 
-		int ans = v[left];
-		int flag = 1;
+		int ans;
+		int flag = 0;
 		for (int i = left; i <= right; i++)
 		{
 			if (flag > 0)
