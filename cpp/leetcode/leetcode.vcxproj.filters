@@ -9,27 +9,6 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="源文件\Array">
-      <UniqueIdentifier>{8f7cc73e-10f5-4af3-b0f0-ab8ec0f78293}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\LinkList">
-      <UniqueIdentifier>{2a2ecaed-1b90-4716-ad96-6bef84dd1f56}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\String">
-      <UniqueIdentifier>{c13098af-2edf-428f-8e88-826fa3225063}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\DC">
-      <UniqueIdentifier>{d7a92ef2-f2ae-45dd-a58a-1f96dba9ad58}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\Math">
-      <UniqueIdentifier>{94e552d6-9abc-41d3-ab4d-21e5fcb20e46}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\DP">
-      <UniqueIdentifier>{61a5fc2d-e743-41c1-8e30-4fa9c823ae2e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\BackTracking">
-      <UniqueIdentifier>{4fdb2d0f-9d1b-4cb1-94ee-d32ec61a00d3}</UniqueIdentifier>
-    </Filter>
     <Filter Include="资源文件">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
@@ -59,13 +38,28 @@
     <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="392. is-subsequence.cpp">
+    <ClCompile Include="test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="403. frog-jump.cpp">
+    <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="410. split-array-largest-sum.cpp">
+    <ClCompile Include="503. next-greater-element-ii.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="508. most-frequent-subtree-sum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="516. longest-palindromic-subsequence.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="518. coin-change-2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="519. random-flip-matrix.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="522. longest-uncommon-subsequence-ii.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

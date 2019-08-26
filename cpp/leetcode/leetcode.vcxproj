@@ -163,11 +163,16 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="392. is-subsequence.cpp" />
-    <ClCompile Include="403. frog-jump.cpp" />
-    <ClCompile Include="410. split-array-largest-sum.cpp" />
+    <ClCompile Include="503. next-greater-element-ii.cpp" />
+    <ClCompile Include="508. most-frequent-subtree-sum.cpp" />
+    <ClCompile Include="516. longest-palindromic-subsequence.cpp" />
+    <ClCompile Include="518. coin-change-2.cpp" />
+    <ClCompile Include="519. random-flip-matrix.cpp" />
+    <ClCompile Include="522. longest-uncommon-subsequence-ii.cpp" />
+    <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
+    <ClCompile Include="test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

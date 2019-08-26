@@ -17,9 +17,14 @@
 #include <bitset>
 #include <array>
 
+#include <random>
+#include "time.h"
+
 //#include "json/json.h"
 
 using namespace std;
+
+int gcd(int, int);
 
 /*
 //37
