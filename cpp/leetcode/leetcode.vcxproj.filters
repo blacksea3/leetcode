@@ -44,16 +44,22 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="5059. single-row-keyboard.cpp">
+    <ClCompile Include="503. next-greater-element-ii.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="5061. design-file-system.cpp">
+    <ClCompile Include="508. most-frequent-subtree-sum.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="5062. minimum-cost-to-connect-sticks.cpp">
+    <ClCompile Include="516. longest-palindromic-subsequence.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="5074. optimize-water-distribution-in-a-village.cpp">
+    <ClCompile Include="518. coin-change-2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="519. random-flip-matrix.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="522. longest-uncommon-subsequence-ii.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

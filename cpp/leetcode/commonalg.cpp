@@ -74,3 +74,22 @@ private:
 		}
 	}
 };
+
+//返回:s是否为t的子序列
+bool isSubsequence(string s, string t) {
+	int sloc = 0;
+	int tloc = 0;
+
+	while (sloc < s.size() && tloc < t.size())
+	{
+		if (t[tloc] == s[sloc])
+		{
+			tloc++;
+			sloc++;
+		}
+		else tloc++;
+	}
+	if (sloc == s.size()) return true;
+	else return false;
+}
+

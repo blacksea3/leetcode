@@ -163,10 +163,12 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="5059. single-row-keyboard.cpp" />
-    <ClCompile Include="5061. design-file-system.cpp" />
-    <ClCompile Include="5062. minimum-cost-to-connect-sticks.cpp" />
-    <ClCompile Include="5074. optimize-water-distribution-in-a-village.cpp" />
+    <ClCompile Include="503. next-greater-element-ii.cpp" />
+    <ClCompile Include="508. most-frequent-subtree-sum.cpp" />
+    <ClCompile Include="516. longest-palindromic-subsequence.cpp" />
+    <ClCompile Include="518. coin-change-2.cpp" />
+    <ClCompile Include="519. random-flip-matrix.cpp" />
+    <ClCompile Include="522. longest-uncommon-subsequence-ii.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
