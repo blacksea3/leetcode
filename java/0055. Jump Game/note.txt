@@ -1,0 +1,7 @@
+相关点： 
+array 
+Greedy
+
+思路：
+1, find a simple way to do this by dp
+2, just need to record max and end of every step

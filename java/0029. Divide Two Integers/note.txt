@@ -1,0 +1,10 @@
+相关点： 
+Math
+
+思路：
+1, binary length compare, use bit operation
+
+
+
+
+

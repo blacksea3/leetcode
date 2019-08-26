@@ -1,0 +1,11 @@
+相关点： 
+string
+
+思路：
+1, manipulate single char as multiply, from end to start, update 2 num every time
+
+
+
+
+
+

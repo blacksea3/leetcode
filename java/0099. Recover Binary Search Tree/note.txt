@@ -1,0 +1,9 @@
+相关点： 
+Tree
+
+思路：
+1, similar to question 98
+2, A,change root.left max with root.right
+   B, change root.left max with root
+   C, change root.right min wiht root
+   D, find in root left or right

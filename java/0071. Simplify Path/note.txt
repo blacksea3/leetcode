@@ -1,0 +1,6 @@
+相关点： 
+Stack
+
+思路：
+1, stack pop and push
+2, split the //,  is ""

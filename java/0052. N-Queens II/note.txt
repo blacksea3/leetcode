@@ -1,0 +1,6 @@
+相关点： 
+backtracking
+
+思路：
+1, like the prev
+2, using boolean array rather than hashset could be much faster

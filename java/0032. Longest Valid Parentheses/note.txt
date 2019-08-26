@@ -1,0 +1,9 @@
+相关点： 
+String
+
+思路：
+1, using recursion for every substring by order(takes a long time)
+
+
+
+

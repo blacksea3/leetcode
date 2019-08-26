@@ -1,0 +1,9 @@
+相关点： 
+Array
+Segment tree
+Stack
+
+思路：
+1, segment tree: find the smallest num in array. Then check the max rect in left area, right area and itself
+2, brute force: check the area for every length
+3, recursion from middle: find middle and compare left area, right area, and the center are, 

@@ -1,0 +1,12 @@
+相关点： 
+dp
+
+思路：
+1, actually backtracking taking a long time and do not work
+2, use dp, 2d table, * could get from d[i-1][j] or d[i][j-1]
+
+
+
+
+
+

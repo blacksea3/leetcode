@@ -1,0 +1,6 @@
+相关点： 
+Dp
+
+思路：
+1, consider the replace and add new for the string
+2, create dp table by the relation

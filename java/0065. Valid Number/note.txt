@@ -1,0 +1,7 @@
+相关点： 
+String
+
+思路：
+1, try to change every num into one so compare all the cases
+2, a much better solution is using state machine
+//ref:https://leetcode.wang/leetCode-65-Valid-Number.html

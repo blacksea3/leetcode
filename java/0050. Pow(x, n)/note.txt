@@ -1,0 +1,6 @@
+相关点： 
+math
+
+思路：
+1, log(n)times
+2, just /2 is a better solution

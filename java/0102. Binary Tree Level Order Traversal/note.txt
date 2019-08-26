@@ -1,0 +1,11 @@
+相关点： 
+Tree
+BFS
+Queue
+
+思路：
+1, using queue: 
+offer: add element at end
+Poll: remove and show element at front
+Peek: show element at front
+Size: show size of queue

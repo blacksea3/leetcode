@@ -1,0 +1,7 @@
+相关点： 
+Array
+2 pointer
+
+思路：
+1, 2 pointer in one loop
+2, threshold condition

@@ -1,0 +1,7 @@
+相关点： 
+Array
+
+思路：
+1, allocate a row and a column for the first 0
+2, set whether this column or row is 0 inside this prev allocted
+3, use 1/0 to represent 

@@ -1,0 +1,7 @@
+相关点： 
+Array
+2 point
+
+思路：
+1, move the array backward 
+2, then compare and put the new array from start

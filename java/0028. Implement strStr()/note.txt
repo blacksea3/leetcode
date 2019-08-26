@@ -1,0 +1,9 @@
+相关点： 
+string
+
+思路：
+1, the suitable location for substring 
+
+
+
+

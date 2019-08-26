@@ -1,0 +1,5 @@
+相关点： 
+Tree
+
+思路：
+1, check isvalid of subtree and compare min and max value from subtrees

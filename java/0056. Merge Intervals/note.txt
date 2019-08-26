@@ -1,0 +1,9 @@
+相关点： 
+array 
+Sort
+
+思路：
+1, the way to sort object or array: 
+   Arrays.sort(intervals, (i1, i2) -> Integer.compare(i1[0], i2[0]));
+2, convert list and array: array.asList or just loop
+3, get last item in list: get(index), index = list.size()-1

@@ -1,0 +1,8 @@
+相关点： 
+Exchange number in array
+
+思路：
+1, could also used in prev question, without hashmap
+2, exchange the array order so add the int[] as list to the all list
+3, when convert int[] to list, just use loop and add
+

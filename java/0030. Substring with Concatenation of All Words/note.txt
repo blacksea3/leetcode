@@ -1,0 +1,12 @@
+相关点： 
+Map
+
+思路：
+1, for arraylist using arraylist.length, for string using string.length()
+2, map.getOrDefault(index, default value)
+3, use hashmap to compare for disordered list
+
+
+
+
+

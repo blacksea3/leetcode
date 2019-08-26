@@ -1,0 +1,5 @@
+相关点： 
+array 
+
+思路：
+1, we could combine the find newinterval start end and add new to list in one loop

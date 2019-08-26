@@ -1,0 +1,13 @@
+相关点： 
+Arraylist
+Backtracking
+
+思路：
+1, a late difference : by adding 1 to index of (new number in list) when looking for next number in recursion
+2, and do not check same number in list more than 1 time in the loop
+
+
+
+
+
+

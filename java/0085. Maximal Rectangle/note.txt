@@ -1,0 +1,7 @@
+相关点： 
+Array
+Stack
+
+思路：
+1, force: considered rectangle edge at one location, find the largest rectangle at point
+2, use the similar method like question84 and put the record data every line.

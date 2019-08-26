@@ -1,0 +1,10 @@
+相关点： 
+Linked list
+
+思路：
+1, separate to 2 link list than combine
+
+
+
+
+

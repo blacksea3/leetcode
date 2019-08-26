@@ -1,0 +1,6 @@
+相关点： 
+Backtracking
+Math
+
+思路：
+1, add 1 number each time for the permutation
