@@ -44,22 +44,10 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="503. next-greater-element-ii.cpp">
+    <ClCompile Include="523. continuous-subarray-sum.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="508. most-frequent-subtree-sum.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="516. longest-palindromic-subsequence.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="518. coin-change-2.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="519. random-flip-matrix.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="522. longest-uncommon-subsequence-ii.cpp">
+    <ClCompile Include="524. longest-word-in-dictionary-through-deleting.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
