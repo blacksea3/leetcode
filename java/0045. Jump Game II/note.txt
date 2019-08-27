@@ -1,0 +1,9 @@
+相关点： 
+greedy
+
+思路：
+1, record the max location for every step
+
+
+
+

@@ -1,0 +1,6 @@
+相关点： 
+Math
+
+思路：
+1, just use binary search
+2, to avoid over flow using (a-b)/2+a and divide rather than multiple

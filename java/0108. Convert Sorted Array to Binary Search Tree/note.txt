@@ -1,0 +1,5 @@
+相关点： 
+Tree
+
+思路：
+1, copy part of the array: Arrays.copyOfRange(nums, start, end+1);

@@ -1,0 +1,6 @@
+相关点： 
+String
+Backtracking
+
+思路：
+1, take care of the threshold condition, such as 01 could be parsed into int but not valid in IP

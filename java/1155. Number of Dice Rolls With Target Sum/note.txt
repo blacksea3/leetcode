@@ -1,0 +1,9 @@
+相关点： 
+dp
+
+思路：
+1, mod is used every time
+
+
+
+

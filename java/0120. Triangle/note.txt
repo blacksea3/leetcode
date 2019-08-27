@@ -1,0 +1,5 @@
+相关点： 
+dp
+
+思路：
+1, in just O(x) (could use just list, but I use int[])

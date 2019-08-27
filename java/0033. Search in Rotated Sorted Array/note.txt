@@ -1,0 +1,9 @@
+相关点： 
+Array
+
+思路：
+1, check the rotation location first, then find the target location
+
+
+
+

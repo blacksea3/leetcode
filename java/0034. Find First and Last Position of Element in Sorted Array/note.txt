@@ -1,0 +1,9 @@
+相关点： 
+Array
+
+思路：
+1, find the location of num just before the target and after the target, between are the target
+
+
+
+

@@ -1,0 +1,5 @@
+相关点： 
+backtracking
+
+思路：
+1, try every possible solution by recursion and backtracking

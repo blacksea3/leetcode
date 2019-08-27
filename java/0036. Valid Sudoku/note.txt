@@ -1,0 +1,13 @@
+相关点： 
+Hashset
+
+思路：
+1, valid, may not solvable, just works for the exist number
+2, using hashset to avoid duplicate comparison
+
+
+
+
+
+
+

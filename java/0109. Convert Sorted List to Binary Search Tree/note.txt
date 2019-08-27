@@ -1,0 +1,6 @@
+相关点： 
+Tree
+
+思路：
+1, using loop to convert list to array
+2, using inorder BSF ways, could save time

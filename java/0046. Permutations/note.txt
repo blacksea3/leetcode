@@ -1,0 +1,10 @@
+相关点： 
+Backtracking
+
+思路：
+1, just add to arraylist to convert int[]
+2, java pass the reference to function, so remove after add
+3, distinct means just check contains
+
+
+

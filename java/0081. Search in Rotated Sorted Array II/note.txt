@@ -1,0 +1,6 @@
+相关点： 
+Array
+Binary search
+
+思路：
+1, only change from question 33 is in find rotation location, by checking all the front element num[i] before test loc rather than just the first element num[0]

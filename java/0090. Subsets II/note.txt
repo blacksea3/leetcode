@@ -1,0 +1,6 @@
+相关点： 
+Backtracking
+
+思路：
+1, do not fit the prev solution in quesion78, because it is little hard to when add a new duplicate number
+2, backtracking and 

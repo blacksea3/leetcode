@@ -1,0 +1,5 @@
+相关点： 
+Linked list 
+
+思路：
+1, in code.java ,I try to remove the duplicate node after current node

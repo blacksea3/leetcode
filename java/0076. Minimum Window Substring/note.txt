@@ -1,0 +1,9 @@
+相关点： 
+2 pointer
+Hashmap/array
+Sliding window
+
+思路：
+1, using array to represent hashmap smaller than some size is efficient
+2, need to consider over 2 same char needed
+3, sliding window could use while outside and inside

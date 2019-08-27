@@ -1,0 +1,7 @@
+相关点： 
+Tree
+BFS
+Queue
+
+思路：
+1, collections.reverse(list)

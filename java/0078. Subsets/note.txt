@@ -1,0 +1,6 @@
+相关点： 
+recursion,
+
+
+思路：
+1, consider add new number to previous

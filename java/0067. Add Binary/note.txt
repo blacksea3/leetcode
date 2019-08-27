@@ -1,0 +1,6 @@
+相关点： 
+String
+
+思路：
+1, if the first char is 0 remove the char
+2, add/2 and add%2

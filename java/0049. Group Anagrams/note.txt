@@ -1,0 +1,6 @@
+相关点： 
+hashmap
+
+思路：
+1, sort the string by char[]
+2, hash map and list combined 

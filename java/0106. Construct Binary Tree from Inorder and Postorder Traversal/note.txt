@@ -1,0 +1,6 @@
+相关点： 
+Tree
+
+思路：
+1, map and recursion
+2, remember for a tree [x], start and end should be 0-1 other than 0-0, 0-0 should be null

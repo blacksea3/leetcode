@@ -1,0 +1,6 @@
+相关点： 
+String
+
+思路：
+1, space and remainder is simple solution
+2, string.trim()used to delete the space before and after which is useful

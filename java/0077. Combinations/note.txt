@@ -1,0 +1,7 @@
+相关点： 
+recursion,
+Backtracking
+
+思路：
+1, recursion in code.js take a long time and space
+2, backtracking by add new int to list could save space and time

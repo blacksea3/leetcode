@@ -1,0 +1,5 @@
+相关点： 
+String
+
+思路：
+1, use Character.isSpace(s.charAt(loc) to check if the char is space
