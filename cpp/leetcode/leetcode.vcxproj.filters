@@ -44,10 +44,10 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="523. continuous-subarray-sum.cpp">
+    <ClCompile Include="525. contiguous-array.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="524. longest-word-in-dictionary-through-deleting.cpp">
+    <ClCompile Include="526. beautiful-arrangement.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

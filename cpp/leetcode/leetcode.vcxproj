@@ -163,8 +163,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="523. continuous-subarray-sum.cpp" />
-    <ClCompile Include="524. longest-word-in-dictionary-through-deleting.cpp" />
+    <ClCompile Include="525. contiguous-array.cpp" />
+    <ClCompile Include="526. beautiful-arrangement.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
