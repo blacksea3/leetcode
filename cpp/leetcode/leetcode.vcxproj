@@ -163,8 +163,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="525. contiguous-array.cpp" />
-    <ClCompile Include="526. beautiful-arrangement.cpp" />
+    <ClCompile Include="528. random-pick-with-weight.cpp" />
+    <ClCompile Include="535. encode-and-decode-tinyurl.cpp" />
+    <ClCompile Include="537. complex-number-multiplication.cpp" />
+    <ClCompile Include="539. minimum-time-difference.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />

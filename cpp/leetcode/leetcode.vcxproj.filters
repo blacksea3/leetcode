@@ -44,10 +44,16 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="525. contiguous-array.cpp">
+    <ClCompile Include="528. random-pick-with-weight.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="526. beautiful-arrangement.cpp">
+    <ClCompile Include="535. encode-and-decode-tinyurl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="537. complex-number-multiplication.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="539. minimum-time-difference.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
