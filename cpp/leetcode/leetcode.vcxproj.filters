@@ -44,16 +44,16 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="540. single-element-in-a-sorted-array.cpp">
+    <ClCompile Include="556. next-greater-element-iii.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="547. friend-circles.cpp">
+    <ClCompile Include="560. subarray-sum-equals-k.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="553. optimal-division.cpp">
+    <ClCompile Include="5174. diet-plan-performance.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="554. brick-wall.cpp">
+    <ClCompile Include="5173. prime-arrangements.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

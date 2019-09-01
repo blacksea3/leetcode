@@ -163,10 +163,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="540. single-element-in-a-sorted-array.cpp" />
-    <ClCompile Include="547. friend-circles.cpp" />
-    <ClCompile Include="553. optimal-division.cpp" />
-    <ClCompile Include="554. brick-wall.cpp" />
+    <ClCompile Include="5173. prime-arrangements.cpp" />
+    <ClCompile Include="5174. diet-plan-performance.cpp" />
+    <ClCompile Include="556. next-greater-element-iii.cpp" />
+    <ClCompile Include="560. subarray-sum-equals-k.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />

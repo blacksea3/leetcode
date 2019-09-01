@@ -29,6 +29,23 @@ vector<int> primes(const size_t n) {
 	return res;
 }
 
+//输入正整数, 输出是否是质数, 是就true
+bool isPrime(int n)
+{
+	if (n == 1) return false;
+	else if (n == 2) return true;
+	else
+	{
+		if (n % 2 == 0) return false;
+
+		for (int val = 3; val <= (int)sqrt(n); val += 2)
+		{
+			if (n%val == 0) return false;
+		}
+		return true;
+	}
+}
+
 //给a作质因数分解
 unordered_set<int> getprimes(int a)
 {
