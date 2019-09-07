@@ -44,16 +44,10 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="556. next-greater-element-iii.cpp">
+    <ClCompile Include="565. array-nesting.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="560. subarray-sum-equals-k.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="5174. diet-plan-performance.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="5173. prime-arrangements.cpp">
+    <ClCompile Include="567. permutation-in-string.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
