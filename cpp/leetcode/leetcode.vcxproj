@@ -163,10 +163,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="5067. count-substrings-with-only-one-distinct-letter.cpp" />
-    <ClCompile Include="5068. before-and-after-puzzle.cpp" />
-    <ClCompile Include="5070. shortest-distance-to-target-color.cpp" />
-    <ClCompile Include="5082. maximum-number-of-ones.cpp" />
+    <ClCompile Include="5181. distance-between-bus-stops.cpp" />
+    <ClCompile Include="5182. maximum-subarray-sum-with-one-deletion.cpp" />
+    <ClCompile Include="5183. day-of-the-week.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />

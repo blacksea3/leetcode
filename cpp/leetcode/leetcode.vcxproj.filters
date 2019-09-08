@@ -44,16 +44,13 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="5067. count-substrings-with-only-one-distinct-letter.cpp">
+    <ClCompile Include="5181. distance-between-bus-stops.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="5068. before-and-after-puzzle.cpp">
+    <ClCompile Include="5183. day-of-the-week.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="5070. shortest-distance-to-target-color.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="5082. maximum-number-of-ones.cpp">
+    <ClCompile Include="5182. maximum-subarray-sum-with-one-deletion.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
