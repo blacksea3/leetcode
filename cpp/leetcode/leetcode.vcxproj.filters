@@ -44,13 +44,16 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="5181. distance-between-bus-stops.cpp">
+    <ClCompile Include="576. out-of-boundary-paths.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="5183. day-of-the-week.cpp">
+    <ClCompile Include="583. delete-operation-for-two-strings.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="5182. maximum-subarray-sum-with-one-deletion.cpp">
+    <ClCompile Include="592. fraction-addition-and-subtraction.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="593. valid-square.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

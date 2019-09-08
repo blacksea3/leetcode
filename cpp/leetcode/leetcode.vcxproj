@@ -163,9 +163,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="5181. distance-between-bus-stops.cpp" />
-    <ClCompile Include="5182. maximum-subarray-sum-with-one-deletion.cpp" />
-    <ClCompile Include="5183. day-of-the-week.cpp" />
+    <ClCompile Include="576. out-of-boundary-paths.cpp" />
+    <ClCompile Include="583. delete-operation-for-two-strings.cpp" />
+    <ClCompile Include="592. fraction-addition-and-subtraction.cpp" />
+    <ClCompile Include="593. valid-square.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />

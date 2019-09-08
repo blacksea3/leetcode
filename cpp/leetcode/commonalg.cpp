@@ -1,6 +1,42 @@
 #include "public.h"
 
-//辗转相除
+//实现一个分数类
+class Fraction {
+private:
+	int mother;
+	int son;
+public:
+	//外部注意分子可正可负可0, 分母必须正整数
+	Fraction(int inputSon = 0, int inputMother = 1)
+	{
+		mother = inputMother;
+		son = inputSon;
+	}
+
+	//外部注意相加的时候至少一个数不为0
+	//支持分子是负数
+	void add(Fraction& inputF)
+	{
+		int newMother = inputF.mother * this->mother;
+		int newSon = inputF.son * this->mother + inputF.mother * this->son;
+		int publicMulFactor = gcd(abs(newMother), abs(newSon));
+		this->mother = newMother / publicMulFactor;
+		this->son = newSon / publicMulFactor;
+	}
+
+	int getSon()
+	{
+		return this->son;
+	}
+
+	int getMother()
+	{
+		return this->mother;
+	}
+};
+
+//自定义辗转相除
+//特别注意gcd本身就是个库函数??
 int gcd(int x, int y)
 {
 	if (!y)
