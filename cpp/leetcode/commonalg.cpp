@@ -1,5 +1,29 @@
 #include "public.h"
 
+//用ch分割raw, 变成一个string列表
+vector<string> mStringSplit(string raw, char ch)
+{
+	int loc = 0;
+	string s = "";
+	vector<string> res;
+
+	while (loc < raw.size())
+	{
+		if (raw[loc] == ch)
+		{
+			res.emplace_back(s);
+			s = "";
+		}
+		else
+		{
+			s.push_back(raw[loc]);
+		}
+		loc++;
+	}
+	res.emplace_back(s);
+	return res;
+}
+
 //实现一个分数类
 class Fraction {
 private:
