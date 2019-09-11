@@ -13,6 +13,24 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="源文件\BackTrack">
+      <UniqueIdentifier>{80b54529-6d82-477a-a73e-9a45a6af5831}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\BruteForce">
+      <UniqueIdentifier>{be92d73b-fb77-4431-b24e-a855dd520294}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Simulation">
+      <UniqueIdentifier>{02b73f87-d061-4051-9fbf-d81f1f1aa402}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Greedy">
+      <UniqueIdentifier>{034aaa22-8053-42e7-b5fe-f2641fffa621}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\SortPreTreat">
+      <UniqueIdentifier>{70097c84-60c2-4448-b7bc-d7b133bd32c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\BinarySearch">
+      <UniqueIdentifier>{7b10e0cb-4e91-4d32-835a-b67799f13bf6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -44,8 +62,26 @@
     <ClCompile Include="commonalg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="609. find-duplicate-file-in-system.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="51. N-Queens.cpp">
+      <Filter>源文件\BackTrack</Filter>
+    </ClCompile>
+    <ClCompile Include="52. N-Queens II.cpp">
+      <Filter>源文件\BackTrack</Filter>
+    </ClCompile>
+    <ClCompile Include="53. Maximum Subarray.cpp">
+      <Filter>源文件\BruteForce</Filter>
+    </ClCompile>
+    <ClCompile Include="54. Spiral Matrix.cpp">
+      <Filter>源文件\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="55. Jump Game.cpp">
+      <Filter>源文件\Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="56. Merge Intervals.cpp">
+      <Filter>源文件\SortPreTreat</Filter>
+    </ClCompile>
+    <ClCompile Include="57. Insert Interval.cpp">
+      <Filter>源文件\BinarySearch</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

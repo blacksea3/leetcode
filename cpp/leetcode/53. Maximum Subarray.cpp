@@ -1,20 +1,17 @@
 #include "public.h"
 
-//12ms, 95.28%
-
-//brute force
-//I think there is no need to use divide and conquer :), the brute force is ok for easy problem :)
+//8ms, 88.94%
+//暴力, 一轮扫描, 如果当前结果为正则与最终结果比较/更新, 为负则下一个重新开始
+//注意: 涉及到了对输入nums的修改
 
 class Solution {
 public:
 	int maxSubArray(vector<int>& nums) {
 		int res = nums[0];
-		int sum = 0;
-		for (int i = 0; i < nums.size(); i++)
+		for (int i = 1; i < nums.size(); ++i)
 		{
-			if (sum > 0) sum += nums[i];
-			else sum = nums[i];
-			res = (res < sum) ? sum : res;
+			nums[i] = max(nums[i-1] + nums[i], nums[i]);
+			res = max(nums[i], res);
 		}
 		return res;
 	}

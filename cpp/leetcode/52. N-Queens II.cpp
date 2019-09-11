@@ -1,40 +1,35 @@
 #include "public.h"
 
-//12ms, 56.55%
-
-//similar to problem 51
-
-//DFS(BackTracking) problem, don't need to record the route
-//note that the size(n) shall not become very big(>1000), so use recursive solution is ok
+//4ms, 93.27%
+//尽管同前, 但是现在不用字符串存储, 而是用二进制位存储棋盘占据情况
 
 class Solution {
 private:
-	int total_res = 0;
+	int res = 0;
+	int fullcolumns; //二进制n个1
 
-	void DFS(vector<int> input, int n)
+	//p_diagolal:主对角线占据情况, 二进制1为占据, 二进制0为占据, 斜率+45°
+	//n_diagonal:次对角线占据情况, 斜率-45°
+	//cols:列占据情况
+	void DFS(int r, int p_diagonal, int n_diagonal, int cols, int n)
 	{
-		int isize = input.size();
-		//remove the same column and (±45 degrees) line
-		for (int x = 0; x < n; x++)
+		if (r == n) res++;
+		//二进制1为可以用, 0为不能用, 此和传入参数01定义相反
+		int emptyCols = fullcolumns & ~(p_diagonal | n_diagonal | cols);
+
+		while (emptyCols > 0)
 		{
-			for (int i = 0; i < isize; i++)
-			{
-				if (x == input[i]) goto xcontinue;
-				if (x == (input[i] - (isize - i))) goto xcontinue;
-				if (x == (input[i] + (isize - i))) goto xcontinue;
-			}
-			input.push_back(x);
-			if (isize == (n - 1)) total_res++;
-			else DFS(input, n);
-			input.pop_back();
-		xcontinue: continue;
+			int preCol = emptyCols & (-emptyCols); //取二进制最后一个1位
+			emptyCols ^= preCol;                   //删除这个可用的1位
+			DFS(r + 1, (p_diagonal | preCol) << 1, (n_diagonal | preCol) >> 1, cols | preCol, n);
 		}
 	}
 
 public:
 	int totalNQueens(int n)
 	{
-		DFS(vector<int>{}, n);
-		return total_res;
+		DFS(0, 0, 0, 0, n);
+		fullcolumns = (1 << n) - 1;
+		return res;
 	}
 };

@@ -163,7 +163,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="609. find-duplicate-file-in-system.cpp" />
+    <ClCompile Include="51. N-Queens.cpp" />
+    <ClCompile Include="52. N-Queens II.cpp" />
+    <ClCompile Include="53. Maximum Subarray.cpp" />
+    <ClCompile Include="54. Spiral Matrix.cpp" />
+    <ClCompile Include="55. Jump Game.cpp" />
+    <ClCompile Include="56. Merge Intervals.cpp" />
+    <ClCompile Include="57. Insert Interval.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />

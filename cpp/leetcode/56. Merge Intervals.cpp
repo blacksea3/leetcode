@@ -1,21 +1,14 @@
 #include "public.h"
 
-//48ms, 26.09%
-
-//sort by left border first, then merge one and one intervals, need only one traverse
+//28ms, 79.66%
+//先按左边界排序, 然后一边扫描同时合并
 
 class Solution {
-private:
-	bool LessEqSort(const vector<int> &i1, const vector<int> &i2)
-	{
-		return (i1[0] <= i2[0]);
-	}
 public:
 	vector<vector<int>> merge(vector<vector<int>>& intervals) {
-		//special input
-		if (intervals.size() == 0) return vector<vector<int>>{};
+		int iSize = intervals.size();
+		if (iSize == 0) return vector<vector<int>>{};
 
-		//sort by left border
 		sort(intervals.begin(), intervals.end());
 		vector<vector<int>> res = { intervals[0] };
 

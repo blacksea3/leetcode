@@ -1,9 +1,7 @@
 #include "public.h"
 
 //4ms, 97.01%
-
-//similar to problem 48
-//From outside circle to the inside circle
+//模拟
 
 class Solution {
 public:
@@ -15,7 +13,7 @@ public:
 		int n = matrix[0].size();
 		if (n == 0) return vector<int>{};
 
-		//treverse using four directions
+		//四个方向的移动
 		int left_border = 0;
 		int right_border = n - 1;
 		int up_border = 0;
