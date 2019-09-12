@@ -183,6 +183,11 @@
     <ClCompile Include="68. Text Justification.cpp" />
     <ClCompile Include="69. Sqrt(x).cpp" />
     <ClCompile Include="70. Climbing Stairs.cpp" />
+    <ClCompile Include="71. Simplify Path.cpp" />
+    <ClCompile Include="72. Edit Distance.cpp" />
+    <ClCompile Include="73. Set Matrix Zeroes.cpp" />
+    <ClCompile Include="74. Search a 2D Matrix.cpp" />
+    <ClCompile Include="75. Sort Colors.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />

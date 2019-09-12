@@ -43,6 +43,12 @@
     <Filter Include="源文件\FiniteStateMachine">
       <UniqueIdentifier>{39bba9b0-e33d-47f9-ad57-48468037b9d4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Stack">
+      <UniqueIdentifier>{430fbc75-0c6a-4bcf-bd37-d3d7271a7acb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Special">
+      <UniqueIdentifier>{bdd84835-974b-4b05-864f-f8d46a23b355}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -113,9 +119,6 @@
     <ClCompile Include="64. Minimum Path Sum.cpp">
       <Filter>源文件\DP</Filter>
     </ClCompile>
-    <ClCompile Include="70. Climbing Stairs.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="65. Valid Number.cpp">
       <Filter>源文件\FiniteStateMachine</Filter>
     </ClCompile>
@@ -133,6 +136,24 @@
     </ClCompile>
     <ClCompile Include="69. Sqrt(x).cpp">
       <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="70. Climbing Stairs.cpp">
+      <Filter>源文件\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="71. Simplify Path.cpp">
+      <Filter>源文件\Stack</Filter>
+    </ClCompile>
+    <ClCompile Include="72. Edit Distance.cpp">
+      <Filter>源文件\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="73. Set Matrix Zeroes.cpp">
+      <Filter>源文件\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="74. Search a 2D Matrix.cpp">
+      <Filter>源文件\BinarySearch</Filter>
+    </ClCompile>
+    <ClCompile Include="75. Sort Colors.cpp">
+      <Filter>源文件\Special</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

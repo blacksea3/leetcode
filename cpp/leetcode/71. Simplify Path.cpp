@@ -1,94 +1,38 @@
 #include "public.h"
 
-//12ms, 95.06%
+//8ms, 93.33%
+//数组, 先当作栈处理, 然后再一轮遍历
+//语言技巧: 使用stringstream sstr, 配合getline(sstr,tempStr,'//')分割字符串
 
 class Solution {
 public:
 	string simplifyPath(string path) {
-		vector<string> vs = {};
-
-		if (path.size() == 1) return path;  //only a '/'
-
-		string prestr = "";
-		int loc = 1;
-		while (loc < path.size())
+		vector<string> vs;
+		stringstream sStr(path);
+		string tempStr;
+		while (getline(sStr, tempStr, '/'))
 		{
-			if (path[loc] == '/')
+			if (tempStr == ".") continue;
+			else if (tempStr != "..")
 			{
-				if (prestr != "")
-				{
-					vs.push_back(prestr);
-					prestr = "";
-				}
+				if (!tempStr.empty()) vs.emplace_back(tempStr);
 			}
-			else
-			{
-				if (path[loc] != '.')
-				{
-					prestr += path[loc];
-				}
-				else //note that if has ., there must only have one or two '.' for special infomation,
-					//otherwise this is a regular path!
-				{
-					if (loc < path.size() - 2)
-						if (path[loc + 1] == '/') loc += 1;
-						else if (path[loc + 1] == '.')
-						{
-							if (path[loc + 2] == '/')
-							{
-								if (!vs.empty()) vs.pop_back();
-								loc += 2;
-							}
-							else
-							{
-								prestr += "..";
-								prestr += path[loc + 2];
-								loc += 2;
-							}
-						}
-						else
-						{
-							prestr += ".";
-							prestr += path[loc + 1];
-							loc += 1;
-						}
-					else if (loc == path.size() - 2)
-						if (path[loc + 1] == '/') loc += 1;
-						else if (path[loc + 1] == '.')
-						{
-							if (!vs.empty()) vs.pop_back();
-							loc += 2;
-						}
-						else
-						{
-							prestr += ".";
-							prestr += path[loc + 1];
-							loc += 1;
-						}
-					else
-					{
-						loc += 1;
-					}
-				}
-			}
-			++loc;
+			else if (!vs.empty()) vs.pop_back();
 		}
-		if (prestr != "") vs.push_back(prestr);
-
-		if (vs.empty()) return "/";
-		else
+		tempStr.clear();
+		for (int i = 0; i < vs.size();)
 		{
-			string returns = "";
-			for (auto avs:vs)
-				returns += "/" + avs;
-			return returns;
+			tempStr.append("/" + vs[i++]);
 		}
+		return tempStr.empty() ? "/" : tempStr;
 	}
 };
 
+/*
 int main()
 {
 	Solution* s = new Solution();
 	string res = s->simplifyPath("/...//b////c/d//././/..");
 	return 0;
 }
+*/

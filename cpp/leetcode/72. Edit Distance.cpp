@@ -1,8 +1,7 @@
 #include "public.h"
 
 //16ms, 96.30%
-
-//use DP algorthm
+//DPŒ Ã‚
 
 //here: use dp int[lenword1+1][lenword2+1] to store thing:
 //dp int[i][j] means that how many distance between the word1.substr(0,i) and word2.substr(0,j)

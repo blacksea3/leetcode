@@ -1,7 +1,7 @@
 #include "public.h"
 
 //0ms, 100%
-//就是斐波那契数列
+//就是斐波那契数列, 用dp操作
 
 class Solution {
 public:

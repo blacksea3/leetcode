@@ -1,9 +1,8 @@
 #include "public.h"
 
-//72ms, 91.20%
-
-//first traverse the first column/row to get whether first column/row should be clear to 0
-//then store the 0 info to the first column/first row, then clear these columns/rows
+//60ms, 98.42%
+//原地算法, 模拟
+//用矩阵的第一行和第一列存储需要调整至0的行和列
 
 class Solution {
 public:
