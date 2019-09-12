@@ -1,8 +1,8 @@
 #include "public.h"
 
 //4ms, 97.47%
-
-// here, use k = A*(n-1)! + B*(n-2)! + ....
+//数学
+//使用, use k = A*(n-1)! + B*(n-2)! + ...., 计算A, B, C...就行
 
 class Solution {
 public:

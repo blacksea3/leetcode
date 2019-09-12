@@ -1,79 +1,32 @@
 #include "public.h"
 
-//12ms, 83.31%
-
-//one traverse, from outside to inside
+//4ms, 95.02%
+//暴力填充, O(n)
+//考虑这是一个n^2矩阵, 故对称, 一定遵循左->右 上->下 右->左 下->上的顺序
+//给填充数字计数作为循环边界条件
 
 class Solution {
 public:
 	vector<vector<int>> generateMatrix(int n) {
-		int up_border = 0;
-		int down_border = n - 1;
-		int left_border = 0;
-		int right_border = n - 1;
-		int dir = 0;
-
 		vector<vector<int>> res(n, vector<int>(n, 0));
-		int count = 1;
-		int prex = 0;
-		int prey = 0;
+		int maxCount = n * n;
+		int preCount = 1;
+		int left = 0;
+		int right = n - 1;
+		int up = 0;
+		int down = n - 1;
 
-		while ((right_border >= left_border) && (down_border >= up_border))
+		while (preCount <= maxCount)
 		{
-			switch (dir)
-			{
-			case 0:
-			{
-				res[prex][prey] = count++;
-				if (prey == right_border)
-				{
-					dir = 1;
-					prex++;
-					up_border++;
-				}
-				else prey++;
-				break;
-			}
-			case 1:
-			{
-				res[prex][prey] = count++;
-				if (prex == down_border)
-				{
-					dir = 2;
-					prey--;
-					right_border--;
-				}
-				else prex++;
-				break;
-			}
-			case 2:
-			{
-				res[prex][prey] = count++;
-				if (prey == left_border)
-				{
-					dir = 3;
-					prex--;
-					down_border--;
-				}
-				else prey--;
-				break;
-			}
-			case 3:
-			{
-				res[prex][prey] = count++;
-				if (prex == up_border)
-				{
-					dir = 0;
-					prey++;
-					left_border++;
-				}
-				else prex--;
-				break;
-			}
-			default: break;
-			}
+			for (int c = left; c <= right; ++c) res[up][c] = preCount++;
+			up++;
+			for (int r = up; r <= down; ++r) res[r][right] = preCount++;
+			right--;
+			for (int c = right; c >= left; --c) res[down][c] = preCount++;
+			down--;
+			for (int r = down; r >= up; --r) res[r][left] = preCount++;
+			left++;
 		}
 		return res;
-
 	}
 };

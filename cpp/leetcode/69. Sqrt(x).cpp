@@ -1,7 +1,5 @@
-
-//4ms, 98.45%
-
-//This is just Newton iteration
+//0ms, 100%
+//数学, 牛顿迭代法
 
 class Solution {
 public:
@@ -14,10 +12,11 @@ public:
 
 		if (x <= 1) return x;
 
-		int r = x;
-		while (r > x / r)
-			r = (int)(((long)r + x / r) / 2);
+		long r = x;
+		long cpX = x;
+		while (r > cpX / r)
+			r = ((r + cpX / r) / 2);
 
-		return r;
+		return (long)r;
 	}
 };

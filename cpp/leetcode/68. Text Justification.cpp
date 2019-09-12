@@ -1,19 +1,18 @@
 #include "public.h"
 
-//4ms, 98.01%
-
-//simple algorithm, traverse words is just ok
+//0ms, 100%
+//复杂的模拟
 
 class Solution {
 private:
 	string genstring_fullJustify(vector<string> words, int maxlength)
 	{
-		//caculate the number of space
+		//计算空格数量
 		int length = 0;
 		for (auto word : words) length += word.size();
 		int totalspace = maxlength - length;
 		int spacegroupnum = words.size() - 1;
-		if (spacegroupnum == 0)  //if only one letter, all the spaces should be place to the right
+		if (spacegroupnum == 0)  //如果只有一个空格, 那么空格应该全在右边
 			return genlaststring_fullJustify(words, maxlength);
 		int upper_space = totalspace / spacegroupnum;
 		int remaining_space = totalspace % spacegroupnum;
@@ -51,11 +50,9 @@ private:
 public:
 	vector<string> fullJustify(vector<string>& words, int maxWidth)
 	{
-		//state mathine
-		//the problem ensures that
+		//问题保证了
 		//words.size()>0
 		//words[0].size()>=maxWidth
-
 		int wsize = words.size();
 
 		vector<string> pre_words = {};

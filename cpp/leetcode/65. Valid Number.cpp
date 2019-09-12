@@ -1,9 +1,7 @@
 #include "public.h"
 
 //0ms, 100%
-
-//here, use finite state machine
-// I will not change my old comment written in Chinese, if want more, see the state comment below
+//ÓÐÏÞ×´Ì¬»ú
 
 class Solution {
 public:

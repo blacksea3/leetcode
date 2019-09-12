@@ -1,15 +1,13 @@
 #include "public.h"
 
-//4ms, 98.49%
-
-//this problem is similar to problem 62,
-// we donnot need to use a two-dimention vector, we can refresh one line by one line
-// dp[j] += dp[j - 1] if obstacleGrid[prerow][j] == 1 else 0
+//4ms, 90.85%
+//类似62题, 空间复杂度优化, 单行dp[j] += dp[j - 1] if obstacleGrid[prerow][j] == 1 else 0
+//需要初始化第一行
 
 class Solution {
 public:
 	int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid) {
-		//special input
+		//处理特殊情况
 		int n = obstacleGrid.size();
 		if (n == 0) return 0;
 		int m = obstacleGrid[0].size();

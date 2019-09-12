@@ -1,19 +1,17 @@
 #include "public.h"
 
-//8ms, 92.71%
-
-//brute force
-//note: here if i >= s.size(), s[i] is just 0
+//4ms, 86.55%
+//±©Á¦, µ¹Ðò±éÀú
 
 class Solution {
 public:
 	int lengthOfLastWord(string s) {
-		int len = 0, i = 0;
-		while (s[i]) {
-			if (s[i++] != ' ')
+		int len = 0, index = s.size() - 1;
+		while (index >= 0) {
+			if (s[index--] != ' ')
 				++len;
-			else if (s[i] && s[i] != ' ')
-				len = 0;
+			else if (len != 0)
+				return len;
 		}
 		return len;
 	}

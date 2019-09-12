@@ -2,18 +2,7 @@
 #include "listnode.h"
 
 //16ms, 91.86%
-
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
- * };
- */
-
-//Here, use one traverse to get the length of listnode, then caculate the real move distance
-// Then modify the listnode
+//链表, 先计算链表长度得出真实移动距离, 再移动, O(n), 常数2倍
 
 class Solution {
 public:
