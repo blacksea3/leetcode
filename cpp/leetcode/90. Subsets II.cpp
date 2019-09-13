@@ -1,8 +1,11 @@
 #include "public.h"
 
+//使用迭代回溯或者递归回溯
+//建议递归回溯, 因为它更容易写和DEBUG
 //use iteration Backtracking or recursive BackTracking
 
-//First: iteration Backtracking: 16ms, 93.54%
+//16ms, 71.45%
+//First: iteration Backtracking
 /*class Solution {
 public:
 	vector<vector<int>> subsetsWithDup(vector<int>& nums) {
@@ -75,27 +78,29 @@ public:
 	}
 };*/
 
-//Second: recursive BackTracking:  16ms, 93.54%
+//12ms, 91.51%
+//Second: recursive BackTracking
 class Solution {
 private:
 	vector<vector<int>> res = {};
-	void DFS(const vector<int>& nums, int oldloc, int prenums, const int& totalnums, vector<int> preres)
+	void DFS(const vector<int>& nums, int preloc, int prenums, vector<int>& preres)
 	{
-		if (prenums == totalnums)
+		res.emplace_back(preres);
+
+		if (preloc < nums.size())
 		{
-			res.push_back(preres);
-			return;
-		}
-		unordered_set<int> used = {};
-		for (int i = oldloc + 1; i < nums.size() - (totalnums - prenums - 1); ++i)
-		{
-			if (used.find(nums[i]) != used.end()) continue;
-			else
+			preres.emplace_back(nums[preloc]);
+			DFS(nums, preloc + 1, prenums + 1, preres);
+			preres.pop_back();
+			for (int i = preloc + 1; i < nums.size(); ++i)
 			{
-				preres.push_back(nums[i]);
-				DFS(nums, i, prenums + 1, totalnums, preres);
-				preres.pop_back();
-				used.insert(nums[i]);
+				if (nums[i] == nums[i - 1]) continue;
+				else
+				{
+					preres.emplace_back(nums[i]);
+					DFS(nums, i + 1, prenums + 1, preres);
+					preres.pop_back();
+				}
 			}
 		}
 	}
@@ -103,10 +108,8 @@ private:
 public:
 	vector<vector<int>> subsetsWithDup(vector<int>& nums) {
 		sort(nums.begin(), nums.end());
-		for (int i = 0; i <= nums.size(); i++)
-		{
-			DFS(nums, -1, 0, i, {});
-		}
+		vector<int> emptynums;
+		DFS(nums, 0, 0, emptynums);
 		return res;
 	}
 };

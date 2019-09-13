@@ -1,54 +1,40 @@
 #include "listnode.h"
 
-//8ms, 91.04%
+//4ms, 90.58%
+//“˝»Î’ª
 
-//No special algorithm
-
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
- * };
- */
 class Solution {
 public:
 	ListNode* reverseBetween(ListNode* head, int m, int n) {
 		if (m == n) return head;
+		stack<ListNode*> stk;
 
-		//one traverse
-		ListNode *dump = new ListNode(0);
-		dump->next = head;
-		int loc = 0;
-		ListNode *left = dump;
-		ListNode * right = dump;
-		bool isstart = false;
-		ListNode *preln = dump;
-		while (loc < n)
+		ListNode* header = new ListNode(0);
+		header->next = head;
+
+		ListNode* start;
+		ListNode* end = header;
+
+		int counter = 0;
+
+		while (counter <= n)
 		{
-			if (!isstart)
-			{
-				if ((loc + 1) == m)
-				{
-					left = preln;
-					isstart = true;
-				}
-				loc++;
-				preln = preln->next;
-			}
-			else
-			{
-				right = preln;  //in fact: they are sawp of left->next and right->next
-				// 1->3->2->4->5  left:1 right:2
-				ListNode *temp = left->next;
-				left->next = right->next;
-				right->next = left->next->next;
-				left->next->next = temp;
-
-				loc++;
-			}
+			if (counter >= m)
+				stk.push(end);
+			else if (counter == m - 1)
+				start = end;
+			end = end->next;
+			counter++;
 		}
-		return dump->next;
+
+		while (!stk.empty())
+		{
+			ListNode* top = stk.top();
+			start->next = top;
+			stk.pop();
+			start = top;
+		}
+		start->next = end;
+		return header->next;
 	}
 };

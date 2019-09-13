@@ -1,9 +1,7 @@
 #include "public.h"
 
-//4ms, 99.54%
-
-//use iteration
-// note that the graycode of n can be duplicated useing graycode of n-1
+//4ms, 98.61%
+//迭代法, 通过n-1格雷码获取n的格雷码, 模拟
 
 class Solution {
 public:
@@ -17,14 +15,13 @@ public:
 
 		for (int i = 2; i <= n; i++)
 		{
-			next.clear();
 			next.resize(pre.size() * 2);
 			for (int j = 0; j < pre.size(); j++)
 				next[j] = pre[j];
 			int abs = 1 << (i - 1);
 			for (int j = pre.size(); j < 2 * pre.size(); j++)
 				next[j] = pre[2 * pre.size() - j - 1] + abs;
-			swap(pre, next);
+			pre = next;
 		}
 		return pre;
 	}

@@ -1,7 +1,6 @@
 #include "public.h"
 
-//DP problem, 72ms, 18.83%    :(
-
+//DP problem, 68ms, 13.33%
 //Too difficult, I give up, please see https://blog.csdn.net/linhuanmars/article/details/24506703
 
 class Solution {
@@ -42,15 +41,17 @@ public:
 				{
 					//有些情况下直接跳跃,不需要遍历求解|=位或
 					//正序
-					for (int klenm1 = 0; klenm1 < lenm1; klenm1++)  //左部分实际长度减1
-						if (dp[i][j][klenm1] && dp[i + klenm1 + 1][j + klenm1 + 1][lenm1 - klenm1 - 1])
+					for (int klenm1 = 0, klen = 1; klenm1 < lenm1; klenm1++, klen++)  //左部分实际长度减1
+					{
+						if (dp[i][j][klenm1] && dp[i + klen][j + klen][lenm1 - klen])
 						{
 							dp[i][j][lenm1] = true;
 							goto end;
 						}
+					}
 					//乱序
-					for (int klenm1 = 0; klenm1 < lenm1; klenm1++)  //左部分实际长度减1
-						if (dp[i][j + lenm1 - klenm1][klenm1] && dp[i + klenm1 + 1][j][lenm1 - klenm1 - 1])
+					for (int klenm1 = 0, klen = 1; klenm1 < lenm1; klenm1++, klen++)  //左部分实际长度减1
+						if (dp[i][j + lenm1 - klenm1][klenm1] && dp[i + klen][j][lenm1 - klen])
 						{
 							dp[i][j][lenm1] = true;
 							goto end;

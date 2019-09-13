@@ -203,5 +203,26 @@
     <ClCompile Include="85. Maximal Rectangle.cpp">
       <Filter>源文件\CommonAlg\Stack</Filter>
     </ClCompile>
+    <ClCompile Include="86. Partition List.cpp">
+      <Filter>源文件\SpecialAlg\ListNode</Filter>
+    </ClCompile>
+    <ClCompile Include="87. Scramble String.cpp">
+      <Filter>源文件\CommonAlg\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="88. Merge Sorted Array.cpp">
+      <Filter>源文件\EasyAlg\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="89. Gray Code.cpp">
+      <Filter>源文件\EasyAlg\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="90. Subsets II.cpp">
+      <Filter>源文件\CommonAlg\BackTrack</Filter>
+    </ClCompile>
+    <ClCompile Include="91. Decode Ways.cpp">
+      <Filter>源文件\CommonAlg\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="92. Reverse Linked List II.cpp">
+      <Filter>源文件\SpecialAlg\ListNode</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

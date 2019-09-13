@@ -198,6 +198,13 @@
     <ClCompile Include="83. Remove Duplicates from Sorted List.cpp" />
     <ClCompile Include="84. Largest Rectangle in Histogram.cpp" />
     <ClCompile Include="85. Maximal Rectangle.cpp" />
+    <ClCompile Include="86. Partition List.cpp" />
+    <ClCompile Include="87. Scramble String.cpp" />
+    <ClCompile Include="88. Merge Sorted Array.cpp" />
+    <ClCompile Include="89. Gray Code.cpp" />
+    <ClCompile Include="90. Subsets II.cpp" />
+    <ClCompile Include="91. Decode Ways.cpp" />
+    <ClCompile Include="92. Reverse Linked List II.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
