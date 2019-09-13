@@ -1,52 +1,67 @@
 #include "public.h"
 
-//24ms, 80.96%
-
-//only a simple silder window
-
-//here: straight find the left and right loc of silder window is ok
-//for the right: the loc must be this: if remove s[loc], the effective letter combination of s cannot 
-//  exceed or equal to letter in t
-
-//for the left: just the same..
+//12ms, 95.64%
+//普通滑动窗口, 先统计各个字符出现次数, 然后一遍扫描s
 
 class Solution {
 public:
 	string minWindow(string s, string t) {
-		int i = 0, j = 0, k = t.size(), freq_s[256] = { 0 }, freq_t[256] = { 0 };
-		string minS = "";
-		for (j = 0; j < t.size(); j++)
-			freq_t[t[j]]++;
-		for (j = 0; j < s.size(); j++)
+		int minLen = INT_MAX;
+		string res = "";
+
+		int lastRightIndex = -1;
+		int preIndex = 0;
+
+		vector<int> tCount(128, 0);
+		for (auto& iter_t : t)
 		{
-			if (freq_t[s[j]]) //try to find the FUCK right loc
-			{
-				freq_s[s[j]]++;
-				if (freq_s[s[j]] <= freq_t[s[j]])
-					k--;
-			}
-			while (k == 0) //try to find the FUCK left loc
-			{
-				if (minS.empty() || minS.size() > j - i + 1)
-					minS = s.substr(i, j - i + 1);
-				if (freq_s[s[i]] && freq_t[s[i]])
-				{
-					freq_s[s[i]]--;
-					if (freq_s[s[i]] < freq_t[s[i]])
-						k++;
-				}
-				i++;
-			}
+			tCount[iter_t]++;
 		}
-		return minS;
+		int tSize = t.size();
+
+		vector<int> sCount(128, 0);
+		int sMatch = 0;
+		while (preIndex < s.size())
+		{
+			if (++sCount[s[preIndex]] <= tCount[s[preIndex]])
+			{
+				sMatch++;
+				if (sMatch == tSize)
+				{
+					//OK了, 准备撤回部分lastRightIndex之后的字符
+					while (true)
+					{
+						if (--sCount[s[lastRightIndex + 1]] < tCount[s[lastRightIndex + 1]])
+						{
+							sMatch--;
+							if (preIndex - lastRightIndex < minLen)
+							{
+								minLen = preIndex - lastRightIndex;
+								res = s.substr(lastRightIndex + 1, preIndex - lastRightIndex);
+							}
+							lastRightIndex++;
+							break;
+						}
+						else
+						{
+							lastRightIndex++;
+						}
+					}
+				}
+			}
+			preIndex++;
+		}
+
+		return res;
 	}
 };
 
+/*
 int main()
 {
 	Solution* s = new Solution();
+	string res1 = s->minWindow("cabwefgewcwaefgcf", "cae");
 	string res = s->minWindow("ADOBECODEBANC","ABC");
 	return 0;
 }
-
-
+*/

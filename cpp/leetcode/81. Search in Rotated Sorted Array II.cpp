@@ -1,21 +1,20 @@
 #include "public.h"
 
-//12ms, 88.85%
-
-//use Binary search, pay attention to the sorted judge
+//8ms, 83.12%
+//类二分查找, 手动二分拆分
 
 class Solution {
 public:
 	//here nums[startloc, endloc] may be sorted or not
-	int iter_search_81(vector<int>& nums, int target, int startloc, int endloc)
+	//注意闭区间
+	bool quasi_binary_search(vector<int>& nums, int target, int startloc, int endloc)
 	{
 		//binary cut
-		int nsize = endloc - startloc;
-		if (nsize < 0) return -1;
-		if (nsize == 0)
+		if (endloc < startloc) return false;
+		else if (endloc == startloc)
 		{
 			if (nums[startloc] == target) return startloc;
-			else return -1;
+			else return false;
 		}
 		else
 		{
@@ -48,7 +47,7 @@ public:
 			{
 				if (nums[startloc] <= target)
 					if (target <= nums[mid])
-						return binary_search_81(nums, target, startloc, mid);
+						return m_binary_search(nums, target, startloc, mid);
 					else //target may in the latter half
 					{
 						//the latter half may not be incremently sorted
@@ -62,36 +61,36 @@ public:
 						}
 
 						if (is_righthalf_sorted)     //[mid+1,endloc] is incremently sorted
-							return binary_search_81(nums, target, mid + 1, endloc);
+							return m_binary_search(nums, target, mid + 1, endloc);
 						else
-							return iter_search_81(nums, target, mid + 1, endloc);
+							return quasi_binary_search(nums, target, mid + 1, endloc);
 					}
 				else
-					return iter_search_81(nums, target, mid + 1, endloc);
+					return quasi_binary_search(nums, target, mid + 1, endloc);
 			}
 			else
 			{
 				if (nums[mid + 1] <= target)
 					if (target <= nums[endloc])
-						return binary_search_81(nums, target, mid + 1, endloc);
+						return m_binary_search(nums, target, mid + 1, endloc);
 					else
-						return iter_search_81(nums, target, startloc, mid);
+						return quasi_binary_search(nums, target, startloc, mid);
 				else
-					return iter_search_81(nums, target, startloc, mid);
+					return quasi_binary_search(nums, target, startloc, mid);
 			}
 
 		}
 	}
 
-	int binary_search_81(vector<int>& nums, int target, int startloc, int endloc)
+	bool m_binary_search(vector<int>& nums, int target, int startloc, int endloc)
 	{
 		int left = startloc;
 		int right = endloc;
 		if (right < left) return -1;
 		if (right == left)
 		{
-			if (nums[left] == target) return left;
-			else return -1;
+			if (nums[left] == target) return true;
+			else return false;
 		}
 		else
 		{
@@ -100,10 +99,10 @@ public:
 				int mid = (left + right) / 2;
 				if (nums[mid] < target) left = mid + 1;
 				else if (nums[mid] > target) right = mid - 1;
-				else return mid;
+				else return true;
 			}
 		}
-		return -1;
+		return false;
 	}
 
 	bool search(vector<int>& nums, int target)
@@ -115,10 +114,17 @@ public:
 			if (nums[0] == target) return true;
 			else return false;
 		}
-
 		//next are nsize >= 2 condition, recursively
-		if (iter_search_81(nums, target, 0, nsize - 1) == -1)
-			return false;
-		else return true;
+		return quasi_binary_search(nums, target, 0, nsize - 1);
 	}
 };
+
+/*
+int main()
+{
+	Solution* s = new Solution();
+	vector<int> nums = { 0,0 };
+	auto res = s->search(nums, 1);
+	return 0;
+}
+*/

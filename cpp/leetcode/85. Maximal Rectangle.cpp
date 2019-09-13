@@ -1,70 +1,50 @@
 #include "public.h"
 
-//24ms, 97.79%
-
-//You can reuse the code from problem 84,
-//for each line, the upper lines contains continuous '1' can be the height of each column
-//Then caculate the max size of each matrix is ok
+//24ms, 90.21%
+//复用84题,
+//对每一行, 上面的连续的1的个数就是每一列的高度, 求每一行为底部的最大矩形
+//仅仅记录当前行的每列高度, 按行更新
 
 class Solution {
 private:
-	int largestRectangleArea(const vector<int>& heights)
+public:
+	int largestRectangleArea(vector<int>& heights)
 	{
-		//use Monotonic stack(单调栈)
-		//from https://blog.csdn.net/lv1224/article/details/79974175
+		heights.emplace_back(0);
+		stack<int> stHeight;  //存储索引
+		int maxSize = 0;
 
-		vector<int> stack = {};
-		int hsize = heights.size();
-		int maxArea = 0;
-		if (hsize == 0) return 0;
-
-		for (int i = 0; i < hsize; i++)
+		int index;
+		for (index = 0; index < heights.size(); ++index)
 		{
-			if (stack.empty() || heights[stack[stack.size() - 1]] <= heights[i]) stack.push_back(i);
-			else
-			{
-				while (!stack.empty() && heights[stack[stack.size() - 1]] > heights[i])
-				{
-					int top = stack[stack.size() - 1];
-					stack.pop_back();
-					if (stack.empty()) maxArea = max(heights[top] * i, maxArea);
-					else maxArea = max(heights[top] * (i - stack[stack.size() - 1] - 1), maxArea);
-				}
-				stack.push_back(i);
+			while (!stHeight.empty() && heights[stHeight.top()] > heights[index]) {
+				int preHeight = heights[stHeight.top()];
+				stHeight.pop();
+				maxSize = max(maxSize, preHeight*(stHeight.empty() ? index : (index - stHeight.top() - 1)));
 			}
+			stHeight.push(index);
 		}
-
-		while (!stack.empty())
-		{
-			int top = stack[stack.size() - 1];
-			stack.pop_back();
-			if (stack.empty()) maxArea = max(heights[top] * (hsize), maxArea);
-			else maxArea = max(heights[top] * (hsize - stack[stack.size() - 1] - 1), maxArea);
-		}
-		return maxArea;
+		return maxSize;
 	}
+
 public:
 	int maximalRectangle(vector<vector<char>>& matrix) {
-		//m rows, n columns
 		int m = matrix.size();
 		if (m == 0) return 0;
 		int n = matrix[0].size();
 		if (n == 0) return 0;
-
-		vector<vector<int>> heights(m, vector<int>(n, 0));
-
-		for (int j = 0; j < n; j++)
-			heights[0][j] = (matrix[0][j] == '1') ? 1 : 0;
-
-		for (int i = 1; i < m; i++)
-			for (int j = 0; j < n; j++)
-				heights[i][j] = (matrix[i][j] == '1') ? heights[i - 1][j] + 1 : 0;
-
+		
+		vector<int> heights(n, 0);
 		int maxsize = 0;
 
-		for (int i = 0; i < m; i++)
-			maxsize = max(maxsize, largestRectangleArea(heights[i]));
-
+		for (int r = 0; r < m; r++)
+		{
+			for (int c = 0; c < n; c++)
+			{
+				heights[c] = (matrix[r][c] == '1') ? heights[c] + 1 : 0;
+			}
+			maxsize = max(maxsize, largestRectangleArea(heights));
+		}
 		return maxsize;
 	}
 };

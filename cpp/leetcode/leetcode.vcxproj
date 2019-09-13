@@ -188,6 +188,16 @@
     <ClCompile Include="73. Set Matrix Zeroes.cpp" />
     <ClCompile Include="74. Search a 2D Matrix.cpp" />
     <ClCompile Include="75. Sort Colors.cpp" />
+    <ClCompile Include="76. Minimum Window Substring.cpp" />
+    <ClCompile Include="77. Combinations.cpp" />
+    <ClCompile Include="78. Subsets.cpp" />
+    <ClCompile Include="79. Word Search.cpp" />
+    <ClCompile Include="80. Remove Duplicates from Sorted Array II.cpp" />
+    <ClCompile Include="81. Search in Rotated Sorted Array II.cpp" />
+    <ClCompile Include="82. Remove Duplicates from Sorted List II.cpp" />
+    <ClCompile Include="83. Remove Duplicates from Sorted List.cpp" />
+    <ClCompile Include="84. Largest Rectangle in Histogram.cpp" />
+    <ClCompile Include="85. Maximal Rectangle.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />

@@ -1,9 +1,7 @@
 #include "public.h"
 
-//16ms, 98.26%
-
-//count the occur times of ont num
-// use one traverse
+//16ms, 92.43%
+//模拟, 统计字符出现次数
 
 class Solution {
 public:

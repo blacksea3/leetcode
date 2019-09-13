@@ -1,39 +1,41 @@
 #include "listnode.h"
 
-//16ms, 91.75%
-
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
- * };
- */
-
-//Simple solution, use double pointer
+//8ms, 97.66%
+//Ä£Äâ
 
 class Solution {
 public:
 	ListNode* deleteDuplicates(ListNode* head) {
 		if (head == nullptr) return nullptr;
 
-		//one traverse
-		//double pointer
 		ListNode* dump = new ListNode(0);
 		dump->next = head;
-		ListNode* loc = dump;
-		ListNode *left, *right;
+		ListNode* pre = dump;
 
-		while (loc->next)
+		while (true)
 		{
-			left = loc->next;
-			right = left;
-			while (right->next && right->next->val == left->val)
-				right = right->next;
-			if (left == right) loc = loc->next;
-			else loc->next = right->next;
+			ListNode* pNext = pre->next;
+			if (!pNext) break;
+			else if (pNext->next && pNext->val == pNext->next->val)
+			{
+				int val = pNext->val;
+				while (pNext && val == pNext->val)
+				{
+					pNext = pNext->next;
+				}
+				pre->next = pNext;
+			}
+			else pre = pNext;
 		}
 		return dump->next;
 	}
 };
+
+/*
+int main()
+{
+	Solution* s = new Solution();
+	auto res = s->deleteDuplicates(stringToListNode("[1,2,3,3,4,4,5]"));
+	return 0;
+}
+*/

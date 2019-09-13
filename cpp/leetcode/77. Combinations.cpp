@@ -1,27 +1,29 @@
 #include "public.h"
 
-//108ms, 88.23%
-
-//This is a BackTracking problem
-//Solve it recursively
+//88ms, 97.99%
+//回溯法
 
 class Solution {
 private:
 	vector<vector<int>> res;
-	void recu_combine(int pren, int totaln, int prek, vector<int> prev)
+
+	//startn: 起始n; totaln: 最大n; remainn: 剩余数字个数; prev:当前数组
+	void backTrack(int startn, int totaln, int remainn, vector<int>& prev)
 	{
-		for (int i = pren + 1; i <= (totaln - prek + 1); ++i)
+		for (int i = startn; i <= (totaln - remainn + 1); ++i)
 		{
-			prev.push_back(i);
-			if (prek == 1) res.push_back(prev);
-			else recu_combine(i, totaln, prek - 1, prev);
+			prev.emplace_back(i);
+			if (remainn == 1) res.push_back(prev);
+			else backTrack(i + 1, totaln, remainn - 1, prev);
 			prev.pop_back();
 		}
 	}
 
 public:
-	vector<vector<int>> combine(int n, int k) {
-		recu_combine(0, n, k, {});
+	vector<vector<int>> combine(int n, int k) 
+	{
+		vector<int> nums;
+		backTrack(1, n, k, nums);
 		return res;
 	}
 };

@@ -65,6 +65,7 @@ public:
 	}
 };
 
+/*
 int main()
 {
 	Solution* s = new Solution();
@@ -73,3 +74,4 @@ int main()
 	auto res = s->insert(intervals, newInterval);
 	return 0;
 }
+*/
