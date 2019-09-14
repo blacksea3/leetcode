@@ -1,21 +1,42 @@
 #include "BinaryTree.h"
 
-//Morris traverse, see https://blog.csdn.net/u013575812/article/details/50069991 86.75%
+//36ms, 74.91%
+//简单的方法是中序遍历后排序节点，然后按照中序遍历的顺序依次填回去，空间复杂度O(n)
+//左中右
+//两轮遍历
 
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
+class Solution {
+private:
+	vector<int> nodes;
+	int index = 0;
+	void Inorder_Gen(TreeNode* root)
+	{
+		if (!root) return;
+		Inorder_Gen(root->left);
+		nodes.emplace_back(root->val);
+		Inorder_Gen(root->right);
+	}
+	void Inorder_Set(TreeNode* root)
+	{
+		if (!root) return;
+		Inorder_Set(root->left);
+		root->val = nodes[index++];
+		Inorder_Set(root->right);
+	}
+
+public:
+	void recoverTree(TreeNode* root) {
+		Inorder_Gen(root);
+		sort(nodes.begin(), nodes.end());
+		Inorder_Set(root);
+	}
+};
+
+//52ms, 32.63%
+//Morris traverse, see https://blog.csdn.net/u013575812/article/details/50069991
 class Solution {
 public:
 	void recoverTree(TreeNode* root) {
-		//简单的方法是中序遍历后排序节点，然后按照中序遍历的顺序依次填回去，空间复杂度O(n)
-
 		//Morris遍历
 		//太变态了https://blog.csdn.net/u013575812/article/details/50069991
 		//核心:首先疯狂往左遍历,每次往下增加深度时,对当前的右子树的最右节点的右节点连上当前节点的父节点
@@ -43,7 +64,7 @@ public:
 				}
 				parent = cur;
 				cur = cur->right;
-			}//end if
+			}
 			else {
 				pre = cur->left;
 				while (pre->right != NULL && pre->right != cur) pre = pre->right;
@@ -61,8 +82,8 @@ public:
 					parent = cur;
 					cur = cur->right;
 				}
-			}//end else
-		}//end while
+			}
+		}
 
 		if (first != NULL && second != NULL) {
 			int temp = first->val;

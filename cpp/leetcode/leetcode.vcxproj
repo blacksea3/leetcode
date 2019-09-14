@@ -163,6 +163,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="100. Same Tree.cpp" />
     <ClCompile Include="51. N-Queens.cpp" />
     <ClCompile Include="52. N-Queens II.cpp" />
     <ClCompile Include="53. Maximum Subarray.cpp" />
@@ -205,6 +206,13 @@
     <ClCompile Include="90. Subsets II.cpp" />
     <ClCompile Include="91. Decode Ways.cpp" />
     <ClCompile Include="92. Reverse Linked List II.cpp" />
+    <ClCompile Include="93. Restore IP Addresses.cpp" />
+    <ClCompile Include="94. Binary Tree Inorder Traversal.cpp" />
+    <ClCompile Include="95. Unique Binary Search Trees II.cpp" />
+    <ClCompile Include="96. Unique Binary Search Trees.cpp" />
+    <ClCompile Include="97. Interleaving String.cpp" />
+    <ClCompile Include="98. Validate Binary Search Tree.cpp" />
+    <ClCompile Include="99. Recover Binary Search Tree.cpp" />
     <ClCompile Include="commonalg.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />

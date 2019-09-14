@@ -1,24 +1,23 @@
 #include "public.h"
 
-//4ms, 95.16%
-
-//DP problem, but all history res should be stored
+//4ms, 72.24%
+//DP, dp[i]表示n=i的二叉搜索树种类
+//例如dp[18] = 求和dp[i]*dp[17-i] i=0至17
+//初始化dp[0] = 1
 
 class Solution {
 public:
 	int numTrees(int n) {
-		//a(n=18) = 求和a(i)*a(17-i) i=0至17
-		//a(n=0) = 1
-		vector<int> numtrees(n + 1, 0);  //numtrees[下标]表示a(n),a(0)=1,a(1)=1
-
+		vector<int> dp(n + 1);
 		if (n <= 0) return 0;
-		numtrees[0] = 1;
-		numtrees[1] = 1;
-		for (int i = 2; i <= n; i++)
+		dp[0] = 1;
+		for (int i = 1; i <= n; i++)
 		{
-			for (int j = 0; j < i; j++)
-				numtrees[i] += numtrees[j] * numtrees[i - 1 - j];
+			for (int j = 0, j_add1 = 1; j < i; j++, j_add1++)
+			{
+				dp[i] += dp[j] * dp[i - j_add1];
+			}
 		}
-		return numtrees[n];
+		return dp[n];
 	}
 };

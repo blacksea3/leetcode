@@ -67,6 +67,12 @@
     <Filter Include="源文件\SpecialAlg\Special">
       <UniqueIdentifier>{bdd84835-974b-4b05-864f-f8d46a23b355}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\SpecialAlg\BinaryTree">
+      <UniqueIdentifier>{e58e0017-d90a-4be4-9476-e624a15dc540}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\CommonAlg\DivideAndConquer">
+      <UniqueIdentifier>{dbc0a33b-4eed-4741-990a-541a829378bb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -223,6 +229,30 @@
     </ClCompile>
     <ClCompile Include="92. Reverse Linked List II.cpp">
       <Filter>源文件\SpecialAlg\ListNode</Filter>
+    </ClCompile>
+    <ClCompile Include="93. Restore IP Addresses.cpp">
+      <Filter>源文件\CommonAlg\BackTrack</Filter>
+    </ClCompile>
+    <ClCompile Include="94. Binary Tree Inorder Traversal.cpp">
+      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="95. Unique Binary Search Trees II.cpp">
+      <Filter>源文件\CommonAlg\DivideAndConquer</Filter>
+    </ClCompile>
+    <ClCompile Include="96. Unique Binary Search Trees.cpp">
+      <Filter>源文件\CommonAlg\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="97. Interleaving String.cpp">
+      <Filter>源文件\CommonAlg\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="98. Validate Binary Search Tree.cpp">
+      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="99. Recover Binary Search Tree.cpp">
+      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="100. Same Tree.cpp">
+      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

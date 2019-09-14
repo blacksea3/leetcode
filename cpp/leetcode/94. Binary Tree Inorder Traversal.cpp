@@ -1,17 +1,9 @@
 #include "BinaryTree.h"
 
-//4ms, 96.87%
-//Simple algorithm, use stack
+/*
+//4ms, 83.50%
+//栈, 左中右, 迭代法
 
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
 class Solution {
 public:
 	vector<int> inorderTraversal(TreeNode* root) {
@@ -27,13 +19,35 @@ public:
 			}
 			else
 			{
-				//backtracking
 				pre = ts.top();
 				ts.pop();
 				res.push_back(pre->val);
 				pre = pre->right;
 			}
 		}
+		return res;
+	}
+};
+*/
+
+//0ms, 100%
+//左中右, 递归写法
+//层数不能超过最大递归深度
+
+class Solution {
+private:
+	void Inorder(TreeNode* root, vector<int>& res)
+	{
+		if (!root) return;
+		Inorder(root->left, res);
+		res.emplace_back(root->val);
+		Inorder(root->right, res);
+	}
+
+public:
+	vector<int> inorderTraversal(TreeNode* root) {
+		vector<int> res;
+		Inorder(root, res);
 		return res;
 	}
 };

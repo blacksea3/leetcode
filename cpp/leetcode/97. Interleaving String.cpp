@@ -1,13 +1,11 @@
 #include "public.h"
 
-//First: DP problem, 16ms, 32.82%
-
-//dp[i][j]: s1.substr(0,i) + s2.substr(0,j) == s3.substr(0,i+j)?
-//when i == 0 and j == 0 , dp[i][j] = true
+//4ms, 94.58%
+//DP问题
+//定义dp[i][j]: s1.substr(0,i) + s2.substr(0,j) 能否交错成为 s3.substr(0,i+j)
+//初始化when i == 0 and j == 0 , dp[i][j] = true
 //for i == 0 and j ≠ 0 or j == 0 and i ≠ 0, dp[i][0] = dp[i-1][0] && (s1[i-1] == s3[i-1]), the same is for j
-
 //for j > 0 and j > 0, dp[i][j] = (dp[i-1][j] && (s1[i-1] == s3[i-1+j]))|| (dp[i][j-i] && (s2[j-1] == s3[i-1+j]))
-
 //then return dp[lens1][lens2]
 
 class Solution {
