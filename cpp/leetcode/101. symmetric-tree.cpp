@@ -1,18 +1,7 @@
 #include "BinaryTree.h"
 
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
-
 //iterately solution, 16ms, 74.61%
 //traverse both left and right, use one queue
-
 /*
 class Solution {
 public:

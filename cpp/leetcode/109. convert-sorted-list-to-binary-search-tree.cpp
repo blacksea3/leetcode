@@ -1,26 +1,9 @@
 #include "BinaryTree.h"
 #include "listnode.h"
 
-//first: convert the linked list to array, then use problem 108,
-//44ms, 88.85%
-
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
- * };
- */
- /**
-  * Definition for a binary tree node.
-  * struct TreeNode {
-  *     int val;
-  *     TreeNode *left;
-  *     TreeNode *right;
-  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-  * };
-  */
+/*
+//64ms, 33.69%
+//先把链表转成数组然后用108题
 class Solution {
 private:
 	//should ensure that right >= left, if not return nullptr
@@ -47,9 +30,39 @@ public:
 		ListNode* pre = head;
 		while (pre != nullptr)
 		{
-			nums.push_back(pre->val);
+			nums.emplace_back(pre->val);
 			pre = pre->next;
 		}
 		return sortedArrayToBST(nums);
+	}
+};
+*/
+
+//36ms, 92.19%
+//直接把链表转成二叉搜索树
+//用快慢指针定位链表中间
+class Solution {
+public:
+	TreeNode* sortedListToBST(ListNode* head) {
+		if (!head) return nullptr;
+		else if (!head->next) return new TreeNode(head->val);
+		else
+		{
+			ListNode* fast = head;
+			ListNode* slow = head;
+			ListNode* oldslow;     //注意到head==nullptr和head->next==nullptr已经被排除, 下面的while至少会循环一次
+			while (fast && fast->next)
+			{
+				oldslow = slow;
+				fast = fast->next->next;
+				slow = slow->next;
+			}
+			//切断list
+			TreeNode *root = new TreeNode(slow->val);
+			oldslow->next = nullptr;
+			root->left = sortedListToBST(head);
+			root->right = sortedListToBST(slow->next);
+			return root;
+		}
 	}
 };

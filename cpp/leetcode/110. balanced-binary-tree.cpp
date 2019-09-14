@@ -4,15 +4,6 @@
 // a trick: we can use a (global) flag to store the res, if one small tree is inbalanced,
 //  then the total tree is inbalanced, we don't need to recursively all the total tree!
 
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
 class Solution {
 private:
 	bool flag = true;

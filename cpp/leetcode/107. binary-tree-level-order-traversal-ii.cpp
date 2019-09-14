@@ -1,16 +1,7 @@
 #include "BinaryTree.h"
 
-//level traverse, level traverse, use queue, 16ms, 86.30%
-
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
+//4ms, 97.92%
+//²ãÐò±éÀú, Ë«¶ÓÁÐ
 class Solution {
 public:
 	vector<vector<int>> levelOrderBottom(TreeNode* root) {
@@ -37,9 +28,10 @@ public:
 				if (temp->left) next.push(temp->left);
 				if (temp->right) next.push(temp->right);
 			}
-			total_res.insert(total_res.begin(), pre_res);
+			total_res.emplace_back(pre_res);
 			swap(pre, next);
 		}
+		reverse(total_res.begin(), total_res.end());
 		return total_res;
 	}
 };
