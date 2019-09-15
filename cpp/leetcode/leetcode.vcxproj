@@ -185,6 +185,10 @@
     <ClCompile Include="119. pascals-triangle-ii.cpp" />
     <ClCompile Include="120. triangle.cpp" />
     <ClCompile Include="51. N-Queens.cpp" />
+    <ClCompile Include="5189. maximum-number-of-balloons.cpp" />
+    <ClCompile Include="5190. reverse-substrings-between-each-pair-of-parentheses.cpp" />
+    <ClCompile Include="5191. k-concatenation-maximum-sum.cpp" />
+    <ClCompile Include="5192. critical-connections-in-a-network.cpp" />
     <ClCompile Include="52. N-Queens II.cpp" />
     <ClCompile Include="53. Maximum Subarray.cpp" />
     <ClCompile Include="54. Spiral Matrix.cpp" />

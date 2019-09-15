@@ -42,10 +42,11 @@ public:
 	}
 };
 
+/*
 int main()
 {
 	Solution* s = new Solution();
 	vector<string> res = s->restoreIpAddresses("25525511135");
 	return 0;
 }
-
+*/

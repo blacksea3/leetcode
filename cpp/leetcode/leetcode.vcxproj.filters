@@ -314,5 +314,17 @@
     <ClCompile Include="120. triangle.cpp">
       <Filter>源文件\CommonAlg\DP</Filter>
     </ClCompile>
+    <ClCompile Include="5189. maximum-number-of-balloons.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5190. reverse-substrings-between-each-pair-of-parentheses.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5191. k-concatenation-maximum-sum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5192. critical-connections-in-a-network.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
