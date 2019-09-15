@@ -1,6 +1,7 @@
 #include "public.h"
 
-//simple solution, 4ms, 95.27%
+//0ms, 100%
+//Ä£Äâ 
 
 class Solution {
 public:

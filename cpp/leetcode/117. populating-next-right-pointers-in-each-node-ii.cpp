@@ -17,37 +17,38 @@ public:
 	}
 };
 
-//620ms, 81.48%
-//level order traverse, first you can use queue, but if we want to achieve O(1) space use,
-// we can directedly use next to replace the use of queue
-// this is from https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node-ii/solution/mo-bai-da-lao-de-si-lu-yong-nextdai-ti-queue-by-gi/
+//640ms, 67.32%
+//层序遍历, 用队列是显然的, 但是为了获取O(1)空间复杂度, 可以直接使用next指针代替队列
+//参考 https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node-ii/solution/mo-bai-da-lao-de-si-lu-yong-nextdai-ti-queue-by-gi/
 
-Node* connect(Node* root) {
-	Node *last = root;
-	while (last != NULL) {
-		// 获得队首元素
-		while (last && last->left == NULL && last->right == NULL)last = last->next;
-		if (last == NULL)break;
-		Node *cur = NULL;
-		// 遍历队列
-		for (Node *i = last; i != NULL; i = i->next) {
-			// 进行push和pop操作
-			if (i->left) {
-				if (cur != NULL) {
-					cur->next = i->left;
+class Solution {
+public:
+	Node* connect(Node* root) {
+		Node *last = root;
+		while (last) {
+			// 获得队首元素
+			while (last && !last->left && !last->right)last = last->next;
+			if (!last)break;
+			Node *cur = NULL;
+			// 遍历队列
+			for (Node *i = last; i; i = i->next) {
+				// 进行push和pop操作
+				if (i->left) {
+					if (cur) {
+						cur->next = i->left;
+					}
+					cur = i->left;
 				}
-				cur = i->left;
-			}
-			if (i->right) {
-				if (cur != NULL) {
-					cur->next = i->right;
+				if (i->right) {
+					if (cur) {
+						cur->next = i->right;
+					}
+					cur = i->right;
 				}
-				cur = i->right;
 			}
+			// 更新队首
+			last = last->left ? last->left : last->right;
 		}
-		// 更新队首
-		last = last->left ? last->left : last->right;
+		return root;
 	}
-	return root;
-}
-
+};

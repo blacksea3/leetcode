@@ -174,6 +174,16 @@
     <ClCompile Include="108. convert-sorted-array-to-binary-search-tree.cpp" />
     <ClCompile Include="109. convert-sorted-list-to-binary-search-tree.cpp" />
     <ClCompile Include="110. balanced-binary-tree.cpp" />
+    <ClCompile Include="111. minimum-depth-of-binary-tree.cpp" />
+    <ClCompile Include="112. path-sum.cpp" />
+    <ClCompile Include="113. path-sum-ii.cpp" />
+    <ClCompile Include="114. flatten-binary-tree-to-linked-list.cpp" />
+    <ClCompile Include="115. distinct-subsequences.cpp" />
+    <ClCompile Include="116. populating-next-right-pointers-in-each-node.cpp" />
+    <ClCompile Include="117. populating-next-right-pointers-in-each-node-ii.cpp" />
+    <ClCompile Include="118. pascals-triangle.cpp" />
+    <ClCompile Include="119. pascals-triangle-ii.cpp" />
+    <ClCompile Include="120. triangle.cpp" />
     <ClCompile Include="51. N-Queens.cpp" />
     <ClCompile Include="52. N-Queens II.cpp" />
     <ClCompile Include="53. Maximum Subarray.cpp" />

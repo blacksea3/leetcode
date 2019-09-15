@@ -1,6 +1,7 @@
 #include "public.h"
 
-//原地合并, 0ms, 100%
+//0ms, 100%
+//模拟, 原地合并
 
 class Solution {
 public:

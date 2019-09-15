@@ -1,6 +1,7 @@
 #include "public.h"
 
-//DP problem, 8ms, 93.71%
+//4ms, 97.47%
+//DP问题, 倒序, 从下往上按行扫描
 
 class Solution {
 public:

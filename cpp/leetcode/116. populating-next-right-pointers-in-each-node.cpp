@@ -1,4 +1,5 @@
 #include "public.h"
+
 // Definition for a Node.
 class Node {
 public:
@@ -17,14 +18,14 @@ public:
 	}
 };
 
-//note this is a perfect binary tree!, 84ms, 92.98%
+//80ms, 89.03%
+//注意这是完美二叉树, 不会残缺
 
 class Solution {
 private:
 	void helper(Node* root)
 	{
-		if (!root) return;
-		if (!root->left) return;
+		if (!root || !root->left) return;
 		root->left->next = root->right;
 		if (root->next) root->right->next = root->next->left;
 		helper(root->left);

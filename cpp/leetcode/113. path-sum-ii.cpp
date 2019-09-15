@@ -1,16 +1,8 @@
 #include "BinaryTree.h"
 
-//recursively, 20ms, 94.01%
+//16ms, 93.08%
+//recursively
 
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
 class Solution {
 private:
 	vector<vector<int>> res = {};
@@ -22,14 +14,14 @@ private:
 		{
 			if (sum == root->val)
 			{
-				pre.push_back(root->val);
-				res.push_back(pre);
+				pre.emplace_back(root->val);
+				res.emplace_back(pre);
 				pre.pop_back();
 			}
 		}
 		else
 		{
-			pre.push_back(root->val);
+			pre.emplace_back(root->val);
 			recu_pathSum(root->left, sum - root->val);
 			recu_pathSum(root->right, sum - root->val);
 			pre.pop_back();

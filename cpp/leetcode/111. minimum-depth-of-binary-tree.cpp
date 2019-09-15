@@ -1,16 +1,8 @@
 #include "BinaryTree.h"
 
-//recursively, 24ms, 79.57%
+//12ms, 95.65%
+//recursively
 
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
 class Solution {
 private:
 	//ensure that root!=nullptr
