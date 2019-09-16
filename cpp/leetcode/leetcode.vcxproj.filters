@@ -314,17 +314,20 @@
     <ClCompile Include="120. triangle.cpp">
       <Filter>源文件\CommonAlg\DP</Filter>
     </ClCompile>
-    <ClCompile Include="5189. maximum-number-of-balloons.cpp">
+    <ClCompile Include="125. valid-palindrome.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="5190. reverse-substrings-between-each-pair-of-parentheses.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="121. best-time-to-buy-and-sell-stock.cpp">
+      <Filter>源文件\CommonAlg\Greedy</Filter>
     </ClCompile>
-    <ClCompile Include="5191. k-concatenation-maximum-sum.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="122. best-time-to-buy-and-sell-stock-ii.cpp">
+      <Filter>源文件\CommonAlg\Greedy</Filter>
     </ClCompile>
-    <ClCompile Include="5192. critical-connections-in-a-network.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="123. best-time-to-buy-and-sell-stock-iii.cpp">
+      <Filter>源文件\CommonAlg\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="124. binary-tree-maximum-path-sum.cpp">
+      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

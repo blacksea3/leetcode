@@ -1,16 +1,8 @@
 #include "BinaryTree.h"
 
-//40ms, 89.74%
+//44ms, 58.33%
+//递归
 
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
 class Solution {
 private:
 	int res = INT_MIN;   //方法共享变量,最小值

@@ -1,15 +1,16 @@
 #include "public.h"
 
-//12ms, 85.41%
+//8ms, 85.28%
+//只要后一天比前一天价格高,就卖出
 
 class Solution {
 public:
 	int maxProfit(vector<int>& prices) {
-		//只要后一天比前一天价格高,就卖出
+		
 		int res = 0;
-		for (int i = 1; i < prices.size(); i++)
+		for (int i = 1, i_m1 = 0; i < prices.size(); i++, i_m1++)
 		{
-			if (prices[i] > prices[i - 1]) res += (prices[i] - prices[i - 1]);
+			res += max(0, prices[i] - prices[i_m1]);
 		}
 		return res;
 	}
