@@ -16,9 +16,6 @@
     <Filter Include="源文件\CommonAlg">
       <UniqueIdentifier>{3e1984bf-4c67-45e6-8a03-05ef84a91da4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\CommonAlg\DFS">
-      <UniqueIdentifier>{ab71c7e8-783c-4e46-95c7-ce6f2623d82c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="源文件\CommonAlg\Greedy">
       <UniqueIdentifier>{034aaa22-8053-42e7-b5fe-f2641fffa621}</UniqueIdentifier>
     </Filter>
@@ -72,6 +69,9 @@
     </Filter>
     <Filter Include="源文件\CommonAlg\DivideAndConquer">
       <UniqueIdentifier>{dbc0a33b-4eed-4741-990a-541a829378bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\CommonAlg\DFS/BFS">
+      <UniqueIdentifier>{ab71c7e8-783c-4e46-95c7-ce6f2623d82c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -189,7 +189,7 @@
       <Filter>源文件\SpecialAlg\BitOperation</Filter>
     </ClCompile>
     <ClCompile Include="79. Word Search.cpp">
-      <Filter>源文件\CommonAlg\DFS</Filter>
+      <Filter>源文件\CommonAlg\DFS/BFS</Filter>
     </ClCompile>
     <ClCompile Include="80. Remove Duplicates from Sorted Array II.cpp">
       <Filter>源文件\EasyAlg\Simulation</Filter>
@@ -314,9 +314,6 @@
     <ClCompile Include="120. triangle.cpp">
       <Filter>源文件\CommonAlg\DP</Filter>
     </ClCompile>
-    <ClCompile Include="125. valid-palindrome.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="121. best-time-to-buy-and-sell-stock.cpp">
       <Filter>源文件\CommonAlg\Greedy</Filter>
     </ClCompile>
@@ -328,6 +325,27 @@
     </ClCompile>
     <ClCompile Include="124. binary-tree-maximum-path-sum.cpp">
       <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="125. valid-palindrome.cpp">
+      <Filter>源文件\EasyAlg\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="126. word-ladder-ii.cpp">
+      <Filter>源文件\CommonAlg\DFS/BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="127. word-ladder.cpp">
+      <Filter>源文件\CommonAlg\DFS/BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="128. longest-consecutive-sequence.cpp">
+      <Filter>源文件\SpecialAlg\Special</Filter>
+    </ClCompile>
+    <ClCompile Include="129. sum-root-to-leaf-numbers.cpp">
+      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="130. surrounded-regions.cpp">
+      <Filter>源文件\CommonAlg\DFS/BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="131. palindrome-partitioning.cpp">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

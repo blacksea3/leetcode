@@ -1,6 +1,7 @@
 #include "public.h"
 
-//使用固定轮转双端BFS, 还可以接着优化成动态双端BFS, 132ms, 70.57%
+//84ms, 84.02%
+//动态双端BFS
 
 class Solution {
 private:	
@@ -20,88 +21,51 @@ private:
 
 public:
 	int ladderLength(string beginWord, string endWord, vector<string>& wordList) {
-		//特殊情况:没有endWord
-		if (find(wordList.begin(), wordList.end(), endWord) == wordList.end()) return 0;
-		//特殊情况2:beginWord直接连到endWord
-		if (isconvert(beginWord, endWord)) return 2;
-
-		unordered_set<string> wordset;
 		//为提高速度,vector->unordered_set
-		for (auto iter = wordList.begin(); iter != wordList.end(); ++iter)
-			wordset.insert(*iter);
-		unordered_set<string> wordset_reverse = wordset;
-
-		//双端BFS
-		unordered_set<string> history;
-		history.insert(beginWord);
-		unordered_set<string> history_reverse;
-		history_reverse.insert(endWord);
-
-		int res = 0;
+		unordered_set<string> wordset(wordList.begin(), wordList.end());
+		//特殊情况: endWord不存在于wordList中
+		if (wordset.find(endWord) == wordset.end()) return 0;
+		bool breakflag = false;
 		bool isreverse = false;   //是否反向BFS
-		const int letter_length = beginWord.size();
 
-		while (true)
+		unordered_set<string> history = { beginWord };
+		unordered_set<string> history_reverse = { endWord };
+
+		//第一轮双端BFS,构建图 gblmap
+		int res = 2;
+
+		while (!history.empty())
 		{
-			unordered_set<string> nextset;
-			if (!isreverse)
+			unordered_set<string> next;
+			for (auto& str : history) wordset.erase(str);
+			for (auto& str : history)
 			{
-				for (auto str : history) wordset.erase(str);
-				if (history.empty()) return 0; //强制退出,无转换序列
-				for (auto phstring = history.begin(); phstring != history.end(); ++phstring)
+				for (auto& nextstring : wordset)
 				{
-					for (int loc = 0; loc < letter_length; ++loc)
+					if (isconvert(str, nextstring))
 					{
-						string nexttemp = *phstring;
-						for (char c = 'a'; c < 'z'; ++c)
+						next.insert(nextstring);
+						if (history_reverse.find(nextstring) != history_reverse.end())
 						{
-							nexttemp[loc] = c;
-							if (wordset.find(nexttemp) != wordset.end())
-							{
-								nextset.insert(nexttemp);
-							}
-							if (history_reverse.find(nexttemp) != history_reverse.end())
-							{
-								++res;
-								goto BIGbreak;
-							}
+							breakflag = true;
 						}
 					}
 				}
-				history = nextset;
-				isreverse = true;
+			}
+			if (breakflag) break;
+			else res++;
+			if (next.size() <= history_reverse.size())
+			{
+				history = next;
 			}
 			else
 			{
-				for (auto str : history_reverse) wordset_reverse.erase(str);
-				if (history_reverse.empty()) return 0; //强制退出,无转换序列
-				for (auto phstring = history_reverse.begin(); phstring != history_reverse.end(); ++phstring)
-				{
-					for (int loc = 0; loc < letter_length; ++loc)
-					{
-						string nexttemp = *phstring;
-						for (char c = 'a'; c < 'z'; ++c)
-						{
-							nexttemp[loc] = c;
-							if (wordset_reverse.find(nexttemp) != wordset_reverse.end())
-							{
-								nextset.insert(nexttemp);
-							}
-							if (history.find(nexttemp) != history.end())
-							{
-								++res;
-								goto BIGbreak;
-							}
-						}
-					}
-				}
-				history_reverse = nextset;
-				isreverse = false;
+				history = history_reverse; history_reverse = next;
+				isreverse = !isreverse;
 			}
-			++res;
 		}
-	BIGbreak:
-		return res + 1;
+
+		return (breakflag) ? res : 0;
 	}
 };
 

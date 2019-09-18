@@ -1,39 +1,30 @@
 #include "public.h"
 
-//12ms, 90.42%
+//8ms, 91.88%
+//模拟, 左右同时向中间扫
 
 class Solution {
 public:
 	bool isPalindrome(string s) {
-		//左右同时向中间扫
-
 		int left = 0;
 		int right = s.size() - 1;
 
-		char diff = 'a' - 'A';
-
 		while (left < right)
 		{
-			if (!isdigit(s[left]) && !isalpha(s[left]))
-				left++;
-			else if (!isdigit(s[right]) && !isalpha(s[right]))
-				right--;
-			else
+			while (left < right && !isdigit(s[left]) && !isalpha(s[left]))
 			{
-				if (isdigit(s[left]) && isdigit(s[right]))
-				{
-					if (s[left] != s[right]) return false;
-				}
-				else if (isalpha(s[left]) && isalpha(s[right]))
-				{
-					if ((s[left] != s[right]) && (s[left] != s[right] - diff) && (s[right] != s[left] - diff))
-						return false;
-				}
-				else
-					return false;
 				left++;
+			}
+			while (left < right && !isdigit(s[right]) && !isalpha(s[right]))
+			{
 				right--;
 			}
+			if (toupper(s[left]) != toupper(s[right]))
+			{
+				return false;
+			}
+			left++;
+			right--;
 		}
 		return true;
 	}

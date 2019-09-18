@@ -1,24 +1,24 @@
 #include "public.h"
 
-//44ms, 86.57%
+//32ms, 98.00%
 
 //DFS
 //先对边界搜一轮O,变成A   
-//然后对中间遍历O变成X
-//然后边界遍历把A变成O
+//然后把O变成X, 把A变成O
 
 class Solution {
 private:
-	void DFS_O2A(vector<vector<char>>& board, int line, int column, int& maxline, int& maxcolumn)
+	void DFS_O2A(vector<vector<char>>& board, int line, int column)
 	{
-		if ((line < 0) || (line == maxline) || (column < 0) || (column == maxcolumn)) return;
+		if ((line < 0) || (line == board.size()) || (column < 0) 
+			|| (column == board[0].size())) return;
 		if (board[line][column] == 'O')
 		{
 			board[line][column] = 'A';
-			DFS_O2A(board, line - 1, column, maxline, maxcolumn);
-			DFS_O2A(board, line, column - 1, maxline, maxcolumn);
-			DFS_O2A(board, line + 1, column, maxline, maxcolumn);
-			DFS_O2A(board, line, column + 1, maxline, maxcolumn);
+			DFS_O2A(board, line - 1, column);
+			DFS_O2A(board, line, column - 1);
+			DFS_O2A(board, line + 1, column);
+			DFS_O2A(board, line, column + 1);
 		}
 	}
 public:
@@ -30,27 +30,30 @@ public:
 
 		//first DFS, border O -> A
 		for (int col = 0; col < maxcolumn; ++col)
-			DFS_O2A(board, 0, col, maxline, maxcolumn);
-		for (int col = 0; col < maxcolumn; ++col)
-			DFS_O2A(board, maxline - 1, col, maxline, maxcolumn);
+		{
+			DFS_O2A(board, 0, col);
+			DFS_O2A(board, maxline - 1, col);
+		}	
 		for (int lin = 1; lin < maxline - 1; ++lin)
-			DFS_O2A(board, lin, 0, maxline, maxcolumn);
-		for (int lin = 1; lin < maxline - 1; ++lin)
-			DFS_O2A(board, lin, maxcolumn - 1, maxline, maxcolumn);
+		{
+			DFS_O2A(board, lin, 0);
+			DFS_O2A(board, lin, maxcolumn - 1);
+		}
 
 		//second traverse, inner O -> X
-		for (int lin = 1; lin < maxline - 1; ++lin)
-			for (int col = 1; col < maxcolumn - 1; ++col)
-				if (board[lin][col] == 'O') board[lin][col] = 'X';
-
-		//third: traverse, A -> O
+		//and third: traverse, A -> O
 		for (int lin = 0; lin < maxline; ++lin)
+		{
 			for (int col = 0; col < maxcolumn; ++col)
-			if (board[lin][col] == 'A') board[lin][col] = 'O';
-				
+			{
+				if (board[lin][col] == 'O') board[lin][col] = 'X';
+				if (board[lin][col] == 'A') board[lin][col] = 'O';
+			}
+		}	
 	}
 };
 
+/*
 int main()
 {
 	Solution* s = new Solution();
@@ -59,3 +62,4 @@ int main()
 
 	return 0;
 }
+*/

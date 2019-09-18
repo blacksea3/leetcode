@@ -1,29 +1,19 @@
 #include "BinaryTree.h"
 
-//4ms, 95.29%
+//4ms, 89.86%
+//Ä£Äâ, ±éÀúÊ÷
 
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
 class Solution {
 private:
 	int sum = 0;
 	void iter_sumNumbres(TreeNode* root, const int& pre)
 	{
-		if (!root) return;
-		else
+		if (root)
 		{
 			int now = 10 * pre + root->val;
 			if ((root->left == nullptr) && (root->right == nullptr))
 			{
 				sum += now;
-				return;
 			}
 			else
 			{

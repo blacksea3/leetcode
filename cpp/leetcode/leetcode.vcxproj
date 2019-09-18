@@ -189,6 +189,12 @@
     <ClCompile Include="123. best-time-to-buy-and-sell-stock-iii.cpp" />
     <ClCompile Include="124. binary-tree-maximum-path-sum.cpp" />
     <ClCompile Include="125. valid-palindrome.cpp" />
+    <ClCompile Include="126. word-ladder-ii.cpp" />
+    <ClCompile Include="127. word-ladder.cpp" />
+    <ClCompile Include="128. longest-consecutive-sequence.cpp" />
+    <ClCompile Include="129. sum-root-to-leaf-numbers.cpp" />
+    <ClCompile Include="130. surrounded-regions.cpp" />
+    <ClCompile Include="131. palindrome-partitioning.cpp" />
     <ClCompile Include="51. N-Queens.cpp" />
     <ClCompile Include="52. N-Queens II.cpp" />
     <ClCompile Include="53. Maximum Subarray.cpp" />
