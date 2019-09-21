@@ -347,5 +347,17 @@
     <ClCompile Include="131. palindrome-partitioning.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="5072. how-many-apples-can-you-put-into-the-basket.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5073. minimum-knight-moves.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5071. find-smallest-common-element-in-all-rows.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5091. minimum-time-to-build-blocks.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

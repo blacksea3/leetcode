@@ -45,9 +45,11 @@ public:
 	}
 };
 
+/*
 int main()
 {
 	Solution* s = new Solution();
 	vector<vector<string>> res = s->partition("aab");
 	return 0;
 }
+*/

@@ -97,6 +97,7 @@ public:
 	}
 };
 
+/*
 int main()
 {
 	Solution* s = new Solution();
@@ -112,3 +113,4 @@ int main()
 
 	return 0;
 }
+*/

@@ -195,6 +195,10 @@
     <ClCompile Include="129. sum-root-to-leaf-numbers.cpp" />
     <ClCompile Include="130. surrounded-regions.cpp" />
     <ClCompile Include="131. palindrome-partitioning.cpp" />
+    <ClCompile Include="5071. find-smallest-common-element-in-all-rows.cpp" />
+    <ClCompile Include="5072. how-many-apples-can-you-put-into-the-basket.cpp" />
+    <ClCompile Include="5073. minimum-knight-moves.cpp" />
+    <ClCompile Include="5091. minimum-time-to-build-blocks.cpp" />
     <ClCompile Include="51. N-Queens.cpp" />
     <ClCompile Include="52. N-Queens II.cpp" />
     <ClCompile Include="53. Maximum Subarray.cpp" />
