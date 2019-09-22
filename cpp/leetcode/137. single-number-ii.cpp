@@ -1,6 +1,7 @@
 #include "public.h"
 
-//复杂的位运算, 数字电路, 16ms, 83.08%
+//12ms, 86.40%
+//复杂的位运算, 数字电路
 
 class Solution {
 public:
@@ -27,7 +28,7 @@ public:
 
 		int a = 0;
 		int b = 0;
-		for (auto num : nums)
+		for (auto& num : nums)
 		{
 			b = (b ^ num) & ~a;
 			a = (a ^ num) & ~b;

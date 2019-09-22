@@ -16,13 +16,13 @@ public:
     }
 };
 
-// 三轮操作, 详情看注释, 60ms, 76.16%
+//32ms, 99.76%
+//三轮操作, 详情看注释
 
 class Solution {
 public:
     Node* copyRandomList(Node* head) {
         if (head == nullptr) return nullptr;
-        
         Node* pre = head;
         
         //第一轮复制,给每个节点复制到自己的后面
@@ -43,7 +43,6 @@ public:
         }
         
         //第三轮,拆出复制节点
-        
         Node* returnhead = head->next;
         pre = head;
         while (pre->next != nullptr)
@@ -52,7 +51,6 @@ public:
             pre->next = pre->next->next;
             pre = temp;
         }
-        
-        return returnhead;
+		return returnhead;
     }
 };

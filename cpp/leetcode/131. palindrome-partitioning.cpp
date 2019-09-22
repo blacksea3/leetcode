@@ -1,8 +1,7 @@
 #include "public.h"
 
-//24ms, 96.83%
-
-//µÝ¹é±©Á¦ËÑË÷
+//8ms, 100%
+//»ØËÝ·¨£º±©Á¦ËÑË÷
 
 class Solution {
 private:
@@ -20,27 +19,23 @@ private:
 		return true;
 	}
 
-	void recu_partition(const string& s, int start)
+	void backTracking(const string& s, int start)
 	{
-		if (start >= s.size()) res.push_back(pre);
-
-		//±©Á¦
+		if (start >= s.size()) res.emplace_back(pre);
 		for (int i = start; i < s.size(); i++)
 		{
 			if (is_partition(s, start, i))
 			{
-				pre.push_back(s.substr(start, i - start + 1));
-				recu_partition(s, i + 1);
+				pre.emplace_back(s.substr(start, i - start + 1));
+				backTracking(s, i + 1);
 				pre.pop_back();
 			}
 		}
 	}
-
-
 public:
 	vector<vector<string>> partition(string s) {
 		//µÝ¹é
-		recu_partition(s, 0);
+		backTracking(s, 0);
 		return res;
 	}
 };
