@@ -200,7 +200,11 @@
     <ClCompile Include="5073. minimum-knight-moves.cpp" />
     <ClCompile Include="5091. minimum-time-to-build-blocks.cpp" />
     <ClCompile Include="51. N-Queens.cpp" />
+    <ClCompile Include="5197. minimum-absolute-difference.cpp" />
+    <ClCompile Include="5198. ugly-number-iii.cpp" />
+    <ClCompile Include="5199. smallest-string-with-swaps.cpp" />
     <ClCompile Include="52. N-Queens II.cpp" />
+    <ClCompile Include="5200. sort-items-by-groups-respecting-dependencies.cpp" />
     <ClCompile Include="53. Maximum Subarray.cpp" />
     <ClCompile Include="54. Spiral Matrix.cpp" />
     <ClCompile Include="55. Jump Game.cpp" />

@@ -359,5 +359,17 @@
     <ClCompile Include="5091. minimum-time-to-build-blocks.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="5197. minimum-absolute-difference.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5198. ugly-number-iii.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5199. smallest-string-with-swaps.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5200. sort-items-by-groups-respecting-dependencies.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
