@@ -1,22 +1,14 @@
 #include "listnode.h"
 
-//68ms, 89.35%
+//56ms, 98.72%
+//原地算法
+//归并排序
 
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
- * };
- */
 class Solution {
 private:
 	//外部确保head不为空
 	ListNode* iter_sortList(ListNode* head)
 	{
-		//原地算法
-		//归并排序
 		if (head->next == nullptr) return head;
 
 		//用双指针切割链表

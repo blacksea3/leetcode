@@ -1,17 +1,7 @@
 #include "listnode.h"
 
-//68ms, 93.11%
-
+//60ms, 98.78%
 //分成三部分处理：找到中点分离后半段、反转后半段，后半段插入前半段
-
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
- * };
- */
 class Solution {
 public:
 	void reorderList(ListNode* head) {
@@ -22,7 +12,6 @@ public:
 		//快慢指针找到中点,分离出后半段
 		ListNode* fast = head;
 		ListNode* slow = head;
-
 		while (fast->next && fast->next->next)
 		{
 			fast = fast->next->next;
@@ -59,6 +48,7 @@ public:
 	}
 };
 
+/*
 int main()
 {
 	Solution* s = new Solution();
@@ -67,3 +57,4 @@ int main()
 	s->reorderList(l);
 	return 0;
 }
+*/

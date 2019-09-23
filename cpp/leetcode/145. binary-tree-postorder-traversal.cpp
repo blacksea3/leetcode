@@ -1,25 +1,13 @@
 #include "BinaryTree.h"
 
-//4ms, 94.05%
+//0ms, 100%
+//倒过来，生成反-后序遍历，即中右左遍历
+//迭代
 
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
 class Solution {
 public:
 	vector<int> postorderTraversal(TreeNode* root) {
-		//倒过来,生成反-后序遍历:即根-右-左遍历顺序
-
 		vector<int> res = {};
-
-		if (root == nullptr) return res;
-
 		TreeNode* pre = root;
 		stack<TreeNode*> dfs;
 
@@ -27,7 +15,7 @@ public:
 		{
 			if (pre)
 			{
-				res.insert(res.begin(), pre->val);
+				res.emplace_back(pre->val);
 				dfs.push(pre);
 				pre = pre->right;
 			}
@@ -38,6 +26,7 @@ public:
 				pre = pre->left;
 			}
 		}
+		reverse(res.begin(), res.end());
 		return res;
 	}
 };

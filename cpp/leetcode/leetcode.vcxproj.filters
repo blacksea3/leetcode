@@ -73,6 +73,12 @@
     <Filter Include="源文件\CommonAlg\DFS/BFS">
       <UniqueIdentifier>{ab71c7e8-783c-4e46-95c7-ce6f2623d82c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\SpecialAlg\Design">
+      <UniqueIdentifier>{c7bdb619-18ec-46bb-bf22-a08a9a5659fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\CommonAlg\Hash">
+      <UniqueIdentifier>{0435cff6-cf40-4700-b717-77e94284750a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -344,9 +350,6 @@
     <ClCompile Include="130. surrounded-regions.cpp">
       <Filter>源文件\CommonAlg\DFS/BFS</Filter>
     </ClCompile>
-    <ClCompile Include="141. linked-list-cycle.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="131. palindrome-partitioning.cpp">
       <Filter>源文件\CommonAlg\BackTrack</Filter>
     </ClCompile>
@@ -376,6 +379,39 @@
     </ClCompile>
     <ClCompile Include="140. word-break-ii.cpp">
       <Filter>源文件\CommonAlg\DFS/BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="151. reverse-words-in-a-string.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="141. linked-list-cycle.cpp">
+      <Filter>源文件\SpecialAlg\ListNode</Filter>
+    </ClCompile>
+    <ClCompile Include="142. linked-list-cycle-ii.cpp">
+      <Filter>源文件\SpecialAlg\ListNode</Filter>
+    </ClCompile>
+    <ClCompile Include="143. reorder-list.cpp">
+      <Filter>源文件\SpecialAlg\ListNode</Filter>
+    </ClCompile>
+    <ClCompile Include="144. binary-tree-preorder-traversal.cpp">
+      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="145. binary-tree-postorder-traversal.cpp">
+      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="146. lru-cache.cpp">
+      <Filter>源文件\SpecialAlg\Design</Filter>
+    </ClCompile>
+    <ClCompile Include="147. insertion-sort-list.cpp">
+      <Filter>源文件\SpecialAlg\ListNode</Filter>
+    </ClCompile>
+    <ClCompile Include="148. sort-list.cpp">
+      <Filter>源文件\SpecialAlg\ListNode</Filter>
+    </ClCompile>
+    <ClCompile Include="149. max-points-on-a-line.cpp">
+      <Filter>源文件\CommonAlg\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="150. evaluate-reverse-polish-notation.cpp">
+      <Filter>源文件\CommonAlg\Stack</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,6 +1,7 @@
 #include "public.h"
 
-//188ms, 56.36%
+//132ms, 97.82%
+//字典和双向链表
 
 class LRUCache {
 private:
@@ -20,9 +21,8 @@ public:
 	int get(int key) {
 		if (LRUpair.find(key) != LRUpair.end())
 		{
-			list<int>::iterator loc = LRUpair[key].second;
 			int value = LRUpair[key].first;
-			record.erase(loc);
+			record.erase(LRUpair[key].second);
 			record.push_front(key);
 			LRUpair[key] = pair<int, list<int>::iterator>{ value,record.begin() };
 			return value;
@@ -35,8 +35,7 @@ public:
 		//如果存在
 		if (get(key) != -1)
 		{
-			list<int>::iterator loc = LRUpair[key].second;
-			record.erase(loc);
+			record.erase(LRUpair[key].second);
 			record.push_front(key);
 			LRUpair[key] = pair<int, list<int>::iterator>{ value,record.begin() };
 		}
