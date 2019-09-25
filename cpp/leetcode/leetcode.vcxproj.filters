@@ -413,5 +413,20 @@
     <ClCompile Include="150. evaluate-reverse-polish-notation.cpp">
       <Filter>源文件\CommonAlg\Stack</Filter>
     </ClCompile>
+    <ClCompile Include="f1. guess-numbers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="f2. deep-dark-fraction.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="f3. programmable-robot.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="f5. coin-bonus.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="f4. broken-board-dominoes.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

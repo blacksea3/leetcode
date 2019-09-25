@@ -265,6 +265,11 @@
     <ClCompile Include="98. Validate Binary Search Tree.cpp" />
     <ClCompile Include="99. Recover Binary Search Tree.cpp" />
     <ClCompile Include="commonalg.cpp" />
+    <ClCompile Include="f1. guess-numbers.cpp" />
+    <ClCompile Include="f2. deep-dark-fraction.cpp" />
+    <ClCompile Include="f3. programmable-robot.cpp" />
+    <ClCompile Include="f4. broken-board-dominoes.cpp" />
+    <ClCompile Include="f5. coin-bonus.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
     <ClCompile Include="test.cpp" />
