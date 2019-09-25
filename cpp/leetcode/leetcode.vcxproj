@@ -265,13 +265,16 @@
     <ClCompile Include="98. Validate Binary Search Tree.cpp" />
     <ClCompile Include="99. Recover Binary Search Tree.cpp" />
     <ClCompile Include="commonalg.cpp" />
-    <ClCompile Include="f1. guess-numbers.cpp" />
-    <ClCompile Include="f2. deep-dark-fraction.cpp" />
-    <ClCompile Include="f3. programmable-robot.cpp" />
-    <ClCompile Include="f4. broken-board-dominoes.cpp" />
-    <ClCompile Include="f5. coin-bonus.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
+    <ClCompile Include="newcode 单词逆序.cpp" />
+    <ClCompile Include="newcode合并二叉树.cpp" />
+    <ClCompile Include="newcode字符串全排列.cpp" />
+    <ClCompile Include="newcode硬币划分.cpp" />
+    <ClCompile Include="newcode递增子序列.cpp" />
+    <ClCompile Include="newcode通用算法.cpp" />
+    <ClCompile Include="newcode降水量.cpp" />
+    <ClCompile Include="newcode非递归方式遍历二叉树.cpp" />
     <ClCompile Include="test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

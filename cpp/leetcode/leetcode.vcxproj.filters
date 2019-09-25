@@ -413,19 +413,28 @@
     <ClCompile Include="150. evaluate-reverse-polish-notation.cpp">
       <Filter>源文件\CommonAlg\Stack</Filter>
     </ClCompile>
-    <ClCompile Include="f1. guess-numbers.cpp">
+    <ClCompile Include="newcode 单词逆序.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="f2. deep-dark-fraction.cpp">
+    <ClCompile Include="newcode硬币划分.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="f3. programmable-robot.cpp">
+    <ClCompile Include="newcode字符串全排列.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="f5. coin-bonus.cpp">
+    <ClCompile Include="newcode合并二叉树.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="f4. broken-board-dominoes.cpp">
+    <ClCompile Include="newcode降水量.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="newcode递增子序列.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="newcode通用算法.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="newcode非递归方式遍历二叉树.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
