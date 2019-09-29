@@ -43,14 +43,16 @@ public:
         }
         
         //第三轮,拆出复制节点
-        Node* returnhead = head->next;
-        pre = head;
-        while (pre->next != nullptr)
-        {
-            Node* temp = pre->next;
-            pre->next = pre->next->next;
-            pre = temp;
-        }
+		Node* ptr_old_list = head;         // A->B->C
+		Node* ptr_new_list = head->next;   // A'->B'->C'
+		Node* returnhead = ptr_new_list;
+		while (ptr_old_list) {
+			ptr_old_list->next = ptr_old_list->next->next;
+			ptr_new_list->next = (ptr_new_list->next) ? ptr_new_list->next->next : nullptr;
+			ptr_old_list = ptr_old_list->next;
+			ptr_new_list = ptr_new_list->next;
+		}
+
 		return returnhead;
     }
 };

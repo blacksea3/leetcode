@@ -167,6 +167,7 @@ void levelOrder(Node* root)
 	}
 }
 
+/*
 int main()
 {
 	ifstream cin;  //¸²¸ÇÈ«¾Östd:cin
@@ -204,3 +205,4 @@ int main()
 		cout << endl;
 	}
 }
+*/

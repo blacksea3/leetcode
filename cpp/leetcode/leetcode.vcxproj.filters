@@ -79,6 +79,9 @@
     <Filter Include="源文件\CommonAlg\Hash">
       <UniqueIdentifier>{0435cff6-cf40-4700-b717-77e94284750a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\牛客">
+      <UniqueIdentifier>{39ce2985-3bbf-4a57-9dc9-d14811bd79b1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -435,6 +438,42 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="newcode非递归方式遍历二叉树.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="汽水瓶.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="明明的随机数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="进制转换.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="构造回文.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="字符移位.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="有趣的数字.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="二维数组中的查找.cpp">
+      <Filter>源文件\牛客</Filter>
+    </ClCompile>
+    <ClCompile Include="8. String to Integer (atoi).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="10. Regular Expression Matching.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="最高分是多少.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5207. get-equal-substrings-within-budget.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5208.minimum-moves-to-reach-target-with-rotations.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

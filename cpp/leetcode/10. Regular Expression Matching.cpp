@@ -222,6 +222,7 @@ public:
 	}
 };
 
+/*
 int main()
 {
 	Solution s = Solution();
@@ -243,4 +244,4 @@ int main()
 	cout << s.isMatch("a", ".*");
 	return 0;
 }
-
+*/

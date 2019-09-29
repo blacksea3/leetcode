@@ -163,6 +163,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="10. Regular Expression Matching.cpp" />
     <ClCompile Include="100. Same Tree.cpp" />
     <ClCompile Include="101. symmetric-tree.cpp" />
     <ClCompile Include="102. binary-tree-level-order-traversal.cpp" />
@@ -217,6 +218,8 @@
     <ClCompile Include="151. reverse-words-in-a-string.cpp" />
     <ClCompile Include="51. N-Queens.cpp" />
     <ClCompile Include="52. N-Queens II.cpp" />
+    <ClCompile Include="5207. get-equal-substrings-within-budget.cpp" />
+    <ClCompile Include="5208.minimum-moves-to-reach-target-with-rotations.cpp" />
     <ClCompile Include="53. Maximum Subarray.cpp" />
     <ClCompile Include="54. Spiral Matrix.cpp" />
     <ClCompile Include="55. Jump Game.cpp" />
@@ -244,6 +247,7 @@
     <ClCompile Include="77. Combinations.cpp" />
     <ClCompile Include="78. Subsets.cpp" />
     <ClCompile Include="79. Word Search.cpp" />
+    <ClCompile Include="8. String to Integer (atoi).cpp" />
     <ClCompile Include="80. Remove Duplicates from Sorted Array II.cpp" />
     <ClCompile Include="81. Search in Rotated Sorted Array II.cpp" />
     <ClCompile Include="82. Remove Duplicates from Sorted List II.cpp" />
@@ -276,6 +280,14 @@
     <ClCompile Include="newcode降水量.cpp" />
     <ClCompile Include="newcode非递归方式遍历二叉树.cpp" />
     <ClCompile Include="test.cpp" />
+    <ClCompile Include="二维数组中的查找.cpp" />
+    <ClCompile Include="字符移位.cpp" />
+    <ClCompile Include="明明的随机数.cpp" />
+    <ClCompile Include="最高分是多少.cpp" />
+    <ClCompile Include="有趣的数字.cpp" />
+    <ClCompile Include="构造回文.cpp" />
+    <ClCompile Include="汽水瓶.cpp" />
+    <ClCompile Include="进制转换.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

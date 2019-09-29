@@ -1,4 +1,111 @@
 #include "public.h"
+#include "BinaryTree.h"
+
+/*
+//查找[0, n]中1的出现次数
+class Solution {
+public:
+	int NumberOf1Between1AndN_Solution(int n)
+	{
+		int res = 0;
+		for (long long base = 1; base <= n; base*=10)
+		{
+			res += (n/(base*10))*base;
+			if ((n%(base*10))/base > 1)
+				res += base;
+			else if ((n%(base*10))/base == 1)
+				res += (n%base + 1);
+		}
+		return res;
+	}
+};
+
+
+//O(n)查找可能的>数组长度一半的数字, 摩尔投票
+class Solution {
+public:
+	int MoreThanHalfNum_Solution(vector<int> numbers) {
+		if (numbers.empty()) return 0;
+		int pre;
+		int pCount = 0;
+		for (auto& n : numbers)
+		{
+			if (pCount == 0)
+			{
+				pre = n;
+				pCount = 1;
+			}
+			else
+			{
+				if (n != pre) pCount--;
+				else pCount++;
+			}
+		}
+
+		pCount = 0;
+		for (auto& n : numbers) if (n == pre) pCount++;
+		return (pCount > (numbers.size() / 2)) ? pre : 0;
+	}
+};
+
+//含重复字符的全排列, 字符串不能包含"!"
+class Solution {
+private:
+	vector<string> res;
+	void backTrack(string& pool, string& olds)
+	{
+		if (pool.empty()) res.emplace_back(olds);
+		else
+		{
+			char oldc = '!';
+			for (int index = 0; index < pool.size(); ++index)
+			{
+				if (oldc == pool[index]) continue;
+				else
+				{
+					oldc = pool[index];
+					pool.erase(pool.begin() + index);
+					olds.push_back(oldc);
+					backTrack(pool, olds);
+					pool.insert(pool.begin() + index, oldc);
+					olds.pop_back();
+				}
+			}
+		}
+	}
+public:
+	vector<string> Permutation(string str) {
+		string pre;
+		backTrack(str, pre);
+		return res;
+	}
+};
+
+//中序遍历迭代
+class Solution {
+public:
+	vector<int> inorderTraversal(TreeNode* pRootOfTree)
+	{
+		stack<TreeNode*> st;
+		TreeNode* pre = pRootOfTree;
+		vector<int> res;
+		
+		while (!st.empty() || pre)
+		{
+			while (pre)
+			{
+				st.push(pre);
+				pre = pre->left;
+			}
+			pre = st.top();
+			st.pop();
+			res.emplace_back(pre->val);
+			pre = pre->right;
+		}
+		return res;
+	}
+};
+*/
 
 //用ch分割raw, 变成一个string列表
 vector<string> mStringSplit(string raw, char ch)
