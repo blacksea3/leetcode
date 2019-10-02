@@ -1,10 +1,9 @@
 #include "public.h"
 
+//4ms, 69.67%
+//二分
 // Forward declaration of isBadVersion API.
 bool isBadVersion(int version);  //这个函数我就不实现了
-
-//4ms, 89.24%
-//simple solution 二分
 
 class Solution {
 public:

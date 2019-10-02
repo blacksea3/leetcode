@@ -1,6 +1,6 @@
 #include "public.h"
 
-//16ms, 77.40%
+//8ms, 93.01%
 //DP problem
 
 class Solution {

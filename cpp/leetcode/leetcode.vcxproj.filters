@@ -677,8 +677,47 @@
     <ClCompile Include="240. search-a-2d-matrix-ii.cpp">
       <Filter>源文件\CommonAlg\Greedy</Filter>
     </ClCompile>
-    <ClCompile Include="241. different-ways-to-add-parentheses.cpp">
+    <ClCompile Include="282. expression-add-operators.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="241. different-ways-to-add-parentheses.cpp">
+      <Filter>源文件\CommonAlg\DivideAndConquer</Filter>
+    </ClCompile>
+    <ClCompile Include="242. valid-anagram.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="257. binary-tree-paths.cpp">
+      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="258. add-digits.cpp">
+      <Filter>源文件\SpecialAlg\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="260. single-number-iii.cpp">
+      <Filter>源文件\SpecialAlg\BitOperation</Filter>
+    </ClCompile>
+    <ClCompile Include="263. ugly-number.cpp">
+      <Filter>源文件\SpecialAlg\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="264. ugly-number-ii.cpp">
+      <Filter>源文件\CommonAlg\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="268. missing-number.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="273. integer-to-english-words.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="274. h-index.cpp">
+      <Filter>源文件\CommonAlg\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="275. h-index-ii.cpp">
+      <Filter>源文件\CommonAlg\BinarySearch</Filter>
+    </ClCompile>
+    <ClCompile Include="278. first-bad-version.cpp">
+      <Filter>源文件\CommonAlg\BinarySearch</Filter>
+    </ClCompile>
+    <ClCompile Include="279. perfect-squares.cpp">
+      <Filter>源文件\CommonAlg\DP</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

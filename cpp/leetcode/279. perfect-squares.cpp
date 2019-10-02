@@ -1,7 +1,7 @@
 #include "public.h"
 
 //还有拉格朗日四数平方法, 看不懂, 以后再优化
-//DP problem, 252ms, 22.08%, 据说python 这样的DP会超时?
+//DP problem, 136ms, 71.19%
 
 //考虑到以下的情形：并不是每次都拿最大的最好，
 //例如对于12: (size): 9+1+1+1 > 4+4+4
@@ -19,7 +19,6 @@ class Solution {
 public:
 	int numSquares(int n) {
 		//DP, O(n*sqrt(n))
-
 		vector<int> dp(n + 1, 0);
 
 		for (int i = 1; i <= n; ++i)

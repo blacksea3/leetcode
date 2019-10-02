@@ -1,6 +1,6 @@
 #include "public.h"
 
-//12ms, 79.46%
+//0ms, 100%
 //easy problem, but the code may be complicated!
 //从低位到高位
 //连续两次遍历
@@ -107,6 +107,7 @@ public:
 	}
 };
 
+/*
 int main()
 {
 	Solution* s = new Solution();
@@ -114,3 +115,4 @@ int main()
 	string res = s->numberToWords(1000000);
 	return 0;
 }
+*/

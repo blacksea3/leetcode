@@ -1,6 +1,6 @@
 #include "public.h"
 
-//16ms, 90.54%
+//16ms, 79.42%
 //位运算
 //先全部异或一遍
 //得到两个不同数字的异或值
@@ -15,7 +15,7 @@ public:
 		int s = 0;
 		for (auto& n : nums) s ^= n;
 
-		int mask = s & (-s) & 0x7FFFFFFF;
+		int mask = s & (-s);    //s & (-s)得到一个二进制位最右边一位为1的数字;
 
 		vector<int> res(2, 0);
 		for (auto& n : nums)

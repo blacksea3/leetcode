@@ -1,6 +1,6 @@
 #include "public.h"
 
-//8ms, 93.16%
+//4ms, 96.94%
 //分治得出所有情况
 
 class Solution {
@@ -53,7 +53,7 @@ private:
 					ops, i + 1, opend);
 				for (auto& left : r1)
 					for (auto& right : r2)
-						pre.push_back(cal(left, right ,ops, i));
+						pre.push_back(cal(left, right, ops, i));
 			}
 			return pre;
 		}
@@ -85,10 +85,11 @@ public:
 	}
 };
 
+/*
 int main()
 {
 	Solution* s = new Solution();
 	vector<int> res = s->diffWaysToCompute("2-1-1");
 	return 0;
 }
-
+*/
