@@ -97,6 +97,9 @@
     <Filter Include="源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29">
       <UniqueIdentifier>{02b73f87-d061-4051-9fbf-d81f1f1aa402}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\CommonAlg\Greedy">
+      <UniqueIdentifier>{caf4c049-408b-40c8-b9ab-01a54412c630}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -615,6 +618,66 @@
       <Filter>源文件\CommonAlg\SortPreTreat先排序再模拟</Filter>
     </ClCompile>
     <ClCompile Include="221. maximal-square.cpp">
+      <Filter>源文件\CommonAlg\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="222. count-complete-tree-nodes.cpp">
+      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="223. rectangle-area.cpp">
+      <Filter>源文件\SpecialAlg\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="224. basic-calculator.cpp">
+      <Filter>源文件\CommonAlg\Stack</Filter>
+    </ClCompile>
+    <ClCompile Include="225. implement-stack-using-queues.cpp">
+      <Filter>源文件\SpecialAlg\Design</Filter>
+    </ClCompile>
+    <ClCompile Include="226. invert-binary-tree.cpp">
+      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="227. basic-calculator-ii.cpp">
+      <Filter>源文件\BaseAlg\FiniteStateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="228. summary-ranges.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="摩尔投票法升级229. majority-element-ii.cpp">
+      <Filter>源文件\SpecialAlg\Special</Filter>
+    </ClCompile>
+    <ClCompile Include="230. kth-smallest-element-in-a-bst.cpp">
+      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="231. power-of-two.cpp">
+      <Filter>源文件\SpecialAlg\BitOperation</Filter>
+    </ClCompile>
+    <ClCompile Include="232. implement-queue-using-stacks.cpp">
+      <Filter>源文件\SpecialAlg\Design</Filter>
+    </ClCompile>
+    <ClCompile Include="233. number-of-digit-one.cpp">
+      <Filter>源文件\SpecialAlg\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="234. palindrome-linked-list.cpp">
+      <Filter>源文件\SpecialAlg\ListNode</Filter>
+    </ClCompile>
+    <ClCompile Include="235. lowest-common-ancestor-of-a-binary-search-tree.cpp">
+      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="236. lowest-common-ancestor-of-a-binary-tree.cpp">
+      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="237. delete-node-in-a-linked-list.cpp">
+      <Filter>源文件\SpecialAlg\ListNode</Filter>
+    </ClCompile>
+    <ClCompile Include="238. product-of-array-except-self.cpp">
+      <Filter>源文件\CommonAlg\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="239. sliding-window-maximum.cpp">
+      <Filter>源文件\CommonAlg\SlidingWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="240. search-a-2d-matrix-ii.cpp">
+      <Filter>源文件\CommonAlg\Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="241. different-ways-to-add-parentheses.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

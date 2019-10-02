@@ -1,7 +1,7 @@
 #include "public.h"
 
-//4ms, 91.56%
-//两个栈,一个temp,一个存储,和225题差不多
+//4ms, 75.53%
+//两个栈, 一个temp,一个存储,和225题差不多
 
 class MyQueue {
 private:
@@ -51,12 +51,3 @@ public:
 		return s1.empty() && s2.empty();
 	}
 };
-
-/**
- * Your MyQueue object will be instantiated and called as such:
- * MyQueue* obj = new MyQueue();
- * obj->push(x);
- * int param_2 = obj->pop();
- * int param_3 = obj->peek();
- * bool param_4 = obj->empty();
- */

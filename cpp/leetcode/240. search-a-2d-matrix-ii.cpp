@@ -1,5 +1,37 @@
 #include "public.h"
 
+//64ms, 98.26%
+//可以从右上角或者左下角开始
+//例如右上角,小了就左移,大了就下移
+
+class Solution {
+public:
+	bool searchMatrix(vector<vector<int>>& matrix, int target) {
+		int maxrowp1 = matrix.size();
+		if (!maxrowp1) return false;
+		int maxcolp1 = matrix[0].size();
+		if (!maxcolp1) return false;
+
+		int prerow = 0;
+		int precol = maxcolp1 - 1;
+		while (true)
+		{
+			if (matrix[prerow][precol] < target)
+			{
+				if (prerow < maxrowp1 - 1) prerow++;
+				else return false;
+			}
+			else if (matrix[prerow][precol] > target)
+			{
+				if (precol > 0) precol--;
+				else return false;
+			}
+			else return true;
+		}
+		return true; //dump return
+	}
+};
+
 /*
 //260ms, 14.78%
 //分治+二分查找
@@ -54,36 +86,3 @@ int main()
 	return 0;
 }
 */
-
-//60ms, 99.76%
-//可以从右上角或者左下角开始
-//例如右上角,小了就左移,大了就下移
-
-class Solution {
-public:
-	bool searchMatrix(vector<vector<int>>& matrix, int target) {
-		int maxrowp1 = matrix.size();
-		if (!maxrowp1) return false;
-		int maxcolp1 = matrix[0].size();
-		if (!maxcolp1) return false;
-
-		int prerow = 0;
-		int precol = maxcolp1 - 1;
-		while (true)
-		{
-			if (matrix[prerow][precol] < target)
-			{
-				if (prerow < maxrowp1 - 1) prerow++;
-				else return false;
-			}
-			else if (matrix[prerow][precol] > target)
-			{
-				if (precol > 0) precol--;
-				else return false;
-			}
-			else return true;
-		}
-		return true; //dump return
-	}
-};
-

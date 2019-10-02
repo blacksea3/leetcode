@@ -1,7 +1,7 @@
 #include "public.h"
 
-//4ms, 90.47%
-//DC: 分治法
+//0ms, 100%
+//位运算
 
 class Solution {
 public:
@@ -9,8 +9,8 @@ public:
 		if (n <= 0) return false;
 		while (n > 1)
 		{
-			if (n % 2) return false;
-			n /= 2;
+			if (n & 1) return false;
+			n >>= 1;
 		}
 		return true;
 	}

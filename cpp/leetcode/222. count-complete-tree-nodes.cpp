@@ -1,33 +1,25 @@
 #include "BinaryTree.h"
 
-//DFS is just ok, 40ms, 98.76%
+//36ms, 96.39%
+//ÏÈÐò±éÀú, ÖÐ×óÓÒ
 
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
 class Solution {
 private:
 	int res = 0;
-	void DFS(TreeNode* root)
+	void preOrder(TreeNode* root)
 	{
 		if (!root) return;
 		else
 		{
 			res++;
-			DFS(root->left);
-			DFS(root->right);
+			preOrder(root->left);
+			preOrder(root->right);
 		}
 	}
 
 public:
 	int countNodes(TreeNode* root) {
-		DFS(root);
+		preOrder(root);
 		return res;
 	}
 };

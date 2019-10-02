@@ -1,6 +1,7 @@
 #include "public.h"
 
-//stack, 16ms, 93.63%
+//8ms, 98.55%
+//ջ
 
 class Solution {
 public:
@@ -70,6 +71,7 @@ public:
 	}
 };
 
+/*
 int main()
 {
 	Solution* s = new Solution();
@@ -77,3 +79,4 @@ int main()
 	cout << s->calculate("2147483647") << endl;
 	return 0;
 }
+*/

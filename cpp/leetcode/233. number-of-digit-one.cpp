@@ -1,6 +1,6 @@
 #include "public.h"
 
-//4ms, 87.55%
+//4ms, 72.51%
 //数学法, 实在无法做到答案如此简洁!
 
 /*
@@ -22,6 +22,3 @@ public:
 		return countr;
 	}
 };
-
-
-

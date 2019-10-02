@@ -1,6 +1,7 @@
 #include "public.h"
 
-//状态机, 12ms, 97.54%
+//8ms, 98.45%
+//状态机, 维持三值, 俩符号, 这样便可以决定计算顺序
 
 class Solution {
 public:

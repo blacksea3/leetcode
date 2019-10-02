@@ -1,6 +1,7 @@
 #include "public.h"
 
-//DP problem, 20ms, 94.09%
+//16ms, 97.09%
+//DP problem
 //dp[row][col]: 如果这个元素是某个正方形的右下角, 那么这代表这个正方形的边长
 
 class Solution {

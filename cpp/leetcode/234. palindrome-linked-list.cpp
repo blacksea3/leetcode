@@ -1,17 +1,9 @@
 #include "listnode.h"
 
-//24ms, 96.74%
+//20ms, 97.53%
 //遍历两遍
 //先获取长度,然后对前半段原地reverse,然后双指针分别从head和中间开始往后移动
 
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
- * };
- */
 class Solution {
 public:
 	bool isPalindrome(ListNode* head) {

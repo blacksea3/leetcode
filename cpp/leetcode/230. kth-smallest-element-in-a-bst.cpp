@@ -1,16 +1,8 @@
 #include "BinaryTree.h"
 
-//24ms, 95.63%
+//16ms. 99.41%
+//ÖÐÐò±éÀú, ×óÖÐÓÒ
 
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
 class Solution {
 public:
 	int kthSmallest(TreeNode* root, int k) {

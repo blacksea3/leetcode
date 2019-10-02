@@ -1,6 +1,6 @@
 #include "public.h"
 
-//20ms, 81.62%
+//16ms, 80.37%
 //摩尔投票法
 //注意:首先最多只有两个数量超过1/3的数
 //其次:每次选两个侯选数,一旦出现其他数,就和他们合并(侯选数数量减一)
@@ -69,6 +69,7 @@ public:
 	}
 };
 
+/*
 int main()
 {
 	Solution* s = new Solution();
@@ -76,3 +77,4 @@ int main()
 	vector<int> res = s->majorityElement(nums);
 	return 0;
 }
+*/
