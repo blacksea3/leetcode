@@ -1,6 +1,6 @@
 #include "public.h"
 
-//44ms, 88.04%
+//40ms, 82.67%
 
 class MinStack {
 private:
@@ -12,15 +12,13 @@ public:
 	MinStack() {
 		//双栈
 		//一个是记录元素的栈
-		//一个是记录最小值的栈
+		//一个是记录最小值的栈, 提前push一个最大值作为dump
+		mins.push(INT_MAX);
 	}
 
 	void push(int x) {
 		real.push(x);
-		if (mins.empty())
-			mins.push(x);
-		else
-			mins.push(min(mins.top(), x));
+		mins.push(min(mins.top(), x));
 	}
 
 	void pop() {

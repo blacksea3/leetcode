@@ -1,12 +1,13 @@
 #include "public.h"
 
-//simple solution, 数学题, 4ms, 96.36%
+//0ms, 100%
+//数学
 
 class Solution {
 public:
 	int titleToNumber(string s) {
 		int res = 0;
-		for (auto is : s)
+		for (auto& is : s)
 		{
 			res *= 26;
 			res += is - 'A' + 1;

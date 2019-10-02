@@ -1,6 +1,7 @@
 #include "public.h"
 
-//位运算，类似滑动窗口操作, 12ms, 99.79%
+//12ms, 97.68%
+//位运算，类似滑动窗口操作
 //优化操作:将ACGT分别转成0123,那么仅仅需要一个20bit的序列来储存一个10字符长度的DNA
 //然后用bitset保存, bitset<1 << 20> S, 如果某个位为1表示这个20bit序列已经出现过, 这个相当于map功能
 
@@ -10,16 +11,12 @@ public:
 		switch (c) {
 		case 'A':
 			return 0;
-
 		case 'C':
 			return 1;
-
 		case 'G':
 			return 2;
-
 		case 'T':
 			return 3;
-
 		}
 		return 0;
 	}
@@ -46,7 +43,6 @@ public:
 				S1.set(val);
 			}
 		}
-
 		return res;
 	}
 };

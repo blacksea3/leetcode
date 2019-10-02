@@ -1,6 +1,7 @@
 #include "public.h"
 
-//DFS, 16ms, 91.76%
+//16ms, 80.72%
+//DFS, 对搜索过的陆地赋值2
 
 class Solution {
 private:
@@ -15,12 +16,9 @@ private:
 
 public:
 	int numIslands(vector<vector<char>>& grid) {
-		//DFS,对搜索过的陆地赋值2
-
-		//特殊情况
-		int maxrow = grid.size() - 1;
+		int maxrow = grid.size() - 1;  //特别注意:此处的maxrow=row数-1
 		if (maxrow < 0) return 0;
-		int maxcolumn = grid[0].size() - 1;
+		int maxcolumn = grid[0].size() - 1;  //特别注意:此处的maxcolumn=column数-1
 		if (maxcolumn < 0) return 0;
 		int res = 0;
 
@@ -36,4 +34,3 @@ public:
 		return res;
 	}
 };
-

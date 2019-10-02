@@ -1,18 +1,19 @@
 #include "public.h"
 
-//4ms, 98.18%
+//4ms, 95.35%
+//DP问题
+//存放当前的最大值和最小值
+//如果遇到0,当前最大值和最小值都等于0
+//如果遇到正数,扩展(当前值和历史最大值/当前值和历史最小值)
+//如果遇到负数,先交换最大值和最小值再扩展
 
 class Solution {
 public:
 	int maxProduct(vector<int>& nums) {
-		//存放当前的最大值和最小值
-		//如果遇到0,当前最大值和最小值都等于0
-		//如果遇到正数,扩展
-		//如果遇到负数,交换
 		int res = INT_MIN;
 		int smax = 1;
 		int smin = 1;
-		for (auto num : nums)
+		for (auto& num : nums)
 		{
 			if (num < 0) swap(smax, smin); //交换
 			smax = max(smax*num, num);

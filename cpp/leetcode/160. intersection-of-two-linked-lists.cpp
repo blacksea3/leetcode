@@ -1,26 +1,17 @@
 #include "listnode.h"
 
-//68ms, 84.26%
+//52ms, 97.61%
+//先一起跑, 找到长度差, 然后让长的先跑
+//然后一起跑的话如果相同则一定是相交起始点, 否则直到终点
 
-//先计算两个链表长度
-//然后大家都从头开始，让长的先跑一段，然后一起跑的话如果相同则一定是相交起始点
-
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
- * };
- */
 class Solution {
 public:
 	ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
 		//遍历读取长度
-
 		ListNode* lnA = headA;
 		ListNode* lnB = headB;
-		int abs = 0;  //计数
+		ListNode* fi;
+		ListNode* se;
 
 		while ((lnB) && (lnA))
 		{
@@ -29,43 +20,36 @@ public:
 		}
 		if (lnB)
 		{
+			fi = headB;
 			while (lnB)
 			{
 				lnB = lnB->next;
-				abs++;
+				fi = fi->next;
 			}
-			lnA = headA;
-			lnB = headB;
-			//从头开始先跑一段
-			while (abs-- != 0)
-				lnB = lnB->next;
+			se = headA;
 		}
 		else if (lnA)
 		{
+			fi = headA;
 			while (lnA)
 			{
 				lnA = lnA->next;
-				abs++;
+				fi = fi->next;
 			}
-
-			lnA = headA;
-			lnB = headB;
-			//从头开始先跑一段
-			while (abs-- != 0)
-				lnA = lnA->next;
+			se = headB;
 		}
 		else
 		{
-			lnA = headA;
-			lnB = headB;
+			fi = headA;
+			se = headB;
 		}
 
 		//从头开始跑
-		while (lnA)
+		while (fi)
 		{
-			if (lnB == lnA) return lnB;
-			lnB = lnB->next;
-			lnA = lnA->next;
+			if (fi == se) return fi;
+			fi = fi->next;
+			se = se->next;
 		}
 		return nullptr;
 	}

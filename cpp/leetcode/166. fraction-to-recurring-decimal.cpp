@@ -1,14 +1,14 @@
 #include "public.h"
 
-//纯数学题,极其绕人 8ms, 75.94%
+//0ms, 100%
+//纯数学题,极其绕人
+//除下去
+//出现0就强制退出
+//否则等待出现重复的循环小数
 
 class Solution {
 public:
 	string fractionToDecimal(int numerator, int denominator) {
-		//除下去
-		//出现0就强制退出
-		//否则等待出现重复的循环小数
-
 		long long fnumerator = numerator;
 		long long fdenominator = denominator;
 		//傻逼大数字

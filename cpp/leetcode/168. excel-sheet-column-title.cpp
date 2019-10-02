@@ -1,6 +1,6 @@
 #include "public.h"
 
-//simple solution 4ms, 87.86%
+//0ms, 100%
 //数学问题
 
 class Solution {
@@ -13,17 +13,17 @@ public:
 		{
 			if (n % 26 == 0)
 			{
-				res.insert(res.begin(), 'Z');
+				res.push_back('Z');
 				n /= 26;
 				n--;
 			}
 			else
 			{
-				res.insert(res.begin(), n % 26 + 'A' - 1);
+				res.push_back(n % 26 + 'A' - 1);
 				n /= 26;
 			}
 		}
+		reverse(res.begin(), res.end());
 		return res;
 	}
 };
-

@@ -1,6 +1,6 @@
 #include "public.h"
 
-//simple solution 12ms, 90.58%
+//8ms, 92.76%
 //状态机,分读取字母和读取空格
 
 class Solution {
@@ -41,3 +41,7 @@ public:
 		return res;
 	}
 };
+
+//双翻转, 然后去除首尾和多余空格
+
+

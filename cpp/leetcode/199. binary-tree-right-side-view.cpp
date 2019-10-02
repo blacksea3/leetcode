@@ -1,37 +1,28 @@
 #include "BinaryTree.h"
 
-//traverse by level order, 8ms, 87.31%
+//4ms, 92.11%
+//层序遍历, 层间反向
 
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
 class Solution {
 public:
 	vector<int> rightSideView(TreeNode* root) {
-		//层序遍历
 		vector<int> res;
-
 		if (root == nullptr) return res;
-		vector<TreeNode*> q;
-		vector<TreeNode*> temp;
-		q.push_back(root);
+		queue<TreeNode*> q;
+		q.push(root);
+
 		while (!q.empty())
 		{
-			res.push_back(q[q.size() - 1]->val);
-			temp.clear();
-			for (auto iq : q)
+			queue<TreeNode*> ne;
+			res.push_back(q.front()->val);
+			while (!q.empty())
 			{
-				if (iq->left) temp.push_back(iq->left);
-				if (iq->right) temp.push_back(iq->right);
+				TreeNode* temp = q.front();
+				q.pop();
+				if (temp->right) ne.push(temp->right);
+				if (temp->left) ne.push(temp->left);
 			}
-			q.clear();
-			q.assign(temp.begin(), temp.end());
+			q = ne;
 		}
 		return res;
 	}

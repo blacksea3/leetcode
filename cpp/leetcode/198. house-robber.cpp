@@ -1,13 +1,12 @@
 #include "public.h"
 
-//DP problem, 0ms, 100%
+//0ms, 100%
+//dp[i]:偷窃开头直到包含i下标的最大金额
+//优化: 仅仅保存最后三个dp
 
 class Solution {
 public:
 	int rob(vector<int>& nums) {
-		//dpi:偷窃开头直到包含i下标的最大金额
-		//只保存最后三个dp
-		//init
 		if (nums.size() == 0)
 			return 0;
 		else if (nums.size() == 1)

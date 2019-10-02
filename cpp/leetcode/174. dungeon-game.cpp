@@ -1,8 +1,8 @@
 #include "public.h"
 
-//DP problem, 8ms, 94.18%
+//DP problem, 12ms, 60.12%
 //dp[i][j]:从i,j到达右下角的最低初始健康指数
-//从右下角向左上角更新
+//从"右下角"向"左上角"更新
 //右下角值初始化：若正则1否则取反加1
 //各个位置更新值：举个例子
 //dp[i][n - 1] = (dungeon[i][n - 1] >= dp[i + 1][n - 1]) ? 1 : (dp[i + 1][n - 1] - dungeon[i][n - 1]);
@@ -11,7 +11,6 @@
 class Solution {
 public:
 	int calculateMinimumHP(vector<vector<int>>& dungeon) {
-		//假设dungeon不为空
 		int m = dungeon.size();     //row
 		int n = dungeon[0].size();  //column
 
@@ -32,8 +31,6 @@ public:
 				);
 			}
 		}
-
 		return dp[0][0];
-
 	}
 };
