@@ -100,6 +100,9 @@
     <Filter Include="源文件\CommonAlg\Greedy">
       <UniqueIdentifier>{caf4c049-408b-40c8-b9ab-01a54412c630}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\CommonAlg\优先队列/大顶堆/小顶堆">
+      <UniqueIdentifier>{49dbfe32-af3f-4bf4-a241-3843758beb21}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -677,9 +680,6 @@
     <ClCompile Include="240. search-a-2d-matrix-ii.cpp">
       <Filter>源文件\CommonAlg\Greedy</Filter>
     </ClCompile>
-    <ClCompile Include="282. expression-add-operators.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="241. different-ways-to-add-parentheses.cpp">
       <Filter>源文件\CommonAlg\DivideAndConquer</Filter>
     </ClCompile>
@@ -718,6 +718,42 @@
     </ClCompile>
     <ClCompile Include="279. perfect-squares.cpp">
       <Filter>源文件\CommonAlg\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="282. expression-add-operators.cpp">
+      <Filter>源文件\CommonAlg\BackTrack</Filter>
+    </ClCompile>
+    <ClCompile Include="300. longest-increasing-subsequence.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="301. remove-invalid-parentheses.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="283. move-zeroes.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="284. peeking-iterator.cpp">
+      <Filter>源文件\SpecialAlg\Design</Filter>
+    </ClCompile>
+    <ClCompile Include="287. find-the-duplicate-number.cpp">
+      <Filter>源文件\SpecialAlg\ListNode</Filter>
+    </ClCompile>
+    <ClCompile Include="289. game-of-life.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="290. word-pattern.cpp">
+      <Filter>源文件\CommonAlg\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="292. nim-game.cpp">
+      <Filter>源文件\SpecialAlg\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="295. find-median-from-data-stream.cpp">
+      <Filter>源文件\CommonAlg\优先队列/大顶堆/小顶堆</Filter>
+    </ClCompile>
+    <ClCompile Include="297. serialize-and-deserialize-binary-tree.cpp">
+      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="299. bulls-and-cows.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

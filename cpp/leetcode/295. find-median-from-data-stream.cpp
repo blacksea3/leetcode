@@ -1,49 +1,53 @@
 #include "public.h"
 
-//628ms, 9.19%
-//注意: 内存消耗 42.2MB 97.74%
-//可以针对时间再优化
+//168ms, 99.54%
+//同时维持一个最大堆和最小堆
+
+class MedianFinder {
+private:
+	priority_queue<int, vector<int>, less<int>> maxHeap;      //大顶堆, 放小数字, 大小>小顶堆或相等
+	priority_queue<int, vector<int>, greater<int>> minHeap;   //小顶堆, 放大数字
+public:
+	/** initialize your data structure here. */
+	MedianFinder() {
+		;
+	}
+
+	void addNum(int num) {
+		if (maxHeap.empty() || maxHeap.top() < num) minHeap.push(num);
+		else maxHeap.push(num);
+		if (maxHeap.size() < minHeap.size()) {
+			maxHeap.push(minHeap.top());
+			minHeap.pop();
+		}
+		if (maxHeap.size() > minHeap.size() + 1) {
+			minHeap.push(maxHeap.top());
+			maxHeap.pop();
+		}
+	}
+
+	double findMedian() {
+		if (maxHeap.size() == minHeap.size()) {
+			return (maxHeap.top() + minHeap.top()) / 2.;
+		}
+		return maxHeap.top();
+	}
+};
+
+/*
+//324ms, 43.12%
 //维持一个排序vector
 
 class MedianFinder {
 private:
 	vector<int> v;
 public:
-	/** initialize your data structure here. */
 	MedianFinder() {
 
 	}
 
 	void addNum(int num) {
-		//二分插入
-		if (v.empty() || num >= v[v.size() - 1])
-		{
-			v.push_back(num);
-			return;
-		}
-		if (num <= v[0])
-		{
-			v.insert(v.begin(), num);
-			return;
-		}
-
-		int left = 0;
-		int right = v.size() - 1;
-
-		while (left < right)
-		{
-			int mid = (left + right) / 2;
-			if (num < v[mid]) right = mid - 1;
-			else if (num > v[mid]) left = mid + 1;
-			else
-			{
-				v.insert(v.begin() + mid, num);
-				return;
-			}
-		}
-
-		if (num <= v[left]) v.insert(v.begin() + left, num);
-		else v.insert(v.begin() + left + 1, num);
+		v.insert(upper_bound(v.begin(), v.end(), num), num);
 	}
 
 	double findMedian() {
@@ -51,14 +55,9 @@ public:
 		else return ((double)v[v.size() / 2 - 1] + v[v.size() / 2]) / 2;
 	}
 };
+*/
 
-/**
- * Your MedianFinder object will be instantiated and called as such:
- * MedianFinder* obj = new MedianFinder();
- * obj->addNum(num);
- * double param_2 = obj->findMedian();
- */
-
+/*
 int main()
 {
 	MedianFinder* obj = new MedianFinder();
@@ -105,3 +104,4 @@ int main()
 	param_2 = obj->findMedian();
 	return 0;
 }
+*/

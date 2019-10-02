@@ -269,6 +269,17 @@
     <ClCompile Include="278. first-bad-version.cpp" />
     <ClCompile Include="279. perfect-squares.cpp" />
     <ClCompile Include="282. expression-add-operators.cpp" />
+    <ClCompile Include="283. move-zeroes.cpp" />
+    <ClCompile Include="284. peeking-iterator.cpp" />
+    <ClCompile Include="287. find-the-duplicate-number.cpp" />
+    <ClCompile Include="289. game-of-life.cpp" />
+    <ClCompile Include="290. word-pattern.cpp" />
+    <ClCompile Include="292. nim-game.cpp" />
+    <ClCompile Include="295. find-median-from-data-stream.cpp" />
+    <ClCompile Include="297. serialize-and-deserialize-binary-tree.cpp" />
+    <ClCompile Include="299. bulls-and-cows.cpp" />
+    <ClCompile Include="300. longest-increasing-subsequence.cpp" />
+    <ClCompile Include="301. remove-invalid-parentheses.cpp" />
     <ClCompile Include="摩尔投票法升级229. majority-element-ii.cpp" />
     <ClCompile Include="230. kth-smallest-element-in-a-bst.cpp" />
     <ClCompile Include="231. power-of-two.cpp" />

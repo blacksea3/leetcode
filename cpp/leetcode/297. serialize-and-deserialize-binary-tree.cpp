@@ -1,20 +1,10 @@
 #include "BinaryTree.h"
 
-//44ms, 99.03%
-//类似的层序遍历
+//36ms, 98.68%
+//层序遍历
 
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
 class Codec {
 public:
-
 	// Encodes a tree to a single string.
 	string serialize(TreeNode* root) {
 		if (!root) return "";
@@ -68,7 +58,6 @@ public:
 		return res;
 	}
 
-	// Decodes your encoded data to tree.
 	// Decodes your encoded data to tree.
 	TreeNode* deserialize(string data) {
 		if (data.size() == 0) return nullptr;
@@ -222,6 +211,7 @@ public:
 // Codec codec;
 // codec.deserialize(codec.serialize(root));
 
+/*
 int main()
 {
 	//TreeNode* root = stringToTreeNode("[1,2,3,null,null,4,5]");
@@ -232,6 +222,4 @@ int main()
 	TreeNode* root2 = codec.deserialize(res);
 	return 0;
 }
-
-
-
+*/

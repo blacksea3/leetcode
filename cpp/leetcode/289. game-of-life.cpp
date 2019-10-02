@@ -1,6 +1,6 @@
 #include "public.h"
 
-//4ms, 92.57%
+//0ms, 100%
 //注意到这里一个元素是int
 //自由扩展int值, 以强行储存当前值和更新值
 //定义: 1:未遍历到的当前活细胞/遍历后仍然存活的活细胞
@@ -36,6 +36,8 @@ public:
 					if (board[r + 1][c] > 0) temp++;
 					if ((c < col - 1) && (board[r + 1][c + 1] > 0)) temp++;
 				}
+
+
 				if ((board[r][c]) && ((temp < 2) || (temp > 3))) board[r][c] = 2;
 				else if ((!board[r][c]) && (temp == 3)) board[r][c] = -1;
 			}

@@ -16,7 +16,7 @@ public:
 	bool hasNext() const;
 };
 
-//12ms, 69.70%
+//8ms, 75.00%
 //直接当场复制一个自己迭代器
 
 class PeekingIterator : public Iterator {

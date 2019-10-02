@@ -1,6 +1,6 @@
 #include "public.h"
 
-//4ms, 90.11%
+//0ms, 100%
 //数学问题
 
 class Solution {

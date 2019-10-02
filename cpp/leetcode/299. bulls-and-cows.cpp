@@ -1,6 +1,6 @@
 #include "public.h"
 
-//4ms, 98.87%
+//4ms, 97.61%
 //设置array来存储secret和guess的各个数字数量
 //如果secret和guess位置一样数字也一样, 则这次遍历不计入数字数量
 
