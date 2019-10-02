@@ -1,14 +1,15 @@
 #include "public.h"
 
-//DP problem, 连续两遍198题打家劫舍, 4ms, 91.29%
+//4ms, 79.27%
+//DP problem, 连续两遍198题打家劫舍, 
 
 class Solution {
 private:
 	int rob_199(vector<int>& nums, int startloc, int endloc)
 	{
 		//dpi:偷窃开头直到包含i下标的最大金额
-	//只保存最后三个dp
-	//init
+		//只保存最后三个dp
+		//init
 		int nsize = endloc - startloc + 1;
 
 		if (nsize <= 0)

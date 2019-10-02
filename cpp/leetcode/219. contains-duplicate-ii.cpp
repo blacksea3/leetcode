@@ -1,6 +1,6 @@
 #include "public.h"
 
-//44ms, 83.32%
+//36ms, 82.39%
 //…Ë÷√map
 
 class Solution {

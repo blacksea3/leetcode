@@ -1,6 +1,7 @@
 #include "public.h"
 
-//复用前缀树, 128ms, 83.88%
+//144ms, 81.13%
+//复用前缀树
 
 class WordDictionary {
 private:

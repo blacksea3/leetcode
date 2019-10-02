@@ -1,6 +1,7 @@
 #include "public.h"
 
-//滑动窗口, 12ms, 94.53%
+//4ms, 99.95%
+//滑动窗口
 
 class Solution {
 public:
@@ -10,7 +11,7 @@ public:
 		queue<int> pre;
 		int presum = 0;
 		int loc = 0;
-		int minlen = INT_MAX;
+		int minlen = INT_MAX;  //基于这一假设: nums的长度不会是INT_MAX
 		while (loc < nums.size())
 		{
 			pre.push(nums[loc]);
@@ -26,8 +27,6 @@ public:
 			}
 			++loc;
 		}
-		//按理来说,minlen不会真的是INT_MAX吧,...
 		return (minlen != INT_MAX) ? minlen : 0;
 	}
 };
-

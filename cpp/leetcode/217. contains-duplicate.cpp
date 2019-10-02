@@ -1,7 +1,7 @@
 #include "public.h"
 
-//48ms, 76.78%
-//simple solution, set 去重
+//36ms, 89.43%
+//set去重
 
 class Solution {
 public:

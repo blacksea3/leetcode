@@ -1,7 +1,7 @@
 #include "public.h"
 
-//Backtracking, 4ms, 93.41%
-//Here I use iterative solution
+//0ms, 100%
+//»ØËÝ, µü´ú·¨
 
 class Solution {
 public:

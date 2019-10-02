@@ -1,6 +1,8 @@
 #include "public.h"
 
-//建立vector表示0-n-1这n个数字是否是质数, 52ms, 80.99%
+//36ms, 94.53%
+//dp问题
+//建立vector表示[0, n-1]这n个数字是否是质数
 
 class Solution {
 public:

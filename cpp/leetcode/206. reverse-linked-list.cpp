@@ -1,15 +1,7 @@
 #include "listnode.h"
 
-//simple solution, 12ms, 94.20%
-
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
- * };
- */
+//8ms, 98.30%
+//µü´ú·¨, Ë«Ö¸Õë
 class Solution {
 public:
 	ListNode* reverseList(ListNode* head) {
@@ -27,3 +19,22 @@ public:
 		return left;
 	}
 };
+
+//12ms, 83.35%
+//µÝ¹é
+
+/*
+class Solution {
+public:
+	ListNode* reverseList(ListNode* head) {
+		if (!head || !head->next) return head;
+		else
+		{
+			ListNode* p = reverseList(head->next);
+			head->next->next = head;
+			head->next = nullptr;
+			return p;
+		}
+	}
+};
+*/

@@ -1,7 +1,7 @@
 #include "public.h"
 
-//复用Manacher算法, 16ms, 33.12%
-
+//8ms, 76.89%
+//复用Manacher算法
 //注意:最后应当先扣取s的后一部分字符串然后反转再加上s的前一部分字符串
 //不可随意使用res.insert(res.begin(),char x), 这太慢了, 直接TLE
 
@@ -87,6 +87,7 @@ public:
 	}
 };
 
+/*
 int main()
 {
 	Solution* s = new Solution();
@@ -95,3 +96,4 @@ int main()
 	//string res = s->shortestPalindrome("");
 	return 0;
 }
+*/

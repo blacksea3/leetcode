@@ -1,11 +1,11 @@
 #include "public.h"
 
-//Õÿ∆À≈≈–Ú, ∏¥”√207Ã‚, 28ms, 98.18%
+//20ms, 99.63%
+//Õÿ∆À≈≈–Ú, ∏¥”√207Ã‚
 
 class Solution {
 public:
 	vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
-		//∏¥”√207Ã‚
 		if (numCourses == 0) return vector<int> {};
 
 		//Õÿ∆À≈≈–Ú

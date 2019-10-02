@@ -25,20 +25,8 @@
     <Filter Include="源文件\CommonAlg\BackTrack">
       <UniqueIdentifier>{80b54529-6d82-477a-a73e-9a45a6af5831}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\EasyAlg">
-      <UniqueIdentifier>{87b854a6-93db-4f11-b3b9-1e36949a4b2a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\EasyAlg\BruteForce">
-      <UniqueIdentifier>{be92d73b-fb77-4431-b24e-a855dd520294}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\EasyAlg\FiniteStateMachine">
-      <UniqueIdentifier>{39bba9b0-e33d-47f9-ad57-48468037b9d4}</UniqueIdentifier>
-    </Filter>
     <Filter Include="源文件\CommonAlg\SlidingWindow">
       <UniqueIdentifier>{6a2e1eb5-53dd-45c4-955f-9e80ee1f4eb3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\CommonAlg\SortPreTreat">
-      <UniqueIdentifier>{70097c84-60c2-4448-b7bc-d7b133bd32c9}</UniqueIdentifier>
     </Filter>
     <Filter Include="源文件\CommonAlg\Stack">
       <UniqueIdentifier>{430fbc75-0c6a-4bcf-bd37-d3d7271a7acb}</UniqueIdentifier>
@@ -82,7 +70,31 @@
     <Filter Include="源文件\SpecialAlg\Others">
       <UniqueIdentifier>{dda1179a-392e-4517-b9cf-c3b155ce7a71}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\EasyAlg\SimulationEasy%28模拟规则或者流水线式代码，无特定分类%29">
+    <Filter Include="源文件\CommonAlg\拓扑排序">
+      <UniqueIdentifier>{a3bd6d07-4eab-4639-8e26-f89114a7c146}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\HardAlg">
+      <UniqueIdentifier>{51488004-58ed-41d6-b82a-2dd7ac9d5e04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\HardAlg\前缀树">
+      <UniqueIdentifier>{4763f793-9ba5-4bbd-ba68-e6dd47398443}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\HardAlg\线段树">
+      <UniqueIdentifier>{238cbbac-8793-47d0-964c-d03022da3888}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\CommonAlg\SortPreTreat先排序再模拟">
+      <UniqueIdentifier>{70097c84-60c2-4448-b7bc-d7b133bd32c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\BaseAlg">
+      <UniqueIdentifier>{87b854a6-93db-4f11-b3b9-1e36949a4b2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\BaseAlg\BruteForce">
+      <UniqueIdentifier>{be92d73b-fb77-4431-b24e-a855dd520294}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\BaseAlg\FiniteStateMachine">
+      <UniqueIdentifier>{39bba9b0-e33d-47f9-ad57-48468037b9d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29">
       <UniqueIdentifier>{02b73f87-d061-4051-9fbf-d81f1f1aa402}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -123,22 +135,22 @@
       <Filter>源文件\CommonAlg\BackTrack</Filter>
     </ClCompile>
     <ClCompile Include="53. Maximum Subarray.cpp">
-      <Filter>源文件\EasyAlg\BruteForce</Filter>
+      <Filter>源文件\BaseAlg\BruteForce</Filter>
     </ClCompile>
     <ClCompile Include="54. Spiral Matrix.cpp">
-      <Filter>源文件\EasyAlg\SimulationEasy%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
     </ClCompile>
     <ClCompile Include="55. Jump Game.cpp">
       <Filter>源文件\CommonAlg\Hash\Greedy</Filter>
     </ClCompile>
     <ClCompile Include="56. Merge Intervals.cpp">
-      <Filter>源文件\CommonAlg\SortPreTreat</Filter>
+      <Filter>源文件\CommonAlg\SortPreTreat先排序再模拟</Filter>
     </ClCompile>
     <ClCompile Include="57. Insert Interval.cpp">
       <Filter>源文件\CommonAlg\BinarySearch</Filter>
     </ClCompile>
     <ClCompile Include="58. Length of Last Word.cpp">
-      <Filter>源文件\EasyAlg\BruteForce</Filter>
+      <Filter>源文件\BaseAlg\BruteForce</Filter>
     </ClCompile>
     <ClCompile Include="60. Permutation Sequence.cpp">
       <Filter>源文件\SpecialAlg\Math</Filter>
@@ -156,19 +168,19 @@
       <Filter>源文件\CommonAlg\DP</Filter>
     </ClCompile>
     <ClCompile Include="65. Valid Number.cpp">
-      <Filter>源文件\EasyAlg\FiniteStateMachine</Filter>
+      <Filter>源文件\BaseAlg\FiniteStateMachine</Filter>
     </ClCompile>
     <ClCompile Include="59. Spiral Matrix II.cpp">
-      <Filter>源文件\EasyAlg\SimulationEasy%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
     </ClCompile>
     <ClCompile Include="67. Add Binary.cpp">
-      <Filter>源文件\EasyAlg\SimulationEasy%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
     </ClCompile>
     <ClCompile Include="66. Plus One.cpp">
-      <Filter>源文件\EasyAlg\SimulationEasy%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
     </ClCompile>
     <ClCompile Include="68. Text Justification.cpp">
-      <Filter>源文件\EasyAlg\SimulationEasy%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
     </ClCompile>
     <ClCompile Include="69. Sqrt(x).cpp">
       <Filter>源文件\SpecialAlg\Math</Filter>
@@ -183,7 +195,7 @@
       <Filter>源文件\CommonAlg\DP</Filter>
     </ClCompile>
     <ClCompile Include="73. Set Matrix Zeroes.cpp">
-      <Filter>源文件\EasyAlg\SimulationEasy%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
     </ClCompile>
     <ClCompile Include="74. Search a 2D Matrix.cpp">
       <Filter>源文件\CommonAlg\BinarySearch</Filter>
@@ -201,7 +213,7 @@
       <Filter>源文件\CommonAlg\DFS/BFS</Filter>
     </ClCompile>
     <ClCompile Include="80. Remove Duplicates from Sorted Array II.cpp">
-      <Filter>源文件\EasyAlg\SimulationEasy%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
     </ClCompile>
     <ClCompile Include="81. Search in Rotated Sorted Array II.cpp">
       <Filter>源文件\CommonAlg\BinarySearch</Filter>
@@ -225,10 +237,10 @@
       <Filter>源文件\CommonAlg\DP</Filter>
     </ClCompile>
     <ClCompile Include="88. Merge Sorted Array.cpp">
-      <Filter>源文件\EasyAlg\SimulationEasy%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
     </ClCompile>
     <ClCompile Include="89. Gray Code.cpp">
-      <Filter>源文件\EasyAlg\SimulationEasy%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
     </ClCompile>
     <ClCompile Include="90. Subsets II.cpp">
       <Filter>源文件\CommonAlg\BackTrack</Filter>
@@ -315,10 +327,10 @@
       <Filter>源文件\SpecialAlg\BinaryTree</Filter>
     </ClCompile>
     <ClCompile Include="118. pascals-triangle.cpp">
-      <Filter>源文件\EasyAlg\SimulationEasy%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
     </ClCompile>
     <ClCompile Include="119. pascals-triangle-ii.cpp">
-      <Filter>源文件\EasyAlg\SimulationEasy%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
     </ClCompile>
     <ClCompile Include="120. triangle.cpp">
       <Filter>源文件\CommonAlg\DP</Filter>
@@ -336,7 +348,7 @@
       <Filter>源文件\SpecialAlg\BinaryTree</Filter>
     </ClCompile>
     <ClCompile Include="125. valid-palindrome.cpp">
-      <Filter>源文件\EasyAlg\SimulationEasy%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
     </ClCompile>
     <ClCompile Include="126. word-ladder-ii.cpp">
       <Filter>源文件\CommonAlg\DFS/BFS</Filter>
@@ -459,7 +471,7 @@
       <Filter>源文件\牛客</Filter>
     </ClCompile>
     <ClCompile Include="151. reverse-words-in-a-string.cpp">
-      <Filter>源文件\EasyAlg\FiniteStateMachine</Filter>
+      <Filter>源文件\BaseAlg\FiniteStateMachine</Filter>
     </ClCompile>
     <ClCompile Include="152. maximum-product-subarray.cpp">
       <Filter>源文件\CommonAlg\DP</Filter>
@@ -480,13 +492,13 @@
       <Filter>源文件\CommonAlg\BinarySearch</Filter>
     </ClCompile>
     <ClCompile Include="165. compare-version-numbers.cpp">
-      <Filter>源文件\EasyAlg\FiniteStateMachine</Filter>
+      <Filter>源文件\BaseAlg\FiniteStateMachine</Filter>
     </ClCompile>
     <ClCompile Include="166. fraction-to-recurring-decimal.cpp">
       <Filter>源文件\SpecialAlg\Math</Filter>
     </ClCompile>
     <ClCompile Include="167. two-sum-ii-input-array-is-sorted.cpp">
-      <Filter>源文件\EasyAlg\SimulationEasy%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
     </ClCompile>
     <ClCompile Include="168. excel-sheet-column-title.cpp">
       <Filter>源文件\SpecialAlg\Math</Filter>
@@ -516,7 +528,7 @@
       <Filter>源文件\CommonAlg\DP</Filter>
     </ClCompile>
     <ClCompile Include="179. largest-number.cpp">
-      <Filter>源文件\EasyAlg\SimulationEasy%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
     </ClCompile>
     <ClCompile Include="187. repeated-dna-sequences.cpp">
       <Filter>源文件\SpecialAlg\BitOperation</Filter>
@@ -525,7 +537,7 @@
       <Filter>源文件\CommonAlg\DP</Filter>
     </ClCompile>
     <ClCompile Include="189. rotate-array.cpp">
-      <Filter>源文件\EasyAlg\SimulationEasy%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
     </ClCompile>
     <ClCompile Include="190. reverse-bits.cpp">
       <Filter>源文件\SpecialAlg\BitOperation</Filter>
@@ -539,11 +551,71 @@
     <ClCompile Include="199. binary-tree-right-side-view.cpp">
       <Filter>源文件\SpecialAlg\BinaryTree</Filter>
     </ClCompile>
-    <ClCompile Include="201. bitwise-and-of-numbers-range.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="200. number-of-islands.cpp">
       <Filter>源文件\CommonAlg\DFS/BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="201. bitwise-and-of-numbers-range.cpp">
+      <Filter>源文件\SpecialAlg\BitOperation</Filter>
+    </ClCompile>
+    <ClCompile Include="202. happy-number.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="203. remove-linked-list-elements.cpp">
+      <Filter>源文件\SpecialAlg\ListNode</Filter>
+    </ClCompile>
+    <ClCompile Include="204. count-primes.cpp">
+      <Filter>源文件\CommonAlg\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="205. isomorphic-strings.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="206. reverse-linked-list.cpp">
+      <Filter>源文件\SpecialAlg\ListNode</Filter>
+    </ClCompile>
+    <ClCompile Include="207. course-schedule.cpp">
+      <Filter>源文件\CommonAlg\拓扑排序</Filter>
+    </ClCompile>
+    <ClCompile Include="208. implement-trie-prefix-tree.cpp">
+      <Filter>源文件\HardAlg\前缀树</Filter>
+    </ClCompile>
+    <ClCompile Include="209. minimum-size-subarray-sum.cpp">
+      <Filter>源文件\CommonAlg\SlidingWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="210. course-schedule-ii.cpp">
+      <Filter>源文件\CommonAlg\拓扑排序</Filter>
+    </ClCompile>
+    <ClCompile Include="211. add-and-search-word-data-structure-design.cpp">
+      <Filter>源文件\HardAlg\前缀树</Filter>
+    </ClCompile>
+    <ClCompile Include="212. word-search-ii.cpp">
+      <Filter>源文件\HardAlg\前缀树</Filter>
+    </ClCompile>
+    <ClCompile Include="213. house-robber-ii.cpp">
+      <Filter>源文件\CommonAlg\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="Manacher算法214. shortest-palindrome.cpp">
+      <Filter>源文件\SpecialAlg\Special</Filter>
+    </ClCompile>
+    <ClCompile Include="215. kth-largest-element-in-an-array.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="216. combination-sum-iii.cpp">
+      <Filter>源文件\CommonAlg\BackTrack</Filter>
+    </ClCompile>
+    <ClCompile Include="217. contains-duplicate.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="218. the-skyline-problem.cpp">
+      <Filter>源文件\HardAlg\线段树</Filter>
+    </ClCompile>
+    <ClCompile Include="219. contains-duplicate-ii.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="220. contains-duplicate-iii.cpp">
+      <Filter>源文件\CommonAlg\SortPreTreat先排序再模拟</Filter>
+    </ClCompile>
+    <ClCompile Include="221. maximal-square.cpp">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,15 +1,8 @@
 #include "listnode.h"
 
-//链表, 原位操作, 36ms, 97.29%
+//32ms, 97.55%
+//链表, 原位操作
 
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
- * };
- */
 class Solution {
 public:
 	ListNode* removeElements(ListNode* head, int val) {

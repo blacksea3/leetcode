@@ -1,6 +1,6 @@
 #include "public.h"
 
-//12ms, 96.55%
+//12ms, 90.91%
 //排序, 然后就可以了
 
 class Solution {
@@ -10,4 +10,3 @@ public:
 		return nums[k - 1];
 	}
 };
-
