@@ -1,6 +1,6 @@
 #include "public.h"
 
-//36ms, 98.20%
+//36ms, 94.90%
 //设置一个vector, 应当存入下标0至当前下标的和
 
 class NumArray {
@@ -8,29 +8,13 @@ private:
 	vector<int> vnums;
 public:
 	NumArray(vector<int>& nums) {
-		vnums.reserve(nums.size());
-		int sum = 0;
-		for (int i = 0; i < nums.size(); ++i)
-		{
-			sum += nums[i];
-			vnums[i] = sum;
-		}
+		vnums.reserve(nums.size() + 1);
+		vnums[0] = 0;
+		for (int i = 1; i <= nums.size(); ++i)
+			vnums[i] = vnums[i - 1] + nums[i - 1];
 	}
 
 	int sumRange(int i, int j) {
-		if (i == 0)
-		{
-			return vnums[j];
-		}
-		else
-		{
-			return vnums[j] - vnums[i - 1];
-		}
+		return vnums[j + 1] - vnums[i];
 	}
 };
-
-/**
- * Your NumArray object will be instantiated and called as such:
- * NumArray* obj = new NumArray(nums);
- * int param_1 = obj->sumRange(i,j);
- */

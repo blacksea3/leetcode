@@ -1,6 +1,6 @@
 #include "public.h"
 
-//32ms, 91.48%
+//24ms, 98.46%
 //和上一题差不多一个意思
 //变成4个矩形
 
@@ -13,13 +13,6 @@ public:
 
 		vector<int> temp(matrix[0].size() + 1);
 		prev.resize(matrix.size() + 1, vector<int>(matrix[0].size() + 1, 0));
-
-		/*
-		for (int i = 0; i < matrix[0].size(); ++i)
-			prev[0][i] = 0;
-		for (int i = 1; i < matrix.size(); ++i)
-			prev[i][0] = 0;
-		*/
 
 		for (int row = 1; row <= matrix.size(); ++row)
 		{
@@ -36,9 +29,3 @@ public:
 		return prev[row2 + 1][col2 + 1] - prev[row2 + 1][col1] - prev[row1][col2 + 1] + prev[row1][col1];
 	}
 };
-
-/**
- * Your NumMatrix object will be instantiated and called as such:
- * NumMatrix* obj = new NumMatrix(matrix);
- * int param_1 = obj->sumRegion(row1,col1,row2,col2);
- */

@@ -1,8 +1,10 @@
 #include "public.h"
 
-//8ms, 85.43%
+//0ms, 100%
 //维护一个vector
-//如果vector中不存在当前值, 则如果vector中有其他值, 当前值小于vector末尾值, 且vector末尾值在字符串之后还存在, 则去掉vector末尾值, 然后再次相同loc判断;  直到while判断退出, 当前loc+1
+//如果vector中不存在当前值, 则
+//  如果vector中有其他值, 当前值小于vector末尾值, 且vector末尾值在字符串之后还存在, 
+//  则去掉vector末尾值, 然后再次相同loc判断;  直到while判断退出, 当前loc+1
 //如果vector中存在当前值, 当前loc+1
 
 class Solution {
@@ -32,9 +34,11 @@ public:
 	}
 };
 
+/*
 int main()
 {
 	Solution* s = new Solution();
 	string res = s->removeDuplicateLetters("bcabc");
 	return 0;
 }
+*/

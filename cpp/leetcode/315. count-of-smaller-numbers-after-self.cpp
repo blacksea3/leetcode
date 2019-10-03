@@ -1,6 +1,6 @@
 #include "public.h"
 
-//40ms, 94.04%
+//28ms, 99.79%
 //归并排序-力扣官方题解
 
 class Solution {
@@ -89,6 +89,7 @@ public:
 	}
 };
 
+/*
 int main()
 {
 	Solution* s = new Solution();
@@ -96,3 +97,4 @@ int main()
 	vector<int> res = s->countSmaller(nums);
 	return 0;
 }
+*/

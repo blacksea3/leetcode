@@ -79,9 +79,6 @@
     <Filter Include="源文件\HardAlg\前缀树">
       <UniqueIdentifier>{4763f793-9ba5-4bbd-ba68-e6dd47398443}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\HardAlg\线段树">
-      <UniqueIdentifier>{238cbbac-8793-47d0-964c-d03022da3888}</UniqueIdentifier>
-    </Filter>
     <Filter Include="源文件\CommonAlg\SortPreTreat先排序再模拟">
       <UniqueIdentifier>{70097c84-60c2-4448-b7bc-d7b133bd32c9}</UniqueIdentifier>
     </Filter>
@@ -102,6 +99,12 @@
     </Filter>
     <Filter Include="源文件\CommonAlg\优先队列/大顶堆/小顶堆">
       <UniqueIdentifier>{49dbfe32-af3f-4bf4-a241-3843758beb21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\HardAlg\线段树/sqrt%28n%29算法">
+      <UniqueIdentifier>{238cbbac-8793-47d0-964c-d03022da3888}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\上锁">
+      <UniqueIdentifier>{28241e9e-a494-409f-9cb3-af6a20052bdf}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -612,7 +615,7 @@
       <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
     </ClCompile>
     <ClCompile Include="218. the-skyline-problem.cpp">
-      <Filter>源文件\HardAlg\线段树</Filter>
+      <Filter>源文件\HardAlg\线段树/sqrt%28n%29算法</Filter>
     </ClCompile>
     <ClCompile Include="219. contains-duplicate-ii.cpp">
       <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
@@ -722,12 +725,6 @@
     <ClCompile Include="282. expression-add-operators.cpp">
       <Filter>源文件\CommonAlg\BackTrack</Filter>
     </ClCompile>
-    <ClCompile Include="300. longest-increasing-subsequence.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="301. remove-invalid-parentheses.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="283. move-zeroes.cpp">
       <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
     </ClCompile>
@@ -754,6 +751,54 @@
     </ClCompile>
     <ClCompile Include="299. bulls-and-cows.cpp">
       <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="300. longest-increasing-subsequence.cpp">
+      <Filter>源文件\CommonAlg\BinarySearch</Filter>
+    </ClCompile>
+    <ClCompile Include="322. coin-change.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="301. remove-invalid-parentheses.cpp">
+      <Filter>源文件\CommonAlg\BackTrack</Filter>
+    </ClCompile>
+    <ClCompile Include="303. range-sum-query-immutable.cpp">
+      <Filter>源文件\CommonAlg\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="304. range-sum-query-2d-immutable.cpp">
+      <Filter>源文件\CommonAlg\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="306. additive-number.cpp">
+      <Filter>源文件\CommonAlg\DFS/BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="307. range-sum-query-mutable.cpp">
+      <Filter>源文件\HardAlg\线段树/sqrt%28n%29算法</Filter>
+    </ClCompile>
+    <ClCompile Include="309. best-time-to-buy-and-sell-stock-with-cooldown.cpp">
+      <Filter>源文件\CommonAlg\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="310. minimum-height-trees.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="312. burst-balloons.cpp">
+      <Filter>源文件\CommonAlg\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="313. super-ugly-number.cpp">
+      <Filter>源文件\CommonAlg\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="315. count-of-smaller-numbers-after-self.cpp">
+      <Filter>源文件\CommonAlg\DivideAndConquer</Filter>
+    </ClCompile>
+    <ClCompile Include="316. remove-duplicate-letters.cpp">
+      <Filter>源文件\CommonAlg\Stack</Filter>
+    </ClCompile>
+    <ClCompile Include="318. maximum-product-of-word-lengths.cpp">
+      <Filter>源文件\SpecialAlg\BitOperation</Filter>
+    </ClCompile>
+    <ClCompile Include="319. bulb-switcher.cpp">
+      <Filter>源文件\SpecialAlg\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="320. generalized-abbreviation.cpp">
+      <Filter>源文件\上锁</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

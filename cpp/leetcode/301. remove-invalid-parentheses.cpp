@@ -1,13 +1,13 @@
 #include "public.h"
 
-//20ms, 46.26%
+//0ms, 100%
 //先统计最少需要去掉的左括号和右括号, 然后递归回溯
 
 class Solution {
 private:
 	unordered_set<string> res;
 	void recurse(const string& s, int index, int left_count, int right_count,
-		int left_rem, int right_rem, string expr)
+		int left_rem, int right_rem, string& expr)
 	{
 		if (index == s.size())
 		{
@@ -17,11 +17,12 @@ private:
 		else
 		{
 			//直接丢弃当前的括号, 向内递归
-			if ((s[index] == '(' && left_rem > 0) || (s[index] == ')' && right_rem > 0))
-			{
-				recurse(s, index + 1, left_count, right_count, left_rem - (s[index] == '('),
-					right_rem - (s[index] == ')'), expr);
-			}
+			if ((s[index] == '(' && left_rem > 0))
+				recurse(s, index + 1, left_count, right_count, left_rem - 1,
+					right_rem, expr);
+			if ((s[index] == ')' && right_rem > 0))
+				recurse(s, index + 1, left_count, right_count, left_rem,
+					right_rem - 1, expr);
 
 			//记录当前内容
 			expr.push_back(s[index]);
@@ -56,7 +57,8 @@ public:
 				if (left == 0) right++;
 				else left--;
 
-		recurse(s, 0, 0, 0, left, right, "");
+		string exp = "";
+		recurse(s, 0, 0, 0, left, right, exp);
 		vector<string> returnres(res.begin(), res.end());
 		return returnres;
 	}
@@ -66,7 +68,7 @@ public:
 int main()
 {
 	Solution* s = new Solution();
-	vector<string> res = s->removeInvalidParentheses("(a)())()");
+	vector<string> res = s->removeInvalidParentheses("()())()");
 	return 0;
 }
 */
