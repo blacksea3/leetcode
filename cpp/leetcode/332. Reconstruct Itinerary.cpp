@@ -1,15 +1,8 @@
 #include "public.h"
 
-//28ms, 100%
-
-//Graph algorithm, carry out a route that can traverse all the tickets, and is the minimun (string sort)
-
-//problem say that there must be a solution!
-//because we need to carry out the minimun (string sort), so we should use multiset<string> to store the next airports
-
-//In DFS: we traverse all the next airports and use ano DFS recursively
-//note that if one DFS not include all the routes, this is not bug, because we "traverse" all the next airports
-//note that in the whole recursive precedure, the graph is modified anywhere!
+//24ms, 96.25%
+//图, DFS, 倒过来生成行程, 然后reverse它
+//对某个机场的下一个目的地, 按照优先队列排序
 
 class Solution {
 private:
@@ -31,7 +24,7 @@ public:
 		unordered_map<string, priority_queue<string, vector<string>, greater<string>>> graph;
 
 		//generate the graph
-		for (auto ticket : tickets)
+		for (auto& ticket : tickets)
 			graph[ticket[0]].push(ticket[1]);
 
 		DFS("JFK", graph);

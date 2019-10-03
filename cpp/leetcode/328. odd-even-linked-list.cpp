@@ -1,16 +1,8 @@
 #include "listnode.h"
 
-//24ms, 83.79%
-//easy problem, but code may be difficult
+//20ms, 89.16%
+//时间复杂度O(n)空间复杂度O(1)
 
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
- * };
- */
 class Solution {
 public:
 	ListNode* oddEvenList(ListNode* head) {

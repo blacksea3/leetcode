@@ -3,6 +3,7 @@
 //TLE
 //典型的线段树
 //目前是无懒惰标记的线段树, 时间复杂度O(nnlogn) 比暴力还大...
+//待更久之后研究, 线段树难度太大
 
 class Solution {
 private:
@@ -80,6 +81,7 @@ public:
 	}
 };
 
+/*
 int main()
 {
 	Solution* s = new Solution();
@@ -87,3 +89,4 @@ int main()
 	cout << s->countRangeSum(nums, -2, 2);
 	return 0;
 }
+*/

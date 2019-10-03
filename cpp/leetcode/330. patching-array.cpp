@@ -1,6 +1,6 @@
 #include "public.h"
 
-//8ms, 94.59%
+//4ms, 100%
 /*
 参考至作者：Faber99
 链接：https ://leetcode-cn.com/problems/two-sum/solution/an-yao-qiu-bu-qi-shu-zu-tan-lan-by-faber99/

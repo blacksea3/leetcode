@@ -1,15 +1,12 @@
 #include "public.h"
 
-//16ms, 95.20%
-//看代码吧
+//16ms, 88.65%
+//使用极大的3的幂次来操作
 
 class Solution {
 public:
 	bool isPowerOfThree(int n) {
-		if (n <= 0) return false;
-
-		int thefuck3 = (int)pow(3, 19);
-
-		return (thefuck3%n == 0);
+		//int thefuck3=(int)pow(3,19);
+		return (n > 0) && (1162261467 % n == 0);
 	}
 };

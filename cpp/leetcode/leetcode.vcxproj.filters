@@ -755,9 +755,6 @@
     <ClCompile Include="300. longest-increasing-subsequence.cpp">
       <Filter>源文件\CommonAlg\BinarySearch</Filter>
     </ClCompile>
-    <ClCompile Include="322. coin-change.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="301. remove-invalid-parentheses.cpp">
       <Filter>源文件\CommonAlg\BackTrack</Filter>
     </ClCompile>
@@ -797,8 +794,47 @@
     <ClCompile Include="319. bulb-switcher.cpp">
       <Filter>源文件\SpecialAlg\Math</Filter>
     </ClCompile>
-    <ClCompile Include="320. generalized-abbreviation.cpp">
-      <Filter>源文件\上锁</Filter>
+    <ClCompile Include="341. flatten-nested-list-iterator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="321. create-maximum-number.cpp">
+      <Filter>源文件\CommonAlg\DivideAndConquer</Filter>
+    </ClCompile>
+    <ClCompile Include="322. coin-change.cpp">
+      <Filter>源文件\CommonAlg\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="324. wiggle-sort-ii.cpp">
+      <Filter>源文件\CommonAlg\SortPreTreat先排序再模拟</Filter>
+    </ClCompile>
+    <ClCompile Include="326. power-of-three.cpp">
+      <Filter>源文件\SpecialAlg\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="327. count-of-range-sum.cpp">
+      <Filter>源文件\HardAlg\线段树/sqrt%28n%29算法</Filter>
+    </ClCompile>
+    <ClCompile Include="328. odd-even-linked-list.cpp">
+      <Filter>源文件\SpecialAlg\ListNode</Filter>
+    </ClCompile>
+    <ClCompile Include="329. longest-increasing-path-in-a-matrix.cpp">
+      <Filter>源文件\CommonAlg\DFS/BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="330. patching-array.cpp">
+      <Filter>源文件\SpecialAlg\Others</Filter>
+    </ClCompile>
+    <ClCompile Include="331. verify-preorder-serialization-of-a-binary-tree.cpp">
+      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="332. Reconstruct Itinerary.cpp">
+      <Filter>源文件\CommonAlg\DFS/BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="334. increasing-triplet-subsequence.cpp">
+      <Filter>源文件\CommonAlg\Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="337. House Robber III.cpp">
+      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="338. counting-bits.cpp">
+      <Filter>源文件\CommonAlg\DP</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

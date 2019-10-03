@@ -1,6 +1,6 @@
 #include "public.h"
 
-//56ms, 87.25%
+//48ms, 91.61%
 //分治
 //一定是从nums1中取i个数, 从nums2中取k-i个数
 

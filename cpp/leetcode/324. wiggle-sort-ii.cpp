@@ -1,7 +1,8 @@
 #include "public.h"
 
-//108ms, 77.78%
-//我看了评论, 还不如先排序然后插入数据
+//88ms, 91.70%
+//O(nlogn), 理论时间复杂度可以O(n), 待优化
+//先排序然后插入数据
 
 class Solution {
 public:

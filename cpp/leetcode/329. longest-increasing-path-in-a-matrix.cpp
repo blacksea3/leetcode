@@ -1,12 +1,13 @@
 #include "public.h"
 
-//4ms, 98.91%
+//44ms, 94.30%
 //DFS加记忆化
-//搜过的地方存储结果, 如果某个未搜过的地方搜到了搜过的地方, 可以直接相加, 这是因为那个搜过的地方的路径绝不可能与当前走过的路径相交(总路径是递增路径)
+//搜过的地方存储结果, 如果某个未搜过的地方搜到了搜过的地方, 可以直接相加, 
+//  这是因为那个搜过的地方的路径绝不可能与当前走过的路径相交(总路径是递增路径)
 
 class Solution {
 private:
-	int DFS(const vector<vector<int>>& matrix, vector<vector<int>>& memory, int row, int col)
+	int DFS(vector<vector<int>> const& matrix, vector<vector<int>>& memory, int row, int col)
 	{
 		if (memory[row][col] != -1) return memory[row][col];
 
@@ -44,6 +45,7 @@ public:
 	}
 };
 
+/*
 int main()
 {
 	Solution* s = new Solution();
@@ -51,3 +53,4 @@ int main()
 	cout << s->longestIncreasingPath(matrix);
 	return 0;
 }
+*/
