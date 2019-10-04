@@ -1,17 +1,9 @@
 #include "listnode.h"
 
-//48ms, 89.39%
+//40ms, 98.23%
 //取出第一个数, 第二个数有1/2概率替换它, 第三个数有1/3概率替换....
 //可证明得每个数得概率都是1/n, n为链表长度
 
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
- * };
- */
 class Solution {
 private:
 	ListNode* prehead;
@@ -47,9 +39,11 @@ public:
  * int param_1 = obj->getRandom();
  */
 
+/*
 int main()
 {
 	Solution* s = new Solution(stringToListNode("[10,1,10,20,100]"));
 	int param_1 = s->getRandom();
 	return 0;
 }
+*/

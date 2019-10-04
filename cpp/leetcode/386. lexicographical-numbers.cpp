@@ -1,8 +1,9 @@
 #include "public.h"
 
-//100ms, 98.04%
+//88ms, 98.57%
 //O(n)
 //按顺序push_back
+//数学题找规律 1,10,11,12,13,2,3,4,5,6,7,8,9
 
 class Solution {
 private:
@@ -15,7 +16,7 @@ private:
 		for (int i = startnum; i <= startnum + 9; ++i)
 		{
 			if (i > gbln) return;
-			res.push_back(i);
+			res.emplace_back(i);
 			add(i);
 		}
 	}
@@ -25,7 +26,7 @@ public:
 		gbln = n;
 		for (int i = 1; i <= min(n, 9); ++i)
 		{
-			res.push_back(i);
+			res.emplace_back(i);
 			add(i);
 		}
 		return res;

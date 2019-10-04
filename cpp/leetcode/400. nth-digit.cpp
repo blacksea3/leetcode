@@ -1,6 +1,6 @@
 #include "public.h"
 
-//8ms, 44.19%
+//4ms, 70.78%
 //ÕÒ¹æÂÉ
 
 class Solution {
@@ -25,7 +25,5 @@ public:
 
 		int res = (realloc / ((int)(pow(10, mul - detail - 1)))) % 10;
 		return res;
-
-
 	}
 };

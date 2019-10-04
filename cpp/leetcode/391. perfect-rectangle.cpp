@@ -1,16 +1,14 @@
 #include "public.h"
 
-//132ms, 98.11%
+//120ms, 100%
 //完美矩形：除了四个周围的点以外，其他点只出现两次/四次。
 // 且所有矩阵面积和等于最后矩阵面积和
 
 class Solution {
 public:
 	bool isRectangleCover(vector<vector<int>>& rectangles) {
-
 		unordered_map<int, unordered_set<int>> us1;
 		unordered_map<int, unordered_set<int>> us2;
-
 		int totalsize = 0;
 
 		for (auto& rec : rectangles)
@@ -21,28 +19,16 @@ public:
 			int y2 = rec[3];
 			totalsize += abs(x2 - x1)*abs(y2 - y1);
 
-			if (us1[x1].find(y1) != us1[x1].end())
-			{
-				us1[x1].erase(y1);
-			}
+			if (us1[x1].find(y1) != us1[x1].end()) us1[x1].erase(y1);
 			else us1[x1].insert(y1);
 
-			if (us1[x1].find(y2) != us1[x1].end())
-			{
-				us1[x1].erase(y2);
-			}
+			if (us1[x1].find(y2) != us1[x1].end()) us1[x1].erase(y2);
 			else us1[x1].insert(y2);
 
-			if (us1[x2].find(y2) != us1[x2].end())
-			{
-				us1[x2].erase(y2);
-			}
+			if (us1[x2].find(y2) != us1[x2].end()) us1[x2].erase(y2);
 			else us1[x2].insert(y2);
 
-			if (us1[x2].find(y1) != us1[x2].end())
-			{
-				us1[x2].erase(y1);
-			}
+			if (us1[x2].find(y1) != us1[x2].end()) us1[x2].erase(y1);
 			else us1[x2].insert(y1);
 		}
 

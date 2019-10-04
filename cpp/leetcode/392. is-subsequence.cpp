@@ -1,6 +1,6 @@
 #include "public.h"
 
-//60ms, 80.26%
+//44ms, 97.70%
 //к╚об╠Й
 
 class Solution {
@@ -8,8 +8,10 @@ public:
 	bool isSubsequence(string s, string t) {
 		int sloc = 0;
 		int tloc = 0;
+		int sSize = s.size();
+		int tSize = t.size();
 
-		while (sloc < s.size() && tloc < t.size())
+		while (sloc < sSize && tloc < tSize)
 		{
 			if (t[tloc] == s[sloc])
 			{
@@ -18,7 +20,7 @@ public:
 			}
 			else tloc++;
 		}
-		if (sloc == s.size()) return true;
+		if (sloc == sSize) return true;
 		else return false;
 	}
 };

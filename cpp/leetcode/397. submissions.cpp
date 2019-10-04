@@ -1,24 +1,30 @@
 #include "public.h"
 
-//8ms, 64.90%
-//暴力, 递归
+//0ms, 100%
+//数学, 迭代
+//偶数直接除以2
+//奇数: 如果结尾是01, 那么减1; 如果是11, 那么加1
+//  奇数特殊情况: 如果是3, 那么如果加1则3->4->2->1
+//      减1则3->2->1, 故直接次数+2
 
 class Solution {
-private:
-	int res = INT_MAX;
-		void recu(int n, int pre)
-	{
-		if (n == 1) res = min(res, pre);
-		else if (n % 2 == 0) recu(n / 2, pre + 1);
-		else
-		{
-			recu(n + 1, pre + 1);
-			recu(n - 1, pre + 1);
-		}
-	}
 public:
 	int integerReplacement(int n) {
-		recu(n, 0);
-		return res;
+		int res = 0;
+		while (n > 3)
+		{
+			if (n % 2)
+			{
+				n >>= 1;
+				if (n % 2) n++; //对应前述奇数结尾是11, 若n%2==0, 则结尾是01
+				res += 2;
+			}
+			else
+			{
+				n >>= 1;
+				res++;
+			}
+		}
+		return res + n - 1;
 	}
 };

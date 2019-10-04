@@ -1,7 +1,7 @@
 #include "public.h"
 
-//4ms, 91.18%
-//Backtracking
+//0ms, 100%
+//回溯
 //迭代写法
 
 class Solution {
@@ -29,7 +29,7 @@ public:
 			for (j = i; j < length && input[j] != '\n'; ++j)  //突进读取, 直到j='\n'
 				if (input[j] == '.')
 					cal = true;
-			v.push_back(level ? j - i + 1 : j - i);  //如果不是根目录, 则长度还需要加上\
+			v.push_back(level ? j - i + 1 : j - i);  //如果不是根目录, 则长度还需要加上'\'
             level = 0;
 			if (cal) {
 				answer = max(answer, sum(v));
@@ -40,5 +40,3 @@ public:
 		return answer;
 	}
 };
-
-

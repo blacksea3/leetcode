@@ -1,6 +1,6 @@
 #include "public.h"
 
-//400ms, 43.15%
+//288ms, 87.80%
 //Fisher-Yates 洗牌算法
 //复制一份数组, 然后对下标0 - n-1, 随机选取, 1/n的概率选到一个数, 和nums[0]交换位置;
 //    然后对下标1 - n-1随机选取, 1/n-1的概率选到一个数, 当前这个数选到的总概率即为n-1/n * 1/n-1 = 1/n和第一个选中数相同,
@@ -26,7 +26,7 @@ public:
 		int tsize = temp.size();
 		int abs = 0;
 
-		for (int start = 0; start < temp.size(); ++start)
+		for (int start = 0; start < tsize; ++start)
 		{
 			swap(temp[rand() % (tsize - start) + start], temp[start]);
 		}

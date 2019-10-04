@@ -28,7 +28,7 @@ public:
 	const vector<NestedInteger> &getList() const;
 };
 
-//32ms, 61.48%
+//20ms, 95.17%
 //栈
 
 class Solution {
@@ -79,7 +79,6 @@ public:
 				}
 			}
 		}
-
 		//理论上输入格式正确, 是不会到这里的
 		return dump;
 	}

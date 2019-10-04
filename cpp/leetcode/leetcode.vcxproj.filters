@@ -100,8 +100,14 @@
     <Filter Include="源文件\上锁">
       <UniqueIdentifier>{28241e9e-a494-409f-9cb3-af6a20052bdf}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\CommonAlg\Hash/Map">
+    <Filter Include="源文件\SpecialAlg\随机数">
+      <UniqueIdentifier>{0a3e0398-86ad-4f4f-97b0-27456bf59935}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\CommonAlg\Hash/Map/vectorTypeHash">
       <UniqueIdentifier>{0435cff6-cf40-4700-b717-77e94284750a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\CommonAlg\并查集">
+      <UniqueIdentifier>{67fac98b-3017-439b-b1c7-593768659567}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -408,7 +414,7 @@
       <Filter>源文件\SpecialAlg\ListNode</Filter>
     </ClCompile>
     <ClCompile Include="149. max-points-on-a-line.cpp">
-      <Filter>源文件\CommonAlg\Hash/Map</Filter>
+      <Filter>源文件\CommonAlg\Hash/Map/vectorTypeHash</Filter>
     </ClCompile>
     <ClCompile Include="150. evaluate-reverse-polish-notation.cpp">
       <Filter>源文件\CommonAlg\Stack</Filter>
@@ -720,7 +726,7 @@
       <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
     </ClCompile>
     <ClCompile Include="290. word-pattern.cpp">
-      <Filter>源文件\CommonAlg\Hash/Map</Filter>
+      <Filter>源文件\CommonAlg\Hash/Map/vectorTypeHash</Filter>
     </ClCompile>
     <ClCompile Include="292. nim-game.cpp">
       <Filter>源文件\SpecialAlg\Math</Filter>
@@ -819,7 +825,7 @@
       <Filter>源文件\CommonAlg\SlidingWindow</Filter>
     </ClCompile>
     <ClCompile Include="336. palindrome-pairs.cpp">
-      <Filter>源文件\CommonAlg\Hash/Map</Filter>
+      <Filter>源文件\CommonAlg\Hash/Map/vectorTypeHash</Filter>
     </ClCompile>
     <ClCompile Include="341. flatten-nested-list-iterator.cpp">
       <Filter>源文件\SpecialAlg\Design</Filter>
@@ -846,7 +852,7 @@
       <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
     </ClCompile>
     <ClCompile Include="352. data-stream-as-disjoint-intervals.cpp">
-      <Filter>源文件\CommonAlg\Hash/Map</Filter>
+      <Filter>源文件\CommonAlg\Hash/Map/vectorTypeHash</Filter>
     </ClCompile>
     <ClCompile Include="55. Jump Game.cpp">
       <Filter>源文件\CommonAlg\Greedy</Filter>
@@ -884,9 +890,6 @@
     <ClCompile Include="368. largest-divisible-subset.cpp">
       <Filter>源文件\CommonAlg\DP</Filter>
     </ClCompile>
-    <ClCompile Include="381. insert-delete-getrandom-o1-duplicates-allowed.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="371. Sum of Two Integers.cpp">
       <Filter>源文件\SpecialAlg\ListNode</Filter>
     </ClCompile>
@@ -913,6 +916,69 @@
     </ClCompile>
     <ClCompile Include="380. insert-delete-getrandom-o1.cpp">
       <Filter>源文件\SpecialAlg\Design</Filter>
+    </ClCompile>
+    <ClCompile Include="400. nth-digit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="401. binary-watch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="381. insert-delete-getrandom-o1-duplicates-allowed.cpp">
+      <Filter>源文件\SpecialAlg\Design</Filter>
+    </ClCompile>
+    <ClCompile Include="382. linked-list-random-node.cpp">
+      <Filter>源文件\SpecialAlg\随机数</Filter>
+    </ClCompile>
+    <ClCompile Include="383. ransom-note.cpp">
+      <Filter>源文件\CommonAlg\Hash/Map/vectorTypeHash</Filter>
+    </ClCompile>
+    <ClCompile Include="384. shuffle-an-array.cpp">
+      <Filter>源文件\SpecialAlg\随机数</Filter>
+    </ClCompile>
+    <ClCompile Include="385. mini-parser.cpp">
+      <Filter>源文件\SpecialAlg\Design</Filter>
+    </ClCompile>
+    <ClCompile Include="386. lexicographical-numbers.cpp">
+      <Filter>源文件\SpecialAlg\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="387. First Unique Character in a String.cpp">
+      <Filter>源文件\CommonAlg\Hash/Map/vectorTypeHash</Filter>
+    </ClCompile>
+    <ClCompile Include="388. longest-absolute-file-path.cpp">
+      <Filter>源文件\CommonAlg\BackTrack</Filter>
+    </ClCompile>
+    <ClCompile Include="389. Find the Difference.cpp">
+      <Filter>源文件\CommonAlg\Hash/Map/vectorTypeHash</Filter>
+    </ClCompile>
+    <ClCompile Include="390. elimination-game.cpp">
+      <Filter>源文件\SpecialAlg\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="391. perfect-rectangle.cpp">
+      <Filter>源文件\SpecialAlg\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="392. is-subsequence.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="393. utf-8-validation.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="394. Decode String.cpp">
+      <Filter>源文件\CommonAlg\DFS/BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="395. longest-substring-with-at-least-k-repeating-characters.cpp">
+      <Filter>源文件\CommonAlg\DivideAndConquer</Filter>
+    </ClCompile>
+    <ClCompile Include="396. rotate-function.cpp">
+      <Filter>源文件\CommonAlg\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="397. submissions.cpp">
+      <Filter>源文件\SpecialAlg\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="398. random-pick-index.cpp">
+      <Filter>源文件\SpecialAlg\随机数</Filter>
+    </ClCompile>
+    <ClCompile Include="399. evaluate-division.cpp">
+      <Filter>源文件\CommonAlg\并查集</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

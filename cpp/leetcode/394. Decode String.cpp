@@ -1,7 +1,7 @@
 #include "public.h"
 
-//DFS problem, 0ms, 100%
-//note: the problem say that s is valid
+//0ms, 100%
+//DFS, 注意题目说字符串是合法的, 无需判断合法性
 
 class Solution {
 private:
@@ -53,9 +53,11 @@ public:
 	}
 };
 
+/*
 int main()
 {
 	Solution* s = new Solution();
 	string res = s->decodeString("3[a]2[bc]");
 	return 0;
 }
+*/

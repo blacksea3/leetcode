@@ -1,18 +1,17 @@
 #include "public.h"
 
-//8ms, 93.92%
-
-//use an unordered_map to store infos of s
+//4ms, 91.72%
+//hash统计出现次数(实际上用vector存)
 
 class Solution {
 public:
 	char findTheDifference(string s, string t) {
-		unordered_map<char, int> um;
-		for (auto iis : s) um[iis]++;
+		vector<int> v(256, 0);
+		for (auto& iis : s) v[iis]++;
 
-		for (auto iit : t)
+		for (auto& iit : t)
 		{
-			if (um[iit] > 0) um[iit]--;
+			if (v[iit] > 0) v[iit]--;
 			else return iit;
 		}
 		return '.'; //dump
