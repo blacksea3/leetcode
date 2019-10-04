@@ -1,6 +1,6 @@
 #include "public.h"
 
-//36ms, 44.48%
+//24ms, 81.23%
 //按长度dp
 //dp[i][j]表示从i+1到j+1的最差情况和
 //则有: init  dp[i][i] = 0

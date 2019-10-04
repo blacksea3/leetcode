@@ -324,6 +324,15 @@
     <ClCompile Include="367. Valid Perfect Square.cpp" />
     <ClCompile Include="368. largest-divisible-subset.cpp" />
     <ClCompile Include="371. Sum of Two Integers.cpp" />
+    <ClCompile Include="372. super-pow.cpp" />
+    <ClCompile Include="373. find-k-pairs-with-smallest-sums.cpp" />
+    <ClCompile Include="374. Guess Number Higher or Lower.cpp" />
+    <ClCompile Include="375. guess-number-higher-or-lower-ii.cpp" />
+    <ClCompile Include="376. wiggle-subsequence.cpp" />
+    <ClCompile Include="377. combination-sum-iv.cpp" />
+    <ClCompile Include="378. kth-smallest-element-in-a-sorted-matrix.cpp" />
+    <ClCompile Include="380. insert-delete-getrandom-o1.cpp" />
+    <ClCompile Include="381. insert-delete-getrandom-o1-duplicates-allowed.cpp" />
     <ClCompile Include="摩尔投票法升级229. majority-element-ii.cpp" />
     <ClCompile Include="230. kth-smallest-element-in-a-bst.cpp" />
     <ClCompile Include="231. power-of-two.cpp" />

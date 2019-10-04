@@ -1,6 +1,6 @@
 #include "public.h"
 
-//12ms, 94.62%
+//12ms, 87.02%
 /*
 a^ b % c = (a % c)^ b % c
 = ((a % c)^ (b-t) * (a % c)^ t ) % c

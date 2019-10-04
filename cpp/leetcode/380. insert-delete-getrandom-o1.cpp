@@ -1,10 +1,7 @@
 #include "public.h"
 
-//76ms, 87.52%
+//56ms, 98.61%
 //一个unordered_map, 一个vector, 这个vector仅仅在尾部进行操作/随机访问
-
-//using std::default_random_engine;
-//using std::uniform_int_distribution;
 
 class RandomizedSet {
 private:
@@ -20,7 +17,7 @@ public:
 	bool insert(int val) {
 		if (um.find(val) == um.end())
 		{
-			um.insert(pair<int, int>{val, v.size()});
+			um[val] = v.size();
 			v.push_back(val);
 			return true;
 		}

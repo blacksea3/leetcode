@@ -1,6 +1,6 @@
-// binary search
 
 //0ms, 100%
+//¶þ·Ö
 
 // Forward declaration of guess API.
 // @param num, your guess

@@ -1,8 +1,7 @@
 #include "public.h"
 
 //0ms, 100%
-
-//bit caculate  //assume that the result will not overflow
+//Œª‘ÀÀ„
 
 class Solution {
 public:

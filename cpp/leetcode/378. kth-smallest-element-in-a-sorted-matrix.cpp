@@ -1,29 +1,31 @@
 #include "public.h"
 
-//80ms, 35.39%
-//多指针
+//36ms, 93.40%
+//二分, 被查找的值一定在最大值和最小值之间, 然后逐次搜索每一行比中间值大的数字的个数
 
 class Solution {
 public:
 	int kthSmallest(vector<vector<int>>& matrix, int k) {
-		multimap<int, pair<int, int>> sorted_value_and_loc;
-		//init
-		for (int i = 0; i < matrix.size(); ++i) //初始化每行开头元素
-			sorted_value_and_loc.insert(pair<int, pair<int, int>>{matrix[i][0], pair<int, int>{i, 0}});
-
-		//注意k一定有效
-		for (int i = 1; i < k; ++i) //count k-1 times
+		int lo = matrix[0][0], hi = matrix.back().back();
+		
+		while (lo < hi)
 		{
-			pair<int, pair<int, int>> pre = *sorted_value_and_loc.begin();
-			sorted_value_and_loc.erase(sorted_value_and_loc.begin());
-			if (pre.second.second < matrix[0].size() - 1)
+			int mid = lo + (hi - lo >> 1);
+			int count = 0;
+			// O(n)
+			for (auto& m:matrix) 
 			{
-				pre.second.second++;
-				pre.first = matrix[pre.second.first][pre.second.second];
-				sorted_value_and_loc.insert(pre);
+				// O(logn)
+				// <= mid 的元素个数
+				count += upper_bound(m.begin(), m.end(), mid) - m.begin();
+			}
+			if (k <= count) {
+				hi = mid;
+			}
+			else {
+				lo = mid + 1;
 			}
 		}
-		pair<int, pair<int, int>> pre = *sorted_value_and_loc.begin();
-		return matrix[pre.second.first][pre.second.second];
+		return lo;
 	}
 };

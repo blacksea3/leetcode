@@ -824,9 +824,6 @@
     <ClCompile Include="341. flatten-nested-list-iterator.cpp">
       <Filter>源文件\SpecialAlg\Design</Filter>
     </ClCompile>
-    <ClCompile Include="371. Sum of Two Integers.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="342. power-of-four.cpp">
       <Filter>源文件\SpecialAlg\Math</Filter>
     </ClCompile>
@@ -886,6 +883,36 @@
     </ClCompile>
     <ClCompile Include="368. largest-divisible-subset.cpp">
       <Filter>源文件\CommonAlg\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="381. insert-delete-getrandom-o1-duplicates-allowed.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="371. Sum of Two Integers.cpp">
+      <Filter>源文件\SpecialAlg\ListNode</Filter>
+    </ClCompile>
+    <ClCompile Include="372. super-pow.cpp">
+      <Filter>源文件\SpecialAlg\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="373. find-k-pairs-with-smallest-sums.cpp">
+      <Filter>源文件\CommonAlg\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="374. Guess Number Higher or Lower.cpp">
+      <Filter>源文件\CommonAlg\BinarySearch</Filter>
+    </ClCompile>
+    <ClCompile Include="375. guess-number-higher-or-lower-ii.cpp">
+      <Filter>源文件\CommonAlg\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="376. wiggle-subsequence.cpp">
+      <Filter>源文件\CommonAlg\Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="377. combination-sum-iv.cpp">
+      <Filter>源文件\CommonAlg\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="378. kth-smallest-element-in-a-sorted-matrix.cpp">
+      <Filter>源文件\CommonAlg\BinarySearch</Filter>
+    </ClCompile>
+    <ClCompile Include="380. insert-delete-getrandom-o1.cpp">
+      <Filter>源文件\SpecialAlg\Design</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
