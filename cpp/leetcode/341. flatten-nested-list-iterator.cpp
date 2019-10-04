@@ -1,5 +1,6 @@
 #include "public.h"
 
+/*
 // This is the interface that allows for creating nested lists.
 // You should not implement it, or speculate about its implementation
 class NestedInteger {
@@ -16,48 +17,53 @@ class NestedInteger {
     const vector<NestedInteger> &getList() const;
 };
 
-//32ms, 59.48%
-//ջ
+//24ms, 89.56%
+//栈, 利用双栈存储当前遍历层数(begin和end迭代器)
 
 class NestedIterator {
 private:
-	stack<NestedInteger> st;
+	stack<vector<NestedInteger>::iterator> begins;
+	stack<vector<NestedInteger>::iterator> ends;
 	int ne;
 
 public:
 	NestedIterator(vector<NestedInteger> &nestedList) {
-		for (int i = nestedList.size() - 1; i >= 0; --i)
-		{
-			st.push(nestedList[i]);
-		}
+		begins.push(nestedList.begin());
+		ends.push(nestedList.end());
 	}
 
 	int next() {
-		return ne;
+		return (begins.top()++)->getInteger();
 	}
 
 	bool hasNext() {
-		while (!st.empty())
+		while (!begins.empty())
 		{
-			NestedInteger pre = st.top();
-			st.pop();
-			if (pre.isInteger())
+			if (begins.top() == ends.top())
 			{
-				ne = pre.getInteger();
-				return true;
+				begins.pop();
+				ends.pop();
 			}
 			else
 			{
-				vector<NestedInteger> next = pre.getList();
-				for (int i = next.size() - 1; i >= 0; --i)
-				{
-					st.push(next[i]);
-				}
+				auto val = begins.top();
+				if (val->isInteger())
+					return true;
+				begins.top()++;
+				//注：此处若写成
+				//vector<NestedInteger> v = val->getList();
+				//begins.push(v.begin());
+				//ends.push(v.end());
+				//则在线运行 heap use after free, 原因不详
+
+				begins.push(val->getList().begin());
+				ends.push(val->getList().end());
 			}
 		}
 		return false;
 	}
 };
+*/
 
 /**
  * Your NestedIterator object will be instantiated and called as such:

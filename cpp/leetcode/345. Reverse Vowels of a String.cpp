@@ -1,31 +1,33 @@
 #include "public.h"
 
-//20ms, 67.35%
-
-//use double pointer, one from left to right, another from right to left
+//12ms, 83.06%
+//双指针, 一个从右边走一个从左边走
 
 class Solution {
+private:
+	set<char> const us = { 'a','e','i','o','u','A','E','I','O','U' };
 public:
 	string reverseVowels(string s) {
 		//reverse only the vowels: a e i o u
 		int left = 0;
 		int right = s.size() - 1;
-		vector<char> us = { 'a','e','i','o','u','A','E','I','O','U' };
 		while (left < right)
 		{
-			while ((left < right) && (find(us.begin(), us.end(), s[left]) == us.end()))
+			while ((left < right) && (us.find(s[left])) == us.end())
 				left++;
-			while ((left < right) && (find(us.begin(), us.end(), s[right]) == us.end()))
+			while ((left < right) && (us.find(s[right])) == us.end())
 				right--;
-			if (left < right) swap(s[left++], s[right--]);
+			swap(s[left++], s[right--]);  //注意一旦前面有left==right退出, 此处不影响交换
 		}
 		return s;
 	}
 };
 
+/*
 int main()
 {
 	Solution* s = new Solution();
 	string res = s->reverseVowels("aA");
 	return 0;
 }
+*/

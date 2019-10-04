@@ -18,9 +18,11 @@ public:
 	}
 };
 
+/*
 int main()
 {
 	Solution* s = new Solution();
 	cout << s->getSum(4, 7);
 	return 0;
 }
+*/

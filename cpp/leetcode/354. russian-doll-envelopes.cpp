@@ -1,6 +1,43 @@
 #include "public.h"
 
-//816ms, 42.51%
+//44ms, 98.37%
+//复用300.最长上升子序列 DP+二分 O(nlogn)
+//先对信封排序: 宽度升序, 高度降序
+//特别注意: 高度降序的目的是:
+//  例如 [3,5], [6,8], [6,9] 这是按照高度升序的, 假设对高度我们应用最长上升子序列, 那么会三个连起来, 这不满足俄罗斯套娃的双重严格大于
+// 因此认为对宽度相同下, 高度降序排序, 使得[6,9]在[6,8]前面, 两个永远不会相互连接
+
+class Solution {
+private:
+	static bool msort(vector<int> const& v1, vector<int> const& v2)
+	{
+		if (v1[0] < v2[0]) return true;
+		else if (v1[0] > v2[0]) return false;
+		else return v1[1] > v2[1];
+	}
+
+	int lengthOfLIS(vector<vector<int>>& nums) {
+		vector<int> dp;
+
+		for (auto& num : nums)
+		{
+			vector<int>::iterator iter = lower_bound(dp.begin(), dp.end(), num[1]);
+			if (iter == dp.end()) dp.emplace_back(num[1]);
+			else dp[iter - dp.begin()] = num[1];
+		}
+		return dp.size();
+	}
+
+public:
+	int maxEnvelopes(vector<vector<int>>& envelopes) {
+		sort(envelopes.begin(), envelopes.end(), msort);
+
+		return lengthOfLIS(envelopes);
+	}
+};
+
+/*
+//688ms, 58.51%
 //O(n^2) DP解法
 //记录前面的最大信封数, 往数字大的方向更新
 
@@ -34,6 +71,7 @@ public:
 		return rmax;
 	}
 };
+*/
 
 /*
 int main()

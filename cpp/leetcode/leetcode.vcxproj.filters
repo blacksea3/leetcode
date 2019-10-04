@@ -58,14 +58,8 @@
     <Filter Include="源文件\SpecialAlg\Design">
       <UniqueIdentifier>{c7bdb619-18ec-46bb-bf22-a08a9a5659fa}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\CommonAlg\Hash">
-      <UniqueIdentifier>{0435cff6-cf40-4700-b717-77e94284750a}</UniqueIdentifier>
-    </Filter>
     <Filter Include="源文件\牛客">
       <UniqueIdentifier>{39ce2985-3bbf-4a57-9dc9-d14811bd79b1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\CommonAlg\Hash\Greedy">
-      <UniqueIdentifier>{034aaa22-8053-42e7-b5fe-f2641fffa621}</UniqueIdentifier>
     </Filter>
     <Filter Include="源文件\SpecialAlg\Others">
       <UniqueIdentifier>{dda1179a-392e-4517-b9cf-c3b155ce7a71}</UniqueIdentifier>
@@ -105,6 +99,9 @@
     </Filter>
     <Filter Include="源文件\上锁">
       <UniqueIdentifier>{28241e9e-a494-409f-9cb3-af6a20052bdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\CommonAlg\Hash/Map">
+      <UniqueIdentifier>{0435cff6-cf40-4700-b717-77e94284750a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -148,9 +145,6 @@
     </ClCompile>
     <ClCompile Include="54. Spiral Matrix.cpp">
       <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
-    </ClCompile>
-    <ClCompile Include="55. Jump Game.cpp">
-      <Filter>源文件\CommonAlg\Hash\Greedy</Filter>
     </ClCompile>
     <ClCompile Include="56. Merge Intervals.cpp">
       <Filter>源文件\CommonAlg\SortPreTreat先排序再模拟</Filter>
@@ -344,12 +338,6 @@
     <ClCompile Include="120. triangle.cpp">
       <Filter>源文件\CommonAlg\DP</Filter>
     </ClCompile>
-    <ClCompile Include="121. best-time-to-buy-and-sell-stock.cpp">
-      <Filter>源文件\CommonAlg\Hash\Greedy</Filter>
-    </ClCompile>
-    <ClCompile Include="122. best-time-to-buy-and-sell-stock-ii.cpp">
-      <Filter>源文件\CommonAlg\Hash\Greedy</Filter>
-    </ClCompile>
     <ClCompile Include="123. best-time-to-buy-and-sell-stock-iii.cpp">
       <Filter>源文件\CommonAlg\DP</Filter>
     </ClCompile>
@@ -379,12 +367,6 @@
     </ClCompile>
     <ClCompile Include="133. clone-graph.cpp">
       <Filter>源文件\CommonAlg\DFS/BFS</Filter>
-    </ClCompile>
-    <ClCompile Include="134. gas-station.cpp">
-      <Filter>源文件\CommonAlg\Hash\Greedy</Filter>
-    </ClCompile>
-    <ClCompile Include="135. candy.cpp">
-      <Filter>源文件\CommonAlg\Hash\Greedy</Filter>
     </ClCompile>
     <ClCompile Include="136. single-number.cpp">
       <Filter>源文件\SpecialAlg\BitOperation</Filter>
@@ -426,7 +408,7 @@
       <Filter>源文件\SpecialAlg\ListNode</Filter>
     </ClCompile>
     <ClCompile Include="149. max-points-on-a-line.cpp">
-      <Filter>源文件\CommonAlg\Hash</Filter>
+      <Filter>源文件\CommonAlg\Hash/Map</Filter>
     </ClCompile>
     <ClCompile Include="150. evaluate-reverse-polish-notation.cpp">
       <Filter>源文件\CommonAlg\Stack</Filter>
@@ -738,7 +720,7 @@
       <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
     </ClCompile>
     <ClCompile Include="290. word-pattern.cpp">
-      <Filter>源文件\CommonAlg\Hash</Filter>
+      <Filter>源文件\CommonAlg\Hash/Map</Filter>
     </ClCompile>
     <ClCompile Include="292. nim-game.cpp">
       <Filter>源文件\SpecialAlg\Math</Filter>
@@ -794,9 +776,6 @@
     <ClCompile Include="319. bulb-switcher.cpp">
       <Filter>源文件\SpecialAlg\Math</Filter>
     </ClCompile>
-    <ClCompile Include="341. flatten-nested-list-iterator.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="321. create-maximum-number.cpp">
       <Filter>源文件\CommonAlg\DivideAndConquer</Filter>
     </ClCompile>
@@ -840,7 +819,73 @@
       <Filter>源文件\CommonAlg\SlidingWindow</Filter>
     </ClCompile>
     <ClCompile Include="336. palindrome-pairs.cpp">
+      <Filter>源文件\CommonAlg\Hash/Map</Filter>
+    </ClCompile>
+    <ClCompile Include="341. flatten-nested-list-iterator.cpp">
+      <Filter>源文件\SpecialAlg\Design</Filter>
+    </ClCompile>
+    <ClCompile Include="371. Sum of Two Integers.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="342. power-of-four.cpp">
+      <Filter>源文件\SpecialAlg\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="343. integer-break.cpp">
+      <Filter>源文件\SpecialAlg\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="344. reverse-string.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="345. Reverse Vowels of a String.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="347. top-k-frequent-elements.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="349. Intersection of Two Arrays.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="350. Intersection of Two Arrays II.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="352. data-stream-as-disjoint-intervals.cpp">
+      <Filter>源文件\CommonAlg\Hash/Map</Filter>
+    </ClCompile>
+    <ClCompile Include="55. Jump Game.cpp">
+      <Filter>源文件\CommonAlg\Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="121. best-time-to-buy-and-sell-stock.cpp">
+      <Filter>源文件\CommonAlg\Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="122. best-time-to-buy-and-sell-stock-ii.cpp">
+      <Filter>源文件\CommonAlg\Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="134. gas-station.cpp">
+      <Filter>源文件\CommonAlg\Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="135. candy.cpp">
+      <Filter>源文件\CommonAlg\Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="354. russian-doll-envelopes.cpp">
+      <Filter>源文件\CommonAlg\BinarySearch</Filter>
+    </ClCompile>
+    <ClCompile Include="355. design-twitter.cpp">
+      <Filter>源文件\SpecialAlg\Design</Filter>
+    </ClCompile>
+    <ClCompile Include="357. count-numbers-with-unique-digits.cpp">
+      <Filter>源文件\SpecialAlg\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="363. max-sum-of-rectangle-no-larger-than-k.cpp">
+      <Filter>源文件\CommonAlg\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="365. water-and-jug-problem.cpp">
+      <Filter>源文件\SpecialAlg\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="367. Valid Perfect Square.cpp">
+      <Filter>源文件\SpecialAlg\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="368. largest-divisible-subset.cpp">
+      <Filter>源文件\CommonAlg\DP</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

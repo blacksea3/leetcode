@@ -1,6 +1,6 @@
-//binary search
 
 //0ms, 100%
+//¶þ·Ö
 
 class Solution {
 public:

@@ -1,42 +1,50 @@
 #include "public.h"
 
-//64ms, 30.30%
-//O(n^2)DP solution
+//36ms, 90.35%
+//O(n^2) DP solution
 //考虑到: 如果b>a, b%a == 0, c>b, c%b == 0, 那么 c%a==0
+//dp[i]存放: 比nums[i]小的最长的整除子集大小(包括自己)
+//再放一个dp2[i]表示i的前驱元素在nums中的下标
 
 class Solution {
 public:
 	vector<int> largestDivisibleSubset(vector<int>& nums) {
+		int nSize = nums.size();
 		sort(nums.begin(), nums.end(), less<int>());
 
-		vector<vector<int>> dp(nums.size(), vector<int>{});
-		vector<int> ress;
-		int ressize = 0;
+		vector<int> dp(nSize, 1);
+		vector<int> dp2(nSize, -1);
+		int resLen = 0;
+		int resIndex = -1;
 
-		for (int i = 0; i < nums.size(); ++i)
+		for (int i = 0; i < nSize; ++i)
 		{
-			int oldsize = 0;
-			vector<int> olds;
 			for (int j = 0; j < i; ++j)
 			{
 				if (nums[i] % nums[j] == 0)
 				{
-					if (dp[j].size() > oldsize)
+					if (dp[j] >= dp[i])
 					{
-						oldsize = dp[j].size();
-						olds = dp[j];
+						dp[i] = dp[j] + 1;
+						dp2[i] = j;
 					}
 				}
 			}
-			dp[i] = olds;
-			dp[i].push_back(nums[i]);
-			if (dp[i].size() > ressize)
+			if (dp[i] > resLen)
 			{
-				ressize = dp[i].size();
-				ress = dp[i];
+				resLen = dp[i];
+				resIndex = i;
 			}
 		}
-		return ress;
+
+		vector<int> vres;
+		while (resIndex != -1)
+		{
+			vres.emplace_back(nums[resIndex]);
+			resIndex = dp2[resIndex];
+		}
+		reverse(vres.begin(), vres.end());
+		return vres;
 	}
 };
 

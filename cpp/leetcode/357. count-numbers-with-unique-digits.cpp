@@ -1,6 +1,6 @@
 #include "public.h"
 
-//4ms, 85.84%
+//0ms, 100%
 //数学题, DP solution
 //dp[i]: i-1位数的各位数字都不同的数字的个数
 //dp[0]: 1
@@ -18,21 +18,26 @@ public:
 		if (n >= 10) return 0;
 		else
 		{
-			vector<int> dp(n + 1, 0);
-			if (n == 0) return 0;
+			vector<int> dp(n + 1, 1);
+			if (n == 0) return 1;
 			else
 			{
 				dp[1] = 9;
 				for (int i = 2; i <= n; ++i)
 				{
-					dp[n] = (11 - n)*dp[n - 1];
+					dp[i] = (11 - i)*dp[i - 1];
 				}
-
-				int res = 0;
-				for (int i = 0; i <= n; ++i)
-					res += dp[i];
-				return res;
+				return accumulate(dp.begin(), dp.end(), 0);
 			}
 		}
 	}
 };
+
+/*
+int main()
+{
+	Solution* s = new Solution();
+	cout << s->countNumbersWithUniqueDigits(2);
+	return 0;
+}
+*/

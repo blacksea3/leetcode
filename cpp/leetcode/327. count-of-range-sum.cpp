@@ -1,6 +1,36 @@
 #include "public.h"
 
 //TLE
+//暴力O(n^2)
+
+class Solution {
+public:
+	int countRangeSum(vector<int>& nums, int lower, int upper) {
+		vector<int> sums(nums.size() + 1, 0);
+
+		int preSum = 0;
+		for (int index = 0; index < nums.size(); ++index)
+		{
+			preSum += nums[index];
+			sums[index + 1] = preSum;
+		}
+
+		int res = 0;
+
+		for (int st = 0; st < nums.size(); ++st)
+		{
+			for (int en = st + 1; en <= nums.size(); ++en)
+			{
+				if (((sums[en] - sums[st]) <= upper) && ((sums[en] - sums[st]) >= lower))
+					res++;
+			}
+		}
+		return res;
+	}
+};
+
+/*
+//TLE
 //典型的线段树
 //目前是无懒惰标记的线段树, 时间复杂度O(nnlogn) 比暴力还大...
 //待更久之后研究, 线段树难度太大
@@ -80,6 +110,7 @@ public:
 		return res;
 	}
 };
+*/
 
 /*
 int main()

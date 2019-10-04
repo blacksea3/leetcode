@@ -1,13 +1,13 @@
 #include "public.h"
 
-//260ms, 8.16%
-//暴力
-//用vector<pair<int, int>>记录: 用户ID, 推文ID
-//用unordered_map<int, vector<int>>记录: 用户ID, 应显示的用户IDs(不包括自己)
+//104ms, 55.48%
+//暴力, 也许还可以优化?
+//用vector<pair<int, int>>记录: 用户ID, 推文ID, 直接按时间排序过了
+//用unordered_map<int, unordered_set<int>>记录: 用户ID, 此用户关注的用户IDs(也包括自己)
 
 class Twitter {
 private:
-	unordered_map<int, vector<int>> users;
+	unordered_map<int, unordered_set<int>> users;
 	vector<pair<int, int>> infos;
 
 public:
@@ -18,20 +18,21 @@ public:
 
 	/** Compose a new tweet. */
 	void postTweet(int userId, int tweetId) {
-		infos.push_back(pair<int, int>{userId, tweetId});
+		infos.emplace_back(pair<int, int>{userId, tweetId});
 	}
 
 	/** Retrieve the 10 most recent tweet ids in the user's news feed. Each item in the news feed must be posted by users who the user followed or by the user herself. Tweets must be ordered from most recent to least recent. */
 	vector<int> getNewsFeed(int userId) {
-		int remaininfos = 10;
+		//强制让用户关注自己
+		follow(userId, userId);
+		unordered_set<int>& targetIds = users[userId];
 		vector<int> res;
 		for (int loc = infos.size() - 1; loc >= 0; loc--)
 		{
-			if (infos[loc].first == userId || find(users[userId].begin(), users[userId].end(), infos[loc].first) != users[userId].end())
+			if (targetIds.find(infos[loc].first) != targetIds.end())
 			{
-				res.push_back(infos[loc].second);
-				remaininfos--;
-				if (remaininfos == 0) break;
+				res.emplace_back(infos[loc].second);
+				if (res.size() == 10) break;
 			}
 		}
 		return res;
@@ -39,14 +40,16 @@ public:
 
 	/** Follower follows a followee. If the operation is invalid, it should be a no-op. */
 	void follow(int followerId, int followeeId) {
-		vector<int>::iterator iter = find(users[followerId].begin(), users[followerId].end(), followeeId);
-		if (iter == users[followerId].end()) users[followerId].push_back(followeeId);
+		unordered_set<int>& targetIds = users[followerId];
+		if (targetIds.find(followeeId) == targetIds.end())
+			targetIds.insert(followeeId);
 	}
 
 	/** Follower unfollows a followee. If the operation is invalid, it should be a no-op. */
 	void unfollow(int followerId, int followeeId) {
-		vector<int>::iterator iter = find(users[followerId].begin(), users[followerId].end(), followeeId);
-		if (iter != users[followerId].end()) users[followerId].erase(iter);
+		unordered_set<int>& targetIds = users[followerId];
+		if (targetIds.find(followeeId) != targetIds.end())
+			targetIds.erase(followeeId);
 	}
 };
 
@@ -59,6 +62,7 @@ public:
  * obj->unfollow(followerId,followeeId);
  */
 
+/*
 int main()
 {
 	Twitter* obj = new Twitter();
@@ -69,3 +73,4 @@ int main()
 	vector<int> param_2 = obj->getNewsFeed(1);
 	return 0;
 }
+*/
