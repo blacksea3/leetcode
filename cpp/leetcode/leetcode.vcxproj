@@ -303,6 +303,8 @@
     <ClCompile Include="331. verify-preorder-serialization-of-a-binary-tree.cpp" />
     <ClCompile Include="332. Reconstruct Itinerary.cpp" />
     <ClCompile Include="334. increasing-triplet-subsequence.cpp" />
+    <ClCompile Include="335. self-crossing.cpp" />
+    <ClCompile Include="336. palindrome-pairs.cpp" />
     <ClCompile Include="337. House Robber III.cpp" />
     <ClCompile Include="338. counting-bits.cpp" />
     <ClCompile Include="341. flatten-nested-list-iterator.cpp" />

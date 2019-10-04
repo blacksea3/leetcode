@@ -836,5 +836,11 @@
     <ClCompile Include="338. counting-bits.cpp">
       <Filter>源文件\CommonAlg\DP</Filter>
     </ClCompile>
+    <ClCompile Include="335. self-crossing.cpp">
+      <Filter>源文件\CommonAlg\SlidingWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="336. palindrome-pairs.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
