@@ -28,9 +28,6 @@
     <Filter Include="源文件\CommonAlg\SlidingWindow">
       <UniqueIdentifier>{6a2e1eb5-53dd-45c4-955f-9e80ee1f4eb3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\CommonAlg\Stack">
-      <UniqueIdentifier>{430fbc75-0c6a-4bcf-bd37-d3d7271a7acb}</UniqueIdentifier>
-    </Filter>
     <Filter Include="源文件\SpecialAlg">
       <UniqueIdentifier>{649445af-6b8a-40c4-a522-702d93739ad5}</UniqueIdentifier>
     </Filter>
@@ -108,6 +105,12 @@
     </Filter>
     <Filter Include="源文件\CommonAlg\并查集">
       <UniqueIdentifier>{67fac98b-3017-439b-b1c7-593768659567}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\CommonAlg\单调栈">
+      <UniqueIdentifier>{7d29b258-c9a9-43a7-9217-1d74b018504d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\CommonAlg\CommonStack">
+      <UniqueIdentifier>{430fbc75-0c6a-4bcf-bd37-d3d7271a7acb}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -198,7 +201,7 @@
       <Filter>源文件\CommonAlg\DP</Filter>
     </ClCompile>
     <ClCompile Include="71. Simplify Path.cpp">
-      <Filter>源文件\CommonAlg\Stack</Filter>
+      <Filter>源文件\CommonAlg\CommonStack</Filter>
     </ClCompile>
     <ClCompile Include="72. Edit Distance.cpp">
       <Filter>源文件\CommonAlg\DP</Filter>
@@ -234,10 +237,10 @@
       <Filter>源文件\SpecialAlg\ListNode</Filter>
     </ClCompile>
     <ClCompile Include="84. Largest Rectangle in Histogram.cpp">
-      <Filter>源文件\CommonAlg\Stack</Filter>
+      <Filter>源文件\CommonAlg\CommonStack</Filter>
     </ClCompile>
     <ClCompile Include="85. Maximal Rectangle.cpp">
-      <Filter>源文件\CommonAlg\Stack</Filter>
+      <Filter>源文件\CommonAlg\CommonStack</Filter>
     </ClCompile>
     <ClCompile Include="86. Partition List.cpp">
       <Filter>源文件\SpecialAlg\ListNode</Filter>
@@ -417,7 +420,7 @@
       <Filter>源文件\CommonAlg\Hash/Map/vectorTypeHash</Filter>
     </ClCompile>
     <ClCompile Include="150. evaluate-reverse-polish-notation.cpp">
-      <Filter>源文件\CommonAlg\Stack</Filter>
+      <Filter>源文件\CommonAlg\CommonStack</Filter>
     </ClCompile>
     <ClCompile Include="二维数组中的查找.cpp">
       <Filter>源文件\牛客</Filter>
@@ -621,7 +624,7 @@
       <Filter>源文件\SpecialAlg\Math</Filter>
     </ClCompile>
     <ClCompile Include="224. basic-calculator.cpp">
-      <Filter>源文件\CommonAlg\Stack</Filter>
+      <Filter>源文件\CommonAlg\CommonStack</Filter>
     </ClCompile>
     <ClCompile Include="225. implement-stack-using-queues.cpp">
       <Filter>源文件\SpecialAlg\Design</Filter>
@@ -774,7 +777,7 @@
       <Filter>源文件\CommonAlg\DivideAndConquer</Filter>
     </ClCompile>
     <ClCompile Include="316. remove-duplicate-letters.cpp">
-      <Filter>源文件\CommonAlg\Stack</Filter>
+      <Filter>源文件\CommonAlg\CommonStack</Filter>
     </ClCompile>
     <ClCompile Include="318. maximum-product-of-word-lengths.cpp">
       <Filter>源文件\SpecialAlg\BitOperation</Filter>
@@ -917,12 +920,6 @@
     <ClCompile Include="380. insert-delete-getrandom-o1.cpp">
       <Filter>源文件\SpecialAlg\Design</Filter>
     </ClCompile>
-    <ClCompile Include="400. nth-digit.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="401. binary-watch.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="381. insert-delete-getrandom-o1-duplicates-allowed.cpp">
       <Filter>源文件\SpecialAlg\Design</Filter>
     </ClCompile>
@@ -979,6 +976,60 @@
     </ClCompile>
     <ClCompile Include="399. evaluate-division.cpp">
       <Filter>源文件\CommonAlg\并查集</Filter>
+    </ClCompile>
+    <ClCompile Include="400. nth-digit.cpp">
+      <Filter>源文件\SpecialAlg\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="421. maximum-xor-of-two-numbers-in-an-array.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="401. binary-watch.cpp">
+      <Filter>源文件\CommonAlg\DFS/BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="402. remove-k-digits.cpp">
+      <Filter>源文件\CommonAlg\单调栈</Filter>
+    </ClCompile>
+    <ClCompile Include="403. frog-jump.cpp">
+      <Filter>源文件\CommonAlg\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="404. sum-of-left-leaves.cpp">
+      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="405. convert-a-number-to-hexadecimal.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="406. queue-reconstruction-by-height.cpp">
+      <Filter>源文件\CommonAlg\Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="407. trapping-rain-water-ii.cpp">
+      <Filter>源文件\CommonAlg\DFS/BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="409. longest-palindrome.cpp">
+      <Filter>源文件\CommonAlg\Hash/Map/vectorTypeHash</Filter>
+    </ClCompile>
+    <ClCompile Include="410. split-array-largest-sum.cpp">
+      <Filter>源文件\CommonAlg\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="412. fizz-buzz.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="413. arithmetic-slices.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="414. third-maximum-number.cpp">
+      <Filter>源文件\BaseAlg\FiniteStateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="415. add-strings.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="416. partition-equal-subset-sum.cpp">
+      <Filter>源文件\CommonAlg\BinarySearch</Filter>
+    </ClCompile>
+    <ClCompile Include="417. pacific-atlantic-water-flow.cpp">
+      <Filter>源文件\CommonAlg\DFS/BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="419. battleships-in-a-board.cpp">
+      <Filter>源文件\CommonAlg\Greedy</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

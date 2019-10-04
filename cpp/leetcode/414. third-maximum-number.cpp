@@ -1,9 +1,7 @@
 #include "public.h"
 
-//8ms, 96.90%
-
-//set three number to store the biggest 3 nums!
-//note: problem say nums.empty() == false!
+//4ms, 99.22%
+//状态机, 存三个最大的数
 
 class Solution {
 public:
@@ -14,7 +12,7 @@ public:
 
 		int valid_big_nums = 0;
 
-		for (auto num : nums)
+		for (auto& num : nums)
 		{
 			switch(valid_big_nums)
 			{

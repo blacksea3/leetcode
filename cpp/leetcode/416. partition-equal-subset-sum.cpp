@@ -1,7 +1,7 @@
 #include "public.h"
 
-//12ms, 92.87%
-//±©Á¦, DFS
+//8ms, 96.34%
+//DFS+¶þ·Ö
 
 class Solution {
 private:

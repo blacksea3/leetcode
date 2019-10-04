@@ -1,13 +1,13 @@
 #include "public.h"
 
-//4ms, 91.58%
+//4ms, 79.89%
 //DFS
 
 class Solution {
 private:
 	vector<string> res;
 	vector<int> nums = { 8,4,2,1,32,16,8,4,2,1 };
-	void DFS(int num, vector<int> pre, int preloc, int len)
+	void DFS(int num, vector<int>& pre, int preloc, int len)
 	{
 		for (int k = preloc + 1; k <= 9; ++k)
 		{
@@ -43,7 +43,8 @@ private:
 public:
 	vector<string> readBinaryWatch(int num) {
 		if (num == 0) return { "0:00" };
-		DFS(num, vector<int> {}, -1, 1);
+		vector<int> pre = {};
+		DFS(num, pre, -1, 1);
 		return res;
 	}
 };

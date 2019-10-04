@@ -1,7 +1,7 @@
 #include "public.h"
 
-//20ms, 46.54%
-//simple solution
+//4ms, 96.88%
+//Ä£Äâ
 
 class Solution {
 public:
@@ -25,7 +25,7 @@ public:
 			{
 				c = false;
 			}
-			res.insert(res.begin(), s);
+			res.push_back(s);
 		}
 		while ((c) || (l1 >= 0) || (l2 >= 0))
 		{
@@ -43,8 +43,9 @@ public:
 			{
 				c = false;
 			}
-			res.insert(res.begin(), s);
+			res.push_back(s);
 		}
+		reverse(res.begin(), res.end());
 		return res;
 	}
 };

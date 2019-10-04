@@ -1,6 +1,7 @@
 #include "public.h"
 
-//268ms, 15.66%
+//188ms, 32.81%
+//DP问题, O(nnm), 理论上可以二分, 待优化
 //定义dp[i][j]为从前开始数达到下标为i-1的时候, nums内的数被分割成j份的最小的最大值
 //仅初始化dp[0][0]=0, 其他dp[?][0] = INT_MAX, dp[0][?] = INT_MAX
 //那么dp[i][j] = min(max(dp[k][j-1], nums[k]+...+nums[i-1]), ..0 < k < i)

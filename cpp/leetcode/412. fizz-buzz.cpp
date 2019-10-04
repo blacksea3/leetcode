@@ -1,7 +1,7 @@
 #include "public.h"
 
-//4ms, 99.62%
-//simple solution
+//8ms, 93.06%
+//Ä£Äâ
 
 class Solution {
 public:
@@ -9,15 +9,11 @@ public:
 		vector<string> res;
 		for (int i = 1; i <= n; i++)
 		{
-			if (i % 15 == 0) res.push_back("FizzBuzz");
-			else if (i % 3 == 0) res.push_back("Fizz");
-			else if (i % 5 == 0)
-				res.push_back("Buzz");
-			else res.push_back(to_string(i));
-
-
+			if (i % 15 == 0) res.emplace_back("FizzBuzz");
+			else if (i % 3 == 0) res.emplace_back("Fizz");
+			else if (i % 5 == 0) res.emplace_back("Buzz");
+			else res.emplace_back(to_string(i));
 		}
 		return res;
 	}
 };
-

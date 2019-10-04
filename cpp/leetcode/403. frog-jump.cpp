@@ -1,27 +1,27 @@
 #include "public.h"
 
-//324ms, 54.88%
+//176ms, 66.22%
 //DP
-//用map记录{当前位置:之前跳过来时的长度}
+//用unordered_map<int, unordered_set<int>>记录{当前位置:之前跳过来时的长度(可能有多种情况)}
+
+//注: 实际上还可以回溯, 待优化
 
 class Solution {
 public:
 	bool canCross(vector<int>& stones) {
-		map<int, unordered_set<int>> m;
+		unordered_map<int, unordered_set<int>> m;
 
 		for (auto& stone : stones)
-			m.insert(pair<int, unordered_set<int>>{stone, unordered_set<int>{}});
+			m[stone] = unordered_set<int>{};
 		m[0].insert(0);
-		int target = stones[stones.size() - 1];
+		int target = stones.back();
 
-		map<int, unordered_set<int>>::iterator iter = m.begin();
-		while (iter != m.end())
+		for (auto& stone:stones)
 		{
-			for (auto& next : iter->second)
+			for (auto& next : m[stone])
 				for (int step = max(next - 1, 1); step <= next + 1; ++step)
-					if (m.find(iter->first + step) != m.end())
-						m[iter->first + step].insert(step);
-			iter++;
+					if (m.find(stone + step) != m.end())
+						m[stone + step].insert(step);
 		}
 		return !m[target].empty();
 	}

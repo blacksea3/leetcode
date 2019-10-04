@@ -1,7 +1,6 @@
 #include "BinaryTree.h"
 
-//4ms, 93.05%
-//easy but code is a little bit different
+//4ms, 91.63%
 //DFS
 
 /**

@@ -1,22 +1,26 @@
 #include "public.h"
 
-//8ms, 89.94%
-
-//Brute force, this is just an easy problem
-// only need count in um, then find if there occur odd value!
+//4ms, 90.69%
+//暴力
+//统计所有的出现次数的一半之和(包括偶数和奇数), 以及是否有奇数出现次数
 
 class Solution {
 public:
 	int longestPalindrome(string s) {
-		unordered_map<char, int> um;
-		for (auto is : s) um[is]++;
+		vector<int> v(256, 0);
+		for (auto& is : s) v[is]++;
 
 		bool needodd = false;
 		int halfres = 0;
-		for (unordered_map<char, int>::iterator iter = um.begin(); iter != um.end(); ++iter)
+		for (char c = 'a'; c <= 'z'; ++c)
 		{
-			if ((iter->second % 2) == 1) needodd = true;
-			halfres += iter->second / 2;
+			if ((v[c] % 2) == 1) needodd = true;
+			halfres += v[c] / 2;
+		}
+		for (char c = 'A'; c <= 'Z'; ++c)
+		{
+			if ((v[c] % 2) == 1) needodd = true;
+			halfres += v[c] / 2;
 		}
 
 		return (needodd) ? halfres*2 + 1 : halfres*2;

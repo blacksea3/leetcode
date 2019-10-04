@@ -1,6 +1,7 @@
 #include "public.h"
 
-//8ms, 49.89%
+//4ms, 86.52%
+//模拟, 强制判断是否有三连续等差数组, 并以此延申
 //一遍扫描
 
 class Solution {
