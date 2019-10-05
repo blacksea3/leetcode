@@ -1,6 +1,6 @@
 #include "public.h"
 
-//12ms, 89.74%
+//4ms, 99.64%
 //滑动窗口
 //初始化窗口大小是k+1, 如果右移扩展一个窗口后, 当前窗口长度-最多数量字母数<=k则可扩展, 
 //否则减去一个/多个左边窗口
@@ -23,6 +23,7 @@ public:
 	}
 };
 
+/*
 int main()
 {
 	Solution* s = new Solution();
@@ -30,3 +31,4 @@ int main()
 	auto res = s->characterReplacement("ABAA", 0);
 	return 0;
 }
+*/

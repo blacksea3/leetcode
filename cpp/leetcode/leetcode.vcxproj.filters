@@ -980,9 +980,6 @@
     <ClCompile Include="400. nth-digit.cpp">
       <Filter>源文件\SpecialAlg\Math</Filter>
     </ClCompile>
-    <ClCompile Include="421. maximum-xor-of-two-numbers-in-an-array.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="401. binary-watch.cpp">
       <Filter>源文件\CommonAlg\DFS/BFS</Filter>
     </ClCompile>
@@ -1030,6 +1027,45 @@
     </ClCompile>
     <ClCompile Include="419. battleships-in-a-board.cpp">
       <Filter>源文件\CommonAlg\Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="441. arranging-coins.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="421. maximum-xor-of-two-numbers-in-an-array.cpp">
+      <Filter>源文件\CommonAlg\Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="423. reconstruct-original-digits-from-english.cpp">
+      <Filter>源文件\SpecialAlg\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="424. longest-repeating-character-replacement.cpp">
+      <Filter>源文件\CommonAlg\SlidingWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="427. construct-quad-tree.cpp">
+      <Filter>源文件\CommonAlg\DivideAndConquer</Filter>
+    </ClCompile>
+    <ClCompile Include="429. n-ary-tree-level-order-traversal.cpp">
+      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="430. flatten-a-multilevel-doubly-linked-list.cpp">
+      <Filter>源文件\SpecialAlg\ListNode</Filter>
+    </ClCompile>
+    <ClCompile Include="433. minimum-genetic-mutation.cpp">
+      <Filter>源文件\CommonAlg\DFS/BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="434. number-of-segments-in-a-string.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="435. non-overlapping-intervals.cpp">
+      <Filter>源文件\CommonAlg\Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="436. find-right-interval.cpp">
+      <Filter>源文件\CommonAlg\SortPreTreat先排序再模拟</Filter>
+    </ClCompile>
+    <ClCompile Include="437. path-sum-iii.cpp">
+      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="438. find-all-anagrams-in-a-string.cpp">
+      <Filter>源文件\CommonAlg\SlidingWindow</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

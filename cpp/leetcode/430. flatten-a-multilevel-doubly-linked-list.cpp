@@ -1,8 +1,5 @@
 #include "public.h"
 
-//200ms, 39.37%
-//ջ
-
 // Definition for a Node.
 class Node {
 public:
@@ -20,6 +17,9 @@ public:
 		child = _child;
 	}
 };
+
+//128ms, 92.03%
+//栈
 
 class Solution {
 public:

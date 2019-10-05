@@ -1,6 +1,6 @@
 #include "public.h"
 
-//144ms, 81.40%
+//112ms, 98.67%
 //注意:起始点不同
 //对起始点排序, 然后二分查找
 //关键: 建立起始点值:索引的unordered_map, 然后把值放入vector, 用lower_bound查找
@@ -10,16 +10,15 @@ public:
 	vector<int> findRightInterval(vector<vector<int>>& intervals) {
 		unordered_map<int, int> um;
 		vector<int> starts;
+		int iSize = intervals.size();
 
-		for (int i = 0; i < intervals.size(); ++i)
+		for (int i = 0; i < iSize; ++i)
 		{
 			um[intervals[i][0]] = i;
-			starts.push_back(intervals[i][0]);
+			starts.emplace_back(intervals[i][0]);
 		}
-
 		sort(starts.begin(), starts.end());
-
-		vector<int> res(intervals.size());
+		vector<int> res(iSize);
 
 		for (int i = 0; i < intervals.size(); ++i)
 		{

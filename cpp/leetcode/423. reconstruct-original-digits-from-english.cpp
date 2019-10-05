@@ -1,10 +1,8 @@
 #include "public.h"
 
-//20ms, 96.26%
+//20ms, 91.52%
 //统计字符频率频, 然后一个一个减
-
 // one two three four five six seven eight nine zero
-
 //顺序: zero, two, eight, one, six, four, five, seven, nine, three
 
 class Solution {

@@ -1,6 +1,6 @@
 #include "public.h"
 
-//44ms, 88.78%
+//40ms, 94.59%
 //vector先记录p词频
 //然后滑动窗口
 

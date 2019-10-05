@@ -1,7 +1,5 @@
 #include "public.h"
 
-//DC problem: divide and conquer, 204ms, 84.36%
-
 // Definition for a QuadTree node.
 class Node {
 public:
@@ -23,6 +21,9 @@ public:
 		bottomRight = _bottomRight;
 	}
 };
+
+//148ms, 100%
+//·ÖÖÎ
 
 class Solution {
 private:
@@ -52,10 +53,11 @@ private:
 		}
 		else
 		{
-			Node* topLeft = recu_construct(grid, startrow, startcolumn, linelen / 2);
-			Node* topRight = recu_construct(grid, startrow, startcolumn + linelen / 2, linelen / 2);
-			Node* bottomLeft = recu_construct(grid, startrow + linelen / 2, startcolumn, linelen / 2);
-			Node* bottomRight = recu_construct(grid, startrow + linelen / 2, startcolumn + linelen / 2, linelen / 2);
+			int halflinelen = linelen / 2;
+			Node* topLeft = recu_construct(grid, startrow, startcolumn, halflinelen);
+			Node* topRight = recu_construct(grid, startrow, startcolumn + halflinelen, halflinelen);
+			Node* bottomLeft = recu_construct(grid, startrow + halflinelen, startcolumn, halflinelen);
+			Node* bottomRight = recu_construct(grid, startrow + halflinelen, startcolumn + halflinelen, halflinelen);
 			Node* newn = new Node(firstval, false, topLeft, topRight, bottomLeft, bottomRight);
 			return newn;
 		}
