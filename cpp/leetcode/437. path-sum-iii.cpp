@@ -27,6 +27,7 @@ private:
 	}
 };
 
+/*
 //64ms, 13.66%
 //DFS
 //ÏÈÐò±éÀú, ÖÐ×óÓÒ
@@ -50,6 +51,7 @@ public:
 		return preOrder(root, sum) + pathSum(root->left, sum) + pathSum(root->right, sum);
 	}
 };
+*/
 
 /*
 int main()

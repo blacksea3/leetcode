@@ -1067,5 +1067,17 @@
     <ClCompile Include="438. find-all-anagrams-in-a-string.cpp">
       <Filter>源文件\CommonAlg\SlidingWindow</Filter>
     </ClCompile>
+    <ClCompile Include="5079. intersection-of-three-sorted-arrays.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5080. two-sum-bsts.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5081. stepping-numbers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5099. valid-palindrome-iii.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

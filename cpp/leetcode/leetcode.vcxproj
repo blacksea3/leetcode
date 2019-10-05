@@ -381,6 +381,10 @@
     <ClCompile Include="437. path-sum-iii.cpp" />
     <ClCompile Include="438. find-all-anagrams-in-a-string.cpp" />
     <ClCompile Include="441. arranging-coins.cpp" />
+    <ClCompile Include="5079. intersection-of-three-sorted-arrays.cpp" />
+    <ClCompile Include="5080. two-sum-bsts.cpp" />
+    <ClCompile Include="5081. stepping-numbers.cpp" />
+    <ClCompile Include="5099. valid-palindrome-iii.cpp" />
     <ClCompile Include="摩尔投票法升级229. majority-element-ii.cpp" />
     <ClCompile Include="230. kth-smallest-element-in-a-bst.cpp" />
     <ClCompile Include="231. power-of-two.cpp" />
