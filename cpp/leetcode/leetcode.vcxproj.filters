@@ -1067,16 +1067,16 @@
     <ClCompile Include="438. find-all-anagrams-in-a-string.cpp">
       <Filter>源文件\CommonAlg\SlidingWindow</Filter>
     </ClCompile>
-    <ClCompile Include="5079. intersection-of-three-sorted-arrays.cpp">
+    <ClCompile Include="5213. play-with-chips.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="5080. two-sum-bsts.cpp">
+    <ClCompile Include="5214. longest-arithmetic-subsequence-of-given-difference.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="5081. stepping-numbers.cpp">
+    <ClCompile Include="5215. path-with-maximum-gold.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="5099. valid-palindrome-iii.cpp">
+    <ClCompile Include="5216. count-vowels-permutation.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
