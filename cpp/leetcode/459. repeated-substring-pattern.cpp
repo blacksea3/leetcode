@@ -1,6 +1,6 @@
 #include "public.h"
 
-//36ms, 84.52%
+//28ms, 95.48%
 //找到s长度的所有因数, 然后乘过去
 
 class Solution {

@@ -1,18 +1,9 @@
 #include "BinaryTree.h"
 
-//28ms, 100%
+//28ms, 99.31%
 //前序遍历: 扫描改成字符串用#间隔
 //然后扫描字符串, 根据大小关系决定放左边还是右边, 加入栈
 
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
 class Codec {
 private:
 	string ser_res = "";
@@ -96,9 +87,11 @@ public:
 // Codec codec;
 // codec.deserialize(codec.serialize(root));
 
+/*
 int main()
 {
 	Codec codec;
 	//codec.deserialize(codec.serialize(stringToTreeNode("[2,1,3]")));
 	codec.deserialize(codec.serialize(stringToTreeNode("[3,1,4,null,2]")));
 }
+*/

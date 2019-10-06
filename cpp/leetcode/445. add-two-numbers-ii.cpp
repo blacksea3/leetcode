@@ -1,6 +1,6 @@
 #include "listnode.h"
 
-//32ms, 90.81%
+//28ms, 94.82%
 //¸øvector´æ´¢
 
 /**

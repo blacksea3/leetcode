@@ -1,6 +1,6 @@
 #include "public.h"
 
-//216ms, 29.06%
+//120ms, 95.88%
 //用索引存, 理想情况下nums[i]存i+1, 不是则交换, 如果交换位置已经是了那么res push_back
 
 class Solution {
@@ -30,6 +30,7 @@ public:
 	}
 };
 
+/*
 int main()
 {
 	Solution* s = new Solution();
@@ -39,3 +40,4 @@ int main()
 	//auto res = s->findDuplicates(nums);
 	return 0;
 }
+*/

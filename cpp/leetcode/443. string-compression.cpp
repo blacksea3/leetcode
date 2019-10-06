@@ -1,7 +1,7 @@
 #include "public.h"
 
-//16ms, 61.64%
-//Ä£Äâ
+//12ms, 82.97%
+//Í³¼Æ´ÊÆµ
 
 class Solution {
 public:
@@ -23,17 +23,13 @@ public:
 				{
 					chars[writeloc] = oldchar;
 					writeloc++;
-					vector<char> realnumchars;
-					while (oldlen > 0)
+					string s = to_string(oldlen);
+					for (auto& is:s)
 					{
-						realnumchars.insert(realnumchars.begin(), oldlen % 10);
+						chars[writeloc] = is;
 						oldlen /= 10;
+						writeloc++;
 					}
-					for (int preloc = writeloc; preloc < writeloc + realnumchars.size(); ++preloc)
-					{
-						chars[preloc] = realnumchars[preloc - writeloc] + '0';
-					}
-					writeloc += realnumchars.size();
 				}
 				oldchar = chars[loc];
 				oldlen = 1;
@@ -46,24 +42,31 @@ public:
 
 		if (oldlen == 1)
 		{
+			chars[writeloc] = oldchar;
 			writeloc++;
 		}
 		else
 		{
+			chars[writeloc] = oldchar;
 			writeloc++;
-			vector<char> realnumchars;
-			while (oldlen > 0)
+			string s = to_string(oldlen);
+			for (auto& is : s)
 			{
-				realnumchars.insert(realnumchars.begin(), oldlen % 10);
+				chars[writeloc] = is;
 				oldlen /= 10;
+				writeloc++;
 			}
-			for (int preloc = writeloc; preloc < writeloc + realnumchars.size(); ++preloc)
-			{
-				chars[preloc] = realnumchars[preloc - writeloc] + '0';
-			}
-			writeloc += realnumchars.size();
 		}
-
 		return writeloc;
 	}
 };
+
+/*
+int main()
+{
+	Solution* s = new Solution();
+	vector<char> v = { 'a', 'a', 'a', 'a', 'a', 'b'};
+	auto res = s->compress(v);
+	return 0;
+}
+*/

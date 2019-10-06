@@ -1028,9 +1028,6 @@
     <ClCompile Include="419. battleships-in-a-board.cpp">
       <Filter>源文件\CommonAlg\Greedy</Filter>
     </ClCompile>
-    <ClCompile Include="441. arranging-coins.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="421. maximum-xor-of-two-numbers-in-an-array.cpp">
       <Filter>源文件\CommonAlg\Greedy</Filter>
     </ClCompile>
@@ -1067,17 +1064,56 @@
     <ClCompile Include="438. find-all-anagrams-in-a-string.cpp">
       <Filter>源文件\CommonAlg\SlidingWindow</Filter>
     </ClCompile>
-    <ClCompile Include="5213. play-with-chips.cpp">
+    <ClCompile Include="461. hamming-distance.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="5214. longest-arithmetic-subsequence-of-given-difference.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="441. arranging-coins.cpp">
+      <Filter>源文件\CommonAlg\BinarySearch</Filter>
     </ClCompile>
-    <ClCompile Include="5215. path-with-maximum-gold.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="442. find-all-duplicates-in-an-array.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
     </ClCompile>
-    <ClCompile Include="5216. count-vowels-permutation.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="443. string-compression.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="445. add-two-numbers-ii.cpp">
+      <Filter>源文件\SpecialAlg\ListNode</Filter>
+    </ClCompile>
+    <ClCompile Include="448. find-all-numbers-disappeared-in-an-array.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="449. serialize-and-deserialize-bst.cpp">
+      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="450. delete-node-in-a-bst.cpp">
+      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="451. sort-characters-by-frequency.cpp">
+      <Filter>源文件\CommonAlg\Hash/Map/vectorTypeHash</Filter>
+    </ClCompile>
+    <ClCompile Include="447. number-of-boomerangs.cpp">
+      <Filter>源文件\CommonAlg\Hash/Map/vectorTypeHash</Filter>
+    </ClCompile>
+    <ClCompile Include="452. minimum-number-of-arrows-to-burst-balloons.cpp">
+      <Filter>源文件\CommonAlg\Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="453. minimum-moves-to-equal-array-elements.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="454. 4sum-ii.cpp">
+      <Filter>源文件\CommonAlg\DivideAndConquer</Filter>
+    </ClCompile>
+    <ClCompile Include="455. assign-cookies.cpp">
+      <Filter>源文件\CommonAlg\Greedy</Filter>
+    </ClCompile>
+    <ClCompile Include="456. 132-pattern.cpp">
+      <Filter>源文件\CommonAlg\单调栈</Filter>
+    </ClCompile>
+    <ClCompile Include="457. circular-array-loop.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="459. repeated-substring-pattern.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

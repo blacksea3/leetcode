@@ -1,6 +1,6 @@
 #include "public.h"
 
-//20ms, 78.42%
+//12ms, 97.65%
 //统计词频, 然后生成就行
 
 class Solution {
