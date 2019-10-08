@@ -1115,5 +1115,8 @@
     <ClCompile Include="459. repeated-substring-pattern.cpp">
       <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
     </ClCompile>
+    <ClCompile Include="输出浮点数对小数点后精度有要求.cpp">
+      <Filter>源文件\牛客</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

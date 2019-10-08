@@ -490,6 +490,7 @@
     <ClCompile Include="有趣的数字.cpp" />
     <ClCompile Include="构造回文.cpp" />
     <ClCompile Include="汽水瓶.cpp" />
+    <ClCompile Include="输出浮点数对小数点后精度有要求.cpp" />
     <ClCompile Include="进制转换.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
