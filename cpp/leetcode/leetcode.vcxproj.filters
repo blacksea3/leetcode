@@ -1118,5 +1118,11 @@
     <ClCompile Include="输出浮点数对小数点后精度有要求.cpp">
       <Filter>源文件\牛客</Filter>
     </ClCompile>
+    <ClCompile Include="420. strong-password-checker.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="432. all-oone-data-structure.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

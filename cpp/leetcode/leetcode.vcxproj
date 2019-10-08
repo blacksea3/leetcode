@@ -368,12 +368,14 @@
     <ClCompile Include="416. partition-equal-subset-sum.cpp" />
     <ClCompile Include="417. pacific-atlantic-water-flow.cpp" />
     <ClCompile Include="419. battleships-in-a-board.cpp" />
+    <ClCompile Include="420. strong-password-checker.cpp" />
     <ClCompile Include="421. maximum-xor-of-two-numbers-in-an-array.cpp" />
     <ClCompile Include="423. reconstruct-original-digits-from-english.cpp" />
     <ClCompile Include="424. longest-repeating-character-replacement.cpp" />
     <ClCompile Include="427. construct-quad-tree.cpp" />
     <ClCompile Include="429. n-ary-tree-level-order-traversal.cpp" />
     <ClCompile Include="430. flatten-a-multilevel-doubly-linked-list.cpp" />
+    <ClCompile Include="432. all-oone-data-structure.cpp" />
     <ClCompile Include="433. minimum-genetic-mutation.cpp" />
     <ClCompile Include="434. number-of-segments-in-a-string.cpp" />
     <ClCompile Include="435. non-overlapping-intervals.cpp" />
