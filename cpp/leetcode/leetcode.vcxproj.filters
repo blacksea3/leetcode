@@ -43,9 +43,6 @@
     <Filter Include="源文件\SpecialAlg\Special">
       <UniqueIdentifier>{bdd84835-974b-4b05-864f-f8d46a23b355}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\SpecialAlg\BinaryTree">
-      <UniqueIdentifier>{e58e0017-d90a-4be4-9476-e624a15dc540}</UniqueIdentifier>
-    </Filter>
     <Filter Include="源文件\CommonAlg\DivideAndConquer">
       <UniqueIdentifier>{dbc0a33b-4eed-4741-990a-541a829378bb}</UniqueIdentifier>
     </Filter>
@@ -111,6 +108,9 @@
     </Filter>
     <Filter Include="源文件\CommonAlg\CommonStack">
       <UniqueIdentifier>{430fbc75-0c6a-4bcf-bd37-d3d7271a7acb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\SpecialAlg\BinaryTree/OtherTree">
+      <UniqueIdentifier>{e58e0017-d90a-4be4-9476-e624a15dc540}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -267,7 +267,7 @@
       <Filter>源文件\CommonAlg\BackTrack</Filter>
     </ClCompile>
     <ClCompile Include="94. Binary Tree Inorder Traversal.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="95. Unique Binary Search Trees II.cpp">
       <Filter>源文件\CommonAlg\DivideAndConquer</Filter>
@@ -279,64 +279,64 @@
       <Filter>源文件\CommonAlg\DP</Filter>
     </ClCompile>
     <ClCompile Include="98. Validate Binary Search Tree.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="99. Recover Binary Search Tree.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="100. Same Tree.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="101. symmetric-tree.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="102. binary-tree-level-order-traversal.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="103. binary-tree-zigzag-level-order-traversal.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="104. maximum-depth-of-binary-tree.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="105. construct-binary-tree-from-preorder-and-inorder-traversal.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="106. construct-binary-tree-from-inorder-and-postorder-traversal.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="107. binary-tree-level-order-traversal-ii.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="108. convert-sorted-array-to-binary-search-tree.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="109. convert-sorted-list-to-binary-search-tree.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="110. balanced-binary-tree.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="111. minimum-depth-of-binary-tree.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="112. path-sum.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="113. path-sum-ii.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="114. flatten-binary-tree-to-linked-list.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="115. distinct-subsequences.cpp">
       <Filter>源文件\CommonAlg\DP</Filter>
     </ClCompile>
     <ClCompile Include="116. populating-next-right-pointers-in-each-node.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="117. populating-next-right-pointers-in-each-node-ii.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="118. pascals-triangle.cpp">
       <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
@@ -351,7 +351,7 @@
       <Filter>源文件\CommonAlg\DP</Filter>
     </ClCompile>
     <ClCompile Include="124. binary-tree-maximum-path-sum.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="125. valid-palindrome.cpp">
       <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
@@ -363,7 +363,7 @@
       <Filter>源文件\CommonAlg\DFS/BFS</Filter>
     </ClCompile>
     <ClCompile Include="129. sum-root-to-leaf-numbers.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="130. surrounded-regions.cpp">
       <Filter>源文件\CommonAlg\DFS/BFS</Filter>
@@ -402,10 +402,10 @@
       <Filter>源文件\SpecialAlg\ListNode</Filter>
     </ClCompile>
     <ClCompile Include="144. binary-tree-preorder-traversal.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="145. binary-tree-postorder-traversal.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="146. lru-cache.cpp">
       <Filter>源文件\SpecialAlg\Design</Filter>
@@ -522,7 +522,7 @@
       <Filter>源文件\SpecialAlg\Math</Filter>
     </ClCompile>
     <ClCompile Include="173. binary-search-tree-iterator.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="174. dungeon-game.cpp">
       <Filter>源文件\CommonAlg\DP</Filter>
@@ -549,7 +549,7 @@
       <Filter>源文件\CommonAlg\DP</Filter>
     </ClCompile>
     <ClCompile Include="199. binary-tree-right-side-view.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="200. number-of-islands.cpp">
       <Filter>源文件\CommonAlg\DFS/BFS</Filter>
@@ -618,7 +618,7 @@
       <Filter>源文件\CommonAlg\DP</Filter>
     </ClCompile>
     <ClCompile Include="222. count-complete-tree-nodes.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="223. rectangle-area.cpp">
       <Filter>源文件\SpecialAlg\Math</Filter>
@@ -630,7 +630,7 @@
       <Filter>源文件\SpecialAlg\Design</Filter>
     </ClCompile>
     <ClCompile Include="226. invert-binary-tree.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="227. basic-calculator-ii.cpp">
       <Filter>源文件\BaseAlg\FiniteStateMachine</Filter>
@@ -642,7 +642,7 @@
       <Filter>源文件\SpecialAlg\Special</Filter>
     </ClCompile>
     <ClCompile Include="230. kth-smallest-element-in-a-bst.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="231. power-of-two.cpp">
       <Filter>源文件\SpecialAlg\BitOperation</Filter>
@@ -657,10 +657,10 @@
       <Filter>源文件\SpecialAlg\ListNode</Filter>
     </ClCompile>
     <ClCompile Include="235. lowest-common-ancestor-of-a-binary-search-tree.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="236. lowest-common-ancestor-of-a-binary-tree.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="237. delete-node-in-a-linked-list.cpp">
       <Filter>源文件\SpecialAlg\ListNode</Filter>
@@ -681,7 +681,7 @@
       <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
     </ClCompile>
     <ClCompile Include="257. binary-tree-paths.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="258. add-digits.cpp">
       <Filter>源文件\SpecialAlg\Math</Filter>
@@ -738,7 +738,7 @@
       <Filter>源文件\CommonAlg\优先队列/大顶堆/小顶堆</Filter>
     </ClCompile>
     <ClCompile Include="297. serialize-and-deserialize-binary-tree.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="299. bulls-and-cows.cpp">
       <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
@@ -810,7 +810,7 @@
       <Filter>源文件\SpecialAlg\Others</Filter>
     </ClCompile>
     <ClCompile Include="331. verify-preorder-serialization-of-a-binary-tree.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="332. Reconstruct Itinerary.cpp">
       <Filter>源文件\CommonAlg\DFS/BFS</Filter>
@@ -819,7 +819,7 @@
       <Filter>源文件\CommonAlg\Greedy</Filter>
     </ClCompile>
     <ClCompile Include="337. House Robber III.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="338. counting-bits.cpp">
       <Filter>源文件\CommonAlg\DP</Filter>
@@ -990,7 +990,7 @@
       <Filter>源文件\CommonAlg\DP</Filter>
     </ClCompile>
     <ClCompile Include="404. sum-of-left-leaves.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="405. convert-a-number-to-hexadecimal.cpp">
       <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
@@ -1041,7 +1041,7 @@
       <Filter>源文件\CommonAlg\DivideAndConquer</Filter>
     </ClCompile>
     <ClCompile Include="429. n-ary-tree-level-order-traversal.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="430. flatten-a-multilevel-doubly-linked-list.cpp">
       <Filter>源文件\SpecialAlg\ListNode</Filter>
@@ -1059,13 +1059,10 @@
       <Filter>源文件\CommonAlg\SortPreTreat先排序再模拟</Filter>
     </ClCompile>
     <ClCompile Include="437. path-sum-iii.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="438. find-all-anagrams-in-a-string.cpp">
       <Filter>源文件\CommonAlg\SlidingWindow</Filter>
-    </ClCompile>
-    <ClCompile Include="461. hamming-distance.cpp">
-      <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="441. arranging-coins.cpp">
       <Filter>源文件\CommonAlg\BinarySearch</Filter>
@@ -1083,10 +1080,10 @@
       <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
     </ClCompile>
     <ClCompile Include="449. serialize-and-deserialize-bst.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="450. delete-node-in-a-bst.cpp">
-      <Filter>源文件\SpecialAlg\BinaryTree</Filter>
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
     </ClCompile>
     <ClCompile Include="451. sort-characters-by-frequency.cpp">
       <Filter>源文件\CommonAlg\Hash/Map/vectorTypeHash</Filter>
@@ -1119,10 +1116,37 @@
       <Filter>源文件\牛客</Filter>
     </ClCompile>
     <ClCompile Include="420. strong-password-checker.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\CommonAlg\Greedy</Filter>
     </ClCompile>
     <ClCompile Include="432. all-oone-data-structure.cpp">
+      <Filter>源文件\SpecialAlg\Design</Filter>
+    </ClCompile>
+    <ClCompile Include="440. k-th-smallest-in-lexicographical-order.cpp">
+      <Filter>源文件\SpecialAlg\BinaryTree/OtherTree</Filter>
+    </ClCompile>
+    <ClCompile Include="473. Matchsticks to Square.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="461. hamming-distance.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="462. minimum-moves-to-equal-array-elements-ii.cpp">
+      <Filter>源文件\CommonAlg\SortPreTreat先排序再模拟</Filter>
+    </ClCompile>
+    <ClCompile Include="463. island-perimeter.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="464. can-i-win.cpp">
+      <Filter>源文件\CommonAlg\DFS/BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="467. unique-substrings-in-wraparound-string.cpp">
+      <Filter>源文件\CommonAlg\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="468. validate-ip-address.cpp">
+      <Filter>源文件\BaseAlg\Simulation%28模拟规则或者流水线式代码，无特定分类%29</Filter>
+    </ClCompile>
+    <ClCompile Include="470. implement-rand10-using-rand7.cpp">
+      <Filter>源文件\SpecialAlg\随机数</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

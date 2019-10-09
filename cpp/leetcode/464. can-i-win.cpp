@@ -1,7 +1,8 @@
 #include "public.h"
 
-//28ms, 83.56%
+//24ms, 87.61%
 //用20位二进制表示是否当前组合被选取过
+//用DFS(也就是递归)穷举当前可能的情况并确定胜负问题
 
 class Solution {
 private:
@@ -37,9 +38,11 @@ public:
 	}
 };
 
+/*
 int main()
 {
 	Solution* s = new Solution();
 	cout << s->canIWin(10, 11);
 	return 0;
 }
+*/

@@ -1,6 +1,6 @@
 #include "public.h"
 
-//8ms, 29.73%
+//0ms, 100%
 //求异或, 看1的个数
 
 class Solution {
@@ -10,7 +10,7 @@ public:
 		int res = 0;
 		while (x_or > 0)
 		{
-			res += x_or % 2;
+			if (x_or % 2) res++;
 			x_or /= 2;
 		}
 		return res;

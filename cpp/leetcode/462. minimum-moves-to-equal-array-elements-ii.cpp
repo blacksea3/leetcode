@@ -1,6 +1,6 @@
 #include "public.h"
 
-//12ms, 100%
+//16ms, 93.81%
 //找到中位数
 
 class Solution {

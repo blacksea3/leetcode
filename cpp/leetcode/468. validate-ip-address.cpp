@@ -1,6 +1,6 @@
 #include "public.h"
 
-//4ms, 81.45%
+//0ms, 100%
 //Ä£Äâ
 
 class Solution {
@@ -84,6 +84,7 @@ public:
 	}
 };
 
+/*
 int main()
 {
 	Solution* s = new Solution();
@@ -93,3 +94,4 @@ int main()
 	//cout << s->validIPAddress("2001:0db8:85a3:0:0:8A2E:0370:7334");
 	return 0;
 }
+*/

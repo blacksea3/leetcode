@@ -382,6 +382,7 @@
     <ClCompile Include="436. find-right-interval.cpp" />
     <ClCompile Include="437. path-sum-iii.cpp" />
     <ClCompile Include="438. find-all-anagrams-in-a-string.cpp" />
+    <ClCompile Include="440. k-th-smallest-in-lexicographical-order.cpp" />
     <ClCompile Include="441. arranging-coins.cpp" />
     <ClCompile Include="442. find-all-duplicates-in-an-array.cpp" />
     <ClCompile Include="443. string-compression.cpp" />
@@ -399,6 +400,13 @@
     <ClCompile Include="457. circular-array-loop.cpp" />
     <ClCompile Include="459. repeated-substring-pattern.cpp" />
     <ClCompile Include="461. hamming-distance.cpp" />
+    <ClCompile Include="462. minimum-moves-to-equal-array-elements-ii.cpp" />
+    <ClCompile Include="463. island-perimeter.cpp" />
+    <ClCompile Include="464. can-i-win.cpp" />
+    <ClCompile Include="467. unique-substrings-in-wraparound-string.cpp" />
+    <ClCompile Include="468. validate-ip-address.cpp" />
+    <ClCompile Include="470. implement-rand10-using-rand7.cpp" />
+    <ClCompile Include="473. Matchsticks to Square.cpp" />
     <ClCompile Include="摩尔投票法升级229. majority-element-ii.cpp" />
     <ClCompile Include="230. kth-smallest-element-in-a-bst.cpp" />
     <ClCompile Include="231. power-of-two.cpp" />

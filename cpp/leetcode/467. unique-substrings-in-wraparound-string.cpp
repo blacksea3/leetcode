@@ -1,6 +1,6 @@
 #include "public.h"
 
-//12ms, 74.19%
+//12ms, 73.01%
 //dp, 用vector存储, 记录以char结尾的子字符串的长度
 //最后res用各个长度来更新, 等于sum长度们
 
@@ -9,33 +9,33 @@ public:
 	int findSubstringInWraproundString(string p) {
 		if (p.empty()) return 0;
 
-		vector<int> length(26, 0);
+		vector<int> length(256, 0);  //其实只有中间a-z有效
 		//int res = 0;
 		int oldlen = 1;
-		length[p[0] - 'a']++;
+		length[p[0]]++;
 
 		for (int loc = 1; loc < p.size(); ++loc)
 		{
 			if (p[loc] - p[loc - 1] == 1 || p[loc] - p[loc - 1] == -25)
 			{
-				if (length[p[loc] - 'a'] <= oldlen)
+				if (length[p[loc]] <= oldlen)
 				{
 					oldlen++;
-					length[p[loc] - 'a'] = oldlen;
+					length[p[loc]] = oldlen;
 				}
 				else oldlen++;
 			}
 			else
 			{
-				if (length[p[loc] - 'a'] == 0)
+				if (length[p[loc]] == 0)
 				{
-					length[p[loc] - 'a'] = 1;
+					length[p[loc]] = 1;
 					oldlen = 1;
 				}
 				else oldlen = 1;
 			}
 		}
-		return accumulate(length.begin(), length.end(), 0);
+		return accumulate(length.begin() + 'a', length.begin() + 'z' + 1, 0);
 	}
 };
 

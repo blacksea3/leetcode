@@ -1,6 +1,6 @@
 #include "public.h"
 
-//108ms, 67.78%
+//88ms, 95.38%
 //先获取1-5随机数, 再获取1-6随机数以是否大于3决定是否再来一次1-5随机数
 // The rand7() API is already defined for you.
 /*这是假的rand7()函数*/

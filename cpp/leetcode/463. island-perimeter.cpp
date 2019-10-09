@@ -1,58 +1,29 @@
 #include "public.h"
 
-//208ms, 5.36%
-//DFS
+//68ms, 97.55%
 //注意只有一个岛屿而且没有湖
-//如果岛屿某个方向是边界或者水, 那么将被计算到周长里面
+//对于岛屿: 每当周围多一个岛它的周长贡献减1, 每个岛的最大周长贡献是4
+//直接双重循环
 
 class Solution {
-private:
-	int res = 0;
-	void DFS(const vector<vector<int>>& grid, vector<vector<bool>>& issearched,
-		int r, int c)
-	{
-		issearched[r][c] = true;
-		if (r == 0) res++;
-		else
-		{
-			if (grid[r - 1][c] == 0) res++;
-			else if (!issearched[r - 1][c]) DFS(grid, issearched, r - 1, c);
-		}
-
-		if (c == 0) res++;
-		else
-		{
-			if (grid[r][c - 1] == 0) res++;
-			else if (!issearched[r][c - 1]) DFS(grid, issearched, r, c - 1);
-		}
-
-		if (r == grid.size() - 1) res++;
-		else
-		{
-			if (grid[r + 1][c] == 0) res++;
-			else if (!issearched[r + 1][c]) DFS(grid, issearched, r + 1, c);
-		}
-
-		if (c == grid[0].size() - 1) res++;
-		else
-		{
-			if (grid[r][c + 1] == 0) res++;
-			else if (!issearched[r][c + 1]) DFS(grid, issearched, r, c + 1);
-		}
-	}
-
 public:
 	int islandPerimeter(vector<vector<int>>& grid) {
-		vector<vector<bool>> issearched(grid.size(), vector<bool>(grid[0].size(), false));
-		//找到一块陆地, DFS
-		for (int r = 0; r < grid.size(); ++r)
-			for (int c = 0; c < grid[0].size(); ++c)
+		int res = 0;
+		int gSize = grid.size();
+		int g0Size = grid[0].size();
+		for (int r = 0; r < gSize; ++r)
+			for (int c = 0; c < g0Size; ++c)
+			{
 				if (grid[r][c] == 1)
 				{
-					DFS(grid, issearched, r, c);
-					goto bigbreak;
+					int contribute = 4;
+					if (r > 0 && grid[r - 1][c] == 1) contribute--;
+					if (c > 0 && grid[r][c - 1] == 1) contribute--;
+					if (r < (gSize - 1)&& grid[r + 1][c] == 1) contribute--;
+					if (c < (g0Size - 1) && grid[r][c + 1] == 1) contribute--;
+					res += contribute;
 				}
-	bigbreak:
+			}
 		return res;
 	}
 };
