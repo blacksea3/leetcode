@@ -387,6 +387,7 @@
     <ClCompile Include="442. find-all-duplicates-in-an-array.cpp" />
     <ClCompile Include="443. string-compression.cpp" />
     <ClCompile Include="445. add-two-numbers-ii.cpp" />
+    <ClCompile Include="446. arithmetic-slices-ii-subsequence.cpp" />
     <ClCompile Include="447. number-of-boomerangs.cpp" />
     <ClCompile Include="448. find-all-numbers-disappeared-in-an-array.cpp" />
     <ClCompile Include="449. serialize-and-deserialize-bst.cpp" />
@@ -398,6 +399,7 @@
     <ClCompile Include="455. assign-cookies.cpp" />
     <ClCompile Include="456. 132-pattern.cpp" />
     <ClCompile Include="457. circular-array-loop.cpp" />
+    <ClCompile Include="458. poor-pigs.cpp" />
     <ClCompile Include="459. repeated-substring-pattern.cpp" />
     <ClCompile Include="461. hamming-distance.cpp" />
     <ClCompile Include="462. minimum-moves-to-equal-array-elements-ii.cpp" />
