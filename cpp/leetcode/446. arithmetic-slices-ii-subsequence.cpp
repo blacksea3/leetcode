@@ -29,6 +29,7 @@ public:
 	}
 };
 
+/*
 int main()
 {
 	Solution* s = new Solution();
@@ -36,3 +37,4 @@ int main()
 	cout << s->numberOfArithmeticSlices(A);
 	return 0;
 }
+*/
