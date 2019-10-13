@@ -401,13 +401,16 @@
     <ClCompile Include="457. circular-array-loop.cpp" />
     <ClCompile Include="458. poor-pigs.cpp" />
     <ClCompile Include="459. repeated-substring-pattern.cpp" />
+    <ClCompile Include="460. lfu-cache.cpp" />
     <ClCompile Include="461. hamming-distance.cpp" />
     <ClCompile Include="462. minimum-moves-to-equal-array-elements-ii.cpp" />
     <ClCompile Include="463. island-perimeter.cpp" />
     <ClCompile Include="464. can-i-win.cpp" />
+    <ClCompile Include="466. count-the-repetitions.cpp" />
     <ClCompile Include="467. unique-substrings-in-wraparound-string.cpp" />
     <ClCompile Include="468. validate-ip-address.cpp" />
     <ClCompile Include="470. implement-rand10-using-rand7.cpp" />
+    <ClCompile Include="472. concatenated-words.cpp" />
     <ClCompile Include="473. Matchsticks to Square.cpp" />
     <ClCompile Include="5223. queens-that-can-attack-the-king.cpp" />
     <ClCompile Include="5224. dice-roll-simulation.cpp" />

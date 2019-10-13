@@ -1163,5 +1163,14 @@
     <ClCompile Include="5225. maximum-equal-frequency.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="460. lfu-cache.cpp">
+      <Filter>源文件\SpecialAlg\Design</Filter>
+    </ClCompile>
+    <ClCompile Include="466. count-the-repetitions.cpp">
+      <Filter>源文件\CommonAlg\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="472. concatenated-words.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
