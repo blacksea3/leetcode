@@ -1172,5 +1172,17 @@
     <ClCompile Include="472. concatenated-words.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="5088. missing-number-in-arithmetic-progression.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5089. meeting-scheduler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5090. toss-strange-coins.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5111. divide-chocolate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

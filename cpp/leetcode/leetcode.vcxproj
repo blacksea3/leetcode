@@ -412,6 +412,10 @@
     <ClCompile Include="470. implement-rand10-using-rand7.cpp" />
     <ClCompile Include="472. concatenated-words.cpp" />
     <ClCompile Include="473. Matchsticks to Square.cpp" />
+    <ClCompile Include="5088. missing-number-in-arithmetic-progression.cpp" />
+    <ClCompile Include="5089. meeting-scheduler.cpp" />
+    <ClCompile Include="5090. toss-strange-coins.cpp" />
+    <ClCompile Include="5111. divide-chocolate.cpp" />
     <ClCompile Include="5223. queens-that-can-attack-the-king.cpp" />
     <ClCompile Include="5224. dice-roll-simulation.cpp" />
     <ClCompile Include="5225. maximum-equal-frequency.cpp" />
