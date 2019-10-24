@@ -5,7 +5,6 @@
 class Solution {
 public:
 	vector<int> twoSum(vector<int>& nums, int target) {
-		//”√map«ÛΩ‚
 		unordered_map<int, int> mdict;
 		int loc = 0;
 		for (auto num : nums)

@@ -155,6 +155,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="BinaryTree.h" />
+    <ClInclude Include="estimateFuncTime.hpp" />
     <ClInclude Include="listnode.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="public.h" />
@@ -412,13 +413,10 @@
     <ClCompile Include="470. implement-rand10-using-rand7.cpp" />
     <ClCompile Include="472. concatenated-words.cpp" />
     <ClCompile Include="473. Matchsticks to Square.cpp" />
-    <ClCompile Include="5088. missing-number-in-arithmetic-progression.cpp" />
-    <ClCompile Include="5089. meeting-scheduler.cpp" />
-    <ClCompile Include="5090. toss-strange-coins.cpp" />
-    <ClCompile Include="5111. divide-chocolate.cpp" />
-    <ClCompile Include="5223. queens-that-can-attack-the-king.cpp" />
-    <ClCompile Include="5224. dice-roll-simulation.cpp" />
-    <ClCompile Include="5225. maximum-equal-frequency.cpp" />
+    <ClCompile Include="5230. check-if-it-is-a-straight-line.cpp" />
+    <ClCompile Include="5231. remove-sub-folders-from-the-filesystem.cpp" />
+    <ClCompile Include="5232. replace-the-substring-for-balanced-string.cpp" />
+    <ClCompile Include="5233. maximum-profit-in-job-scheduling.cpp" />
     <ClCompile Include="摩尔投票法升级229. majority-element-ii.cpp" />
     <ClCompile Include="230. kth-smallest-element-in-a-bst.cpp" />
     <ClCompile Include="231. power-of-two.cpp" />
