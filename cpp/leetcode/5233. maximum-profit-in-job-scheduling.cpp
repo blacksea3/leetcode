@@ -67,6 +67,7 @@ public:
 	}
 };
 
+/*
 int main()
 {
 	Solution* s = new Solution();
@@ -85,3 +86,4 @@ int main()
 	cout << s->jobScheduling(startTime1, endTime1, profit1) << endl; //6
 	return 0;
 }
+*/

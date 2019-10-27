@@ -1,52 +1,42 @@
-#include "public.h"
-#include "estimateFuncTime.hpp"
+//
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <math.h>
 
 using namespace std;
 
-int recuBS(const vector<int>& arr, int left, int right, int tar)
+/*
+int main()
 {
-	if (left > right) return left - 1;
-	else
 	{
-		int mid = left + (right - left) / 2;
-		if (arr[mid] == tar) return mid;
-		else if (arr[mid] > tar) return recuBS(arr, left, mid - 1, tar);
-		else return recuBS(arr, mid + 1, right, tar);
+		int n;
+		cin >> n;
+		vector<long long> v;
+		for (int i = 0; i < n; ++i)
+		{
+			int op;
+			cin >> op;
+			if (op == 1)
+			{
+				long long x, y, z;
+				cin >> x >> y >> z;
+				int d = ceil(sqrt(x * x + y * y + z * z));
+				
+				vector<long long>::iterator iter = lower_bound(v.begin(), v.end(), d);
+				if (iter == v.end()) v.push_back(d);
+				else v.insert(iter, d);
+			}
+			else
+			{
+				int loc;
+				cin >> loc;
+				if (loc > v.size()) cout << -1 << endl;
+				else cout << v[loc - 1] << endl;
+			}
+		}
 	}
+	return 0;
 }
-
-void recuBSInterface(const vector<int>& arr, int tar)
-{
-	cout << "res:" << recuBS(arr, 0, arr.size() - 1, tar) << endl;
-}
-
-int iterBS(const vector<int>& arr, int tar)
-{
-	int left = 0;
-	int right = arr.size() - 1;
-	while (left <= right)
-	{
-		int mid = left + (right - left) / 2;
-		if (arr[mid] == tar) return mid;
-		else if (arr[mid] > tar) right = mid - 1;
-		else left = mid + 1;
-	}
-	return left - 1;
-}
-
-void iterBSInterface(const vector<int>& arr, int tar)
-{
-	cout << "res:" << iterBS(arr, tar) << endl;
-}
-
-void BinarySearchTest()
-{
-	vector<int> arr(100000);
-	for (int i = 0; i < 100000; ++i) arr[i] = 2 * i;
-	int count = 5;
-	cout << "recu binary search " << count << " times" << endl;
-	estimateFuncTimeLoop(count, recuBSInterface, arr, 5000);
-	cout << "iter binary search " << count << " times" << endl;
-	estimateFuncTimeLoop(count, iterBSInterface, arr, 5000);
-}
-
+*/

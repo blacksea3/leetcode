@@ -1178,5 +1178,14 @@
     <ClCompile Include="5233. maximum-profit-in-job-scheduling.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="5239. circular-permutation-in-binary-representation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5240. maximum-length-of-a-concatenated-string-with-unique-characters.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5241. tiling-a-rectangle-with-the-fewest-squares.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
