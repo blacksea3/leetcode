@@ -1166,16 +1166,16 @@
     <ClCompile Include="472. concatenated-words.cpp">
       <Filter>源文件\HardAlg\前缀树</Filter>
     </ClCompile>
-    <ClCompile Include="5097. design-a-leaderboard.cpp">
+    <ClCompile Include="5247. minimum-swaps-to-make-strings-equal.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="5096. array-transformation.cpp">
+    <ClCompile Include="5248. count-number-of-nice-subarrays.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="5098. tree-diameter.cpp">
+    <ClCompile Include="5249. minimum-remove-to-make-valid-parentheses.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="5115. palindrome-removal.cpp">
+    <ClCompile Include="5250. check-if-it-is-a-good-array.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
