@@ -1166,16 +1166,16 @@
     <ClCompile Include="472. concatenated-words.cpp">
       <Filter>源文件\HardAlg\前缀树</Filter>
     </ClCompile>
-    <ClCompile Include="5247. minimum-swaps-to-make-strings-equal.cpp">
+    <ClCompile Include="5255. cells-with-odd-values-in-a-matrix.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="5248. count-number-of-nice-subarrays.cpp">
+    <ClCompile Include="5256. reconstruct-a-2-row-binary-matrix.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="5249. minimum-remove-to-make-valid-parentheses.cpp">
+    <ClCompile Include="5257. number-of-closed-islands.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="5250. check-if-it-is-a-good-array.cpp">
+    <ClCompile Include="5258. maximum-score-words-formed-by-letters.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
