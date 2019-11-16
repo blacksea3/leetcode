@@ -413,10 +413,10 @@
     <ClCompile Include="470. implement-rand10-using-rand7.cpp" />
     <ClCompile Include="472. concatenated-words.cpp" />
     <ClCompile Include="473. Matchsticks to Square.cpp" />
-    <ClCompile Include="5255. cells-with-odd-values-in-a-matrix.cpp" />
-    <ClCompile Include="5256. reconstruct-a-2-row-binary-matrix.cpp" />
-    <ClCompile Include="5257. number-of-closed-islands.cpp" />
-    <ClCompile Include="5258. maximum-score-words-formed-by-letters.cpp" />
+    <ClCompile Include="5108. encode-number.cpp" />
+    <ClCompile Include="5109. smallest-common-region.cpp" />
+    <ClCompile Include="5110. synonymous-sentences.cpp" />
+    <ClCompile Include="5125. handshakes-that-dont-cross.cpp" />
     <ClCompile Include="摩尔投票法升级229. majority-element-ii.cpp" />
     <ClCompile Include="230. kth-smallest-element-in-a-bst.cpp" />
     <ClCompile Include="231. power-of-two.cpp" />
