@@ -1166,16 +1166,13 @@
     <ClCompile Include="472. concatenated-words.cpp">
       <Filter>源文件\HardAlg\前缀树</Filter>
     </ClCompile>
-    <ClCompile Include="5263. shift-2d-grid.cpp">
+    <ClCompile Include="5272. count-servers-that-communicate.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="5264. find-elements-in-a-contaminated-binary-tree.cpp">
+    <ClCompile Include="5273. search-suggestions-system.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="5265. greatest-sum-divisible-by-three.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="5266. minimum-moves-to-move-a-box-to-their-target-location.cpp">
+    <ClCompile Include="5274. number-of-ways-to-stay-in-the-same-place-after-some-steps.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
