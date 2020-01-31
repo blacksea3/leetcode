@@ -1178,5 +1178,11 @@
     <ClCompile Include="5266. minimum-moves-to-move-a-box-to-their-target-location.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="线段树单文件.cpp">
+      <Filter>源文件\HardAlg\线段树/sqrt%28n%29算法</Filter>
+    </ClCompile>
+    <ClCompile Include="493. reverse-pairs.cpp">
+      <Filter>源文件\HardAlg\线段树/sqrt%28n%29算法</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
