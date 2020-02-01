@@ -419,6 +419,7 @@
     <ClCompile Include="5264. find-elements-in-a-contaminated-binary-tree.cpp" />
     <ClCompile Include="5265. greatest-sum-divisible-by-three.cpp" />
     <ClCompile Include="5266. minimum-moves-to-move-a-box-to-their-target-location.cpp" />
+    <ClCompile Include="587. erect-the-fence.cpp" />
     <ClCompile Include="摩尔投票法升级229. majority-element-ii.cpp" />
     <ClCompile Include="230. kth-smallest-element-in-a-bst.cpp" />
     <ClCompile Include="231. power-of-two.cpp" />

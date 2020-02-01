@@ -1184,5 +1184,8 @@
     <ClCompile Include="493. reverse-pairs.cpp">
       <Filter>源文件\HardAlg\线段树/sqrt%28n%29算法</Filter>
     </ClCompile>
+    <ClCompile Include="587. erect-the-fence.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

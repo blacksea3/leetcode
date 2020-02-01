@@ -83,8 +83,8 @@ public:
 
 int main() {
     Solution* s = new Solution();
-    vector<vector<int>> points1 = { {1, 1},{2, 2 }, {2, 0}, {2, 4}, { 3, 3}, {4, 2}};
+    vector<vector<int>> points1 = { {1, 1},{2, 2 }, {2, 0}, {2, 4}, { 3, 3}, {4, 2} };
     auto ret = s->outerTrees(points1);
-    
+
     return 0;
 }

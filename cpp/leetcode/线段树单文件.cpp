@@ -71,6 +71,7 @@ int query(int L, int R, int l, int r, int k) {    //[L,R]¼´ÎªÒª²éÑ¯µÄÇø¼ä£¬l£¬rÎ
     }
 }
 
+/*
 int main() {
     //freopen("testData/Ïß¶ÎÊ÷0.txt", "r", stdin);
 
@@ -99,4 +100,4 @@ int main() {
     }
     return 0;
 }
-
+*/

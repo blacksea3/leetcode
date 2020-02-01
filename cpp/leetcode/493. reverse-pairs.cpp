@@ -124,8 +124,10 @@ public:
     }
 };
 
+/*
 int main() {
     Solution* s = new Solution();
     vector<int> v = {2147483647,2147483647,2147483647,2147483647,2147483647,2147483647};
     cout << s->reversePairs(v) << endl;
 }
+*/
