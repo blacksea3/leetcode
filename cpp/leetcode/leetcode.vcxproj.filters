@@ -1175,5 +1175,14 @@
     <ClCompile Include="5274. number-of-ways-to-stay-in-the-same-place-after-some-steps.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="线段树单文件.cpp">
+      <Filter>源文件\HardAlg\线段树/sqrt%28n%29算法</Filter>
+    </ClCompile>
+    <ClCompile Include="493. reverse-pairs.cpp">
+      <Filter>源文件\HardAlg\线段树/sqrt%28n%29算法</Filter>
+    </ClCompile>
+    <ClCompile Include="587. erect-the-fence.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
