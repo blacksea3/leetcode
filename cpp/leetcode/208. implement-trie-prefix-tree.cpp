@@ -68,28 +68,6 @@ public:
 		}
 		return (pre->isend);
 	}
-
-	/** Returns if there is any word in the trie that starts with the given prefix. */
-	bool startsWith(string prefix) {
-		//从祖先开始搜
-		TrieTreeNode* pre = ancestor;
-		bool isfind = false;
-		for (auto& ch : prefix)
-		{
-			isfind = false;
-			for (auto& next : pre->nexts)
-			{
-				if (next->val == ch)
-				{
-					isfind = true;
-					pre = next;
-					break;
-				}
-			}
-			if (!isfind) return false;
-		}
-		return true;
-	}
 };
 
 /**
